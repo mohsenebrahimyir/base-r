@@ -6,11 +6,10 @@ author:
 date: 
   - فرودین ۱۴۰۰
 documentclass: book
-favicon: 
-  - ./img/favicon.ico
-cover-image:
-  - ./img/cover.jpg
+favicon: img/favicon.ico
+cover-image: img/cover.jpg
 site: bookdown::bookdown_site
+url: https://mohsenebrahimyir.github.io/base-r/
 classoption: openany
 bibliography:
   - ./bib/book.bib
@@ -34,10 +33,8 @@ source("R/library.R")
 source("R/function.R")
 ```
 
-\twocolumnfootnotes
-
-
-# پیش گفتار {-}
+پیش گفتار {-}
+========================================================
 
 به همراه این کتاب می‌توانید یادگیری زبان برنامه نویسی
  **R**
@@ -47,7 +44,7 @@ source("R/function.R")
 mohsenebrahimy.ir@gmail.com
 برای بهبود کتاب به نویسنده ارسال کنید
 تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ
-**[`r date_gr_to_jl()`]{dtr=ltr}**
+**[`r date_gr_to_jl() |> digit_fa()`]{dir=ltr}**
 بروزرسانی شده است.
 
 ::: {.center data-latex=""}
