@@ -1,0 +1,37 @@
+book_filename: "base-r"
+delete_merged_file: true
+output_dir: "docs"
+rmd_files: [
+  "index.Rmd",
+  
+  "Rmd/intro/intro.Rmd",
+  "Rmd/intro/install.Rmd",
+  
+  "Rmd/syntax/basics.Rmd",
+  "Rmd/syntax/data-structure.Rmd",
+  "Rmd/syntax/variable.Rmd",
+  "Rmd/syntax/function.Rmd",
+  "Rmd/syntax/loop.Rmd",
+  "Rmd/syntax/operation.Rmd",
+  "Rmd/syntax/ifelse.Rmd",
+  "Rmd/syntax/package.Rmd",
+  "Rmd/syntax/file.Rmd",
+]
+language:
+  label:
+    toc: "فهرست"
+    fig: "شکل "
+    tab: "جدول "
+    def: "تعریف "
+    exr: "تمرین "
+    exm: "مثال "
+    solution: "راه حل "
+    remark: "نکته "
+    eq: 'معادله '
+    thm: 'قضیه '
+    lem: 'اصل '
+    hyp: 'فرضیه '
+    cor: "نتیجه گیری"
+    proof: 'اثبات '
+  ui:
+    chapter_name: "فصل "

@@ -1,0 +1,41 @@
+bookdown::gitbook:
+  name: "مبانی R"
+  css: ./stl/style.css
+  split_by: section
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./index.html">مبانی R</a></li>
+      after:  |
+        &nbsp;
+        <hr />
+        <p style="text-align: center;">
+          <a href="https://mohsenebrahimy.ir/">
+          محسن ابراهیمی
+          <br/>
+         <span style="color: #808080;"><em>www.mohsenebrahimy.ir</em></span>
+         </a>
+        </p>
+        
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <p style="text-align: center;">
+         <a href="https://web.whatsapp.com/send?phone=989118645816" class="fa fa-whatsapp fa-3x" style="color:green"></a>
+        </p>
+        &nbsp;
+    download: false
+    sharing:
+      facebook: false
+      github: false
+      twitter: true
+      linkedin: true
+      weibo: false
+      instapaper: false
+      vk: false
+      whatsapp: true
+      all: null
+    info: false
+  includes:
+    in_header: ./stl/header.html

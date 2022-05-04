@@ -1,0 +1,69 @@
+--- 
+title: "[مبانی R]{dir=rtl}" 
+subtitle: "مقدمه‌ای بر آشنایی با زبان برنامه نویسی R"
+author:
+  - محسن ابراهیمی
+date: 
+  - فرودین ۱۴۰۰
+documentclass: book
+favicon: 
+  - ./img/favicon.ico
+cover-image:
+  - ./img/cover.jpg
+site: bookdown::bookdown_site
+classoption: openany
+bibliography:
+  - ./bib/book.bib
+  - ./bib/packages.bib
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	fig.align = "center",
+	fig.pos = "!ht",
+	message = FALSE,
+	warning = FALSE,
+	out.width = "70%"
+)
+```
+
+```{r include=FALSE}
+source("R/library.R")
+source("R/function.R")
+```
+
+\twocolumnfootnotes
+
+
+# پیش گفتار {-}
+
+به همراه این کتاب می‌توانید یادگیری زبان برنامه نویسی
+ **R**
+را شروع کنید.
+سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید.
+نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل
+mohsenebrahimy.ir@gmail.com
+برای بهبود کتاب به نویسنده ارسال کنید
+تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ
+**[`r date_gr_to_jl()`]{dtr=ltr}**
+بروزرسانی شده است.
+
+::: {.center data-latex=""}
+<center>
+[<https://mohsenebrahimy.ir/book/base-r/>]{dir=ltr}
+</center>
+:::
+
+امیدوارم این کتاب برایتان مفید باشد.
+
+::: {.center data-latex=""}
+<center>
+**محسن ابراهیمی**
+</center>
+<br/>
+<center>
+**www.mohsenebrahimy.ir**
+</center>
+:::

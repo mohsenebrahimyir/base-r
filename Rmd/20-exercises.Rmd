@@ -1,0 +1,10 @@
+# تمرینات {-#exercises}
+
+1. برنامه‌ای بنویسید که نام و سن را از کاربر به عنوان ورودی بگیرد 
+و خروجی زیر را تحویل دهد.
+
+```{r echo=FALSE}
+name = "Mohsen" # readline(prompt="Input your name: ")
+age =  27 # readline(prompt="Input your age: ")
+print(paste("My name is",name, "and I am",age ,"years old."))
+```

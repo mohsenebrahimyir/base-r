@@ -1,0 +1,146 @@
+## انتخاب مقادیر
+
+```r
+(vec <- c(Name = "Mohsen", Age = 27, Male = TRUE, "alaki", NA, "alaki"))
+```
+```output
+    Name  Age   Male                            
+"Mohsen" "27" "TRUE" "alaki" NA "alaki"
+```
+
+- انتخاب 
+اندیس (Index)
+n ام
+
+```r
+vec[3]
+```
+```output
+  Male 
+"TRUE" 
+```
+
+- انتخاب همه مقادیر به غیر از اندیس
+n ام
+
+```r
+vec[-3]
+```
+```output
+    Name  Age                            
+"Mohsen" "27" "alaki" NA "alaki"
+```
+
+
+- انتخاب اندیس‌های دلخواه
+
+```r
+vec[c(2, 5)]
+```
+```output
+ Age      
+"27" NA 
+```
+
+- انتخاب همه‌ی اندیس‌ها به غیر از اندیس‌های دلخواه
+
+```r
+vec[-c(2, 5)]
+```
+```output
+    Name  Male                   
+"Mohsen" "TRUE" "alaki" "alaki" 
+```
+
+- انتخاب مقدار بوسیله نام 
+
+```r
+vec[c("Name", "Age")]
+```
+```output
+    Name  Age 
+"Mohsen" "27" 
+```
+
+- تغییر ترتیب اندیس‌های مقادیر
+
+```r
+vec[c(5, 2)]
+```
+```output
+    Age 
+NA "27" 
+```
+
+- n 
+مقدار اول بردار
+
+```r
+head(x = vec, n = 3)
+```
+```output
+    Name  Age   Male 
+"Mohsen" "27" "TRUE" 
+```
+
+- n
+مقدار آخر
+بردار
+
+```r
+tail(x = vec, n = 3)
+```
+```output
+"alaki" NA "alaki" 
+```
+
+- گرفتن مقادیر بدون تکرار
+
+```r
+unique(x = vec)
+```
+```output
+[1] "Mohsen" "27" "TRUE" "alaki" NA
+```
+
+- گرفتن مقادیر تکراری
+
+این تابع برای مقادیر که بیش از یک بار تکرار شده‌اند،
+مقدار درست و برای بقیه غلط بر میگرداند
+
+```r
+duplicated(x = vec)
+```
+```output
+[1] FALSE FALSE FALSE FALSE FALSE TRUE
+```
+
+انتخاب مقادیر تکرار شده
+
+```r
+vec[duplicated(vec)]
+```
+```output
+        
+"alaki" 
+```
+
+انتخاب مقادیر تکرار نشده
+
+```r
+vec[!duplicated(vec)]
+```
+```output
+    Name  Age   Male                   
+"Mohsen" "27" "TRUE"  "alaki" NA 
+```
+
+- حذف مقادیر از دست رفته
+
+```r
+na.omit(vec)
+```
+```output
+    Name      Age     Male                   
+"Mohsen"     "27"   "TRUE"  "alaki"  "alaki"
+```

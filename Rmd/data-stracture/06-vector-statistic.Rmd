@@ -1,0 +1,251 @@
+
+## آمار
+
+```{r}
+(stat <- c(1, -2, 5, 5, 4, -7, 5, -2, 6, 0, 3))
+```
+```output
+
+```
+
+
+- بیشترین (Maximum)
+
+\[\Large
+x_{max}
+\]
+
+```{r}
+max(stat)
+```
+```output
+
+```
+
+
+- کمترین^[Minimum]
+
+\[\Large
+x_{min}
+\]
+
+```{r}
+min(stat)
+```
+```output
+
+```
+
+
+- تعداد^[Count]
+
+\[\Large
+N
+\]
+
+```{r}
+length(stat)
+```
+```output
+
+```
+
+
+- بازه^[Range]
+
+\[\Large
+x_{min} \leq x \leq  x_{max}
+\]
+
+```{r}
+range(stat)
+```
+```output
+
+```
+
+
+- میانه^[Median]
+
+\[\Large
+x_{median} = 
+\left\{
+\begin{array}{lr}
+  x_{\frac{N}{2}} & {\bf if}\;N\;{\bf is\;even} \\
+  \cfrac{x_{\frac{N-1}{2}} + x_{\frac{N+1}{2}}}{2} & {\bf if}\;N\;{\bf is\;odd}
+\end{array}
+\right.
+\]
+
+```{r}
+median(stat)
+```
+```output
+
+```
+
+
+
+- چارک‌ها^[Quartile]
+
+چارک اول
+(${\bf Q1}$),
+چارک دوم یا همان میانه
+(${\bf Q2\;or\;Median}$),
+چارک سوم 
+(${\bf Q3}$),
+
+
+\[\Large
+x_{sort} = 
+\left[
+\begin{array}{ccccccccccc}
+  -7 & -2 & \overset{\overset{{\bf Q1}}{\uparrow}}{-2} &
+  0 & 1 & \overset{\overset{{\bf Q2}}{\uparrow}}{3} & 4 & 5 &
+  \overset{\overset{{\bf Q3}}{\uparrow}}{5} & 5 & 6
+\end{array}
+\right]
+\]
+
+برای محاسبه چارک‌ها باید تابع جدید ساخت زیرا تابع پیش فرضی وجود ندارد
+
+1. تعریف تابع
+
+```{r}
+quart <- function(x) {
+  x <- sort(x)
+  n <- length(x)
+  m <- (n+1)/2
+  if (floor(m) != m) {
+    l <- m-1/2; u <- m+1/2
+  } else {
+    l <- m-1; u <- m+1
+  }
+  c(Q1=median(x[1:l]), Q2=median(x), Q3=median(x[u:n]))
+}
+```
+```output
+
+```
+
+
+2. استفاده از تابع
+
+```{r}
+quart(stat)
+```
+```output
+
+```
+
+
+- مد^[Mode]
+
+به دلیل نبود تابع مد در زبان 
+ **R**
+می‌توانیم برای آن از تابع زیر استفاده کنیم.
+
+1. تعریف تابع
+
+```{r}
+modes <- function(x) {
+  ux <- unique(x)
+  tab <- tabulate(match(x, ux))
+  ux[tab == max(tab)]
+}
+```
+```output
+
+```
+
+
+2. استفاده از تابع 
+
+```{r}
+modes(stat)
+```
+```output
+
+```
+
+
+- مجموع 
+
+\[\Large
+S_{x} = \sum_{i=1}^{i=n} x_{i}
+\]
+
+```{r}
+sum(stat)
+```
+```output
+
+```
+
+
+- میانگین 
+
+\[\Large
+\mu_{x} = \cfrac{\sum x_{i}}{N}
+\]
+
+```{r}
+mean(stat)
+```
+```output
+
+```
+
+
+- انحراف معیار 
+
+\[\Large
+\sigma = \sqrt{\cfrac{\sum(x_{i} - \mu)^{2}}{N}}
+\]
+
+```{r}
+sd(stat)
+```
+```output
+
+```
+
+
+- نرمال سازی داده‌ها
+
+\[\Large
+Z = \frac{x - \mu}{\sigma} =
+\begin{bmatrix}
+  \frac{x_{1} - \mu}{\sigma} &
+  \frac{x_{2} - \mu}{\sigma} & 
+  \dots & 
+  \frac{x_{n} - \mu}{\sigma}
+\end{bmatrix}
+\]
+
+```{r}
+as.vector(scale(stat))
+```
+```output
+
+```
+
+
+- جمع با مقادیر از دست رفته
+
+```{r}
+sum(c(1, 2, 3, NA, 5, NA))
+```
+```output
+
+```
+
+
+- جمع بدون مقادیر از دست رفته
+
+```{r}
+sum(c(1, 2, 3, NA, 5, NA), na.rm = T)
+```
+```output
+
+```

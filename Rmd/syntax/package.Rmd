@@ -1,0 +1,126 @@
+## بسته
+
+خیلی از افراد توابعی که برای پروژه‌های شخصی خود نوشته‌اند را 
+به صورت بسته
+(Package)
+اختیار دیگران قرار داده‌اند.
+
+## نصب بسته
+
+برای استفاده از توابع توسعه داده شده توسط دیگران، باید
+بسته مربوطه آن تابع را نصب نماییم:
+
+- دانلود و نصب بسته‌ها از مخزن کِرَن
+([CRAN](https://cran.r-project.org/))
+
+```r
+install.packages("dplyr")
+```
+
+
+- نصب از مخزن گیت‌هاب
+([Github](https://github.com/))
+
+ابتدا باید یکی از بسته‌های
+`remotes`
+یا
+`devtools`
+را نصب و سپس بسته مورد نظر را با یکی از روش زیر نصب نمایید.
+
+```r
+remotes::install_github("tidyverse/dplyr")
+# or
+devtools::install_github("tidyverse/dplyr")
+```
+
+- دانلود از مخازن دیگر
+  * مخزن بیت باکت (Bitbucket)
+  با تابع
+  [`install_bitbucket()`]{dir=ltr}
+  * مخزن گیت جنریک [(Generic git){dir=ltr}
+  با تابع
+  [`install_git()`]{dir=ltr}
+  * ...
+
+## بارگذاری بسته
+
+- [`library("package")`]{dir=ltr}: 
+تمام توابع موجود در یک پکیج را در محیط کاری آپلود می‌کند، اگر بسته نصب نباشد خطا
+(`Error`)
+برمی‌گرداند:
+
+```r
+library("alaki")
+```
+```output
+Error in library("alaki") : there is no package called ‘alaki’
+```
+
+
+- [`require("package")`]{dir=ltr}:
+تمام توابع موجود در یک پکیج را در محیط کاری آپلود می‌کند، اگر بسته نصب نباشد غلط
+(`FALSE`)
+برمی‌گرداند:
+
+```r
+require("alaki")
+```
+```output
+Loading required package: alaki
+Warning in library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called ‘alaki’
+```
+
+```r
+(require("alaki"))
+```
+```output
+[1] FALSE
+```
+
+```r
+if (!require("alaki")) install.packages("alaki")
+```
+
+- [`package::function()`]{dir=ltr}:
+این روش فقط برای مواقعی است که به صورت محلی می‌خواهیم تابع خاصی از یک پکیج را 
+استفاده کنیم و دیگر به آن نیازی نداریم.
+
+```r
+dplyr::select(iris, c("Sepal.Width", "Species"))
+```
+```output
+    Sepal.Width    Species
+1           3.5     setosa
+2           3.0     setosa
+3           3.2     setosa
+4           3.1     setosa
+...         ...     ...
+```
+
+
+## بسته‌های پرکاربرد
+
+- `Tidyverse`
+
+```r
+library(tidyverse)
+```
+```output
+── Attaching packages ────────────────── tidyverse 1.3.1 ──
+✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+✓ tibble  3.1.6     ✓ dplyr   1.0.8
+✓ tidyr   1.2.0     ✓ stringr 1.4.0
+✓ readr   2.1.2     ✓ forcats 0.5.1
+── Conflicts ─────────────────────────── tidyverse_conflicts() ──
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+```
+
+این بسته متشکل از بسته‌های معروفی همچون
+`ggplot`،
+`tidyr`،
+`dplyr`،
+`readr`،
+`stringr`
+و ... است.

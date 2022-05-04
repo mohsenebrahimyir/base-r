@@ -1,0 +1,40 @@
+<!--- `r if (knitr::is_html_output()) '# منابع {- #references}'`-->
+
+# منابع  {-#main_resource}
+
+## کتاب مفاهیم پایه R {-}
+
+نسخه تحت وب کتاب
+[R Basics]{dir=ltr} را می‌توانید از 
+[**اینجا**](https://bookdown.org/info_hlee/R_Basics/)
+بخوانید.
+
+## کتاب دستورات  پایه R {-}
+
+نسخه تحت وب کتاب
+[Basic R Commands]{dir=ltr} را می‌توانید از 
+[**اینجا**](https://bookdown.org/fmcron/Basic-R-Commands/)
+بخوانید.
+
+## برگه تقلب {-}
+
+برای یاد آوری سریع دستورات و مفاهیم پایه 
+**R**
+یک 
+برگه تقلب 
+(**Cheatsheet**)
+**مبانی R**
+تهیه شده است که 
+می‌توانید آن 
+را از
+[**اینجا**](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
+دانلود کنید.
+
+## تمرین بیشتر
+
+برای تمرین بیشترمی‌توانید از
+[**اینجا**](https://practity.com/r/)
+به سایت‌هایی که تمرینات
+**R**
+ارائه می‌دهند دسترسی داشته باشید.
+

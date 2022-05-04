@@ -1,0 +1,153 @@
+# بردار
+
+بردار (Vector)
+یک ساختار یک بعدی که تمام مقادیر آن از یک نوع هستند.
+
+\[\Large
+x =
+\begin{bmatrix}
+  x_{1} & x_{2} & \dots & x_{n}
+\end{bmatrix}
+\]
+
+## تعریف  
+
+- بردار خالی
+
+\[\Large
+x =
+[]
+\]
+
+```r
+c()
+```
+```output
+NULL
+```
+
+- بردار تک عضوی
+
+\[\Large
+x =
+\begin{bmatrix}
+  27
+\end{bmatrix}
+\]
+
+```r
+c(27)
+```
+```output
+[1] 27
+```
+
+\[\Large
+x =
+\begin{bmatrix}
+  a
+\end{bmatrix}
+\]
+
+```r
+c("a")
+```
+```output
+[1] "a"
+```
+
+
+\[\Large
+x =
+\begin{bmatrix}
+  True
+\end{bmatrix}
+\]
+
+```r
+c(TRUE)
+```
+```output
+[1] TRUE
+```
+
+
+\[\Large
+x =
+\begin{bmatrix}
+  Not\;Available
+\end{bmatrix}
+\]
+
+```r
+c(NA)
+```
+```output
+[1] NA
+```
+
+
+- بردار چند عضوی دلخواه
+
+\[\Large
+x =
+\begin{bmatrix}
+  27 & Mohsen & True & Not\;Available
+\end{bmatrix}
+\]
+
+```r
+(reshteei <- c(27, "Mohsen", TRUE, NA))
+```
+```output
+[1] "27" "Mohsen" "TRUE" NA      
+```
+
+
+اگر در بین مقادیر یک نوع رشته‌ای وجود داشته باشد، وکتور از نوع رشته‌ای می‌شود.
+
+```r
+class(reshteei)
+```
+```output
+[1] "character"
+```
+
+
+اگر در بین مقادیر عددی مقادیر منطقی داشته باشیم،، وکتور از نوع عددی  می‌شود.
+
+```r
+(adadi <- c(27, TRUE, NA))
+```
+```output
+[1] 27  1 NA
+```
+
+
+```r
+class(adadi)
+```
+```output
+[1] "numeric"
+```
+
+- تشکیل یک بردار با چند بردار
+
+```r
+c(reshteei, adadi, 35, "Salam")
+```
+```output
+[1] "27" "Mohsen" "TRUE" NA "27" "1" NA "35" "Salam" 
+```
+
+
+- می‌توان برای هر یک از مقادیر یک نام هم تعریف کرد.
+
+```r
+c(1, "dovom" = 2, 3)
+```
+```output
+      dovom       
+    1     2     3 
+```
+

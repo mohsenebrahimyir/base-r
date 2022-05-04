@@ -1,0 +1,26 @@
+# نصب  و آماده سازی اولیه
+
+- از طریق  سایت 
+[**www.r-project.org**](https://www.r-project.org/) 
+می‌توانید متناسب با سیستم عامل خود آخرین نسخه 
+**R** 
+را 
+[**دانلود**](https://cran.um.ac.ir/)
+و نصب کنید.
+
+- برای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار 
+**IDE** [(Integrated Development Environment)]{dir=ltr}
+استفاده کنید.
+
+- برای زبان
+**R**
+می‌توانید از 
+**RStudio**
+استفاده کنید. 
+از طریق سایت
+[**www.rstudio.com**](https://rstudio.com/)
+می‌توانید متناسب با سیستم عامل خود آخرین نسخه 
+**RStudio**
+را
+[**دانلود**](https://www.rstudio.com/products/rstudio/download/)
+و نصب کنید.

@@ -1,0 +1,167 @@
+# فرمت داده {#data-frame}
+
+ساختاری پر کاربرد دیگری که خیلی در زبان برنامه نویسی 
+**R**
+شناخته شده،
+فرمت داده یا 
+[`data frame`]{dir="ltr"}
+است.
+
+
+نحوه تعریف یک فرمت داده به صورت زیر است:
+
+```{r}
+df <- 
+  data.frame("Name" = c("Mohsen", "Xie", "Narges"),
+             "Sen" = c(NA, 45, 36),
+             "Gender" = factor(x = c("Male", NA, "Female"), levels = c("Female", "Male")),
+             "Single" = c(TRUE, FALSE, NA))
+```
+
+- نمایش داده با ساختار فرمت داده
+
+```{r}
+df
+```
+
+- نمایش ساختار داده
+
+```{r}
+str(df)
+```
+
+همانطور که ساختار هر یک از ستون‌ها را مشاهده می‌کنید، متوجه می‌شوید که هر ستون 
+ساختار برداری خاص خودش را دارد و دیگر مانند ماتریس همه‌ی ستون‌های آن یک نوع کلاس
+ندارند.
+
+### کار با ساختار فرمت داده
+
+تقریبا تمام خواصی که ساختار ماتریسی دارد، ساختار فرمت داده نیز دارد.
+
+- نام سطر و ستون
+
+```{r}
+rownames(df)
+```
+
+```{r}
+colnames(df)
+```
+- تغییر نام سطر‌ها
+
+```{r}
+rownames(df) <- c("avali", "dovomi", "sevomi")
+```
+
+
+- انتخاب ستونی خاص
+ 
+با اندیس
+
+```{r}
+df[, 3]
+```
+
+با نام
+
+```{r}
+df[, "Gender"]
+```
+با علامت دلار
+
+```{r}
+df$Gender
+```
+
+- انتخاب سطر خاص
+
+با اندیس
+
+```{r}
+df[2, ]
+```
+
+با نام
+
+```{r}
+df["dovomi",]
+```
+
+- فیلتر کردن برحسب یک مقدار خاص
+
+```{r}
+df[df$Name == "Mohsen", ]
+```
+
+استفاده از کتابخانه 
+`tidyverse`
+
+```{r}
+library(tidyverse)
+
+df %>% filter(Name == "Mohsen") %>% select(Gender)
+```
+
+## library
+
+```{r}
+library(tidyverse)
+```
+
+
+## input data
+
+```{r}
+survey <- read.csv("./data/covid-survey/scale_survey.csv") %>% select(-1)
+col_name <- read.csv("./data/covid-survey/colnames_survey.csv")
+```
+
+## Change column name
+
+```{r}
+colnames(survey) <- col_name$Qname
+```
+
+## 
+
+```{r}
+col_name %>% str()
+```
+
+```{r}
+survey %>% summary()
+```
+
+```{r}
+survey %>%
+  filter(Age > 60 & Degree == "PhD") %>% 
+  select(Sex, Age, Degree) %>% 
+  mutate(
+    email_text = sprintf(
+      "Dear %s felani, %s have a %s",
+      ifelse(Sex == "Male", "Mr", ifelse(Sex == "Female", "Mrs", "")),
+      ifelse(is.na(Age), "", sprintf("you are %s years old and ", Age)),
+      str_remove(Degree, "\\;.*"))
+  )
+```
+
+### 
+
+```{r}
+survey %>% 
+  filter(!is.na(Age)) %>% 
+  group_by(Sex) %>% 
+  summarise(
+    N = n(),
+    Mean = mean(Age),
+    SD = sd(Age)
+  )
+```
+
+
+
+
+
+
+
+

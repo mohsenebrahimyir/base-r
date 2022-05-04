@@ -1,0 +1,29 @@
+# فاکتور {#factor}
+
+- تولید یک بردار که مقادیر آن ترتیب خاصی دارند
+
+```{r}
+(vec_reshteei <- c("sevom", "yekom", "sevom", "dovom", "dovom", "sevom"))
+```
+
+- مرتب کردن برحسب حروف الفبا
+
+```{r}
+sort(vec_reshteei)
+```
+
+- تبدیل بردار به یک بردار 
+فاکتوری^[factor]
+
+```{r}
+(vec_reshteei_fct <- 
+  factor(x = vec_reshteei,
+         levels = c("yekom", "dovom", "sevom")))
+```
+
+- مرتب کردن بر حسب سطح بندی
+
+```{r}
+sort(vec_reshteei_fct)
+```
+

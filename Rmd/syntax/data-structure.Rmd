@@ -1,0 +1,113 @@
+# ساختار داده {#data-structure}
+
+```{r include=FALSE}
+caption <- "ساختار داده در R"
+```
+
+```{r echo=FALSE, fig.cap=caption, out.width="80%"}
+knitr::include_graphics("./img/Object_types.png")
+```
+
+برای مدیریت داده‌ها در زبان برنامه نویسی 
+**R**،
+ساختار داده‌های مختلفی را در نظر گرفته‌اند. مانند:
+
+- بردار (Vector)
+
+```r
+1:4
+```
+```output
+[1] 1 2 3 4
+```
+
+- ماتریس (Matrix)
+
+```r
+matrix(data = 1:4, nrow = 2)
+```
+```output
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+```
+
+- آرایه (Array)
+
+```r
+array(data = 1:8, dim = c(2, 2, 2))
+```
+```output
+, , 1
+
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+
+, , 2
+
+     [,1] [,2]
+[1,]    5    7
+[2,]    6    8
+```
+
+- فرمت داده (Data Frame)
+
+```r
+data.frame(
+  "name" = c("ali", "sara", "reza"),
+  "age" = c(27, 20, 30)
+)
+```
+```output
+  name age  male
+1  ali  27  TRUE
+2 sara  20 FALSE
+3 reza  30  TRUE
+```
+
+
+- لیست (List)
+
+```r
+list(
+  "vec" = 1:4,
+  "mat" = matrix(data = 1:4, nrow = 2),
+  "ary" = array(data = 1:8, dim = c(2, 2, 2)),
+  "df"  = data.frame(
+    "name" = c("ali", "sara", "reza"),
+    "age" = c(27, 20, 30)
+    )
+)
+```
+```output
+$vec
+[1] 1 2 3 4
+
+$mat
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+
+$ary
+, , 1
+
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+
+, , 2
+
+     [,1] [,2]
+[1,]    5    7
+[2,]    6    8
+
+
+$df
+  name age
+1  ali  27
+2 sara  20
+3 reza  30
+```
+
+

@@ -1,0 +1,154 @@
+# توابع
+
+تابع (Function)
+با گرفتن یک یا چند ورودی، یک یا چند خروجی را تولید می‌کند.
+
+\[\Large
+x:{\bf Input} \Longrightarrow f(x) : {\bf Output}
+\]
+
+```r
+x = "Salam" # Input
+print(x)    # Function
+```
+```output
+[1] "Salam" # Output
+```
+
+## توابع درون ساخت
+
+توابعی که به طور پیش فرض در
+**R**
+قرار دارند را توابع
+درون ساخت [(built-in)]{dir=ltr}
+می‌گویند.
+
+- دریافت خلاصه‌ای از
+ساختار (Structure)
+یک شئ
+
+```r
+str(iris)
+```
+```output
+'data.frame':	150 obs. of  5 variables:
+ $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+```
+
+- تبدیل چند رشته به یک رشته
+
+```r
+paste("Salam ", "Donya", "!", sep = "") ## or paste0()
+```
+```output
+[1] "Salam Donya!"
+```
+
+- جای گذاری یک مقدار در یک رشته با استفاده از
+[`%s`]{dir=ltr}
+
+```r
+sprintf(fmt = "Salam %s!", "Donya")
+```
+```output
+[1] "Salam Donya!"
+```
+
+- چاپ کردن چند چیز
+
+```r
+cat("Salam ", "Donya", "!", sep = "")
+```
+```output
+Salam Donya!
+```
+
+
+- خواندن کامند لاین 
+
+```r
+readline(prompt = "lotfan ye chezy vared konid: ")
+```
+```output
+lotfan ye chezy vared konid: 
+```
+
+
+## ساخت تابع
+
+برای ساخت تابع باید به صورت زیر عمل کنیم.
+
+```r
+name <- function(input) {
+
+  # Do something
+
+  return(output)
+}
+```
+
+- تابع جمع بستن
+
+```r
+jam <- function(x, y) {
+  z <- x + y
+  return(z)
+}
+```
+
+```r
+jam(2, 3)
+```
+```output
+[1] 5
+```
+
+```r
+class(jam)
+```
+```output
+[1] "function"
+```
+
+- تابع سلام کردن
+
+```r
+salam <- function(name) {
+  salam_name <- paste("Salam", name, "aziz")
+  return(salam_name)
+}
+```
+
+```r
+salam("Mohsen")
+```
+```output
+[1] "Salam Mohsen aziz"
+```
+
+- مقدار اولیه برای ورودی‌ها
+
+```r
+salam <- function(name = "Mohsen") {
+  salam_name <- sprintf("Salam %s Aziz", name)
+  return(salam_name)
+}
+```
+
+```r
+salam()
+```
+```output
+[1] "Salam Mohsen Aziz"
+```
+
+```r
+salam(name = "Arash")
+```
+```output
+[1] "Salam Arash Aziz"
+```

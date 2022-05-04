@@ -1,0 +1,307 @@
+# ماتریس {#matrix}
+
+##  تعریف ماتریس
+
+- هر 
+ماتریس^[Matrix]
+از
+n 
+تا ردیف و
+m
+تا ستون تشکیل شده است.
+
+\[\Large 
+{\bf M}_{n \times m} =
+\left.
+ \vphantom{\begin{array}{c}1\\1\\1\\1\\1\end{array}}
+  \smash{\underbrace{\left[
+   \begin{array}{ccccc}
+    x_{11} & x_{12} & \dots  & x_{1m} \\
+    x_{21} & x_{22} & \dots  & x_{2m} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    x_{n1} & x_{n2} & \dots  & x_{nm}
+   \end{array}
+   \right]
+   }_{m\;Columns}}
+\right\}
+\,n\;Rows\\
+\]
+
+
+```{r}
+(mtx <- matrix(nrow = 5, ncol = 4))
+```
+
+- نوع ساختار داده
+
+```{r}
+class(mtx)
+```
+
+- ابعاد^[Dimansion]
+
+```{r}
+dim(mtx)
+```
+
+- ساختار و نوع مقادیر
+
+```{r}
+str(mtx)
+```
+
+- خواص ماتریس
+
+```{r}
+attributes(mtx)
+```
+
+- دادن تک مقدار به ماتریس
+
+```{r}
+matrix(data = 1, nrow = 3, ncol = 3)
+```
+
+-  تبدیل بردار به ماتریس
+
+```{r}
+matrix(data = c(1,2,4,4,5,4,7,6,3), nrow = 3, ncol = 3)
+```
+
+- چینش به ترتیب ستون
+
+\[\Large 
+M_{n \times m} =
+\begin{bmatrix}
+    \overset{\downarrow}{1} & 
+    \overset{\downarrow}{4} & 
+    \overset{\downarrow}{7} \\
+    2 & 5 & 8\\
+    3 & 6 & 9
+\end{bmatrix}
+\]
+
+```{r}
+matrix(data = 1:9, nrow = 3, ncol = 3) ## byrow = FALSE
+```
+
+-  چینش به ترتیب ردیف
+
+\[\Large 
+M_{n \times m} =
+\begin{bmatrix}
+    \rightarrow 1 & 2 & 3 \\
+    \rightarrow 4 & 5 & 6 \\
+    \rightarrow 7 & 8 & 9
+\end{bmatrix}
+\]
+
+```{r}
+matrix(data = 1:9, nrow = 3, ncol = 3, byrow = TRUE)
+```
+
+## تغییر ابعاد ماتریس
+
+- ساخت یک ماتریس 
+$4 \times 4$
+
+```{r}
+(mtx <- matrix(data = 1:16, nrow = 4, ncol = 4))
+```
+
+- تغییر ابعاد ماتریس به 
+$8 \times 2$
+
+```{r}
+(dim(mtx) <- c(8, 2))
+```
+
+```{r}
+mtx
+```
+
+نکته: در هنگام تغییر ابعاد باید حاصل ضرب ابعاد جدید با حاصل ضرب ابعاد قبلی برابر باشد.
+
+\[\Large
+{\bf M}_{n \times m} \overset{{\bf if} \; n \times m = n' \times m'}{\Longrightarrow} {\bf M'}_{n' \times m'}
+\]
+
+
+- ماتریس
+یک ساختار دو بعدی از مقادیر است که تمام مقادیر آن از یک نوع هستند.
+برای مثال حتی یک مقدار رشته‌ای در بین مقادیر عددی باشد، 
+نوع تمام مقادیر، رشته‌ای می‌شود.
+
+```{r}
+(mtx <- matrix(c(1:15, "a"), 4, 4))
+```
+
+```{r}
+str(mtx)
+```
+
+- تعریف ماتریس 
+همانی^[Identity]
+
+\[\Large
+{\bf I}_{n} = 
+\begin{bmatrix}
+  1&0&\cdots &0\\
+  0&1&\cdots &0\\
+  \vdots&\vdots&\ddots&\vdots\\
+  0&0&\cdots &1
+\end{bmatrix}
+\]
+
+```{r}
+diag(4)
+```
+
+- تعریف ماتریس
+قطری^[Diagnol]
+
+\[\Large
+{\bf I}_{n} = 
+\begin{bmatrix}
+  x_{1}&0&\cdots &0\\
+  0&x_{2}&\cdots &0\\
+  \vdots&\vdots&\ddots&\vdots\\
+  0&0&\cdots &x_{n}
+\end{bmatrix}
+\]
+
+```{r}
+diag(c(9, 5, 8, 3))
+```
+
+- گرفتن قطر یک ماتریس
+
+```{r}
+diag(mtx)
+```
+
+## مقایسه دو ماتریس
+
+- ماتریس A
+
+\[\Large 
+A = 
+\begin{bmatrix} 
+  a_{11} & \cdots & a_{1m} \\
+  \vdots & \ddots & \vdots \\
+  a_{n1} & \cdots & a_{nm} \\ 
+\end{bmatrix}
+\]
+
+```{r}
+(mtx_A <- matrix(1:9, 3, 3))
+```
+
+- ماتریس B
+
+\[\Large 
+B =
+\begin{bmatrix} 
+  b_{11} & \cdots & b_{1m} \\
+  \vdots & \ddots & \vdots \\
+  b_{n1} & \cdots & b_{nm} \\ 
+\end{bmatrix}
+\]
+
+```{r}
+(mtx_B <- matrix(9:1, 3, 3))
+```
+
+### عملگرهای منطقی
+
+- تساوی
+
+\[\Large
+\Large 
+A \overset{?}{\leq} B =
+\begin{bmatrix} 
+  a_{11} \overset{?}{\leq} b_{11} & \cdots & a_{1m} \overset{?}{\leq} b_{1m} \\
+  \vdots & \ddots & \vdots \\
+  a_{n1} \overset{?}{\leq} b_{n1} & \cdots & a_{nm} \overset{?}{\leq} b_{nm} \\ 
+\end{bmatrix}
+\]
+
+```{r}
+mtx_A == mtx_B 
+```
+
+
+به جای علامت برابری می‌توان از
+نابرابری
+(`!=`)،
+کوچکتری
+(`<`)،
+کوچکتر یا برابری
+(`<=`)،
+بزرگتری
+(`>`)،
+بزرگتر یا برابری
+(`>=`)،
+استفاده کرد.
+
+### عملگرهای ریاضی
+
+- عملیات‌های درایه به درایه 
+
+\[\Large
+\Large 
+A + B = 
+\begin{bmatrix} 
+  a_{11} + b_{11} & \cdots & a_{1m} + b_{1m} \\
+  \vdots & \ddots & \vdots \\
+  a_{n1} + b_{n1} & \cdots & a_{nm} + b_{nm} \\ 
+\end{bmatrix}
+\]
+
+```{r}
+mtx_A + mtx_B 
+```
+
+به جای علامت  جمع می‌توان از
+تفریق
+(`-`)،
+ضرب
+(`*`)،
+تقسیم
+(`/`)،
+توان
+(`^`)،
+استفاده کرد.
+
+- ضرب ماتریسی
+
+\[\Large
+\begin{aligned}
+A \times B & = 
+\begin{bmatrix} 
+  a_{11} & \cdots & a_{1m} \\
+  \vdots & \ddots & \vdots \\
+  a_{n1} & \cdots & a_{nm} \\ 
+\end{bmatrix}
+\times
+\begin{bmatrix} 
+  b_{11} & \cdots & b_{1m} \\
+  \vdots & \ddots & \vdots \\
+  b_{n1} & \cdots & b_{nm} \\ 
+\end{bmatrix} \\
+& =
+\begin{bmatrix} 
+  a_{11} \times b_{11} + \cdots + a_{1m} \times b_{n1} & 
+  \cdots  & 
+  a_{11} \times b_{1m} + \cdots + a_{1m} \times b_{nm} \\
+  \vdots & \ddots  & \vdots \\
+  a_{n1} \times b_{11} + \cdots + a_{nm} \times b_{n1} & 
+  \cdots  & 
+  a_{n1} \times b_{1m} + \cdots + a_{nm} \times b_{nm} \\
+ \end{bmatrix}
+\end{aligned}
+\]
+
+```{r}
+mtx_A %*% mtx_B
+```
