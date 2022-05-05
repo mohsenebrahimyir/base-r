@@ -49,7 +49,7 @@ mohsenebrahimy.ir@gmail.com
 
 ::: {.center data-latex=""}
 <center>
-[<https://mohsenebrahimy.ir/book/base-r/>]{dir=ltr}
+[<https://mohsenebrahimyir.github.io/base-r/>]{dir=ltr}
 </center>
 :::
 
