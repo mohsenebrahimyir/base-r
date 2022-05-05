@@ -1,4 +1,4 @@
---- 
+---
 title: "[مبانی R]{dir=rtl}" 
 subtitle: "مقدمه‌ای بر آشنایی با زبان برنامه نویسی R"
 author:
@@ -15,6 +15,9 @@ bibliography:
   - ./bib/book.bib
   - ./bib/packages.bib
 link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
@@ -33,23 +36,21 @@ source("R/library.R")
 source("R/function.R")
 ```
 
-پیش گفتار {-}
-========================================================
+# پیش گفتار {.unnumbered}
 
-به همراه این کتاب می‌توانید یادگیری زبان برنامه نویسی
- **R**
-را شروع کنید.
-سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید.
-نظرات و پیشنهادات خود را می‌توانید از طریق ایمیل
-mohsenebrahimy.ir@gmail.com
-برای بهبود کتاب به نویسنده ارسال کنید
-تا در هر بروزرسانی اصلاحات صورت گیرد. این نسخه در تاریخ
-**[`r date_gr_to_jl() |> digit_fa()`]{dir=ltr}**
-بروزرسانی شده است.
+به همراه این کتاب می‌توانید یادگیری زبان برنامه نویسی **R** را شروع کنید.
+سعی کنید بعد از هر آموزش تمرینات مربوط به آن را انجام دهید. نظرات و
+پیشنهادات خود را می‌توانید از طریق ایمیل
+[mohsenebrahimy.ir\@gmail.com](mailto:mohsenebrahimy.ir@gmail.com){.email}
+برای بهبود کتاب به نویسنده ارسال کنید تا در هر بروزرسانی اصلاحات صورت
+گیرد. این نسخه در تاریخ
+[**`r date_gr_to_jl() |> digit_fa()`**]{dir="ltr"} بروزرسانی شده است.
 
 ::: {.center data-latex=""}
 <center>
-[<https://mohsenebrahimyir.github.io/base-r/>]{dir=ltr}
+
+[[https://mohsenebrahimyir.github.io/base-r/]{dir="ltr"}](https://mohsenebrahimyir.github.io/base-r/){.uri}
+
 </center>
 :::
 
@@ -57,10 +58,16 @@ mohsenebrahimy.ir@gmail.com
 
 ::: {.center data-latex=""}
 <center>
+
 **محسن ابراهیمی**
+
 </center>
+
 <br/>
+
 <center>
+
 **www.mohsenebrahimy.ir**
+
 </center>
 :::
