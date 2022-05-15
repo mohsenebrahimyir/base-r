@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.6 کلاس | مبانی R</title>
-  <meta name="description" content="3.6 کلاس | مبانی R" />
+  <title>8.3 عملگر منطقی | مبانی R</title>
+  <meta name="description" content="8.3 عملگر منطقی | مبانی R" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.6 کلاس | مبانی R" />
+  <meta property="og:title" content="8.3 عملگر منطقی | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.6 کلاس | مبانی R" />
+  <meta name="twitter:title" content="8.3 عملگر منطقی | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="چاپ-کردن.html"/>
-<link rel="next" href="پاک-کردن-کنسول.html"/>
+<link rel="prev" href="عملگرهای-حسابی.html"/>
+<link rel="next" href="دستورات-شرطی.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -218,27 +218,93 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="کلاس" class="section level2 hasAnchor" number="3.6">
-<h2><span class="header-section-number">3.6</span> کلاس<a href="کلاس.html#کلاس" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="عملگر-منطقی" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> عملگر منطقی<a href="عملگر-منطقی.html#عملگر-منطقی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>عملگر منطقی مقادیر درست و غلط برمی‌گرداند.</p>
 <ul>
-<li>یافتن
-نوع (Type)
-یا
-کلاس (Class)
-یک شی</li>
+<li>برابری</li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="کلاس.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
-<pre class="output"><code>[1] &quot;character&quot;</code></pre>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="کلاس.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
-<pre class="output"><code>[1] &quot;character&quot;</code></pre>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="عملگر-منطقی.html#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] FALSE</code></pre>
+<ul>
+<li>نابرابری</li>
+</ul>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="عملگر-منطقی.html#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">!=</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] TRUE</code></pre>
+<ul>
+<li>بزرگتری</li>
+</ul>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="عملگر-منطقی.html#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] FALSE</code></pre>
+<ul>
+<li>بزرگتری یا برابری</li>
+</ul>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="عملگر-منطقی.html#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] FALSE</code></pre>
+<ul>
+<li>کوچکتری</li>
+</ul>
+<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="عملگر-منطقی.html#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] FALSE</code></pre>
+<ul>
+<li>کوچکتری یا برابری</li>
+</ul>
+<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="عملگر-منطقی.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] TRUE</code></pre>
+<ul>
+<li>و</li>
+</ul>
+<p>هر دو شرط اجرا می‌شود
+و در صورت درست بودن هر دوی آن‌ها مقدار
+<code>TRUE</code>
+برمی‌گرداند در غیر این صورت مقدار
+<code>FALSE</code>
+برمیگرداند.</p>
+<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="عملگر-منطقی.html#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] FALSE</code></pre>
+<p>شرط دوم در صورت درست بودن شرط اول اجرا می‌شود.
+و در صورت درست بودن هر دوی آن‌ها مقدار
+<code>TRUE</code>
+برمی‌گرداند در غیر این صورت مقدار
+<code>FALSE</code>
+برمیگرداند.</p>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="عملگر-منطقی.html#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] FALSE</code></pre>
+<ul>
+<li>یا</li>
+</ul>
+<p>هر دو شرط اجرا می‌شود و در صورت درست بودن یکی از آن‌ها
+مقدار
+<code>TRUE</code>
+برمی‌گرداند در غیر این صورت مقدار
+<code>FALSE</code>
+برمیگرداند.</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="عملگر-منطقی.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">|</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] TRUE</code></pre>
+<p>شرط دوم در صورت نادرست بودن شرط اول اجرا می‌شود و اگر
+یکی از آن‌ها درست بود مقدار
+<code>TRUE</code>
+برمی‌گرداند در غیر این صورت مقدار
+<code>FALSE</code>
+برمیگرداند.</p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="عملگر-منطقی.html#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">||</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<pre class="output"><code>[1] TRUE</code></pre>
+<ul>
+<li>مخالف</li>
+</ul>
+<p>بعد از بررسی عمل منطقی خلاف مقدار برگردانده شده را بر می‌گرداند.</p>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="عملگر-منطقی.html#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>(<span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span>)</span></code></pre></div>
+<pre class="output"><code>[1] TRUE</code></pre>
+
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="چاپ-کردن.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="پاک-کردن-کنسول.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="عملگرهای-حسابی.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="دستورات-شرطی.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
