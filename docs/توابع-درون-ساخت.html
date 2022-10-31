@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6.1 توابع درون ساخت | مبانی R</title>
+  <meta name="description" content="6.1 توابع درون ساخت | مبانی R" />
+  <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6.1 توابع درون ساخت | مبانی R" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6.1 توابع درون ساخت | مبانی R" />
+  
+  
+  <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
+
+<meta name="author" content="محسن ابراهیمی" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="توابع.html"/>
+<link rel="next" href="ساخت-تابع.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!DOCTYPE HTML>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&display=swap" rel="stylesheet">
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="stl/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html">مبانی R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>پیش گفتار</a></li>
+<li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a></li>
+<li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
+<li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="دیدگاه-و-نظرات.html"><a href="دیدگاه-و-نظرات.html"><i class="fa fa-check"></i><b>3.1</b> دیدگاه و نظرات</a></li>
+<li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
+<li class="chapter" data-level="3.3" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.3</b> محیط کاری</a></li>
+<li class="chapter" data-level="3.4" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.4</b> اجرای کد</a></li>
+<li class="chapter" data-level="3.5" data-path="چاپ-کردن.html"><a href="چاپ-کردن.html"><i class="fa fa-check"></i><b>3.5</b> چاپ کردن</a></li>
+<li class="chapter" data-level="3.6" data-path="کلاس.html"><a href="کلاس.html"><i class="fa fa-check"></i><b>3.6</b> کلاس</a></li>
+<li class="chapter" data-level="3.7" data-path="پاک-کردن-کنسول.html"><a href="پاک-کردن-کنسول.html"><i class="fa fa-check"></i><b>3.7</b> پاک کردن کنسول</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-structure.html"><a href="data-structure.html"><i class="fa fa-check"></i><b>4</b> ساختار داده</a></li>
+<li class="chapter" data-level="5" data-path="متغییرها.html"><a href="متغییرها.html"><i class="fa fa-check"></i><b>5</b> متغییرها</a></li>
+<li class="chapter" data-level="6" data-path="توابع.html"><a href="توابع.html"><i class="fa fa-check"></i><b>6</b> توابع</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="توابع-درون-ساخت.html"><a href="توابع-درون-ساخت.html"><i class="fa fa-check"></i><b>6.1</b> توابع درون ساخت</a></li>
+<li class="chapter" data-level="6.2" data-path="ساخت-تابع.html"><a href="ساخت-تابع.html"><i class="fa fa-check"></i><b>6.2</b> ساخت تابع</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="حلقه.html"><a href="حلقه.html"><i class="fa fa-check"></i><b>7</b> حلقه</a></li>
+<li class="chapter" data-level="8" data-path="عملگرها.html"><a href="عملگرها.html"><i class="fa fa-check"></i><b>8</b> عملگرها</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="عملگر-پایپ.html"><a href="عملگر-پایپ.html"><i class="fa fa-check"></i><b>8.1</b> عملگر پایپ</a></li>
+<li class="chapter" data-level="8.2" data-path="عملگرهای-حسابی.html"><a href="عملگرهای-حسابی.html"><i class="fa fa-check"></i><b>8.2</b> عملگرهای حسابی</a></li>
+<li class="chapter" data-level="8.3" data-path="عملگر-منطقی.html"><a href="عملگر-منطقی.html"><i class="fa fa-check"></i><b>8.3</b> عملگر منطقی</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="دستورات-شرطی.html"><a href="دستورات-شرطی.html"><i class="fa fa-check"></i><b>9</b> دستورات شرطی</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="بسته.html"><a href="بسته.html"><i class="fa fa-check"></i><b>9.1</b> بسته</a></li>
+<li class="chapter" data-level="9.2" data-path="نصب-بسته.html"><a href="نصب-بسته.html"><i class="fa fa-check"></i><b>9.2</b> نصب بسته</a></li>
+<li class="chapter" data-level="9.3" data-path="بارگذاری-بسته.html"><a href="بارگذاری-بسته.html"><i class="fa fa-check"></i><b>9.3</b> بارگذاری بسته</a></li>
+<li class="chapter" data-level="9.4" data-path="بستههای-پرکاربرد.html"><a href="بستههای-پرکاربرد.html"><i class="fa fa-check"></i><b>9.4</b> بسته‌های پرکاربرد</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="فایلها.html"><a href="فایلها.html"><i class="fa fa-check"></i><b>10</b> فایل‌ها</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="مقادیر-جدا-شده-با-کاما.html"><a href="مقادیر-جدا-شده-با-کاما.html"><i class="fa fa-check"></i><b>10.1</b> مقادیر جدا شده با کاما</a></li>
+<li class="chapter" data-level="10.2" data-path="اکسل.html"><a href="اکسل.html"><i class="fa fa-check"></i><b>10.2</b> اکسل</a></li>
+</ul></li>
+<li class="divider"></li>
+&nbsp;
+<hr />
+<p style="text-align: center;">
+  <a href="https://mohsenebrahimy.ir/">
+  محسن ابراهیمی
+  <br/>
+ <span style="color: #808080;"><em>www.mohsenebrahimy.ir</em></span>
+ </a>
+</p>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<p style="text-align: center;">
+ <a href="https://web.whatsapp.com/send?phone=989118645816" class="fa fa-whatsapp fa-3x" style="color:green"></a>
+</p>
+&nbsp;
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><span dir="rtl">مبانی R</span></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="توابع-درون-ساخت" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> توابع درون ساخت<a href="توابع-درون-ساخت.html#توابع-درون-ساخت" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>توابعی که به طور پیش فرض در
+<strong>R</strong>
+قرار دارند را توابع
+درون ساخت <span dir="ltr">(built-in)</span>
+می‌گویند.</p>
+<ul>
+<li>دریافت خلاصه‌ای از
+ساختار (Structure)
+یک شئ</li>
+</ul>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="توابع-درون-ساخت.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
+<pre class="output"><code>&#39;data.frame&#39;:   150 obs. of  5 variables:
+ $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
+<ul>
+<li>تبدیل چند رشته به یک رشته</li>
+</ul>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="توابع-درون-ساخت.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) <span class="do">## or paste0()</span></span></code></pre></div>
+<pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
+<ul>
+<li>جای گذاری یک مقدار در یک رشته با استفاده از
+<span dir="ltr"><code>%s</code></span></li>
+</ul>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="توابع-درون-ساخت.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sprintf</span>(<span class="at">fmt =</span> <span class="st">&quot;Salam %s!&quot;</span>, <span class="st">&quot;Donya&quot;</span>)</span></code></pre></div>
+<pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
+<ul>
+<li>چاپ کردن چند چیز</li>
+</ul>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="توابع-درون-ساخت.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<pre class="output"><code>Salam Donya!</code></pre>
+<ul>
+<li>خواندن کامند لاین</li>
+</ul>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="توابع-درون-ساخت.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">readline</span>(<span class="at">prompt =</span> <span class="st">&quot;lotfan ye chezy vared konid: &quot;</span>)</span></code></pre></div>
+<pre class="output"><code>lotfan ye chezy vared konid: </code></pre>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="توابع.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ساخت-تابع.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": true,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": true,
+"all": null
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
