@@ -1,23 +1,12 @@
-# intro ----
-setwd("~/Desktop")
-
 # this is first code
-print("line 1")
+3-4
 
-print("line 2")
+5+6
 
-# variable ####
+print("Mohsen")
 
-line_2 <- "line-2"
+# variable
 
-`line-2` <- 2 
+say <- "Salaam Mohsen"
 
-print(line)
-
-
-
-
-
-
-
-
+print(say)

@@ -1,10 +1,10 @@
 fig:unnamed-chunk-4
 fig:unnamed-chunk-6
+مقدمه
 نصب-و-آماده-سازی-اولیه
 نصب-r
 نصب-rstudio
 محیط-rstudio
-مقدمه
 مفاهیم-پایه
 اجرای-کد
 راهنما
@@ -19,7 +19,6 @@ fig:unnamed-chunk-6
 خالی
 متغییرها
 data-structure
-factor
 توابع
 توابع-درون-ساخت
 ساخت-تابع
