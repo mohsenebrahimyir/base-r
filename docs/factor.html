@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>فصل 10 عملگرها | مبانی R</title>
-  <meta name="description" content="فصل 10 عملگرها | مبانی R" />
+  <title>فصل 7 فاکتور | مبانی R</title>
+  <meta name="description" content="فصل 7 فاکتور | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="فصل 10 عملگرها | مبانی R" />
+  <meta property="og:title" content="فصل 7 فاکتور | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="فصل 10 عملگرها | مبانی R" />
+  <meta name="twitter:title" content="فصل 7 فاکتور | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="اکسل.html"/>
-<link rel="next" href="عملگر-پایپ.html"/>
+<link rel="prev" href="data-structure.html"/>
+<link rel="next" href="توابع.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -240,19 +240,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="عملگرها" class="section level1 hasAnchor" number="10">
-<h1><span class="header-section-number">فصل 10</span> عملگرها<a href="عملگرها.html#عملگرها" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>عملگر (Operator)
-نوع خاصی از تابع است که روی چیز‌های که در چپ و راست آن قرار گیرد،
-اعمال می‌شود.</p>
+<div id="factor" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">فصل 7</span> فاکتور<a href="factor.html#factor" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li>تولید یک بردار که مقادیر آن ترتیب خاصی دارند</li>
+</ul>
+<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="factor.html#cb96-1" aria-hidden="true" tabindex="-1"></a>(vec_reshteei <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;sevom&quot;</span>, <span class="st">&quot;yekom&quot;</span>, <span class="st">&quot;sevom&quot;</span>, <span class="st">&quot;dovom&quot;</span>, <span class="st">&quot;dovom&quot;</span>, <span class="st">&quot;sevom&quot;</span>))</span></code></pre></div>
+<pre><code>## [1] &quot;sevom&quot; &quot;yekom&quot; &quot;sevom&quot; &quot;dovom&quot; &quot;dovom&quot; &quot;sevom&quot;</code></pre>
+<ul>
+<li>مرتب کردن برحسب حروف الفبا</li>
+</ul>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="factor.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(vec_reshteei)</span></code></pre></div>
+<pre><code>## [1] &quot;dovom&quot; &quot;dovom&quot; &quot;sevom&quot; &quot;sevom&quot; &quot;sevom&quot; &quot;yekom&quot;</code></pre>
+<ul>
+<li>تبدیل بردار به یک بردار
+فاکتوری<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
+</ul>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="factor.html#cb100-1" aria-hidden="true" tabindex="-1"></a>(vec_reshteei_fct <span class="ot">&lt;-</span> </span>
+<span id="cb100-2"><a href="factor.html#cb100-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">factor</span>(<span class="at">x =</span> vec_reshteei,</span>
+<span id="cb100-3"><a href="factor.html#cb100-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;yekom&quot;</span>, <span class="st">&quot;dovom&quot;</span>, <span class="st">&quot;sevom&quot;</span>)))</span></code></pre></div>
+<pre><code>## [1] sevom yekom sevom dovom dovom sevom
+## Levels: yekom dovom sevom</code></pre>
+<ul>
+<li>مرتب کردن بر حسب سطح بندی</li>
+</ul>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="factor.html#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(vec_reshteei_fct)</span></code></pre></div>
+<pre><code>## [1] yekom dovom dovom sevom sevom sevom
+## Levels: yekom dovom sevom</code></pre>
+
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>factor<a href="factor.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="اکسل.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="عملگر-پایپ.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-structure.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="توابع.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
