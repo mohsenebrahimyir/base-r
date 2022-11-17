@@ -242,42 +242,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="ساخت-تابع" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> ساخت تابع<a href="ساخت-تابع.html#ساخت-تابع" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>برای ساخت تابع باید به صورت زیر عمل کنیم.</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="ساخت-تابع.html#cb116-1" aria-hidden="true" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
-<span id="cb116-2"><a href="ساخت-تابع.html#cb116-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb116-3"><a href="ساخت-تابع.html#cb116-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Do something</span></span>
-<span id="cb116-4"><a href="ساخت-تابع.html#cb116-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb116-5"><a href="ساخت-تابع.html#cb116-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(output)</span>
-<span id="cb116-6"><a href="ساخت-تابع.html#cb116-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ساخت-تابع.html#cb118-1" aria-hidden="true" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
+<span id="cb118-2"><a href="ساخت-تابع.html#cb118-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb118-3"><a href="ساخت-تابع.html#cb118-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Do something</span></span>
+<span id="cb118-4"><a href="ساخت-تابع.html#cb118-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb118-5"><a href="ساخت-تابع.html#cb118-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(output)</span>
+<span id="cb118-6"><a href="ساخت-تابع.html#cb118-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <ul>
 <li>تابع جمع بستن</li>
 </ul>
-<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="ساخت-تابع.html#cb117-1" aria-hidden="true" tabindex="-1"></a>jam <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
-<span id="cb117-2"><a href="ساخت-تابع.html#cb117-2" aria-hidden="true" tabindex="-1"></a>  z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
-<span id="cb117-3"><a href="ساخت-تابع.html#cb117-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(z)</span>
-<span id="cb117-4"><a href="ساخت-تابع.html#cb117-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ساخت-تابع.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jam</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="ساخت-تابع.html#cb119-1" aria-hidden="true" tabindex="-1"></a>jam <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb119-2"><a href="ساخت-تابع.html#cb119-2" aria-hidden="true" tabindex="-1"></a>  z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
+<span id="cb119-3"><a href="ساخت-تابع.html#cb119-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(z)</span>
+<span id="cb119-4"><a href="ساخت-تابع.html#cb119-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ساخت-تابع.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jam</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
 <pre class="output"><code>[1] 5</code></pre>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ساخت-تابع.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(jam)</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ساخت-تابع.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(jam)</span></code></pre></div>
 <pre class="output"><code>[1] &quot;function&quot;</code></pre>
 <ul>
 <li>تابع سلام کردن</li>
 </ul>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ساخت-تابع.html#cb122-1" aria-hidden="true" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(name) {</span>
-<span id="cb122-2"><a href="ساخت-تابع.html#cb122-2" aria-hidden="true" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Salam&quot;</span>, name, <span class="st">&quot;aziz&quot;</span>)</span>
-<span id="cb122-3"><a href="ساخت-تابع.html#cb122-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
-<span id="cb122-4"><a href="ساخت-تابع.html#cb122-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="ساخت-تابع.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ساخت-تابع.html#cb124-1" aria-hidden="true" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(name) {</span>
+<span id="cb124-2"><a href="ساخت-تابع.html#cb124-2" aria-hidden="true" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Salam&quot;</span>, name, <span class="st">&quot;aziz&quot;</span>)</span>
+<span id="cb124-3"><a href="ساخت-تابع.html#cb124-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
+<span id="cb124-4"><a href="ساخت-تابع.html#cb124-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="ساخت-تابع.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
 <pre class="output"><code>[1] &quot;Salam Mohsen aziz&quot;</code></pre>
 <ul>
 <li>مقدار اولیه برای ورودی‌ها</li>
 </ul>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="ساخت-تابع.html#cb125-1" aria-hidden="true" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">name =</span> <span class="st">&quot;Mohsen&quot;</span>) {</span>
-<span id="cb125-2"><a href="ساخت-تابع.html#cb125-2" aria-hidden="true" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Salam %s Aziz&quot;</span>, name)</span>
-<span id="cb125-3"><a href="ساخت-تابع.html#cb125-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
-<span id="cb125-4"><a href="ساخت-تابع.html#cb125-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="ساخت-تابع.html#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="ساخت-تابع.html#cb127-1" aria-hidden="true" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">name =</span> <span class="st">&quot;Mohsen&quot;</span>) {</span>
+<span id="cb127-2"><a href="ساخت-تابع.html#cb127-2" aria-hidden="true" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Salam %s Aziz&quot;</span>, name)</span>
+<span id="cb127-3"><a href="ساخت-تابع.html#cb127-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
+<span id="cb127-4"><a href="ساخت-تابع.html#cb127-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ساخت-تابع.html#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>()</span></code></pre></div>
 <pre class="output"><code>[1] &quot;Salam Mohsen Aziz&quot;</code></pre>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ساخت-تابع.html#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>(<span class="at">name =</span> <span class="st">&quot;Arash&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ساخت-تابع.html#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>(<span class="at">name =</span> <span class="st">&quot;Arash&quot;</span>)</span></code></pre></div>
 <pre class="output"><code>[1] &quot;Salam Arash Aziz&quot;</code></pre>
 </div>
             </section>
