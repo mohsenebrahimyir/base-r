@@ -30,7 +30,7 @@
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="بسته.html"/>
-<link rel="next" href="مقادیر-جدا-شده-با-کاما.html"/>
+<link rel="next" href="عملگرها.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -182,11 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.3.3" data-path="بسته.html"><a href="بسته.html#بستههای-پرکاربرد"><i class="fa fa-check"></i><b>7.3.3</b> بسته‌های پرکاربرد</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="فایلها.html"><a href="فایلها.html"><i class="fa fa-check"></i><b>8</b> فایل‌ها</a>
-<ul>
-<li class="chapter" data-level="8.1" data-path="مقادیر-جدا-شده-با-کاما.html"><a href="مقادیر-جدا-شده-با-کاما.html"><i class="fa fa-check"></i><b>8.1</b> مقادیر جدا شده با کاما</a></li>
-<li class="chapter" data-level="8.2" data-path="اکسل.html"><a href="اکسل.html"><i class="fa fa-check"></i><b>8.2</b> اکسل</a></li>
-</ul></li>
+<li class="chapter" data-level="8" data-path="فایلها.html"><a href="فایلها.html"><i class="fa fa-check"></i><b>8</b> فایل‌ها</a></li>
 <li class="chapter" data-level="9" data-path="عملگرها.html"><a href="عملگرها.html"><i class="fa fa-check"></i><b>9</b> عملگرها</a>
 <ul>
 <li class="chapter" data-level="9.1" data-path="عملگر-پایپ.html"><a href="عملگر-پایپ.html"><i class="fa fa-check"></i><b>9.1</b> عملگر پایپ</a></li>
@@ -243,6 +239,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">فصل 8</span> فایل‌ها<a href="فایلها.html#فایلها" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>فایل‌ها برای ذخیره سازی، و انتقال داده‌ها استفاده می‌شوند که نیاز داریم
 از روی آن‌ها داده‌ها را بخوانیم و بنویسیم.</p>
+<ul>
+<li>خروجی گرفتن داده با پسوند
+<span dir="ltr"><code>.csv</code></span></li>
+</ul>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="فایلها.html#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
+<ul>
+<li>وارد کردن داده با پسوند
+<span dir="ltr"><code>.csv</code></span></li>
+</ul>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="فایلها.html#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
+<pre class="output"><code>      X Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1     1          5.1         3.5          1.4         0.2  setosa
+2     2          4.9         3.0          1.4         0.2  setosa
+3     3          4.7         3.2          1.3         0.2  setosa</code></pre>
+<ul>
+<li>خروجی گرفتن داده با پسوند اکسل</li>
+</ul>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="فایلها.html#cb148-1" aria-hidden="true" tabindex="-1"></a>writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="at">x =</span> iris, <span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
+<pre class="output"><code>[1] &quot;Salam&quot;</code></pre>
+<ul>
+<li>وارد کردن داده با پسوند اکسل</li>
+</ul>
+<div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="فایلها.html#cb150-1" aria-hidden="true" tabindex="-1"></a>readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
+<pre class="output"><code># A tibble: 150 × 5
+   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;
+ 1          5.1         3.5          1.4         0.2 setosa
+ 2          4.9         3            1.4         0.2 setosa
+ 3          4.7         3.2          1.3         0.2 setosa</code></pre>
+
 </div>
             </section>
 
@@ -250,7 +276,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="بسته.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="مقادیر-جدا-شده-با-کاما.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="عملگرها.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
