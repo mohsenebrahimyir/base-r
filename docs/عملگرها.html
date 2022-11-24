@@ -245,20 +245,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="عملگرها.html#cb152-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(iris <span class="sc">$</span> Species)</span></code></pre></div>
 <pre><code>[1] setosa     versicolor virginica
 Levels: setosa versicolor virginica</code></pre>
-<ul>
-<li>پایپ</li>
-</ul>
 <p>با استفاده از عملگر پایپ
 می‌توانیم خروجی یک تابع را به عنوان وروردی به اولین آرگومان تابع بعدی دهیم</p>
 <p>عملگر پایپ می‌تواند کار با توابع را ساده و از تعریف متغییر‌های زیاد جلوگیری کند.</p>
 <ul>
-<li><span dir="ltr">(<code>|&gt;</code>)</span>: یک عملگر درون ساخت است.</li>
+<li><span dir="ltr"><code>|&gt;</code></span>
+<ul>
+<li>یک عملگر درون ساخت است.</li>
+</ul></li>
 </ul>
 <div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="عملگرها.html#cb154-1" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">$</span> Species <span class="sc">|&gt;</span> <span class="fu">unique</span>()</span></code></pre></div>
 <pre><code>[1] setosa     versicolor virginica
 Levels: setosa versicolor virginica</code></pre>
 <ul>
-<li><span dir="ltr">(<code>%&gt;%</code>)</span>: باید بسته <code>tidyverse</code> را فراخانی کنیم.</li>
+<li><span dir="ltr"><code>%&gt;%</code></span>
+<ul>
+<li>باید بسته <code>tidyverse</code> را فراخانی کنیم.</li>
+</ul></li>
 </ul>
 <div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="عملگرها.html#cb156-1" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">$</span> Species <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span></code></pre></div>
 <pre><code>[1] setosa     versicolor virginica
