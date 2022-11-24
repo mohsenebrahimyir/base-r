@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9.3 عملگر منطقی | مبانی R</title>
-  <meta name="description" content="9.3 عملگر منطقی | مبانی R" />
+  <title>9.2 عملگر منطقی | مبانی R</title>
+  <meta name="description" content="9.2 عملگر منطقی | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9.3 عملگر منطقی | مبانی R" />
+  <meta property="og:title" content="9.2 عملگر منطقی | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9.3 عملگر منطقی | مبانی R" />
+  <meta name="twitter:title" content="9.2 عملگر منطقی | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -185,9 +185,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8" data-path="فایلها.html"><a href="فایلها.html"><i class="fa fa-check"></i><b>8</b> فایل‌ها</a></li>
 <li class="chapter" data-level="9" data-path="عملگرها.html"><a href="عملگرها.html"><i class="fa fa-check"></i><b>9</b> عملگرها</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="عملگر-پایپ.html"><a href="عملگر-پایپ.html"><i class="fa fa-check"></i><b>9.1</b> عملگر پایپ</a></li>
-<li class="chapter" data-level="9.2" data-path="عملگرهای-حسابی.html"><a href="عملگرهای-حسابی.html"><i class="fa fa-check"></i><b>9.2</b> عملگرهای حسابی</a></li>
-<li class="chapter" data-level="9.3" data-path="عملگر-منطقی.html"><a href="عملگر-منطقی.html"><i class="fa fa-check"></i><b>9.3</b> عملگر منطقی</a></li>
+<li class="chapter" data-level="9.1" data-path="عملگرهای-حسابی.html"><a href="عملگرهای-حسابی.html"><i class="fa fa-check"></i><b>9.1</b> عملگرهای حسابی</a></li>
+<li class="chapter" data-level="9.2" data-path="عملگر-منطقی.html"><a href="عملگر-منطقی.html"><i class="fa fa-check"></i><b>9.2</b> عملگر منطقی</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="دستورات-شرطی.html"><a href="دستورات-شرطی.html"><i class="fa fa-check"></i><b>10</b> دستورات شرطی</a></li>
 <li class="chapter" data-level="11" data-path="حلقه.html"><a href="حلقه.html"><i class="fa fa-check"></i><b>11</b> حلقه</a></li>
@@ -235,38 +234,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="عملگر-منطقی" class="section level2 hasAnchor" number="9.3">
-<h2><span class="header-section-number">9.3</span> عملگر منطقی<a href="عملگر-منطقی.html#عملگر-منطقی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="عملگر-منطقی" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> عملگر منطقی<a href="عملگر-منطقی.html#عملگر-منطقی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>عملگر منطقی مقادیر درست و غلط برمی‌گرداند.</p>
 <ul>
 <li>برابری</li>
 </ul>
-<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="عملگر-منطقی.html#cb172-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="عملگر-منطقی.html#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>نابرابری</li>
 </ul>
-<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="عملگر-منطقی.html#cb174-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">!=</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="عملگر-منطقی.html#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">!=</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>بزرگتری</li>
 </ul>
-<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="عملگر-منطقی.html#cb176-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="عملگر-منطقی.html#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>بزرگتری یا برابری</li>
 </ul>
-<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="عملگر-منطقی.html#cb178-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="عملگر-منطقی.html#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>کوچکتری</li>
 </ul>
-<div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="عملگر-منطقی.html#cb180-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb182"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb182-1"><a href="عملگر-منطقی.html#cb182-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>کوچکتری یا برابری</li>
 </ul>
-<div class="sourceCode" id="cb182"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb182-1"><a href="عملگر-منطقی.html#cb182-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb184"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb184-1"><a href="عملگر-منطقی.html#cb184-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>و</li>
@@ -277,7 +276,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
-<div class="sourceCode" id="cb184"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb184-1"><a href="عملگر-منطقی.html#cb184-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="عملگر-منطقی.html#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] FALSE</code></pre>
 <p>شرط دوم در صورت درست بودن شرط اول اجرا می‌شود.
 و در صورت درست بودن هر دوی آن‌ها مقدار
@@ -285,7 +284,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
-<div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="عملگر-منطقی.html#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb188"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb188-1"><a href="عملگر-منطقی.html#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>یا</li>
@@ -296,7 +295,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
-<div class="sourceCode" id="cb188"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb188-1"><a href="عملگر-منطقی.html#cb188-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">|</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="عملگر-منطقی.html#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">|</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] TRUE</code></pre>
 <p>شرط دوم در صورت نادرست بودن شرط اول اجرا می‌شود و اگر
 یکی از آن‌ها درست بود مقدار
@@ -304,19 +303,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
-<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="عملگر-منطقی.html#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">||</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="عملگر-منطقی.html#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">||</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>مخالف</li>
 </ul>
 <p>بعد از بررسی عمل منطقی خلاف مقدار برگردانده شده را بر می‌گرداند.</p>
-<div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="عملگر-منطقی.html#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>(<span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="عملگر-منطقی.html#cb194-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>(<span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>شامل بودن</li>
 </ul>
 <p>برای این که چک کنیم که آیا اعضای یک بردار درون بردار دیگری هست یا خیر</p>
-<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="عملگر-منطقی.html#cb194-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">&quot;reza&quot;</span>, <span class="st">&quot;ebrahim&quot;</span>) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;mohsen&quot;</span>, <span class="st">&quot;reza&quot;</span>, <span class="st">&quot;mahsa&quot;</span>, <span class="st">&quot;iman&quot;</span>, <span class="st">&quot;peyman&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="عملگر-منطقی.html#cb196-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">&quot;reza&quot;</span>, <span class="st">&quot;ebrahim&quot;</span>) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;mohsen&quot;</span>, <span class="st">&quot;reza&quot;</span>, <span class="st">&quot;mahsa&quot;</span>, <span class="st">&quot;iman&quot;</span>, <span class="st">&quot;peyman&quot;</span>)</span></code></pre></div>
 <pre><code>[1]  TRUE FALSE</code></pre>
 
 </div>
