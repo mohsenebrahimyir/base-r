@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>فصل 7 توابع | مبانی R</title>
-  <meta name="description" content="فصل 7 توابع | مبانی R" />
+  <title>فصل 12 بردار - کمی بیشتر | مبانی R</title>
+  <meta name="description" content="فصل 12 بردار - کمی بیشتر | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="فصل 7 توابع | مبانی R" />
+  <meta property="og:title" content="فصل 12 بردار - کمی بیشتر | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="فصل 7 توابع | مبانی R" />
+  <meta name="twitter:title" content="فصل 12 بردار - کمی بیشتر | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-structure.html"/>
-<link rel="next" href="توابع-درون-ساخت.html"/>
+<link rel="prev" href="exercises.html"/>
+<link rel="next" href="مقادیر-متوالی.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -246,21 +246,99 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="توابع" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">فصل 7</span> توابع<a href="توابع.html#توابع" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>تابع (Function)
-با گرفتن یک یا چند ورودی، یک یا چند خروجی را تولید می‌کند.</p>
-<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="توابع.html#cb106-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;Salam&quot;</span> <span class="co"># Input</span></span>
-<span id="cb106-2"><a href="توابع.html#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)    <span class="co"># Function</span></span></code></pre></div>
-<pre class="output"><code>[1] &quot;Salam&quot; # Output</code></pre>
+<div id="بردار---کمی-بیشتر" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">فصل 12</span> بردار - کمی بیشتر<a href="بردار---کمی-بیشتر.html#بردار---کمی-بیشتر" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>بردار (Vector)
+یک ساختار یک بعدی که تمام مقادیر آن از یک نوع هستند.</p>
+<p><span class="math display">\[\Large
+x =
+\begin{bmatrix}
+  x_{1} &amp; x_{2} &amp; \dots &amp; x_{n}
+\end{bmatrix}
+\]</span></p>
+<ul>
+<li>بردار خالی</li>
+</ul>
+<p><span class="math display">\[\Large
+x =
+[]
+\]</span></p>
+<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="بردار---کمی-بیشتر.html#cb218-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>()</span></code></pre></div>
+<pre class="output"><code>NULL</code></pre>
+<ul>
+<li>بردار تک عضوی</li>
+</ul>
+<p><span class="math display">\[\Large
+x =
+\begin{bmatrix}
+  27
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="بردار---کمی-بیشتر.html#cb220-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">27</span>)</span></code></pre></div>
+<pre class="output"><code>[1] 27</code></pre>
+<p><span class="math display">\[\Large
+x =
+\begin{bmatrix}
+  a
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="بردار---کمی-بیشتر.html#cb222-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">&quot;a&quot;</span>)</span></code></pre></div>
+<pre class="output"><code>[1] &quot;a&quot;</code></pre>
+<p><span class="math display">\[\Large
+x =
+\begin{bmatrix}
+  True
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="بردار---کمی-بیشتر.html#cb224-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
+<pre class="output"><code>[1] TRUE</code></pre>
+<p><span class="math display">\[\Large
+x =
+\begin{bmatrix}
+  Not\;Available
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="بردار---کمی-بیشتر.html#cb226-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="cn">NA</span>)</span></code></pre></div>
+<pre class="output"><code>[1] NA</code></pre>
+<ul>
+<li>بردار چند عضوی دلخواه</li>
+</ul>
+<p><span class="math display">\[\Large
+x =
+\begin{bmatrix}
+  27 &amp; Mohsen &amp; True &amp; Not\;Available
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="بردار---کمی-بیشتر.html#cb228-1" aria-hidden="true" tabindex="-1"></a>(reshteei <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="st">&quot;Mohsen&quot;</span>, <span class="cn">TRUE</span>, <span class="cn">NA</span>))</span></code></pre></div>
+<pre class="output"><code>[1] &quot;27&quot; &quot;Mohsen&quot; &quot;TRUE&quot; NA      </code></pre>
+<p>اگر در بین مقادیر یک نوع رشته‌ای وجود داشته باشد، وکتور از نوع رشته‌ای می‌شود.</p>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="بردار---کمی-بیشتر.html#cb230-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(reshteei)</span></code></pre></div>
+<pre class="output"><code>[1] &quot;character&quot;</code></pre>
+<p>اگر در بین مقادیر عددی مقادیر منطقی داشته باشیم،، وکتور از نوع عددی می‌شود.</p>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="بردار---کمی-بیشتر.html#cb232-1" aria-hidden="true" tabindex="-1"></a>(adadi <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="cn">TRUE</span>, <span class="cn">NA</span>))</span></code></pre></div>
+<pre class="output"><code>[1] 27  1 NA</code></pre>
+<div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="بردار---کمی-بیشتر.html#cb234-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(adadi)</span></code></pre></div>
+<pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
+<ul>
+<li>تشکیل یک بردار با چند بردار</li>
+</ul>
+<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="بردار---کمی-بیشتر.html#cb236-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(reshteei, adadi, <span class="dv">35</span>, <span class="st">&quot;Salam&quot;</span>)</span></code></pre></div>
+<pre class="output"><code>[1] &quot;27&quot; &quot;Mohsen&quot; &quot;TRUE&quot; NA &quot;27&quot; &quot;1&quot; NA &quot;35&quot; &quot;Salam&quot; </code></pre>
+<ul>
+<li>می‌توان برای هر یک از مقادیر یک نام هم تعریف کرد.</li>
+</ul>
+<div class="sourceCode" id="cb238"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb238-1"><a href="بردار---کمی-بیشتر.html#cb238-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>, <span class="st">&quot;dovom&quot;</span> <span class="ot">=</span> <span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
+<pre class="output"><code>      dovom       
+    1     2     3 </code></pre>
+<!--chapter:end:Rmd/3-more//01-vector-1.Rmd-->
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-structure.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="توابع-درون-ساخت.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exercises.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="مقادیر-متوالی.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

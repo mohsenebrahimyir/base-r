@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>فصل 7 توابع | مبانی R</title>
-  <meta name="description" content="فصل 7 توابع | مبانی R" />
+  <title>12.1 مقادیر متوالی | مبانی R</title>
+  <meta name="description" content="12.1 مقادیر متوالی | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="فصل 7 توابع | مبانی R" />
+  <meta property="og:title" content="12.1 مقادیر متوالی | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="فصل 7 توابع | مبانی R" />
+  <meta name="twitter:title" content="12.1 مقادیر متوالی | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-structure.html"/>
-<link rel="next" href="توابع-درون-ساخت.html"/>
+<link rel="prev" href="بردار---کمی-بیشتر.html"/>
+<link rel="next" href="مقادیر-تصادفی.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -246,21 +246,78 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="توابع" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">فصل 7</span> توابع<a href="توابع.html#توابع" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>تابع (Function)
-با گرفتن یک یا چند ورودی، یک یا چند خروجی را تولید می‌کند.</p>
-<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="توابع.html#cb106-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;Salam&quot;</span> <span class="co"># Input</span></span>
-<span id="cb106-2"><a href="توابع.html#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)    <span class="co"># Function</span></span></code></pre></div>
-<pre class="output"><code>[1] &quot;Salam&quot; # Output</code></pre>
+<div id="مقادیر-متوالی" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> مقادیر متوالی<a href="مقادیر-متوالی.html#مقادیر-متوالی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>مرتب کردن مقادیر</li>
+</ul>
+<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="مقادیر-متوالی.html#cb240-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">9</span>))</span></code></pre></div>
+<pre class="output"><code>[1] -2  3  5  5  7  9</code></pre>
+<ul>
+<li>توالی صعودی در بازه مشخص</li>
+</ul>
+<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="مقادیر-متوالی.html#cb242-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div>
+<pre class="output"><code>[1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+<ul>
+<li>توالی نزولی در بازه مشخص</li>
+</ul>
+<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="مقادیر-متوالی.html#cb244-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
+<pre class="output"><code>[1] 10  9  8  7  6  5  4  3  2  1</code></pre>
+<ul>
+<li>توالی صعودی با تعداد مشخص</li>
+</ul>
+<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="مقادیر-متوالی.html#cb246-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq_len</span>(<span class="dv">5</span>)</span></code></pre></div>
+<pre class="output"><code>[1] 1 2 3 4 5</code></pre>
+<ul>
+<li>توالی صعودی با فاصله مشخص در بازه مشخص</li>
+</ul>
+<div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="مقادیر-متوالی.html#cb248-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> .<span class="dv">5</span>)</span></code></pre></div>
+<pre class="output"><code>[1]  5.0  5.5  6.0  6.5  7.0  7.5  8.0  8.5  9.0  9.5 10.0</code></pre>
+<ul>
+<li>توالی صعودی به تعداد مشخص در بازه مشخص</li>
+</ul>
+<div class="sourceCode" id="cb250"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb250-1"><a href="مقادیر-متوالی.html#cb250-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">length =</span> <span class="dv">5</span>)</span></code></pre></div>
+<pre class="output"><code>[1]  5.00  6.25  7.50  8.75 10.00</code></pre>
+<ul>
+<li>حروف کوچک الفبای انگلیسی</li>
+</ul>
+<div class="sourceCode" id="cb252"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb252-1"><a href="مقادیر-متوالی.html#cb252-1" aria-hidden="true" tabindex="-1"></a>letters</span></code></pre></div>
+<pre class="output"><code> [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot;
+[14] &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot; &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+<ul>
+<li>حروف بزرگ الفبای انگلیسی</li>
+</ul>
+<div class="sourceCode" id="cb254"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb254-1"><a href="مقادیر-متوالی.html#cb254-1" aria-hidden="true" tabindex="-1"></a>LETTERS</span></code></pre></div>
+<pre class="output"><code> [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot;
+[14] &quot;N&quot; &quot;O&quot; &quot;P&quot; &quot;Q&quot; &quot;R&quot; &quot;S&quot; &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
+<ul>
+<li>تکرار یک مقدار به تعداد مشخص</li>
+</ul>
+<div class="sourceCode" id="cb256"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb256-1"><a href="مقادیر-متوالی.html#cb256-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="dv">10</span>)</span></code></pre></div>
+<pre class="output"><code>[1] 2 2 2 2 2 2 2 2 2 2</code></pre>
+<ul>
+<li>تکرار یک بردار به تعداد
+n
+بار</li>
+</ul>
+<div class="sourceCode" id="cb258"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb258-1"><a href="مقادیر-متوالی.html#cb258-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">times =</span> <span class="dv">2</span>)</span></code></pre></div>
+<pre class="output"><code>[1] 1 6 5 1 6 5</code></pre>
+<ul>
+<li>تکرار هر مقدار یک بردار به تعداد
+n
+بار</li>
+</ul>
+<div class="sourceCode" id="cb260"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb260-1"><a href="مقادیر-متوالی.html#cb260-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">each=</span><span class="dv">2</span>)</span></code></pre></div>
+<pre class="output"><code>[1] 1 1 6 6 5 5</code></pre>
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-structure.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="توابع-درون-ساخت.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="بردار---کمی-بیشتر.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="مقادیر-تصادفی.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

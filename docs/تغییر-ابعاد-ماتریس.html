@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>فصل 7 توابع | مبانی R</title>
-  <meta name="description" content="فصل 7 توابع | مبانی R" />
+  <title>13.1 تغییر ابعاد ماتریس | مبانی R</title>
+  <meta name="description" content="13.1 تغییر ابعاد ماتریس | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="فصل 7 توابع | مبانی R" />
+  <meta property="og:title" content="13.1 تغییر ابعاد ماتریس | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="فصل 7 توابع | مبانی R" />
+  <meta name="twitter:title" content="13.1 تغییر ابعاد ماتریس | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="data-structure.html"/>
-<link rel="next" href="توابع-درون-ساخت.html"/>
+<link rel="prev" href="ماتریس---کمی-بیشتر.html"/>
+<link rel="next" href="مقایسه-دو-ماتریس.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -246,21 +246,110 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="توابع" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">فصل 7</span> توابع<a href="توابع.html#توابع" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>تابع (Function)
-با گرفتن یک یا چند ورودی، یک یا چند خروجی را تولید می‌کند.</p>
-<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="توابع.html#cb106-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;Salam&quot;</span> <span class="co"># Input</span></span>
-<span id="cb106-2"><a href="توابع.html#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)    <span class="co"># Function</span></span></code></pre></div>
-<pre class="output"><code>[1] &quot;Salam&quot; # Output</code></pre>
+<div id="تغییر-ابعاد-ماتریس" class="section level2 hasAnchor" number="13.1">
+<h2><span class="header-section-number">13.1</span> تغییر ابعاد ماتریس<a href="تغییر-ابعاد-ماتریس.html#تغییر-ابعاد-ماتریس" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>ساخت یک ماتریس
+<span class="math inline">\(4 \times 4\)</span></li>
+</ul>
+<div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="تغییر-ابعاد-ماتریس.html#cb372-1" aria-hidden="true" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>, <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">4</span>))</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    5    9   13
+## [2,]    2    6   10   14
+## [3,]    3    7   11   15
+## [4,]    4    8   12   16</code></pre>
+<ul>
+<li>تغییر ابعاد ماتریس به
+<span class="math inline">\(8 \times 2\)</span></li>
+</ul>
+<div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="تغییر-ابعاد-ماتریس.html#cb374-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">dim</span>(mtx) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">2</span>))</span></code></pre></div>
+<pre><code>## [1] 8 2</code></pre>
+<div class="sourceCode" id="cb376"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb376-1"><a href="تغییر-ابعاد-ماتریس.html#cb376-1" aria-hidden="true" tabindex="-1"></a>mtx</span></code></pre></div>
+<pre><code>##      [,1] [,2]
+## [1,]    1    9
+## [2,]    2   10
+## [3,]    3   11
+## [4,]    4   12
+## [5,]    5   13
+## [6,]    6   14
+## [7,]    7   15
+## [8,]    8   16</code></pre>
+<p>نکته: در هنگام تغییر ابعاد باید حاصل ضرب ابعاد جدید با حاصل ضرب ابعاد قبلی برابر باشد.</p>
+<p><span class="math display">\[\Large
+{\bf M}_{n \times m} \overset{{\bf if} \; n \times m = n&#39; \times m&#39;}{\Longrightarrow} {\bf M&#39;}_{n&#39; \times m&#39;}
+\]</span></p>
+<ul>
+<li>ماتریس
+یک ساختار دو بعدی از مقادیر است که تمام مقادیر آن از یک نوع هستند.
+برای مثال حتی یک مقدار رشته‌ای در بین مقادیر عددی باشد،
+نوع تمام مقادیر، رشته‌ای می‌شود.</li>
+</ul>
+<div class="sourceCode" id="cb378"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb378-1"><a href="تغییر-ابعاد-ماتریس.html#cb378-1" aria-hidden="true" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>, <span class="st">&quot;a&quot;</span>), <span class="dv">4</span>, <span class="dv">4</span>))</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,] &quot;1&quot;  &quot;5&quot;  &quot;9&quot;  &quot;13&quot;
+## [2,] &quot;2&quot;  &quot;6&quot;  &quot;10&quot; &quot;14&quot;
+## [3,] &quot;3&quot;  &quot;7&quot;  &quot;11&quot; &quot;15&quot;
+## [4,] &quot;4&quot;  &quot;8&quot;  &quot;12&quot; &quot;a&quot;</code></pre>
+<div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="تغییر-ابعاد-ماتریس.html#cb380-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mtx)</span></code></pre></div>
+<pre><code>##  chr [1:4, 1:4] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;5&quot; &quot;6&quot; &quot;7&quot; &quot;8&quot; &quot;9&quot; &quot;10&quot; &quot;11&quot; &quot;12&quot; &quot;13&quot; ...</code></pre>
+<ul>
+<li>تعریف ماتریس
+همانی<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a></li>
+</ul>
+<p><span class="math display">\[\Large
+{\bf I}_{n} =
+\begin{bmatrix}
+  1&amp;0&amp;\cdots &amp;0\\
+  0&amp;1&amp;\cdots &amp;0\\
+  \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+  0&amp;0&amp;\cdots &amp;1
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="تغییر-ابعاد-ماتریس.html#cb382-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(<span class="dv">4</span>)</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    0    0    0
+## [2,]    0    1    0    0
+## [3,]    0    0    1    0
+## [4,]    0    0    0    1</code></pre>
+<ul>
+<li>تعریف ماتریس
+قطری<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></li>
+</ul>
+<p><span class="math display">\[\Large
+{\bf I}_{n} =
+\begin{bmatrix}
+  x_{1}&amp;0&amp;\cdots &amp;0\\
+  0&amp;x_{2}&amp;\cdots &amp;0\\
+  \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\
+  0&amp;0&amp;\cdots &amp;x_{n}
+\end{bmatrix}
+\]</span></p>
+<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="تغییر-ابعاد-ماتریس.html#cb384-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(<span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">3</span>))</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    9    0    0    0
+## [2,]    0    5    0    0
+## [3,]    0    0    8    0
+## [4,]    0    0    0    3</code></pre>
+<ul>
+<li>گرفتن قطر یک ماتریس</li>
+</ul>
+<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="تغییر-ابعاد-ماتریس.html#cb386-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(mtx)</span></code></pre></div>
+<pre><code>## [1] &quot;1&quot;  &quot;6&quot;  &quot;11&quot; &quot;a&quot;</code></pre>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="9">
+<li id="fn9"><p>Identity<a href="تغییر-ابعاد-ماتریس.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>Diagnol<a href="تغییر-ابعاد-ماتریس.html#fnref10" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-structure.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="توابع-درون-ساخت.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ماتریس---کمی-بیشتر.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="مقایسه-دو-ماتریس.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
