@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>تمرینات | مبانی R</title>
-  <meta name="description" content="تمرینات | مبانی R" />
+  <title>فصل 15 تمرینات | مبانی R</title>
+  <meta name="description" content="فصل 15 تمرینات | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="تمرینات | مبانی R" />
+  <meta property="og:title" content="فصل 15 تمرینات | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="تمرینات | مبانی R" />
+  <meta name="twitter:title" content="فصل 15 تمرینات | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="حلقه.html"/>
-<link rel="next" href="بردار---کمی-بیشتر.html"/>
+<link rel="prev" href="فرمت-داده---کمی-بیشتر.html"/>
+<link rel="next" href="main_resource.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -170,7 +170,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4" data-path="خالی.html"><a href="خالی.html"><i class="fa fa-check"></i><b>4.4</b> خالی</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="متغییرها.html"><a href="متغییرها.html"><i class="fa fa-check"></i><b>5</b> متغییرها</a></li>
-<li class="chapter" data-level="6" data-path="data-structure.html"><a href="data-structure.html"><i class="fa fa-check"></i><b>6</b> ساختار داده</a></li>
+<li class="chapter" data-level="6" data-path="ساختار-داده.html"><a href="ساختار-داده.html"><i class="fa fa-check"></i><b>6</b> ساختار داده</a></li>
 <li class="chapter" data-level="7" data-path="توابع.html"><a href="توابع.html"><i class="fa fa-check"></i><b>7</b> توابع</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="توابع-درون-ساخت.html"><a href="توابع-درون-ساخت.html"><i class="fa fa-check"></i><b>7.1</b> توابع درون ساخت</a></li>
@@ -190,7 +190,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10" data-path="دستورات-شرطی.html"><a href="دستورات-شرطی.html"><i class="fa fa-check"></i><b>10</b> دستورات شرطی</a></li>
 <li class="chapter" data-level="11" data-path="حلقه.html"><a href="حلقه.html"><i class="fa fa-check"></i><b>11</b> حلقه</a></li>
-<li class="chapter" data-level="" data-path="exercises.html"><a href="exercises.html"><i class="fa fa-check"></i>تمرینات</a></li>
 <li class="chapter" data-level="12" data-path="بردار---کمی-بیشتر.html"><a href="بردار---کمی-بیشتر.html"><i class="fa fa-check"></i><b>12</b> بردار - کمی بیشتر</a>
 <ul>
 <li class="chapter" data-level="12.1" data-path="مقادیر-متوالی.html"><a href="مقادیر-متوالی.html"><i class="fa fa-check"></i><b>12.1</b> مقادیر متوالی</a></li>
@@ -209,6 +208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
+<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -246,22 +246,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="exercises" class="section level1 unnumbered hasAnchor">
-<h1>تمرینات<a href="exercises.html#exercises" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<ol style="list-style-type: decimal">
-<li>برنامه‌ای بنویسید که نام و سن را از کاربر به عنوان ورودی بگیرد
-و خروجی زیر را تحویل دهد.</li>
-</ol>
-<pre><code>## [1] &quot;My name is Mohsen and I am 27 years old.&quot;</code></pre>
+<div id="تمرینات" class="section level1 hasAnchor" number="15">
+<h1><span class="header-section-number">فصل 15</span> تمرینات<a href="تمرینات.html#تمرینات" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>برای تمرین بیشتر می‌توانید
+به سایت‌هایی که تمرینات
+<strong>R</strong>
+ارائه می‌دهند دسترسی داشته باشید.</p>
+<p>با جستجو
+<span dir="ltr"><strong>practice in r</strong></span>
+در گوگل به سایت‌های زیر دسترسی پیدا می‌کنید</p>
+<ul>
+<li><a href="https://www.w3schools.com/r/exercise.asp?filename=exercise_syntax1">R-Exercise</a></li>
+<li><a href="https://www.w3resource.com/r-programming-exercises/">R-Programming-Exercises</a></li>
+<li><a href="https://github.com/rekharchandran/R-programming-Exercises-Practice-Solution">R-programming-Exercises-Practice-Solution</a></li>
+</ul>
 
+<!--- # منابع-->
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="حلقه.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="بردار---کمی-بیشتر.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="فرمت-داده---کمی-بیشتر.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="main_resource.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

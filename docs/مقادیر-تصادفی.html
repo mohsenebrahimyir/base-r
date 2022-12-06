@@ -170,7 +170,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4" data-path="خالی.html"><a href="خالی.html"><i class="fa fa-check"></i><b>4.4</b> خالی</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="متغییرها.html"><a href="متغییرها.html"><i class="fa fa-check"></i><b>5</b> متغییرها</a></li>
-<li class="chapter" data-level="6" data-path="data-structure.html"><a href="data-structure.html"><i class="fa fa-check"></i><b>6</b> ساختار داده</a></li>
+<li class="chapter" data-level="6" data-path="ساختار-داده.html"><a href="ساختار-داده.html"><i class="fa fa-check"></i><b>6</b> ساختار داده</a></li>
 <li class="chapter" data-level="7" data-path="توابع.html"><a href="توابع.html"><i class="fa fa-check"></i><b>7</b> توابع</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="توابع-درون-ساخت.html"><a href="توابع-درون-ساخت.html"><i class="fa fa-check"></i><b>7.1</b> توابع درون ساخت</a></li>
@@ -190,7 +190,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="10" data-path="دستورات-شرطی.html"><a href="دستورات-شرطی.html"><i class="fa fa-check"></i><b>10</b> دستورات شرطی</a></li>
 <li class="chapter" data-level="11" data-path="حلقه.html"><a href="حلقه.html"><i class="fa fa-check"></i><b>11</b> حلقه</a></li>
-<li class="chapter" data-level="" data-path="exercises.html"><a href="exercises.html"><i class="fa fa-check"></i>تمرینات</a></li>
 <li class="chapter" data-level="12" data-path="بردار---کمی-بیشتر.html"><a href="بردار---کمی-بیشتر.html"><i class="fa fa-check"></i><b>12</b> بردار - کمی بیشتر</a>
 <ul>
 <li class="chapter" data-level="12.1" data-path="مقادیر-متوالی.html"><a href="مقادیر-متوالی.html"><i class="fa fa-check"></i><b>12.1</b> مقادیر متوالی</a></li>
@@ -209,6 +208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
+<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -251,28 +251,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>اعداد تصادفی در بازه مشخص بدون تکرار</li>
 </ul>
-<div class="sourceCode" id="cb262"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb262-1"><a href="مقادیر-تصادفی.html#cb262-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb261"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb261-1"><a href="مقادیر-تصادفی.html#cb261-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
 <pre class="output"><code>[1]  5 12  1  4  6  7 10  8  3 13</code></pre>
 <ul>
 <li>اعداد تصادفی در بازه مشخص با تکرار</li>
 </ul>
-<div class="sourceCode" id="cb264"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb264-1"><a href="مقادیر-تصادفی.html#cb264-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span></code></pre></div>
+<div class="sourceCode" id="cb263"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb263-1"><a href="مقادیر-تصادفی.html#cb263-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span></code></pre></div>
 <pre class="output"><code>[1]  7 18  4 16 10 19  9 16 17 10</code></pre>
 <ul>
 <li>حروف کوچک انگلیسی تصادفی بدون تکرار</li>
 </ul>
-<div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="مقادیر-تصادفی.html#cb266-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> letters, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="مقادیر-تصادفی.html#cb265-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> letters, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
 <pre class="output"><code>[1] &quot;r&quot; &quot;u&quot; &quot;z&quot; &quot;h&quot; &quot;k&quot; &quot;a&quot; &quot;m&quot; &quot;b&quot; &quot;v&quot; &quot;s&quot;</code></pre>
 <ul>
 <li>اعداد تصادفی با توزیع نرمال</li>
 </ul>
-<div class="sourceCode" id="cb268"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb268-1"><a href="مقادیر-تصادفی.html#cb268-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="مقادیر-تصادفی.html#cb267-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code></pre></div>
 <pre class="output"><code>[1]  1.29085505  0.70984957 -0.04318293  0.63228842  0.48876293
 [6]  0.03517201 -0.13634837 -0.16242425  0.91619639 -0.72076816</code></pre>
 <ul>
 <li>اعداد تصادفی با توزیع یکنواخت</li>
 </ul>
-<div class="sourceCode" id="cb270"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb270-1"><a href="مقادیر-تصادفی.html#cb270-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="مقادیر-تصادفی.html#cb269-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span></code></pre></div>
 <pre class="output"><code>[1] 0.8406612 0.7941666 0.5174069 0.2705386 0.2232102
 [6] 0.8314685 0.9551069 0.1105243 0.1253661 0.1118882</code></pre>
 
