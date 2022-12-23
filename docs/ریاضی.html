@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -248,12 +254,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="ریاضی" class="section level2 hasAnchor" number="12.3">
 <h2><span class="header-section-number">12.3</span> ریاضی<a href="ریاضی.html#ریاضی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="ریاضی.html#cb271-1" aria-hidden="true" tabindex="-1"></a>(math <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">1.3574</span>, <span class="sc">-</span><span class="fl">2.2</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="sc">-</span><span class="dv">7</span>, <span class="fl">2.55</span>, <span class="fl">1.4</span>, <span class="sc">-</span><span class="dv">8</span>))</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 1.3574 -2.2000  5.0000  4.0000 -7.0000  2.5500  1.4000 -8.0000</code></pre>
 <ul>
 <li>گرد کردن مقادیر تا رقم اعشار دلخواه</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="ریاضی.html#cb273-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(math, <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1]  1.36 -2.20  5.00  4.00 -7.00  2.55  1.40 -8.00</code></pre>
 <ul>
 <li>قدرمطلق مقادیر</li>
@@ -264,7 +274,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   |x_{1}| &amp; |x_{2}| &amp; \dots &amp; |x_{n}|
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="ریاضی.html#cb275-1" aria-hidden="true" tabindex="-1"></a><span class="fu">abs</span>(math)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 1.3574 2.2000 5.0000 4.0000 7.0000 2.5500 1.4000 8.0000</code></pre>
 <ul>
 <li>جذر</li>
@@ -275,7 +287,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   \sqrt{x_{1}} &amp; \sqrt{x_{2}} &amp; \dots &amp; \sqrt{x_{n}}
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="ریاضی.html#cb277-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(math)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 1.165075 NaN 2.236068 2.000000 NaN 1.596872 1.183216 NaN</code></pre>
 
 </div>

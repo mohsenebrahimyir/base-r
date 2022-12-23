@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -249,54 +255,76 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="عددی" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> عددی<a href="عددی.html#عددی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>مقادیری که عملیات ریاضی بر آن‌ها می‌توان انجام داد.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="عددی.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="sc">-</span><span class="dv">1234567890</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
 <ul>
 <li>تغییر یک مقدار به نوع عددی</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="عددی.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">&quot;000100.000&quot;</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 100</code></pre>
 <ul>
 <li>مقادیر تعریف نشده</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="عددی.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span><span class="sc">/</span><span class="dv">0</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] NaN</code></pre>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="عددی.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="cn">Inf</span><span class="sc">/</span><span class="cn">Inf</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] NaN</code></pre>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="عددی.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NaN</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
 <ul>
 <li>مقادیر عددی از دست رفته</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="عددی.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_real_</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
 <ul>
 <li>تغییر یک مقدار به نوع عددی
 صحیح (Integer)</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="عددی.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">12.001</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 12</code></pre>
 <ul>
 <li>مقادیر عددی صحیح از دست رفته</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="عددی.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_integer_</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] &quot;integer&quot;</code></pre>
 <ul>
 <li>تغییر یک مقدار به نوع عددی
 اعشاری (Double)</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="عددی.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.double</span>(<span class="fl">12.001</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 12.001</code></pre>
 <ul>
 <li>تغییر یک مقدار به نوع عددی
 مختلط (Complex)</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="عددی.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.complex</span>(<span class="fl">12.001</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] 12.001+0i</code></pre>
 <ul>
 <li>مقادیر عددی مختلط از دست رفته</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="عددی.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_complex_</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] NA_complex_</code></pre>
 </div>
             </section>

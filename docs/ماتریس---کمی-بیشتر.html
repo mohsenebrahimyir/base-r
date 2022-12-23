@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -273,7 +279,9 @@ m
 \right\}
 \,n\;Rows\\
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb353"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb353-1"><a href="ماتریس---کمی-بیشتر.html#cb353-1" aria-hidden="true" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">nrow =</span> <span class="dv">5</span>, <span class="at">ncol =</span> <span class="dv">4</span>))</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]   NA   NA   NA   NA
 ## [2,]   NA   NA   NA   NA
@@ -283,28 +291,38 @@ m
 <ul>
 <li>نوع ساختار داده</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb355"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb355-1"><a href="ماتریس---کمی-بیشتر.html#cb355-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(mtx)</span></code></pre></div>
+</details>
 <pre><code>## [1] &quot;matrix&quot; &quot;array&quot;</code></pre>
 <ul>
 <li>ابعاد<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb357-1"><a href="ماتریس---کمی-بیشتر.html#cb357-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(mtx)</span></code></pre></div>
+</details>
 <pre><code>## [1] 5 4</code></pre>
 <ul>
 <li>ساختار و نوع مقادیر</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb359"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb359-1"><a href="ماتریس---کمی-بیشتر.html#cb359-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mtx)</span></code></pre></div>
+</details>
 <pre><code>##  logi [1:5, 1:4] NA NA NA NA NA NA ...</code></pre>
 <ul>
 <li>خواص ماتریس</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb361"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb361-1"><a href="ماتریس---کمی-بیشتر.html#cb361-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(mtx)</span></code></pre></div>
+</details>
 <pre><code>## $dim
 ## [1] 5 4</code></pre>
 <ul>
 <li>دادن تک مقدار به ماتریس</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb363"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb363-1"><a href="ماتریس---کمی-بیشتر.html#cb363-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    1    1
 ## [2,]    1    1    1
@@ -312,7 +330,9 @@ m
 <ul>
 <li>تبدیل بردار به ماتریس</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb365"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb365-1"><a href="ماتریس---کمی-بیشتر.html#cb365-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="at">data =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">6</span>,<span class="dv">3</span>), <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>)</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    4    7
 ## [2,]    2    5    6
@@ -330,7 +350,9 @@ M_{n \times m} =
     3 &amp; 6 &amp; 9
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb367"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb367-1"><a href="ماتریس---کمی-بیشتر.html#cb367-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>) <span class="do">## byrow = FALSE</span></span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    4    7
 ## [2,]    2    5    8
@@ -346,7 +368,9 @@ M_{n \times m} =
     \rightarrow 7 &amp; 8 &amp; 9
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb369"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb369-1"><a href="ماتریس---کمی-بیشتر.html#cb369-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">ncol =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    2    3
 ## [2,]    4    5    6

@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -258,7 +264,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ساختار (Structure)
 یک شئ</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="توابع-درون-ساخت.html#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
+</details>
 <pre class="output"><code>&#39;data.frame&#39;:   150 obs. of  5 variables:
  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
@@ -268,23 +276,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>تبدیل چند رشته به یک رشته</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="توابع-درون-ساخت.html#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) <span class="do">## or paste0()</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
 <ul>
 <li>جای گذاری یک مقدار در یک رشته با استفاده از
 <span dir="ltr"><code>%s</code></span></li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="توابع-درون-ساخت.html#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sprintf</span>(<span class="at">fmt =</span> <span class="st">&quot;Salam %s!&quot;</span>, <span class="st">&quot;Donya&quot;</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
 <ul>
 <li>چاپ کردن چند چیز</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="توابع-درون-ساخت.html#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>Salam Donya!</code></pre>
 <ul>
 <li>خواندن کامند لاین</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="توابع-درون-ساخت.html#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="fu">readline</span>(<span class="at">prompt =</span> <span class="st">&quot;lotfan ye chezy vared konid: &quot;</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>lotfan ye chezy vared konid: </code></pre>
 </div>
             </section>

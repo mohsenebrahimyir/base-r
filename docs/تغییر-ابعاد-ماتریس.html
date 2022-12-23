@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -252,7 +258,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>ساخت یک ماتریس
 <span class="math inline">\(4 \times 4\)</span></li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb371-1"><a href="تغییر-ابعاد-ماتریس.html#cb371-1" aria-hidden="true" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>, <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">4</span>))</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]    1    5    9   13
 ## [2,]    2    6   10   14
@@ -262,9 +270,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>تغییر ابعاد ماتریس به
 <span class="math inline">\(8 \times 2\)</span></li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="تغییر-ابعاد-ماتریس.html#cb373-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">dim</span>(mtx) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">2</span>))</span></code></pre></div>
+</details>
 <pre><code>## [1] 8 2</code></pre>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb375"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb375-1"><a href="تغییر-ابعاد-ماتریس.html#cb375-1" aria-hidden="true" tabindex="-1"></a>mtx</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2]
 ## [1,]    1    9
 ## [2,]    2   10
@@ -284,13 +296,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برای مثال حتی یک مقدار رشته‌ای در بین مقادیر عددی باشد،
 نوع تمام مقادیر، رشته‌ای می‌شود.</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb377"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb377-1"><a href="تغییر-ابعاد-ماتریس.html#cb377-1" aria-hidden="true" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>, <span class="st">&quot;a&quot;</span>), <span class="dv">4</span>, <span class="dv">4</span>))</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,] &quot;1&quot;  &quot;5&quot;  &quot;9&quot;  &quot;13&quot;
 ## [2,] &quot;2&quot;  &quot;6&quot;  &quot;10&quot; &quot;14&quot;
 ## [3,] &quot;3&quot;  &quot;7&quot;  &quot;11&quot; &quot;15&quot;
 ## [4,] &quot;4&quot;  &quot;8&quot;  &quot;12&quot; &quot;a&quot;</code></pre>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="تغییر-ابعاد-ماتریس.html#cb379-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mtx)</span></code></pre></div>
+</details>
 <pre><code>##  chr [1:4, 1:4] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;5&quot; &quot;6&quot; &quot;7&quot; &quot;8&quot; &quot;9&quot; &quot;10&quot; &quot;11&quot; &quot;12&quot; &quot;13&quot; ...</code></pre>
 <ul>
 <li>تعریف ماتریس
@@ -305,7 +321,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   0&amp;0&amp;\cdots &amp;1
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="تغییر-ابعاد-ماتریس.html#cb381-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(<span class="dv">4</span>)</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]    1    0    0    0
 ## [2,]    0    1    0    0
@@ -324,7 +342,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   0&amp;0&amp;\cdots &amp;x_{n}
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb383"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb383-1"><a href="تغییر-ابعاد-ماتریس.html#cb383-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(<span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">3</span>))</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]    9    0    0    0
 ## [2,]    0    5    0    0
@@ -333,7 +353,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>گرفتن قطر یک ماتریس</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb385"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb385-1"><a href="تغییر-ابعاد-ماتریس.html#cb385-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(mtx)</span></code></pre></div>
+</details>
 <pre><code>## [1] &quot;1&quot;  &quot;6&quot;  &quot;11&quot; &quot;a&quot;</code></pre>
 </div>
 <div class="footnotes">

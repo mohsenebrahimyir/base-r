@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -254,11 +260,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>برای تکرارهای به مقدار نا معلوم می‌توانیم از ساختار حلقه
 <code>while</code>
 استفاده نماییم.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb213"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb213-1"><a href="حلقه.html#cb213-1" aria-hidden="true" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">5</span></span>
 <span id="cb213-2"><a href="حلقه.html#cb213-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (i <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
 <span id="cb213-3"><a href="حلقه.html#cb213-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
 <span id="cb213-4"><a href="حلقه.html#cb213-4" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">-</span> <span class="dv">1</span></span>
 <span id="cb213-5"><a href="حلقه.html#cb213-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</details>
 <pre><code>## [1] &quot;5th alaki&quot;
 ## [1] &quot;4th alaki&quot;
 ## [1] &quot;3th alaki&quot;
@@ -270,9 +278,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>برای تکرار به مقدار معلوم می‌توانیم از ساختار حلقه
 <code>for</code>
 استفاده نماییم.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="حلقه.html#cb215-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
 <span id="cb215-2"><a href="حلقه.html#cb215-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
 <span id="cb215-3"><a href="حلقه.html#cb215-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</details>
 <pre><code>## [1] &quot;1th alaki&quot;
 ## [1] &quot;2th alaki&quot;
 ## [1] &quot;3th alaki&quot;

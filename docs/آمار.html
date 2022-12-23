@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -248,7 +254,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="آمار" class="section level2 hasAnchor" number="12.5">
 <h2><span class="header-section-number">12.5</span> آمار<a href="آمار.html#آمار" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="آمار.html#cb307-1" aria-hidden="true" tabindex="-1"></a>(stat <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="sc">-</span><span class="dv">7</span>, <span class="dv">5</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">0</span>, <span class="dv">3</span>))</span></code></pre></div>
+</details>
 <pre><code>##  [1]  1 -2  5  5  4 -7  5 -2  6  0  3</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -257,7 +265,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><span class="math display">\[\Large
 x_{max}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="آمار.html#cb310-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 6</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -266,7 +276,9 @@ x_{max}
 <p><span class="math display">\[\Large
 x_{min}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="آمار.html#cb313-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] -7</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -275,7 +287,9 @@ x_{min}
 <p><span class="math display">\[\Large
 N
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="آمار.html#cb316-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 11</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -284,7 +298,9 @@ N
 <p><span class="math display">\[\Large
 x_{min} \leq x \leq  x_{max}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb319"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb319-1"><a href="آمار.html#cb319-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] -7  6</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -299,7 +315,9 @@ x_{median} =
 \end{array}
 \right.
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="آمار.html#cb322-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 3</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -325,6 +343,7 @@ x_{sort} =
 <ol style="list-style-type: decimal">
 <li>تعریف تابع</li>
 </ol>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="آمار.html#cb325-1" aria-hidden="true" tabindex="-1"></a>quart <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb325-2"><a href="آمار.html#cb325-2" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">sort</span>(x)</span>
 <span id="cb325-3"><a href="آمار.html#cb325-3" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
@@ -336,11 +355,14 @@ x_{sort} =
 <span id="cb325-9"><a href="آمار.html#cb325-9" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb325-10"><a href="آمار.html#cb325-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">Q1=</span><span class="fu">median</span>(x[<span class="dv">1</span><span class="sc">:</span>l]), <span class="at">Q2=</span><span class="fu">median</span>(x), <span class="at">Q3=</span><span class="fu">median</span>(x[u<span class="sc">:</span>n]))</span>
 <span id="cb325-11"><a href="آمار.html#cb325-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</details>
 <pre class="output"><code></code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>استفاده از تابع</li>
 </ol>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="آمار.html#cb327-1" aria-hidden="true" tabindex="-1"></a><span class="fu">quart</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## Q1 Q2 Q3 
 ## -2  3  5</code></pre>
 <pre class="output"><code></code></pre>
@@ -353,16 +375,20 @@ x_{sort} =
 <ol style="list-style-type: decimal">
 <li>تعریف تابع</li>
 </ol>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb330"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb330-1"><a href="آمار.html#cb330-1" aria-hidden="true" tabindex="-1"></a>modes <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb330-2"><a href="آمار.html#cb330-2" aria-hidden="true" tabindex="-1"></a>  ux <span class="ot">&lt;-</span> <span class="fu">unique</span>(x)</span>
 <span id="cb330-3"><a href="آمار.html#cb330-3" aria-hidden="true" tabindex="-1"></a>  tab <span class="ot">&lt;-</span> <span class="fu">tabulate</span>(<span class="fu">match</span>(x, ux))</span>
 <span id="cb330-4"><a href="آمار.html#cb330-4" aria-hidden="true" tabindex="-1"></a>  ux[tab <span class="sc">==</span> <span class="fu">max</span>(tab)]</span>
 <span id="cb330-5"><a href="آمار.html#cb330-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</details>
 <pre class="output"><code></code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>استفاده از تابع</li>
 </ol>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="آمار.html#cb332-1" aria-hidden="true" tabindex="-1"></a><span class="fu">modes</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 5</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -371,7 +397,9 @@ x_{sort} =
 <p><span class="math display">\[\Large
 S_{x} = \sum_{i=1}^{i=n} x_{i}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="آمار.html#cb335-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 18</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -380,7 +408,9 @@ S_{x} = \sum_{i=1}^{i=n} x_{i}
 <p><span class="math display">\[\Large
 \mu_{x} = \cfrac{\sum x_{i}}{N}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="آمار.html#cb338-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 1.636364</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -389,7 +419,9 @@ S_{x} = \sum_{i=1}^{i=n} x_{i}
 <p><span class="math display">\[\Large
 \sigma = \sqrt{\cfrac{\sum(x_{i} - \mu)^{2}}{N}}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb341"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb341-1"><a href="آمار.html#cb341-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(stat)</span></code></pre></div>
+</details>
 <pre><code>## [1] 4.05642</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
@@ -404,20 +436,26 @@ Z = \frac{x - \mu}{\sigma} =
   \frac{x_{n} - \mu}{\sigma}
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="آمار.html#cb344-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.vector</span>(<span class="fu">scale</span>(stat))</span></code></pre></div>
+</details>
 <pre><code>##  [1] -0.1568781 -0.8964465  0.8292130  0.8292130  0.5826902 -2.1290604
 ##  [7]  0.8292130 -0.8964465  1.0757358 -0.4034009  0.3361674</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
 <li>جمع با مقادیر از دست رفته</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="آمار.html#cb347-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">5</span>, <span class="cn">NA</span>))</span></code></pre></div>
+</details>
 <pre><code>## [1] NA</code></pre>
 <pre class="output"><code></code></pre>
 <ul>
 <li>جمع بدون مقادیر از دست رفته</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb350"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb350-1"><a href="آمار.html#cb350-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="cn">NA</span>, <span class="dv">5</span>, <span class="cn">NA</span>), <span class="at">na.rm =</span> T)</span></code></pre></div>
+</details>
 <pre><code>## [1] 11</code></pre>
 <pre class="output"><code></code></pre>
 

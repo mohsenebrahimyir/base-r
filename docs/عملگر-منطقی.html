@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -252,32 +258,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>برابری</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="عملگر-منطقی.html#cb173-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>نابرابری</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="عملگر-منطقی.html#cb175-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">!=</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>بزرگتری</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="عملگر-منطقی.html#cb177-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>بزرگتری یا برابری</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="عملگر-منطقی.html#cb179-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&gt;=</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>کوچکتری</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="عملگر-منطقی.html#cb181-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>کوچکتری یا برابری</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="عملگر-منطقی.html#cb183-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">&lt;=</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>و</li>
@@ -288,7 +306,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="عملگر-منطقی.html#cb185-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <p>شرط دوم در صورت درست بودن شرط اول اجرا می‌شود.
 و در صورت درست بودن هر دوی آن‌ها مقدار
@@ -296,7 +316,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="عملگر-منطقی.html#cb187-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">&amp;&amp;</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <ul>
 <li>یا</li>
@@ -307,7 +329,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="عملگر-منطقی.html#cb189-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">|</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] TRUE</code></pre>
 <p>شرط دوم در صورت نادرست بودن شرط اول اجرا می‌شود و اگر
 یکی از آن‌ها درست بود مقدار
@@ -315,19 +339,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند در غیر این صورت مقدار
 <code>FALSE</code>
 برمیگرداند.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="عملگر-منطقی.html#cb191-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span> <span class="sc">||</span> <span class="dv">1</span> <span class="sc">&lt;</span> <span class="dv">2</span></span></code></pre></div>
+</details>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>مخالف</li>
 </ul>
 <p>بعد از بررسی عمل منطقی خلاف مقدار برگردانده شده را بر می‌گرداند.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="عملگر-منطقی.html#cb193-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>(<span class="dv">1</span> <span class="sc">==</span> <span class="dv">2</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] TRUE</code></pre>
 <ul>
 <li>شامل بودن</li>
 </ul>
 <p>برای این که چک کنیم که آیا اعضای یک بردار درون بردار دیگری هست یا خیر</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="عملگر-منطقی.html#cb195-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">&quot;reza&quot;</span>, <span class="st">&quot;ebrahim&quot;</span>) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;mohsen&quot;</span>, <span class="st">&quot;reza&quot;</span>, <span class="st">&quot;mahsa&quot;</span>, <span class="st">&quot;iman&quot;</span>, <span class="st">&quot;peyman&quot;</span>)</span></code></pre></div>
+</details>
 <pre><code>[1]  TRUE FALSE</code></pre>
 
 </div>

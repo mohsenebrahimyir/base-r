@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -259,7 +265,9 @@ A =
   a_{n1} &amp; \cdots &amp; a_{nm} \\
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb387"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb387-1"><a href="مقایسه-دو-ماتریس.html#cb387-1" aria-hidden="true" tabindex="-1"></a>(mtx_A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    4    7
 ## [2,]    2    5    8
@@ -275,7 +283,9 @@ B =
   b_{n1} &amp; \cdots &amp; b_{nm} \\
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb389"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb389-1"><a href="مقایسه-دو-ماتریس.html#cb389-1" aria-hidden="true" tabindex="-1"></a>(mtx_B <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">9</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    9    6    3
 ## [2,]    8    5    2
@@ -294,7 +304,9 @@ A \overset{?}{\leq} B =
   a_{n1} \overset{?}{\leq} b_{n1} &amp; \cdots &amp; a_{nm} \overset{?}{\leq} b_{nm} \\
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb391"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb391-1"><a href="مقایسه-دو-ماتریس.html#cb391-1" aria-hidden="true" tabindex="-1"></a>mtx_A <span class="sc">==</span> mtx_B </span></code></pre></div>
+</details>
 <pre><code>##       [,1]  [,2]  [,3]
 ## [1,] FALSE FALSE FALSE
 ## [2,] FALSE  TRUE FALSE
@@ -326,7 +338,9 @@ A + B =
   a_{n1} + b_{n1} &amp; \cdots &amp; a_{nm} + b_{nm} \\
 \end{bmatrix}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb393"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb393-1"><a href="مقایسه-دو-ماتریس.html#cb393-1" aria-hidden="true" tabindex="-1"></a>mtx_A <span class="sc">+</span> mtx_B </span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]   10   10   10
 ## [2,]   10   10   10
@@ -370,7 +384,9 @@ A \times B &amp; =
 \end{bmatrix}
 \end{aligned}
 \]</span></p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb395"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb395-1"><a href="مقایسه-دو-ماتریس.html#cb395-1" aria-hidden="true" tabindex="-1"></a>mtx_A <span class="sc">%*%</span> mtx_B</span></code></pre></div>
+</details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]   90   54   18
 ## [2,]  114   69   24

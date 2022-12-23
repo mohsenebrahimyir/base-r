@@ -208,7 +208,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="فرمت-داده---کمی-بیشتر.html"><a href="فرمت-داده---کمی-بیشتر.html"><i class="fa fa-check"></i><b>14</b> فرمت داده - کمی بیشتر</a></li>
-<li class="chapter" data-level="15" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>15</b> تمرینات</a></li>
+<li class="chapter" data-level="15" data-path="تمرین-مفاهیم-پایه-r.html"><a href="تمرین-مفاهیم-پایه-r.html"><i class="fa fa-check"></i><b>15</b> تمرین مفاهیم پایه R</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>15.1</b> پرسشنامه وضعیت مواد مخدر در دوران کرونا</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>15.1.1</b> ساخت جدول ۱ مقاله</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
 &nbsp;
@@ -260,7 +266,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>دانلود و نصب بسته‌ها از مخزن کِرَن
 (<a href="https://cran.r-project.org/">CRAN</a>)</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="بسته.html#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dplyr&quot;</span>)</span></code></pre></div>
+</details>
 <ul>
 <li>نصب از مخزن گیت‌هاب
 (<a href="https://github.com/">Github</a>)</li>
@@ -270,9 +278,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 یا
 <code>devtools</code>
 را نصب و سپس بسته مورد نظر را با یکی از روش زیر نصب نمایید.</p>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="بسته.html#cb133-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span>
 <span id="cb133-2"><a href="بسته.html#cb133-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
 <span id="cb133-3"><a href="بسته.html#cb133-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span></code></pre></div>
+</details>
 <ul>
 <li>دانلود از مخازن دیگر
 <ul>
@@ -294,7 +304,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 (<code>Error</code>)
 برمی‌گرداند:</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="بسته.html#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>Error in library(&quot;alaki&quot;) : there is no package called ‘alaki’</code></pre>
 <ul>
 <li><span dir="ltr"><code>require("package")</code></span>:
@@ -302,20 +314,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 (<code>FALSE</code>)
 برمی‌گرداند:</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="بسته.html#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
+</details>
 <pre class="output"><code>Loading required package: alaki
 Warning message:
 In library(package, lib.loc = lib.loc, character.only = TRUE, ... :
   there is no package called ‘alaki’</code></pre>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="بسته.html#cb138-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>))</span></code></pre></div>
+</details>
 <pre class="output"><code>[1] FALSE</code></pre>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="بسته.html#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
+</details>
 <ul>
 <li><span dir="ltr"><code>package::function()</code></span>:
 این روش فقط برای مواقعی است که به صورت محلی می‌خواهیم تابع خاصی از یک پکیج را
 استفاده کنیم و دیگر به آن نیازی نداریم.</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="بسته.html#cb141-1" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(iris, <span class="fu">c</span>(<span class="st">&quot;Sepal.Width&quot;</span>, <span class="st">&quot;Species&quot;</span>))</span></code></pre></div>
+</details>
 <pre class="output"><code>    Sepal.Width    Species
 1           3.5     setosa
 2           3.0     setosa 
@@ -328,7 +348,9 @@ In library(package, lib.loc = lib.loc, character.only = TRUE, ... :
 <ul>
 <li><code>Tidyverse</code></li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="بسته.html#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+</details>
 <pre class="output"><code>── Attaching packages ────────────────── tidyverse 1.3.1 ──
 ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
 ✓ tibble  3.1.6     ✓ dplyr   1.0.8
