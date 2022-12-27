@@ -269,7 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">16.1.1</span> ساخت جدول ۱ مقاله<a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>فایل داده‌های پرسشنامه در پوشه داده ذخیره شده است.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb427"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb427-1"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#cb427-1" aria-hidden="true" tabindex="-1"></a>survey_path <span class="ot">&lt;-</span> <span class="st">&quot;./data/covid19_global_survey.csv&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb427"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb427-1"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#cb427-1" aria-hidden="true" tabindex="-1"></a>survey_path <span class="ot">&lt;-</span> <span class="st">&quot;./data/global_survey_covid19.csv&quot;</span></span></code></pre></div>
 </details>
 <ol class="example" style="list-style-type: decimal">
 <li>داده‌های پرسشنامه را وارد کنید.</li>
@@ -521,12 +521,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <ol start="16" class="example" style="list-style-type: decimal">
 <li>از جدول تهیه شده خروجی اکسل با نام
-<code>demog_table_covid19_survey</code>
+<code>survey_covid19_table_1_demog</code>
 تهیه کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb461"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb461-1"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#cb461-1" aria-hidden="true" tabindex="-1"></a>df_demog <span class="sc">|&gt;</span> </span>
-<span id="cb461-2"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#cb461-2" aria-hidden="true" tabindex="-1"></a>  writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="st">&quot;./data/demog_table_covid19_survey.xlsx&quot;</span>)</span></code></pre></div>
+<span id="cb461-2"><a href="پرسشنامه-وضعیت-مواد-مخدر-در-دوران-کرونا.html#cb461-2" aria-hidden="true" tabindex="-1"></a>  writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="st">&quot;./data/survey_covid19_table_1_demog.xlsx&quot;</span>)</span></code></pre></div>
 </details>
 <ol start="17" class="example" style="list-style-type: decimal">
 <li>در این مطالعه چه تعداد کشور شرکت کرده‌اند.</li>
