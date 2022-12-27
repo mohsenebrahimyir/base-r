@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>فصل 5 متغییرها | مبانی R</title>
-  <meta name="description" content="فصل 5 متغییرها | مبانی R" />
+  <title>فصل 12 نمودار | مبانی R</title>
+  <meta name="description" content="فصل 12 نمودار | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="فصل 5 متغییرها | مبانی R" />
+  <meta property="og:title" content="فصل 12 نمودار | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="فصل 5 متغییرها | مبانی R" />
+  <meta name="twitter:title" content="فصل 12 نمودار | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="خالی.html"/>
-<link rel="next" href="ساختار-داده.html"/>
+<link rel="prev" href="حلقه.html"/>
+<link rel="next" href="بردار---کمی-بیشتر.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -254,42 +254,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="متغییرها" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">فصل 5</span> متغییرها<a href="متغییرها.html#متغییرها" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="نمودار" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">فصل 12</span> نمودار<a href="نمودار.html#نمودار" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>برای رسم نمودار در R توابع زیادی وجود دارد که می‌توانیم برای رسم
+مدل‌های مختلف نمودار از آن‌ها استفاده کنیم.</p>
 <ul>
-<li>هر شئ را می‌توان با
-<code>=</code>،
-<code>&lt;-</code>
-و
-<code>-&gt;</code>
-به یک متغییر مقدار دهی کرد</li>
+<li>هیستوگرام (Histogram)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="متغییرها.html#cb82-1" aria-hidden="true" tabindex="-1"></a>variable <span class="ot">=</span> <span class="st">&quot;Salam&quot;</span></span>
-<span id="cb82-2"><a href="متغییرها.html#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
-<span id="cb82-3"><a href="متغییرها.html#cb82-3" aria-hidden="true" tabindex="-1"></a>variable <span class="ot">&lt;-</span> <span class="st">&quot;Salam&quot;</span> <span class="co"># Alt + &quot;-&quot;</span></span>
-<span id="cb82-4"><a href="متغییرها.html#cb82-4" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
-<span id="cb82-5"><a href="متغییرها.html#cb82-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Salam&quot;</span> <span class="ot">-&gt;</span> variable</span></code></pre></div>
+<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="نمودار.html#cb217-1" aria-hidden="true" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
 </details>
+<p><img src="base-r_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
-<li><p>برای نوشتن
-<span dir="ltr"><code>&lt;-</code></span>
-می‌توان از کلید‌های میانبر
-<span dir="ltr"><code>Alt + -</code></span>
-استفاده نمود.</p></li>
-<li><p>برای نمایش متغییر در هنگام مقدار دهی می‌توان کل کد را داخل پرانتز قرار داد.</p></li>
+<li>توزیع چگالی (Density)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="متغییرها.html#cb83-1" aria-hidden="true" tabindex="-1"></a>(variable <span class="ot">&lt;-</span> <span class="st">&quot;Salam&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="نمودار.html#cb218-1" aria-hidden="true" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
 </details>
-<pre class="output"><code>[1] &quot;Salam&quot;</code></pre>
+<p><img src="base-r_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
-<li>نام متغییر با حروف کوچک و بزرگ انگلیسی شروع می‌شود و شامل تمام حروف و اعداد
-انگلیسی، نقطه و زیرخط می‌تواند باشد.</li>
+<li>نمودار پراکندگی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="متغییرها.html#cb85-1" aria-hidden="true" tabindex="-1"></a>vAri<span class="fl">.25</span>_blE <span class="ot">&lt;-</span> <span class="st">&quot;Salam&quot;</span> </span></code></pre></div>
+<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="نمودار.html#cb219-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
 </details>
+<p><img src="base-r_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>نمودار دایره‌ای</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="نمودار.html#cb220-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span> <span class="ot">=</span> <span class="dv">20</span>, <span class="st">&quot;b&quot;</span> <span class="ot">=</span> <span class="dv">40</span>, <span class="st">&quot;c&quot;</span> <span class="ot">=</span> <span class="dv">10</span>, <span class="st">&quot;d&quot;</span> <span class="ot">=</span> <span class="dv">30</span>)</span>
+<span id="cb220-2"><a href="نمودار.html#cb220-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb220-3"><a href="نمودار.html#cb220-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
+</details>
+<p><img src="base-r_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>ذخیره نمودار در فرمت‌های مختلف</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="نمودار.html#cb221-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pdf(&quot;fig/rplot.pdf&quot;, width = 350, height = 350)</span></span>
+<span id="cb221-2"><a href="نمودار.html#cb221-2" aria-hidden="true" tabindex="-1"></a><span class="co"># png(&quot;fig/rplot.png&quot;, width = 350, height = 350)</span></span>
+<span id="cb221-3"><a href="نمودار.html#cb221-3" aria-hidden="true" tabindex="-1"></a><span class="fu">jpeg</span>(<span class="st">&quot;fig/rplot.jpg&quot;</span>, <span class="at">width =</span> <span class="dv">350</span>, <span class="at">height =</span> <span class="dv">350</span>)</span>
+<span id="cb221-4"><a href="نمودار.html#cb221-4" aria-hidden="true" tabindex="-1"></a>mtcars<span class="sc">$</span>mpg <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span>
+<span id="cb221-5"><a href="نمودار.html#cb221-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+</details>
+<ul>
+<li>ggplot2:
+یکی از بهترین بسته‌های رسم نمودار، بسته
+<code>ggplot2</code>
+است.</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="نمودار.html#cb222-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb222-2"><a href="نمودار.html#cb222-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb222-3"><a href="نمودار.html#cb222-3" aria-hidden="true" tabindex="-1"></a>iris <span class="sc">|&gt;</span> </span>
+<span id="cb222-4"><a href="نمودار.html#cb222-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb222-5"><a href="نمودار.html#cb222-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
+<span id="cb222-6"><a href="نمودار.html#cb222-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+</details>
+<p><img src="base-r_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /></p>
 
 </div>
             </section>
@@ -297,8 +320,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="خالی.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ساختار-داده.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="حلقه.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="بردار---کمی-بیشتر.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
