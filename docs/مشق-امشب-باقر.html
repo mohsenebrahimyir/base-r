@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.2 نصب RStudio | مبانی R</title>
-  <meta name="description" content="2.2 نصب RStudio | مبانی R" />
+  <title>16.3 مشق امشب باقر | مبانی R</title>
+  <meta name="description" content="16.3 مشق امشب باقر | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.2 نصب RStudio | مبانی R" />
+  <meta property="og:title" content="16.3 مشق امشب باقر | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.2 نصب RStudio | مبانی R" />
+  <meta name="twitter:title" content="16.3 مشق امشب باقر | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="نصب-r.html"/>
-<link rel="next" href="محیط-rstudio.html"/>
+<link rel="prev" href="سوال-زرد.html"/>
+<link rel="next" href="سیکل-گرفتن-در-برره.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -283,33 +283,90 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="نصب-rstudio" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> نصب RStudio<a href="نصب-rstudio.html#نصب-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="مشق-امشب-باقر" class="section level2 hasAnchor" number="16.3">
+<h2><span class="header-section-number">16.3</span> مشق امشب باقر<a href="مشق-امشب-باقر.html#مشق-امشب-باقر" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>باقر سرما خورده و مقادیر زیادی خسته‌ است.</p>
+<p>باقر از کودکی علاقه‌ی خاصی به اشکال هندسی داشت، مشق امشب باقر این‌ است که با گرفتن ۳ زاویه بگوید که آیا می‌توان مثلثی با این ۳ زاویه ساخت یا خیر.</p>
+<p>ما به شما سه عددی که معلم به عنوان درجه‌ی هر زاویه به باقر داده‌است را می‌دهیم و شما به باقر کمک کنید تا بتواند مشق امشب را هم به درستی پاسخ دهد.</p>
+<div id="ورودی-2" class="section level3 unnumbered hasAnchor">
+<h3>ورودی<a href="مشق-امشب-باقر.html#ورودی-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>در خط اول ورودی سه عدد آمده‌است که درجه‌ی ۳ زاویه‌ای که معلم به باقر داده‌است را نشان می‌دهد.</p>
+<p>تضمین می‌شود که هر ۳ عدد ورودی اعدادی صحیح و نامنفی و کوچکتر از ۳۶۰ خواهند بود.</p>
+</div>
+<div id="خروجی-2" class="section level3 unnumbered hasAnchor">
+<h3>خروجی<a href="مشق-امشب-باقر.html#خروجی-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>در تنها خط خروجی در صورتی که می‌توانستیم با این ۳ زاویه مثلث بسازیم عبارت
+<code>Yes</code>
+و در غیر این صورت عبارت
+<code>No</code>
+را چاپ کنید.</p>
+</div>
+<div id="مثال-2" class="section level3 unnumbered hasAnchor">
+<h3>مثال<a href="مشق-امشب-باقر.html#مثال-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>برای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار
-<strong>IDE</strong> <span dir="ltr">(Integrated Development Environment)</span>
-استفاده کنید.</p></li>
-<li><p>برای زبان
-<strong>R</strong>
-می‌توانید از
-<strong>RStudio</strong>
-استفاده کنید.
-از طریق سایت
-<a href="https://posit.co/"><strong>www.posit.co</strong></a>
-می‌توانید متناسب با سیستم عامل خود آخرین نسخه
-<strong>RStudio</strong>
-را
-<a href="https://posit.co/download/rstudio-desktop/"><strong>دانلود</strong></a>
-و نصب کنید.</p></li>
+<li>نمونه ۱</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb437"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb437-1"><a href="مشق-امشب-باقر.html#cb437-1" aria-hidden="true" tabindex="-1"></a><span class="dv">70</span> <span class="dv">60</span> <span class="dv">50</span></span></code></pre></div>
+</details>
+<pre><code>Yes</code></pre>
+<ul>
+<li>نمونه ۲</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb439"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb439-1"><a href="مشق-امشب-باقر.html#cb439-1" aria-hidden="true" tabindex="-1"></a><span class="dv">180</span> <span class="dv">0</span> <span class="dv">0</span></span></code></pre></div>
+</details>
+<pre><code>No</code></pre>
+<ul>
+<li>نمونه ۳</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb441"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb441-1"><a href="مشق-امشب-باقر.html#cb441-1" aria-hidden="true" tabindex="-1"></a><span class="dv">150</span> <span class="dv">40</span> <span class="dv">10</span></span></code></pre></div>
+</details>
+<pre><code>No</code></pre>
+<ul>
+<li>نمونه ۴</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb443"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb443-1"><a href="مشق-امشب-باقر.html#cb443-1" aria-hidden="true" tabindex="-1"></a><span class="dv">78</span> <span class="dv">102</span> <span class="dv">0</span></span></code></pre></div>
+</details>
+<pre><code>No</code></pre>
+<ul>
+<li>نمونه ۵</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb445"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb445-1"><a href="مشق-امشب-باقر.html#cb445-1" aria-hidden="true" tabindex="-1"></a><span class="dv">87</span> <span class="dv">65</span> <span class="dv">27</span></span></code></pre></div>
+</details>
+<pre><code>No</code></pre>
+</div>
+<div id="پاسخ-2" class="section level3 unnumbered hasAnchor">
+<h3>پاسخ<a href="مشق-امشب-باقر.html#پاسخ-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="solution">
+<p><span id="unlabeled-div-7" class="solution"><em>راه حل</em>. </span>قبل از دیدن پاسخ، سعی کنید خودتان انجام دهید.</p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb447"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb447-1"><a href="مشق-امشب-باقر.html#cb447-1" aria-hidden="true" tabindex="-1"></a>convert_single_string_to_vector <span class="ot">&lt;-</span></span>
+<span id="cb447-2"><a href="مشق-امشب-باقر.html#cb447-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">function</span>(string, pattern) <span class="fu">return</span>(<span class="fu">strsplit</span>(string, pattern)[[<span class="dv">1</span>]])</span>
+<span id="cb447-3"><a href="مشق-امشب-باقر.html#cb447-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb447-4"><a href="مشق-امشب-باقر.html#cb447-4" aria-hidden="true" tabindex="-1"></a>are_all_angles_non_zero <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) <span class="fu">return</span>(<span class="sc">!</span>(<span class="dv">0</span> <span class="sc">%in%</span> angles))</span>
+<span id="cb447-5"><a href="مشق-امشب-باقر.html#cb447-5" aria-hidden="true" tabindex="-1"></a>is_sum_of_angles_180 <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) <span class="fu">return</span>(<span class="fu">sum</span>(angles) <span class="sc">==</span> <span class="dv">180</span>)</span>
+<span id="cb447-6"><a href="مشق-امشب-باقر.html#cb447-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb447-7"><a href="مشق-امشب-باقر.html#cb447-7" aria-hidden="true" tabindex="-1"></a>can_create_triangle <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) {</span>
+<span id="cb447-8"><a href="مشق-امشب-باقر.html#cb447-8" aria-hidden="true" tabindex="-1"></a>  angles <span class="ot">&lt;-</span> angles <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot; &quot;</span>) <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
+<span id="cb447-9"><a href="مشق-امشب-باقر.html#cb447-9" aria-hidden="true" tabindex="-1"></a>  (<span class="fu">are_all_angles_non_zero</span>(angles) <span class="sc">&amp;&amp;</span> <span class="fu">is_sum_of_angles_180</span>(angles)) <span class="sc">|&gt;</span> </span>
+<span id="cb447-10"><a href="مشق-امشب-باقر.html#cb447-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ifelse</span>(<span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span>
+<span id="cb447-11"><a href="مشق-امشب-باقر.html#cb447-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+</div>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="نصب-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="محیط-rstudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="سوال-زرد.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="سیکل-گرفتن-در-برره.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

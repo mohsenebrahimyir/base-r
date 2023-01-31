@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.2 نصب RStudio | مبانی R</title>
-  <meta name="description" content="2.2 نصب RStudio | مبانی R" />
+  <title>16.2 سوال زرد | مبانی R</title>
+  <meta name="description" content="16.2 سوال زرد | مبانی R" />
   <meta name="generator" content="bookdown 0.28.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.2 نصب RStudio | مبانی R" />
+  <meta property="og:title" content="16.2 سوال زرد | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.2 نصب RStudio | مبانی R" />
+  <meta name="twitter:title" content="16.2 سوال زرد | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="نصب-r.html"/>
-<link rel="next" href="محیط-rstudio.html"/>
+<link rel="prev" href="یک-سوال-ساده.html"/>
+<link rel="next" href="مشق-امشب-باقر.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -283,33 +283,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="نصب-rstudio" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> نصب RStudio<a href="نصب-rstudio.html#نصب-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="سوال-زرد" class="section level2 hasAnchor" number="16.2">
+<h2><span class="header-section-number">16.2</span> سوال زرد<a href="سوال-زرد.html#سوال-زرد" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>مهدی که از کدزدن خسته شده‌است، به تازگی به رشته‌ی صنایع علاقه پیدا کرده است. به همین دلیل تصمیم گرفته است تا در مورد این رشته تحقیق کند. او به افراد مختلفی مراجعه می‌کند و هرکدام یک مقداری اطلاعات به او می‌دهند. او به اندازه‌ی مقدار اطلاعاتی که از اشخاص می‌گیرد متعجب می‌شود. مثلا اگر یک عدد اطلاعات بگیرد می‌گوید
+<span dir="ltr"><code>Wow!</code></span>
+اگر دوتا اطلاعات بگیرد می‌گوید
+<span dir="ltr"><code>Woow!</code></span>
+و به همین شکل مقدار کشیدن کلمه(تعداد
+<code>o</code>
+ها) زیاد می‌شود. حالا شما باید بگویید که اگر یک نفر به اندازه‌ی
+<span class="math inline">\(n\)</span>
+به مهدی اطلاعات بدهد، ما باید انتظار چه کلمه‌ای را از او داشته باشیم.</p>
+<div id="ورودی-1" class="section level3 unnumbered hasAnchor">
+<h3>ورودی<a href="سوال-زرد.html#ورودی-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>در تنها سطر ورودی یک عدد طبیعی
+<span class="math inline">\(n\)</span>
+به شما داده شده است که نمایانگر مقدار اطلاعات داده‌شده به مهدی است.</p>
+<p><span class="math display">\[
+1 \leq n \leq 10
+\]</span></p>
+</div>
+<div id="خروجی-1" class="section level3 unnumbered hasAnchor">
+<h3>خروجی<a href="سوال-زرد.html#خروجی-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>خروجی شامل یک کلمه است،‌ که نشان‌دهنده‌ی کلمه‌ ایست که مهدی بعد از شنیدن اطلاعات راجع به رشته‌ی صنایع می‌گوید.</p>
+</div>
+<div id="مثال-1" class="section level3 unnumbered hasAnchor">
+<h3>مثال<a href="سوال-زرد.html#مثال-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><p>برای نوشتن، اجرا و خروجی گرفتن بهتر می‌توانید از یک نرم افزار
-<strong>IDE</strong> <span dir="ltr">(Integrated Development Environment)</span>
-استفاده کنید.</p></li>
-<li><p>برای زبان
-<strong>R</strong>
-می‌توانید از
-<strong>RStudio</strong>
-استفاده کنید.
-از طریق سایت
-<a href="https://posit.co/"><strong>www.posit.co</strong></a>
-می‌توانید متناسب با سیستم عامل خود آخرین نسخه
-<strong>RStudio</strong>
-را
-<a href="https://posit.co/download/rstudio-desktop/"><strong>دانلود</strong></a>
-و نصب کنید.</p></li>
+<li>نمونه ۱</li>
 </ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb432"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb432-1"><a href="سوال-زرد.html#cb432-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span></code></pre></div>
+</details>
+<pre><code>Wow!</code></pre>
+<ul>
+<li>نمونه ۲</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb434"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb434-1"><a href="سوال-زرد.html#cb434-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span></span></code></pre></div>
+</details>
+<pre><code>Wooow!</code></pre>
+</div>
+<div id="پاسخ-1" class="section level3 unnumbered hasAnchor">
+<h3>پاسخ<a href="سوال-زرد.html#پاسخ-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="solution">
+<p><span id="unlabeled-div-6" class="solution"><em>راه حل</em>. </span>قبل از دیدن پاسخ، سعی کنید خودتان انجام دهید.</p>
+<details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb436"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb436-1"><a href="سوال-زرد.html#cb436-1" aria-hidden="true" tabindex="-1"></a>Wow <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">c</span>(<span class="st">&quot;W&quot;</span>, <span class="fu">rep</span>(<span class="st">&quot;o&quot;</span>, n), <span class="st">&quot;w!&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="at">sep =</span> <span class="st">&quot;&quot;</span>, <span class="at">fill =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+</details>
+</div>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="نصب-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="محیط-rstudio.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="یک-سوال-ساده.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="مشق-امشب-باقر.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
