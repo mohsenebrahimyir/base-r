@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>فصل 15 فرمت داده - کمی بیشتر | مبانی R</title>
   <meta name="description" content="فصل 15 فرمت داده - کمی بیشتر | مبانی R" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="فصل 15 فرمت داده - کمی بیشتر | مبانی R" />
   <meta property="og:type" content="book" />
@@ -127,6 +127,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="stl/style.css" type="text/css" />
 </head>
@@ -285,12 +289,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="فرمت-داده---کمی-بیشتر" class="section level1 hasAnchor" number="15">
 <h1><span class="header-section-number">فصل 15</span> فرمت داده - کمی بیشتر<a href="فرمت-داده---کمی-بیشتر.html#فرمت-داده---کمی-بیشتر" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>ساختاری پر کاربرد دیگری که خیلی در زبان برنامه نویسی
-<strong>R</strong>
-شناخته شده،
-فرمت داده یا
-<span dir="ltr"><code>data frame</code></span>
-است.</p>
+<p>ساختاری پر کاربرد دیگری که خیلی در زبان برنامه نویسی <strong>R</strong> شناخته شده،
+فرمت داده یا <span dir="ltr"><code>data frame</code></span> است.</p>
 <p>نحوه تعریف یک فرمت داده به صورت زیر است:</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb403"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb403-1"><a href="فرمت-داده---کمی-بیشتر.html#cb403-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
@@ -322,9 +322,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  $ Sen   : num  NA 45 36
 ##  $ Gender: Factor w/ 2 levels &quot;Female&quot;,&quot;Male&quot;: 2 NA 1
 ##  $ Single: logi  TRUE FALSE NA</code></pre>
-<p>همانطور که ساختار هر یک از ستون‌ها را مشاهده می‌کنید، متوجه می‌شوید که هر ستون
-ساختار برداری خاص خودش را دارد و دیگر مانند ماتریس همه‌ی ستون‌های آن یک نوع کلاس
-ندارند.</p>
+<p>همانطور که ساختار هر یک از ستون‌ها را مشاهده می‌کنید، متوجه می‌شوید که هر
+ستون ساختار برداری خاص خودش را دارد و دیگر مانند ماتریس همه‌ی ستون‌های آن
+یک نوع کلاس ندارند.</p>
 <p>تقریبا تمام خواصی که ساختار ماتریسی دارد، ساختار فرمت داده نیز دارد.</p>
 <ul>
 <li>نام سطر و ستون</li>
@@ -392,8 +392,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>##         Name Sen Gender Single
 ## avali Mohsen  NA   Male   TRUE</code></pre>
 <ul>
-<li>استفاده از کتابخانه
-<code>tidyverse</code></li>
+<li>استفاده از کتابخانه <code>tidyverse</code></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb425"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb425-1"><a href="فرمت-داده---کمی-بیشتر.html#cb425-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -402,6 +401,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <pre><code>##       Gender
 ## avali   Male</code></pre>
+<ul>
+<li>اتصال دو فرمت داده بر حسب ستون</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb427"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb427-1"><a href="فرمت-داده---کمی-بیشتر.html#cb427-1" aria-hidden="true" tabindex="-1"></a>df_1 <span class="ot">&lt;-</span> df[, <span class="fu">c</span>(<span class="st">&quot;Name&quot;</span>, <span class="st">&quot;Sen&quot;</span>)]</span>
+<span id="cb427-2"><a href="فرمت-داده---کمی-بیشتر.html#cb427-2" aria-hidden="true" tabindex="-1"></a>df_2 <span class="ot">&lt;-</span> df[, <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Single&quot;</span>)]</span>
+<span id="cb427-3"><a href="فرمت-داده---کمی-بیشتر.html#cb427-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb427-4"><a href="فرمت-داده---کمی-بیشتر.html#cb427-4" aria-hidden="true" tabindex="-1"></a>df_1 <span class="sc">|&gt;</span> <span class="fu">cbind</span>(df_2)</span></code></pre></div>
+</details>
+<pre><code>##          Name Sen Gender Single
+## avali  Mohsen  NA   Male   TRUE
+## dovomi    Xie  45   &lt;NA&gt;  FALSE
+## sevomi Narges  36 Female     NA</code></pre>
+<ul>
+<li>اتصال دو فرمت داده بر حسب ردیف</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb429"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb429-1"><a href="فرمت-داده---کمی-بیشتر.html#cb429-1" aria-hidden="true" tabindex="-1"></a>df_1 <span class="ot">&lt;-</span> df[<span class="st">&quot;avali&quot;</span>, ]</span>
+<span id="cb429-2"><a href="فرمت-داده---کمی-بیشتر.html#cb429-2" aria-hidden="true" tabindex="-1"></a>df_2 <span class="ot">&lt;-</span> df[<span class="st">&quot;dovomi&quot;</span>, ]</span>
+<span id="cb429-3"><a href="فرمت-داده---کمی-بیشتر.html#cb429-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb429-4"><a href="فرمت-داده---کمی-بیشتر.html#cb429-4" aria-hidden="true" tabindex="-1"></a>df_1 <span class="sc">|&gt;</span> <span class="fu">rbind</span>(df_2)</span></code></pre></div>
+</details>
+<pre><code>##          Name Sen Gender Single
+## avali  Mohsen  NA   Male   TRUE
+## dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 
 </div>
             </section>

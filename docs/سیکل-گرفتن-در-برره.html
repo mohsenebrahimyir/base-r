@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>17.4 سیکل گرفتن در برره | مبانی R</title>
   <meta name="description" content="17.4 سیکل گرفتن در برره | مبانی R" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="17.4 سیکل گرفتن در برره | مبانی R" />
   <meta property="og:type" content="book" />
@@ -127,6 +127,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="stl/style.css" type="text/css" />
 </head>
@@ -352,8 +356,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>نمونه ۱</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb448"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb448-1"><a href="سیکل-گرفتن-در-برره.html#cb448-1" aria-hidden="true" tabindex="-1"></a><span class="dv">15</span></span>
-<span id="cb448-2"><a href="سیکل-گرفتن-در-برره.html#cb448-2" aria-hidden="true" tabindex="-1"></a><span class="dv">111323311123111</span></span></code></pre></div>
+<div class="sourceCode" id="cb452"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb452-1"><a href="سیکل-گرفتن-در-برره.html#cb452-1" aria-hidden="true" tabindex="-1"></a><span class="dv">15</span></span>
+<span id="cb452-2"><a href="سیکل-گرفتن-در-برره.html#cb452-2" aria-hidden="true" tabindex="-1"></a><span class="dv">111323311123111</span></span></code></pre></div>
 </details>
 <pre><code>7
 keyvoon
@@ -363,8 +367,8 @@ shir farhad</code></pre>
 <li>نمونه ۲</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb450"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb450-1"><a href="سیکل-گرفتن-در-برره.html#cb450-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span></span>
-<span id="cb450-2"><a href="سیکل-گرفتن-در-برره.html#cb450-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1112321332</span></span></code></pre></div>
+<div class="sourceCode" id="cb454"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb454-1"><a href="سیکل-گرفتن-در-برره.html#cb454-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span></span>
+<span id="cb454-2"><a href="سیکل-گرفتن-در-برره.html#cb454-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1112321332</span></span></code></pre></div>
 </details>
 <pre><code>3
 keyvoon
@@ -381,95 +385,95 @@ nezam</code></pre>
 <div class="solution">
 <p><span id="unlabeled-div-8" class="solution"><em>راه حل</em>. </span>قبل از دیدن پاسخ، سعی کنید خودتان انجام دهید.</p>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb452"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb452-1"><a href="سیکل-گرفتن-در-برره.html#cb452-1" aria-hidden="true" tabindex="-1"></a><span class="do">### First Way</span></span>
-<span id="cb452-2"><a href="سیکل-گرفتن-در-برره.html#cb452-2" aria-hidden="true" tabindex="-1"></a>keyvoon_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
-<span id="cb452-3"><a href="سیکل-گرفتن-در-برره.html#cb452-3" aria-hidden="true" tabindex="-1"></a>  numbers <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n)</span>
-<span id="cb452-4"><a href="سیکل-گرفتن-در-برره.html#cb452-4" aria-hidden="true" tabindex="-1"></a>  modulus <span class="ot">&lt;-</span> numbers <span class="sc">%%</span> <span class="dv">6</span></span>
-<span id="cb452-5"><a href="سیکل-گرفتن-در-برره.html#cb452-5" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
-<span id="cb452-6"><a href="سیکل-گرفتن-در-برره.html#cb452-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-7"><a href="سیکل-گرفتن-در-برره.html#cb452-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (number <span class="cf">in</span> numbers) {</span>
-<span id="cb452-8"><a href="سیکل-گرفتن-در-برره.html#cb452-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) {</span>
-<span id="cb452-9"><a href="سیکل-گرفتن-در-برره.html#cb452-9" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb452-10"><a href="سیکل-گرفتن-در-برره.html#cb452-10" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)) {</span>
-<span id="cb452-11"><a href="سیکل-گرفتن-در-برره.html#cb452-11" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb452-12"><a href="سیکل-گرفتن-در-برره.html#cb452-12" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">0</span>)) {</span>
-<span id="cb452-13"><a href="سیکل-گرفتن-در-برره.html#cb452-13" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb452-14"><a href="سیکل-گرفتن-در-برره.html#cb452-14" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb452-15"><a href="سیکل-گرفتن-در-برره.html#cb452-15" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb452-16"><a href="سیکل-گرفتن-در-برره.html#cb452-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(keys)</span>
-<span id="cb452-17"><a href="سیکل-گرفتن-در-برره.html#cb452-17" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb452-18"><a href="سیکل-گرفتن-در-برره.html#cb452-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-19"><a href="سیکل-گرفتن-در-برره.html#cb452-19" aria-hidden="true" tabindex="-1"></a>nezam_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
-<span id="cb452-20"><a href="سیکل-گرفتن-در-برره.html#cb452-20" aria-hidden="true" tabindex="-1"></a>  numbers <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n)</span>
-<span id="cb452-21"><a href="سیکل-گرفتن-در-برره.html#cb452-21" aria-hidden="true" tabindex="-1"></a>  modulus <span class="ot">&lt;-</span> numbers <span class="sc">%%</span> <span class="dv">3</span></span>
-<span id="cb452-22"><a href="سیکل-گرفتن-در-برره.html#cb452-22" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
-<span id="cb452-23"><a href="سیکل-گرفتن-در-برره.html#cb452-23" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-24"><a href="سیکل-گرفتن-در-برره.html#cb452-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (number <span class="cf">in</span> numbers) {</span>
-<span id="cb452-25"><a href="سیکل-گرفتن-در-برره.html#cb452-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>)) {</span>
-<span id="cb452-26"><a href="سیکل-گرفتن-در-برره.html#cb452-26" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb452-27"><a href="سیکل-گرفتن-در-برره.html#cb452-27" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2</span>)) {</span>
-<span id="cb452-28"><a href="سیکل-گرفتن-در-برره.html#cb452-28" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb452-29"><a href="سیکل-گرفتن-در-برره.html#cb452-29" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">0</span>)) {</span>
-<span id="cb452-30"><a href="سیکل-گرفتن-در-برره.html#cb452-30" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb452-31"><a href="سیکل-گرفتن-در-برره.html#cb452-31" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb452-32"><a href="سیکل-گرفتن-در-برره.html#cb452-32" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb452-33"><a href="سیکل-گرفتن-در-برره.html#cb452-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(keys)</span>
-<span id="cb452-34"><a href="سیکل-گرفتن-در-برره.html#cb452-34" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb452-35"><a href="سیکل-گرفتن-در-برره.html#cb452-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-36"><a href="سیکل-گرفتن-در-برره.html#cb452-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-37"><a href="سیکل-گرفتن-در-برره.html#cb452-37" aria-hidden="true" tabindex="-1"></a>shir_farhad_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
-<span id="cb452-38"><a href="سیکل-گرفتن-در-برره.html#cb452-38" aria-hidden="true" tabindex="-1"></a>  numbers <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n)</span>
-<span id="cb452-39"><a href="سیکل-گرفتن-در-برره.html#cb452-39" aria-hidden="true" tabindex="-1"></a>  modulus <span class="ot">&lt;-</span> numbers <span class="sc">%%</span> <span class="dv">4</span></span>
-<span id="cb452-40"><a href="سیکل-گرفتن-در-برره.html#cb452-40" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
-<span id="cb452-41"><a href="سیکل-گرفتن-در-برره.html#cb452-41" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-42"><a href="سیکل-گرفتن-در-برره.html#cb452-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (number <span class="cf">in</span> numbers) {</span>
-<span id="cb452-43"><a href="سیکل-گرفتن-در-برره.html#cb452-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)) {</span>
-<span id="cb452-44"><a href="سیکل-گرفتن-در-برره.html#cb452-44" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb452-45"><a href="سیکل-گرفتن-در-برره.html#cb452-45" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2</span>)) {</span>
-<span id="cb452-46"><a href="سیکل-گرفتن-در-برره.html#cb452-46" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb452-47"><a href="سیکل-گرفتن-در-برره.html#cb452-47" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">0</span>)) {</span>
-<span id="cb452-48"><a href="سیکل-گرفتن-در-برره.html#cb452-48" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb452-49"><a href="سیکل-گرفتن-در-برره.html#cb452-49" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb452-50"><a href="سیکل-گرفتن-در-برره.html#cb452-50" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb452-51"><a href="سیکل-گرفتن-در-برره.html#cb452-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(keys)</span>
-<span id="cb452-52"><a href="سیکل-گرفتن-در-برره.html#cb452-52" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb452-53"><a href="سیکل-گرفتن-در-برره.html#cb452-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-54"><a href="سیکل-گرفتن-در-برره.html#cb452-54" aria-hidden="true" tabindex="-1"></a><span class="do">### Second Way</span></span>
-<span id="cb452-55"><a href="سیکل-گرفتن-در-برره.html#cb452-55" aria-hidden="true" tabindex="-1"></a>keys_maker <span class="ot">&lt;-</span> <span class="cf">function</span>(n, pattern, period) {</span>
-<span id="cb452-56"><a href="سیکل-گرفتن-در-برره.html#cb452-56" aria-hidden="true" tabindex="-1"></a>  pattern <span class="sc">|&gt;</span> </span>
-<span id="cb452-57"><a href="سیکل-گرفتن-در-برره.html#cb452-57" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strrep</span>(<span class="fu">ceiling</span>(n <span class="sc">/</span> period)) <span class="sc">|&gt;</span> </span>
-<span id="cb452-58"><a href="سیکل-گرفتن-در-برره.html#cb452-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">substr</span>(<span class="dv">1</span>, n) <span class="sc">|&gt;</span></span>
-<span id="cb452-59"><a href="سیکل-گرفتن-در-برره.html#cb452-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot;&quot;</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb452-60"><a href="سیکل-گرفتن-در-برره.html#cb452-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as.numeric</span>()</span>
-<span id="cb452-61"><a href="سیکل-گرفتن-در-برره.html#cb452-61" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb452-62"><a href="سیکل-گرفتن-در-برره.html#cb452-62" aria-hidden="true" tabindex="-1"></a>keyvoon_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">keys_maker</span>(n, <span class="st">&quot;331122&quot;</span>, <span class="dv">6</span>)</span>
-<span id="cb452-63"><a href="سیکل-گرفتن-در-برره.html#cb452-63" aria-hidden="true" tabindex="-1"></a>nezam_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">keys_maker</span>(n, <span class="st">&quot;123&quot;</span>, <span class="dv">3</span>)</span>
-<span id="cb452-64"><a href="سیکل-گرفتن-در-برره.html#cb452-64" aria-hidden="true" tabindex="-1"></a>shirfarhad_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">keys_maker</span>(n, <span class="st">&quot;2123&quot;</span>, <span class="dv">4</span>)</span>
-<span id="cb452-65"><a href="سیکل-گرفتن-در-برره.html#cb452-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-66"><a href="سیکل-گرفتن-در-برره.html#cb452-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-67"><a href="سیکل-گرفتن-در-برره.html#cb452-67" aria-hidden="true" tabindex="-1"></a>convert_single_string_to_vector <span class="ot">&lt;-</span> <span class="cf">function</span>(string, pattern) {</span>
-<span id="cb452-68"><a href="سیکل-گرفتن-در-برره.html#cb452-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">strsplit</span>(string, pattern)[[<span class="dv">1</span>]])</span>
-<span id="cb452-69"><a href="سیکل-گرفتن-در-برره.html#cb452-69" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb452-70"><a href="سیکل-گرفتن-در-برره.html#cb452-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb452-71"><a href="سیکل-گرفتن-در-برره.html#cb452-71" aria-hidden="true" tabindex="-1"></a>check_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(string) {</span>
-<span id="cb452-72"><a href="سیکل-گرفتن-در-برره.html#cb452-72" aria-hidden="true" tabindex="-1"></a>  answers <span class="ot">&lt;-</span> string <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb452-73"><a href="سیکل-گرفتن-در-برره.html#cb452-73" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span>  answers[<span class="dv">1</span>] <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
-<span id="cb452-74"><a href="سیکل-گرفتن-در-برره.html#cb452-74" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> answers[<span class="dv">2</span>] <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot;&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
-<span id="cb452-75"><a href="سیکل-گرفتن-در-برره.html#cb452-75" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-76"><a href="سیکل-گرفتن-در-برره.html#cb452-76" aria-hidden="true" tabindex="-1"></a>  scores <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb452-77"><a href="سیکل-گرفتن-در-برره.html#cb452-77" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;keyvoon&quot;</span> <span class="ot">=</span> (<span class="fu">keyvoon_answers</span>(n) <span class="sc">==</span> correct) <span class="sc">|&gt;</span> <span class="fu">sum</span>(),</span>
-<span id="cb452-78"><a href="سیکل-گرفتن-در-برره.html#cb452-78" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;nezam&quot;</span> <span class="ot">=</span> (<span class="fu">nezam_answers</span>(n) <span class="sc">==</span> correct) <span class="sc">|&gt;</span> <span class="fu">sum</span>(),</span>
-<span id="cb452-79"><a href="سیکل-گرفتن-در-برره.html#cb452-79" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;shirfarhad&quot;</span> <span class="ot">=</span> (<span class="fu">shirfarhad_answers</span>(n) <span class="sc">==</span> correct) <span class="sc">|&gt;</span> <span class="fu">sum</span>()</span>
-<span id="cb452-80"><a href="سیکل-گرفتن-در-برره.html#cb452-80" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb452-81"><a href="سیکل-گرفتن-در-برره.html#cb452-81" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-82"><a href="سیکل-گرفتن-در-برره.html#cb452-82" aria-hidden="true" tabindex="-1"></a>  score_max <span class="ot">&lt;-</span> <span class="fu">max</span>(scores) </span>
-<span id="cb452-83"><a href="سیکل-گرفتن-در-برره.html#cb452-83" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-84"><a href="سیکل-گرفتن-در-برره.html#cb452-84" aria-hidden="true" tabindex="-1"></a>  score_max <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb452-85"><a href="سیکل-گرفتن-در-برره.html#cb452-85" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb452-86"><a href="سیکل-گرفتن-در-برره.html#cb452-86" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (name <span class="cf">in</span> scores <span class="sc">|&gt;</span> <span class="fu">names</span>()) {</span>
-<span id="cb452-87"><a href="سیکل-گرفتن-در-برره.html#cb452-87" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (scores[name] <span class="sc">==</span> score_max) name <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb452-88"><a href="سیکل-گرفتن-در-برره.html#cb452-88" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb452-89"><a href="سیکل-گرفتن-در-برره.html#cb452-89" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb456"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb456-1"><a href="سیکل-گرفتن-در-برره.html#cb456-1" aria-hidden="true" tabindex="-1"></a><span class="do">### First Way</span></span>
+<span id="cb456-2"><a href="سیکل-گرفتن-در-برره.html#cb456-2" aria-hidden="true" tabindex="-1"></a>keyvoon_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb456-3"><a href="سیکل-گرفتن-در-برره.html#cb456-3" aria-hidden="true" tabindex="-1"></a>  numbers <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n)</span>
+<span id="cb456-4"><a href="سیکل-گرفتن-در-برره.html#cb456-4" aria-hidden="true" tabindex="-1"></a>  modulus <span class="ot">&lt;-</span> numbers <span class="sc">%%</span> <span class="dv">6</span></span>
+<span id="cb456-5"><a href="سیکل-گرفتن-در-برره.html#cb456-5" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb456-6"><a href="سیکل-گرفتن-در-برره.html#cb456-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-7"><a href="سیکل-گرفتن-در-برره.html#cb456-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (number <span class="cf">in</span> numbers) {</span>
+<span id="cb456-8"><a href="سیکل-گرفتن-در-برره.html#cb456-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) {</span>
+<span id="cb456-9"><a href="سیکل-گرفتن-در-برره.html#cb456-9" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb456-10"><a href="سیکل-گرفتن-در-برره.html#cb456-10" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)) {</span>
+<span id="cb456-11"><a href="سیکل-گرفتن-در-برره.html#cb456-11" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb456-12"><a href="سیکل-گرفتن-در-برره.html#cb456-12" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">0</span>)) {</span>
+<span id="cb456-13"><a href="سیکل-گرفتن-در-برره.html#cb456-13" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb456-14"><a href="سیکل-گرفتن-در-برره.html#cb456-14" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb456-15"><a href="سیکل-گرفتن-در-برره.html#cb456-15" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb456-16"><a href="سیکل-گرفتن-در-برره.html#cb456-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(keys)</span>
+<span id="cb456-17"><a href="سیکل-گرفتن-در-برره.html#cb456-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb456-18"><a href="سیکل-گرفتن-در-برره.html#cb456-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-19"><a href="سیکل-گرفتن-در-برره.html#cb456-19" aria-hidden="true" tabindex="-1"></a>nezam_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb456-20"><a href="سیکل-گرفتن-در-برره.html#cb456-20" aria-hidden="true" tabindex="-1"></a>  numbers <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n)</span>
+<span id="cb456-21"><a href="سیکل-گرفتن-در-برره.html#cb456-21" aria-hidden="true" tabindex="-1"></a>  modulus <span class="ot">&lt;-</span> numbers <span class="sc">%%</span> <span class="dv">3</span></span>
+<span id="cb456-22"><a href="سیکل-گرفتن-در-برره.html#cb456-22" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb456-23"><a href="سیکل-گرفتن-در-برره.html#cb456-23" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-24"><a href="سیکل-گرفتن-در-برره.html#cb456-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (number <span class="cf">in</span> numbers) {</span>
+<span id="cb456-25"><a href="سیکل-گرفتن-در-برره.html#cb456-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>)) {</span>
+<span id="cb456-26"><a href="سیکل-گرفتن-در-برره.html#cb456-26" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb456-27"><a href="سیکل-گرفتن-در-برره.html#cb456-27" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2</span>)) {</span>
+<span id="cb456-28"><a href="سیکل-گرفتن-در-برره.html#cb456-28" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb456-29"><a href="سیکل-گرفتن-در-برره.html#cb456-29" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">0</span>)) {</span>
+<span id="cb456-30"><a href="سیکل-گرفتن-در-برره.html#cb456-30" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb456-31"><a href="سیکل-گرفتن-در-برره.html#cb456-31" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb456-32"><a href="سیکل-گرفتن-در-برره.html#cb456-32" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb456-33"><a href="سیکل-گرفتن-در-برره.html#cb456-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(keys)</span>
+<span id="cb456-34"><a href="سیکل-گرفتن-در-برره.html#cb456-34" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb456-35"><a href="سیکل-گرفتن-در-برره.html#cb456-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-36"><a href="سیکل-گرفتن-در-برره.html#cb456-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-37"><a href="سیکل-گرفتن-در-برره.html#cb456-37" aria-hidden="true" tabindex="-1"></a>shir_farhad_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) {</span>
+<span id="cb456-38"><a href="سیکل-گرفتن-در-برره.html#cb456-38" aria-hidden="true" tabindex="-1"></a>  numbers <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(n)</span>
+<span id="cb456-39"><a href="سیکل-گرفتن-در-برره.html#cb456-39" aria-hidden="true" tabindex="-1"></a>  modulus <span class="ot">&lt;-</span> numbers <span class="sc">%%</span> <span class="dv">4</span></span>
+<span id="cb456-40"><a href="سیکل-گرفتن-در-برره.html#cb456-40" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb456-41"><a href="سیکل-گرفتن-در-برره.html#cb456-41" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-42"><a href="سیکل-گرفتن-در-برره.html#cb456-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (number <span class="cf">in</span> numbers) {</span>
+<span id="cb456-43"><a href="سیکل-گرفتن-در-برره.html#cb456-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)) {</span>
+<span id="cb456-44"><a href="سیکل-گرفتن-در-برره.html#cb456-44" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb456-45"><a href="سیکل-گرفتن-در-برره.html#cb456-45" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">2</span>)) {</span>
+<span id="cb456-46"><a href="سیکل-گرفتن-در-برره.html#cb456-46" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb456-47"><a href="سیکل-گرفتن-در-برره.html#cb456-47" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (modulus[number] <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">0</span>)) {</span>
+<span id="cb456-48"><a href="سیکل-گرفتن-در-برره.html#cb456-48" aria-hidden="true" tabindex="-1"></a>      keys[number] <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb456-49"><a href="سیکل-گرفتن-در-برره.html#cb456-49" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb456-50"><a href="سیکل-گرفتن-در-برره.html#cb456-50" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb456-51"><a href="سیکل-گرفتن-در-برره.html#cb456-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(keys)</span>
+<span id="cb456-52"><a href="سیکل-گرفتن-در-برره.html#cb456-52" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb456-53"><a href="سیکل-گرفتن-در-برره.html#cb456-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-54"><a href="سیکل-گرفتن-در-برره.html#cb456-54" aria-hidden="true" tabindex="-1"></a><span class="do">### Second Way</span></span>
+<span id="cb456-55"><a href="سیکل-گرفتن-در-برره.html#cb456-55" aria-hidden="true" tabindex="-1"></a>keys_maker <span class="ot">&lt;-</span> <span class="cf">function</span>(n, pattern, period) {</span>
+<span id="cb456-56"><a href="سیکل-گرفتن-در-برره.html#cb456-56" aria-hidden="true" tabindex="-1"></a>  pattern <span class="sc">|&gt;</span> </span>
+<span id="cb456-57"><a href="سیکل-گرفتن-در-برره.html#cb456-57" aria-hidden="true" tabindex="-1"></a>    <span class="fu">strrep</span>(<span class="fu">ceiling</span>(n <span class="sc">/</span> period)) <span class="sc">|&gt;</span> </span>
+<span id="cb456-58"><a href="سیکل-گرفتن-در-برره.html#cb456-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">substr</span>(<span class="dv">1</span>, n) <span class="sc">|&gt;</span></span>
+<span id="cb456-59"><a href="سیکل-گرفتن-در-برره.html#cb456-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot;&quot;</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb456-60"><a href="سیکل-گرفتن-در-برره.html#cb456-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">as.numeric</span>()</span>
+<span id="cb456-61"><a href="سیکل-گرفتن-در-برره.html#cb456-61" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb456-62"><a href="سیکل-گرفتن-در-برره.html#cb456-62" aria-hidden="true" tabindex="-1"></a>keyvoon_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">keys_maker</span>(n, <span class="st">&quot;331122&quot;</span>, <span class="dv">6</span>)</span>
+<span id="cb456-63"><a href="سیکل-گرفتن-در-برره.html#cb456-63" aria-hidden="true" tabindex="-1"></a>nezam_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">keys_maker</span>(n, <span class="st">&quot;123&quot;</span>, <span class="dv">3</span>)</span>
+<span id="cb456-64"><a href="سیکل-گرفتن-در-برره.html#cb456-64" aria-hidden="true" tabindex="-1"></a>shirfarhad_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(n) <span class="fu">keys_maker</span>(n, <span class="st">&quot;2123&quot;</span>, <span class="dv">4</span>)</span>
+<span id="cb456-65"><a href="سیکل-گرفتن-در-برره.html#cb456-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-66"><a href="سیکل-گرفتن-در-برره.html#cb456-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-67"><a href="سیکل-گرفتن-در-برره.html#cb456-67" aria-hidden="true" tabindex="-1"></a>convert_single_string_to_vector <span class="ot">&lt;-</span> <span class="cf">function</span>(string, pattern) {</span>
+<span id="cb456-68"><a href="سیکل-گرفتن-در-برره.html#cb456-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">strsplit</span>(string, pattern)[[<span class="dv">1</span>]])</span>
+<span id="cb456-69"><a href="سیکل-گرفتن-در-برره.html#cb456-69" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb456-70"><a href="سیکل-گرفتن-در-برره.html#cb456-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb456-71"><a href="سیکل-گرفتن-در-برره.html#cb456-71" aria-hidden="true" tabindex="-1"></a>check_answers <span class="ot">&lt;-</span> <span class="cf">function</span>(string) {</span>
+<span id="cb456-72"><a href="سیکل-گرفتن-در-برره.html#cb456-72" aria-hidden="true" tabindex="-1"></a>  answers <span class="ot">&lt;-</span> string <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb456-73"><a href="سیکل-گرفتن-در-برره.html#cb456-73" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span>  answers[<span class="dv">1</span>] <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
+<span id="cb456-74"><a href="سیکل-گرفتن-در-برره.html#cb456-74" aria-hidden="true" tabindex="-1"></a>  keys <span class="ot">&lt;-</span> answers[<span class="dv">2</span>] <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot;&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
+<span id="cb456-75"><a href="سیکل-گرفتن-در-برره.html#cb456-75" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-76"><a href="سیکل-گرفتن-در-برره.html#cb456-76" aria-hidden="true" tabindex="-1"></a>  scores <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb456-77"><a href="سیکل-گرفتن-در-برره.html#cb456-77" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;keyvoon&quot;</span> <span class="ot">=</span> (<span class="fu">keyvoon_answers</span>(n) <span class="sc">==</span> correct) <span class="sc">|&gt;</span> <span class="fu">sum</span>(),</span>
+<span id="cb456-78"><a href="سیکل-گرفتن-در-برره.html#cb456-78" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;nezam&quot;</span> <span class="ot">=</span> (<span class="fu">nezam_answers</span>(n) <span class="sc">==</span> correct) <span class="sc">|&gt;</span> <span class="fu">sum</span>(),</span>
+<span id="cb456-79"><a href="سیکل-گرفتن-در-برره.html#cb456-79" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;shirfarhad&quot;</span> <span class="ot">=</span> (<span class="fu">shirfarhad_answers</span>(n) <span class="sc">==</span> correct) <span class="sc">|&gt;</span> <span class="fu">sum</span>()</span>
+<span id="cb456-80"><a href="سیکل-گرفتن-در-برره.html#cb456-80" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb456-81"><a href="سیکل-گرفتن-در-برره.html#cb456-81" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-82"><a href="سیکل-گرفتن-در-برره.html#cb456-82" aria-hidden="true" tabindex="-1"></a>  score_max <span class="ot">&lt;-</span> <span class="fu">max</span>(scores) </span>
+<span id="cb456-83"><a href="سیکل-گرفتن-در-برره.html#cb456-83" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-84"><a href="سیکل-گرفتن-در-برره.html#cb456-84" aria-hidden="true" tabindex="-1"></a>  score_max <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb456-85"><a href="سیکل-گرفتن-در-برره.html#cb456-85" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb456-86"><a href="سیکل-گرفتن-در-برره.html#cb456-86" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (name <span class="cf">in</span> scores <span class="sc">|&gt;</span> <span class="fu">names</span>()) {</span>
+<span id="cb456-87"><a href="سیکل-گرفتن-در-برره.html#cb456-87" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (scores[name] <span class="sc">==</span> score_max) name <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb456-88"><a href="سیکل-گرفتن-در-برره.html#cb456-88" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb456-89"><a href="سیکل-گرفتن-در-برره.html#cb456-89" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 </div>
 

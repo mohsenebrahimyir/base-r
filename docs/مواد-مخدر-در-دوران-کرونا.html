@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>فصل 18 مواد مخدر در دوران کرونا | مبانی R</title>
   <meta name="description" content="فصل 18 مواد مخدر در دوران کرونا | مبانی R" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="فصل 18 مواد مخدر در دوران کرونا | مبانی R" />
   <meta property="og:type" content="book" />
@@ -127,6 +127,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="stl/style.css" type="text/css" />
 </head>
@@ -298,19 +302,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">18.0.1</span> ساخت جدول ۱ مقاله<a href="مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>فایل داده‌های پرسشنامه در پوشه داده ذخیره شده است.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb453"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb453-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb453-1" aria-hidden="true" tabindex="-1"></a>survey_path <span class="ot">&lt;-</span> <span class="st">&quot;./data/global_survey_covid19.csv&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb457"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb457-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb457-1" aria-hidden="true" tabindex="-1"></a>survey_path <span class="ot">&lt;-</span> <span class="st">&quot;./data/global_survey_covid19.csv&quot;</span></span></code></pre></div>
 </details>
 <ol class="example" style="list-style-type: decimal">
 <li>داده‌های پرسشنامه را وارد کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb454"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb454-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb454-1" aria-hidden="true" tabindex="-1"></a>survey <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(survey_path)</span></code></pre></div>
+<div class="sourceCode" id="cb458"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb458-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb458-1" aria-hidden="true" tabindex="-1"></a>survey <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(survey_path)</span></code></pre></div>
 </details>
 <ol start="2" class="example" style="list-style-type: decimal">
 <li>نگاه کلی به داده‌های پرسشنامه بیاندازید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb455"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb455-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb455-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(survey)</span></code></pre></div>
+<div class="sourceCode" id="cb459"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb459-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb459-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(survey)</span></code></pre></div>
 </details>
 <pre><code>## &#39;data.frame&#39;:    177 obs. of  22 variables:
 ##  $ Gender                       : chr  &quot;Male&quot; &quot;Male&quot; &quot;Male&quot; &quot;Male&quot; ...
@@ -339,28 +343,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>فقط ابعاد مجموعه داده را بگیرید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb457"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb457-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb457-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(survey)</span></code></pre></div>
+<div class="sourceCode" id="cb461"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb461-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb461-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(survey)</span></code></pre></div>
 </details>
 <pre><code>## [1] 177  22</code></pre>
 <ol start="4" class="example" style="list-style-type: decimal">
 <li>فقط تعداد ستون‌ها را بگیرید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb459"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb459-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb459-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(survey) <span class="co"># length(survey)</span></span></code></pre></div>
+<div class="sourceCode" id="cb463"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb463-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb463-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(survey) <span class="co"># length(survey)</span></span></code></pre></div>
 </details>
 <pre><code>## [1] 22</code></pre>
 <ol start="5" class="example" style="list-style-type: decimal">
 <li>فقط تعداد ردیف را بگیرید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb461"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb461-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb461-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(survey) <span class="co"># length(survey[,1])</span></span></code></pre></div>
+<div class="sourceCode" id="cb465"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb465-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb465-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(survey) <span class="co"># length(survey[,1])</span></span></code></pre></div>
 </details>
 <pre><code>## [1] 177</code></pre>
 <ol start="6" class="example" style="list-style-type: decimal">
 <li>بردار مرتب شده صعودی ستون سن را بگیرید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb463"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb463-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb463-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(survey<span class="sc">$</span>Age)</span></code></pre></div>
+<div class="sourceCode" id="cb467"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb467-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb467-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(survey<span class="sc">$</span>Age)</span></code></pre></div>
 </details>
 <pre><code>##   [1] 24 25 26 28 28 29 30 30 30 30 30 31 32 32 32 32 32 32 32 32 32 32 33 34 34
 ##  [26] 34 34 35 35 35 35 35 35 36 36 36 37 37 37 37 37 38 38 38 39 39 39 39 40 40
@@ -373,7 +377,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>بردار مرتب شده صعودی از شماره اندیس ستون سن را بگیرید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb465"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb465-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb465-1" aria-hidden="true" tabindex="-1"></a><span class="fu">order</span>(survey<span class="sc">$</span>Age)</span></code></pre></div>
+<div class="sourceCode" id="cb469"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb469-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb469-1" aria-hidden="true" tabindex="-1"></a><span class="fu">order</span>(survey<span class="sc">$</span>Age)</span></code></pre></div>
 </details>
 <pre><code>##   [1] 110 173  92  86 163 170  57 115 117 126 159  95  14  16  19  55  64  66
 ##  [19] 130 160 168 171  61  45  96  97 135  53  79 104 158 164 177  41  62 100
@@ -389,15 +393,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>شماره اندیس‌های ردیف‌هایی که سن آن‌ها کمتر از ۳۰ سال است را بگیرید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb467"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb467-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb467-1" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span>(survey<span class="sc">$</span>Age <span class="sc">&lt;</span> <span class="dv">30</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb471"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb471-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb471-1" aria-hidden="true" tabindex="-1"></a><span class="fu">which</span>(survey<span class="sc">$</span>Age <span class="sc">&lt;</span> <span class="dv">30</span>)</span></code></pre></div>
 </details>
 <pre><code>## [1]  86  92 110 163 170 173</code></pre>
 <ol start="9" class="example" style="list-style-type: decimal">
 <li>چهار ستون اول داده را برای سنین زیر ۳۰ و مدرک کارشناسی انتخاب کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb469"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb469-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb469-1" aria-hidden="true" tabindex="-1"></a><span class="co"># survey[1:4] |&gt; subset(survey$Age &lt; 30 &amp; survey$Degree == &quot;BSc&quot;)</span></span>
-<span id="cb469-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb469-2" aria-hidden="true" tabindex="-1"></a>survey[<span class="fu">which</span>(survey<span class="sc">$</span>Age <span class="sc">&lt;</span> <span class="dv">30</span> <span class="sc">&amp;</span> survey<span class="sc">$</span>Degree <span class="sc">==</span> <span class="st">&quot;BSc&quot;</span>), <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>] </span></code></pre></div>
+<div class="sourceCode" id="cb473"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb473-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb473-1" aria-hidden="true" tabindex="-1"></a><span class="co"># survey[1:4] |&gt; subset(survey$Age &lt; 30 &amp; survey$Degree == &quot;BSc&quot;)</span></span>
+<span id="cb473-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb473-2" aria-hidden="true" tabindex="-1"></a>survey[<span class="fu">which</span>(survey<span class="sc">$</span>Age <span class="sc">&lt;</span> <span class="dv">30</span> <span class="sc">&amp;</span> survey<span class="sc">$</span>Degree <span class="sc">==</span> <span class="st">&quot;BSc&quot;</span>), <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>] </span></code></pre></div>
 </details>
 <pre><code>##     Gender Age       Date Degree
 ## 163   Male  28 2020-04-30    BSc
@@ -406,14 +410,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>تعداد و درصد افراد با مدرک کارشناسی را محاسبه کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb471"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb471-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb471-1" aria-hidden="true" tabindex="-1"></a><span class="co"># survey[which(survey$Degree == &quot;BSc&quot;),] |&gt; nrow()</span></span>
-<span id="cb471-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb471-2" aria-hidden="true" tabindex="-1"></a><span class="co"># survey |&gt; subset(survey$Degree == &quot;BSc&quot;) |&gt; nrow()</span></span>
-<span id="cb471-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb471-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb471-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb471-4" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> <span class="st">&quot;BSc&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb475"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb475-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-1" aria-hidden="true" tabindex="-1"></a><span class="co"># survey[which(survey$Degree == &quot;BSc&quot;),] |&gt; nrow()</span></span>
+<span id="cb475-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-2" aria-hidden="true" tabindex="-1"></a><span class="co"># survey |&gt; subset(survey$Degree == &quot;BSc&quot;) |&gt; nrow()</span></span>
+<span id="cb475-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb475-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-4" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> <span class="st">&quot;BSc&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>## [1] 6</code></pre>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb473"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb473-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb473-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> <span class="st">&quot;BSc&quot;</span>) <span class="sc">/</span> <span class="fu">nrow</span>(survey) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb477"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb477-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb477-1" aria-hidden="true" tabindex="-1"></a>(<span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> <span class="st">&quot;BSc&quot;</span>) <span class="sc">/</span> <span class="fu">nrow</span>(survey) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>)</span></code></pre></div>
 </details>
 <pre><code>## [1] 3.4</code></pre>
 <ol start="11" class="example" style="list-style-type: decimal">
@@ -423,20 +427,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb475"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb475-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-1" aria-hidden="true" tabindex="-1"></a>degrees <span class="ot">&lt;-</span> <span class="fu">unique</span>(survey<span class="sc">$</span>Degree)</span>
-<span id="cb475-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-2" aria-hidden="true" tabindex="-1"></a>n_degrees <span class="ot">&lt;-</span> <span class="fu">length</span>(degrees)</span>
-<span id="cb475-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb475-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-4" aria-hidden="true" tabindex="-1"></a>df_degrees <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
-<span id="cb475-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb475-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(n_degrees)) {</span>
-<span id="cb475-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-7" aria-hidden="true" tabindex="-1"></a>  df_degrees[i, <span class="st">&quot;value&quot;</span>] <span class="ot">&lt;-</span> degrees[i]</span>
-<span id="cb475-8"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-8" aria-hidden="true" tabindex="-1"></a>  df_degrees[i, <span class="st">&quot;n&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> degrees[i])</span>
-<span id="cb475-9"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-9" aria-hidden="true" tabindex="-1"></a>  df_degrees[i, <span class="st">&quot;p&quot;</span>] <span class="ot">&lt;-</span> </span>
-<span id="cb475-10"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-10" aria-hidden="true" tabindex="-1"></a>    (<span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> degrees[i]) <span class="sc">/</span> <span class="fu">nrow</span>(survey) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>)</span>
-<span id="cb475-11"><a href="مواد-مخدر-در-دوران-کرونا.html#cb475-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb479"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb479-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-1" aria-hidden="true" tabindex="-1"></a>degrees <span class="ot">&lt;-</span> <span class="fu">unique</span>(survey<span class="sc">$</span>Degree)</span>
+<span id="cb479-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-2" aria-hidden="true" tabindex="-1"></a>n_degrees <span class="ot">&lt;-</span> <span class="fu">length</span>(degrees)</span>
+<span id="cb479-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb479-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-4" aria-hidden="true" tabindex="-1"></a>df_degrees <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb479-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb479-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(n_degrees)) {</span>
+<span id="cb479-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-7" aria-hidden="true" tabindex="-1"></a>  df_degrees[i, <span class="st">&quot;value&quot;</span>] <span class="ot">&lt;-</span> degrees[i]</span>
+<span id="cb479-8"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-8" aria-hidden="true" tabindex="-1"></a>  df_degrees[i, <span class="st">&quot;n&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> degrees[i])</span>
+<span id="cb479-9"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-9" aria-hidden="true" tabindex="-1"></a>  df_degrees[i, <span class="st">&quot;p&quot;</span>] <span class="ot">&lt;-</span> </span>
+<span id="cb479-10"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-10" aria-hidden="true" tabindex="-1"></a>    (<span class="fu">sum</span>(survey<span class="sc">$</span>Degree <span class="sc">==</span> degrees[i]) <span class="sc">/</span> <span class="fu">nrow</span>(survey) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb479-11"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb476"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb476-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb476-1" aria-hidden="true" tabindex="-1"></a>df_degrees</span></code></pre></div>
+<div class="sourceCode" id="cb480"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb480-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb480-1" aria-hidden="true" tabindex="-1"></a>df_degrees</span></code></pre></div>
 </details>
 <pre><code>##    value  n    p
 ## 1 MD;PhD 32 18.1
@@ -452,25 +456,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 بنویسید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb478"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb478-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-1" aria-hidden="true" tabindex="-1"></a>column <span class="ot">&lt;-</span> <span class="st">&quot;Degree&quot;</span></span>
-<span id="cb478-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb478-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-3" aria-hidden="true" tabindex="-1"></a>value_counter <span class="ot">&lt;-</span> <span class="cf">function</span>(data, column) {</span>
-<span id="cb478-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-4" aria-hidden="true" tabindex="-1"></a>  values <span class="ot">&lt;-</span> <span class="fu">unique</span>(data[, column])</span>
-<span id="cb478-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-5" aria-hidden="true" tabindex="-1"></a>  n_values <span class="ot">&lt;-</span> <span class="fu">length</span>(values)</span>
-<span id="cb478-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-6" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
-<span id="cb478-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb478-8"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(n_values)) {</span>
-<span id="cb478-9"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-9" aria-hidden="true" tabindex="-1"></a>    df[i, <span class="st">&quot;value&quot;</span>] <span class="ot">&lt;-</span> values[i]</span>
-<span id="cb478-10"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-10" aria-hidden="true" tabindex="-1"></a>    df[i, <span class="st">&quot;n&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">sum</span>(data[, column] <span class="sc">==</span> values[i])</span>
-<span id="cb478-11"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-11" aria-hidden="true" tabindex="-1"></a>    df[i, <span class="st">&quot;p&quot;</span>] <span class="ot">&lt;-</span> </span>
-<span id="cb478-12"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-12" aria-hidden="true" tabindex="-1"></a>      (<span class="fu">sum</span>(data[, column] <span class="sc">==</span> values[i]) <span class="sc">/</span> <span class="fu">nrow</span>(survey) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>)</span>
-<span id="cb478-13"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-13" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb478-14"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb478-15"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-15" aria-hidden="true" tabindex="-1"></a>  df</span>
-<span id="cb478-16"><a href="مواد-مخدر-در-دوران-کرونا.html#cb478-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb482"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb482-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-1" aria-hidden="true" tabindex="-1"></a>column <span class="ot">&lt;-</span> <span class="st">&quot;Degree&quot;</span></span>
+<span id="cb482-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb482-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-3" aria-hidden="true" tabindex="-1"></a>value_counter <span class="ot">&lt;-</span> <span class="cf">function</span>(data, column) {</span>
+<span id="cb482-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-4" aria-hidden="true" tabindex="-1"></a>  values <span class="ot">&lt;-</span> <span class="fu">unique</span>(data[, column])</span>
+<span id="cb482-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-5" aria-hidden="true" tabindex="-1"></a>  n_values <span class="ot">&lt;-</span> <span class="fu">length</span>(values)</span>
+<span id="cb482-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-6" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb482-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb482-8"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(n_values)) {</span>
+<span id="cb482-9"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-9" aria-hidden="true" tabindex="-1"></a>    df[i, <span class="st">&quot;value&quot;</span>] <span class="ot">&lt;-</span> values[i]</span>
+<span id="cb482-10"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-10" aria-hidden="true" tabindex="-1"></a>    df[i, <span class="st">&quot;n&quot;</span>] <span class="ot">&lt;-</span> <span class="fu">sum</span>(data[, column] <span class="sc">==</span> values[i])</span>
+<span id="cb482-11"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-11" aria-hidden="true" tabindex="-1"></a>    df[i, <span class="st">&quot;p&quot;</span>] <span class="ot">&lt;-</span> </span>
+<span id="cb482-12"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-12" aria-hidden="true" tabindex="-1"></a>      (<span class="fu">sum</span>(data[, column] <span class="sc">==</span> values[i]) <span class="sc">/</span> <span class="fu">nrow</span>(survey) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">1</span>)</span>
+<span id="cb482-13"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb482-14"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb482-15"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-15" aria-hidden="true" tabindex="-1"></a>  df</span>
+<span id="cb482-16"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb479"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb479-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb479-1" aria-hidden="true" tabindex="-1"></a>survey <span class="sc">|&gt;</span> <span class="fu">value_counter</span>(<span class="st">&quot;Degree&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb483"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb483-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb483-1" aria-hidden="true" tabindex="-1"></a>survey <span class="sc">|&gt;</span> <span class="fu">value_counter</span>(<span class="st">&quot;Degree&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>##    value  n    p
 ## 1 MD;PhD 32 18.1
@@ -489,29 +493,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb481"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb481-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-1" aria-hidden="true" tabindex="-1"></a>columns <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Gender&quot;</span>)</span>
-<span id="cb481-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb481-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-3" aria-hidden="true" tabindex="-1"></a>values_counter <span class="ot">&lt;-</span> <span class="cf">function</span>(data, columns) {</span>
-<span id="cb481-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-4" aria-hidden="true" tabindex="-1"></a>  n_columns <span class="ot">&lt;-</span> <span class="fu">length</span>(columns)</span>
-<span id="cb481-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-5" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb481-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(n_columns)) {</span>
-<span id="cb481-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-7" aria-hidden="true" tabindex="-1"></a>    df <span class="ot">&lt;-</span> data <span class="sc">|&gt;</span> <span class="fu">value_counter</span>(columns[i])</span>
-<span id="cb481-8"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-8" aria-hidden="true" tabindex="-1"></a>    df<span class="sc">$</span>column <span class="ot">&lt;-</span> columns[i]</span>
-<span id="cb481-9"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-9" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb481-10"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="sc">==</span> <span class="dv">1</span>) {</span>
-<span id="cb481-11"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-11" aria-hidden="true" tabindex="-1"></a>      dfs <span class="ot">&lt;-</span> df</span>
-<span id="cb481-12"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-12" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb481-13"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-13" aria-hidden="true" tabindex="-1"></a>      dfs <span class="ot">&lt;-</span> dfs <span class="sc">|&gt;</span> <span class="fu">rbind</span>(df)</span>
-<span id="cb481-14"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-14" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb481-15"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-15" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb481-16"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-16" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb481-17"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-17" aria-hidden="true" tabindex="-1"></a>  dfs[<span class="fu">c</span>(<span class="st">&quot;column&quot;</span>, <span class="st">&quot;value&quot;</span>, <span class="st">&quot;n&quot;</span>, <span class="st">&quot;p&quot;</span>)]</span>
-<span id="cb481-18"><a href="مواد-مخدر-در-دوران-کرونا.html#cb481-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb485"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb485-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-1" aria-hidden="true" tabindex="-1"></a>columns <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Gender&quot;</span>)</span>
+<span id="cb485-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb485-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-3" aria-hidden="true" tabindex="-1"></a>values_counter <span class="ot">&lt;-</span> <span class="cf">function</span>(data, columns) {</span>
+<span id="cb485-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-4" aria-hidden="true" tabindex="-1"></a>  n_columns <span class="ot">&lt;-</span> <span class="fu">length</span>(columns)</span>
+<span id="cb485-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb485-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(n_columns)) {</span>
+<span id="cb485-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-7" aria-hidden="true" tabindex="-1"></a>    df <span class="ot">&lt;-</span> data <span class="sc">|&gt;</span> <span class="fu">value_counter</span>(columns[i])</span>
+<span id="cb485-8"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-8" aria-hidden="true" tabindex="-1"></a>    df<span class="sc">$</span>column <span class="ot">&lt;-</span> columns[i]</span>
+<span id="cb485-9"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb485-10"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="sc">==</span> <span class="dv">1</span>) {</span>
+<span id="cb485-11"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-11" aria-hidden="true" tabindex="-1"></a>      dfs <span class="ot">&lt;-</span> df</span>
+<span id="cb485-12"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-12" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb485-13"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-13" aria-hidden="true" tabindex="-1"></a>      dfs <span class="ot">&lt;-</span> dfs <span class="sc">|&gt;</span> <span class="fu">rbind</span>(df)</span>
+<span id="cb485-14"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-14" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb485-15"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-15" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb485-16"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb485-17"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-17" aria-hidden="true" tabindex="-1"></a>  dfs[<span class="fu">c</span>(<span class="st">&quot;column&quot;</span>, <span class="st">&quot;value&quot;</span>, <span class="st">&quot;n&quot;</span>, <span class="st">&quot;p&quot;</span>)]</span>
+<span id="cb485-18"><a href="مواد-مخدر-در-دوران-کرونا.html#cb485-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb482"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb482-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-1" aria-hidden="true" tabindex="-1"></a>df_demog <span class="ot">&lt;-</span> survey <span class="sc">|&gt;</span> <span class="fu">values_counter</span>(<span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Discipline&quot;</span>)) </span>
-<span id="cb482-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb482-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb482-3" aria-hidden="true" tabindex="-1"></a>df_demog <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb486"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb486-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-1" aria-hidden="true" tabindex="-1"></a>df_demog <span class="ot">&lt;-</span> survey <span class="sc">|&gt;</span> <span class="fu">values_counter</span>(<span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Discipline&quot;</span>)) </span>
+<span id="cb486-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb486-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-3" aria-hidden="true" tabindex="-1"></a>df_demog <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div>
 </details>
 <pre><code>##   column               value   n    p
 ## 1 Gender                Male 111 62.7
@@ -524,13 +528,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>برای ستون سن میانگین و انحراف معیار را محاسبه کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb484"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb484-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-1" aria-hidden="true" tabindex="-1"></a>df_age <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb484-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;column&quot;</span> <span class="ot">=</span> <span class="st">&quot;Age&quot;</span>,</span>
-<span id="cb484-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;m&quot;</span> <span class="ot">=</span> survey<span class="sc">$</span>Age <span class="sc">|&gt;</span> <span class="fu">mean</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">2</span>),</span>
-<span id="cb484-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;s&quot;</span> <span class="ot">=</span> survey<span class="sc">$</span>Age <span class="sc">|&gt;</span> <span class="fu">sd</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">2</span>)</span>
-<span id="cb484-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb484-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb484-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb484-7" aria-hidden="true" tabindex="-1"></a>df_age</span></code></pre></div>
+<div class="sourceCode" id="cb488"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb488-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-1" aria-hidden="true" tabindex="-1"></a>df_age <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb488-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;column&quot;</span> <span class="ot">=</span> <span class="st">&quot;Age&quot;</span>,</span>
+<span id="cb488-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;m&quot;</span> <span class="ot">=</span> survey<span class="sc">$</span>Age <span class="sc">|&gt;</span> <span class="fu">mean</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">2</span>),</span>
+<span id="cb488-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;s&quot;</span> <span class="ot">=</span> survey<span class="sc">$</span>Age <span class="sc">|&gt;</span> <span class="fu">sd</span>(<span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">2</span>)</span>
+<span id="cb488-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb488-6"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb488-7"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-7" aria-hidden="true" tabindex="-1"></a>df_age</span></code></pre></div>
 </details>
 <pre><code>##   column     m     s
 ## 1    Age 46.51 10.78</code></pre>
@@ -542,11 +546,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 اضافه کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb486"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb486-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_demog) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column&quot;</span>, <span class="st">&quot;value&quot;</span>, <span class="st">&quot;n_m&quot;</span>, <span class="st">&quot;p_s&quot;</span>)</span>
-<span id="cb486-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_age) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column&quot;</span>, <span class="st">&quot;n_m&quot;</span>, <span class="st">&quot;p_s&quot;</span>)</span>
-<span id="cb486-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-3" aria-hidden="true" tabindex="-1"></a>df_age<span class="sc">$</span>value <span class="ot">&lt;-</span> <span class="st">&quot;&quot;</span></span>
-<span id="cb486-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb486-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb486-5" aria-hidden="true" tabindex="-1"></a>df_demog <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_demog, df_age)</span></code></pre></div>
+<div class="sourceCode" id="cb490"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb490-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_demog) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column&quot;</span>, <span class="st">&quot;value&quot;</span>, <span class="st">&quot;n_m&quot;</span>, <span class="st">&quot;p_s&quot;</span>)</span>
+<span id="cb490-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_age) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column&quot;</span>, <span class="st">&quot;n_m&quot;</span>, <span class="st">&quot;p_s&quot;</span>)</span>
+<span id="cb490-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-3" aria-hidden="true" tabindex="-1"></a>df_age<span class="sc">$</span>value <span class="ot">&lt;-</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb490-4"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb490-5"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-5" aria-hidden="true" tabindex="-1"></a>df_demog <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_demog, df_age)</span></code></pre></div>
 </details>
 <ol start="16" class="example" style="list-style-type: decimal">
 <li>از جدول تهیه شده خروجی اکسل با نام
@@ -554,22 +558,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 تهیه کنید.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb487"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb487-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb487-1" aria-hidden="true" tabindex="-1"></a>df_demog <span class="sc">|&gt;</span> writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="st">&quot;./data/survey_covid19_table_1_demog.xlsx&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb491"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb491-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb491-1" aria-hidden="true" tabindex="-1"></a>df_demog <span class="sc">|&gt;</span> writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="st">&quot;./data/survey_covid19_table_1_demog.xlsx&quot;</span>)</span></code></pre></div>
 </details>
 <ol start="17" class="example" style="list-style-type: decimal">
 <li>در این مطالعه چه تعداد کشور شرکت کرده‌اند.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb488"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb488-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb488-1" aria-hidden="true" tabindex="-1"></a>survey<span class="sc">$</span>Country <span class="sc">|&gt;</span> <span class="fu">unique</span>() <span class="sc">|&gt;</span> <span class="fu">length</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb492"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb492-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb492-1" aria-hidden="true" tabindex="-1"></a>survey<span class="sc">$</span>Country <span class="sc">|&gt;</span> <span class="fu">unique</span>() <span class="sc">|&gt;</span> <span class="fu">length</span>()</span></code></pre></div>
 </details>
 <pre><code>## [1] 77</code></pre>
 <ol start="18" class="example" style="list-style-type: decimal">
 <li>از هر کشور چه تعداد شرکت کرده‌اند.</li>
 </ol>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb490"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb490-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> survey <span class="sc">|&gt;</span> <span class="fu">values_counter</span>(<span class="st">&quot;Country&quot;</span>) </span>
-<span id="cb490-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb490-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb490-3" aria-hidden="true" tabindex="-1"></a>df[<span class="fu">with</span>(df, <span class="fu">order</span>(<span class="sc">-</span>n)),] <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb494"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb494-1"><a href="مواد-مخدر-در-دوران-کرونا.html#cb494-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> survey <span class="sc">|&gt;</span> <span class="fu">values_counter</span>(<span class="st">&quot;Country&quot;</span>) </span>
+<span id="cb494-2"><a href="مواد-مخدر-در-دوران-کرونا.html#cb494-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb494-3"><a href="مواد-مخدر-در-دوران-کرونا.html#cb494-3" aria-hidden="true" tabindex="-1"></a>df[<span class="fu">with</span>(df, <span class="fu">order</span>(<span class="sc">-</span>n)),] <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div>
 </details>
 <pre><code>##     column          value  n   p
 ## 7  Country  United States 13 7.3
