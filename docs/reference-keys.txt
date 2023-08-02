@@ -2,9 +2,6 @@ fig:unnamed-chunk-4
 fig:unnamed-chunk-6
 مقدمه
 نصب-و-آماده-سازی-اولیه
-نصب-r
-نصب-rstudio
-محیط-rstudio
 مفاهیم-پایه
 اجرای-کد
 راهنما

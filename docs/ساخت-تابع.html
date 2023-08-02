@@ -150,12 +150,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>پیش گفتار</a></li>
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a></li>
-<li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="نصب-r.html"><a href="نصب-r.html"><i class="fa fa-check"></i><b>2.1</b> نصب R</a></li>
-<li class="chapter" data-level="2.2" data-path="نصب-rstudio.html"><a href="نصب-rstudio.html"><i class="fa fa-check"></i><b>2.2</b> نصب RStudio</a></li>
-<li class="chapter" data-level="2.3" data-path="محیط-rstudio.html"><a href="محیط-rstudio.html"><i class="fa fa-check"></i><b>2.3</b> محیط RStudio</a></li>
-</ul></li>
+<li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a></li>
@@ -266,7 +261,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <p style="text-align: center;">
- <a href="https://web.whatsapp.com/send?phone=989118645816" class="fa fa-whatsapp fa-3x" style="color:green"></a>
+ <a href="https://t.me/mohsenebrahimy_ir" class="fa fa-telegram fa-3x" style="color:blue"></a>
 </p>
 &nbsp;
 
@@ -291,58 +286,58 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">7.2</span> ساخت تابع<a href="ساخت-تابع.html#ساخت-تابع" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>برای ساخت تابع باید به صورت زیر عمل کنیم.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ساخت-تابع.html#cb118-1" aria-hidden="true" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
-<span id="cb118-2"><a href="ساخت-تابع.html#cb118-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb118-3"><a href="ساخت-تابع.html#cb118-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Do something</span></span>
-<span id="cb118-4"><a href="ساخت-تابع.html#cb118-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb118-5"><a href="ساخت-تابع.html#cb118-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(output)</span>
-<span id="cb118-6"><a href="ساخت-تابع.html#cb118-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ساخت-تابع.html#cb118-1" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
+<span id="cb118-2"><a href="ساخت-تابع.html#cb118-2" tabindex="-1"></a></span>
+<span id="cb118-3"><a href="ساخت-تابع.html#cb118-3" tabindex="-1"></a>  <span class="co"># Do something</span></span>
+<span id="cb118-4"><a href="ساخت-تابع.html#cb118-4" tabindex="-1"></a></span>
+<span id="cb118-5"><a href="ساخت-تابع.html#cb118-5" tabindex="-1"></a>  <span class="fu">return</span>(output)</span>
+<span id="cb118-6"><a href="ساخت-تابع.html#cb118-6" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <ul>
 <li>تابع جمع بستن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="ساخت-تابع.html#cb119-1" aria-hidden="true" tabindex="-1"></a>jam <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
-<span id="cb119-2"><a href="ساخت-تابع.html#cb119-2" aria-hidden="true" tabindex="-1"></a>  z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
-<span id="cb119-3"><a href="ساخت-تابع.html#cb119-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(z)</span>
-<span id="cb119-4"><a href="ساخت-تابع.html#cb119-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="ساخت-تابع.html#cb119-1" tabindex="-1"></a>jam <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb119-2"><a href="ساخت-تابع.html#cb119-2" tabindex="-1"></a>  z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
+<span id="cb119-3"><a href="ساخت-تابع.html#cb119-3" tabindex="-1"></a>  <span class="fu">return</span>(z)</span>
+<span id="cb119-4"><a href="ساخت-تابع.html#cb119-4" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ساخت-تابع.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jam</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ساخت-تابع.html#cb120-1" tabindex="-1"></a><span class="fu">jam</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 5</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ساخت-تابع.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(jam)</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ساخت-تابع.html#cb122-1" tabindex="-1"></a><span class="fu">class</span>(jam)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;function&quot;</code></pre>
 <ul>
 <li>تابع سلام کردن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ساخت-تابع.html#cb124-1" aria-hidden="true" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(name) {</span>
-<span id="cb124-2"><a href="ساخت-تابع.html#cb124-2" aria-hidden="true" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Salam&quot;</span>, name, <span class="st">&quot;aziz&quot;</span>)</span>
-<span id="cb124-3"><a href="ساخت-تابع.html#cb124-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
-<span id="cb124-4"><a href="ساخت-تابع.html#cb124-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ساخت-تابع.html#cb124-1" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(name) {</span>
+<span id="cb124-2"><a href="ساخت-تابع.html#cb124-2" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Salam&quot;</span>, name, <span class="st">&quot;aziz&quot;</span>)</span>
+<span id="cb124-3"><a href="ساخت-تابع.html#cb124-3" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
+<span id="cb124-4"><a href="ساخت-تابع.html#cb124-4" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="ساخت-تابع.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="ساخت-تابع.html#cb125-1" tabindex="-1"></a><span class="fu">salam</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Mohsen aziz&quot;</code></pre>
 <ul>
 <li>مقدار اولیه برای ورودی‌ها</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="ساخت-تابع.html#cb127-1" aria-hidden="true" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">name =</span> <span class="st">&quot;Mohsen&quot;</span>) {</span>
-<span id="cb127-2"><a href="ساخت-تابع.html#cb127-2" aria-hidden="true" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Salam %s Aziz&quot;</span>, name)</span>
-<span id="cb127-3"><a href="ساخت-تابع.html#cb127-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
-<span id="cb127-4"><a href="ساخت-تابع.html#cb127-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="ساخت-تابع.html#cb127-1" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">name =</span> <span class="st">&quot;Mohsen&quot;</span>) {</span>
+<span id="cb127-2"><a href="ساخت-تابع.html#cb127-2" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Salam %s Aziz&quot;</span>, name)</span>
+<span id="cb127-3"><a href="ساخت-تابع.html#cb127-3" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
+<span id="cb127-4"><a href="ساخت-تابع.html#cb127-4" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ساخت-تابع.html#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ساخت-تابع.html#cb128-1" tabindex="-1"></a><span class="fu">salam</span>()</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Mohsen Aziz&quot;</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ساخت-تابع.html#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="fu">salam</span>(<span class="at">name =</span> <span class="st">&quot;Arash&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ساخت-تابع.html#cb130-1" tabindex="-1"></a><span class="fu">salam</span>(<span class="at">name =</span> <span class="st">&quot;Arash&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Arash Aziz&quot;</code></pre>
 </div>
