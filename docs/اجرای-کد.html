@@ -153,7 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a></li>
+<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
 <li class="chapter" data-level="3.3" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.3</b> محیط کاری</a></li>
 </ul></li>
@@ -284,17 +287,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="اجرای-کد" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> اجرای کد<a href="اجرای-کد.html#اجرای-کد" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="راه-اندازی-محیط" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> راه اندازی محیط<a href="اجرای-کد.html#راه-اندازی-محیط" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>R</strong></p>
 <ul>
-<li>راه اندازی محیط
+<li>در ویندوز باید ابتدا مسیر نصب پوشه
 <strong>R</strong>
-در ترمینال و
-اجرای مستقیم کد در
-کنسول (Console)</li>
+تنظیم کنید.
+<ul>
+<li>مسیر نصب را کپی کنید.</li>
+<li>به بخش متغییرهای محیطی بروید</li>
+<li>مسیر کپی شده را به متغییر <code>PATH</code> اضافه کنید.</li>
+</ul></li>
 </ul>
+<p>الان می‌توانید با اجرا کد زیر به بخش کنسول
+(Console)
+دسترسی داشته باشید.</p>
+<pre class="cmd"><code>C:\Users\User&gt; R
+
+&gt; my code ...</code></pre>
+<p>در لینوکس یا یونیکس معمولا بعد از نصب مسیر نصب به صورت پیش فرض تنظیم شده است.
+و کافی است که کد زیر را اجرا کنید.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="اجرای-کد.html#cb1-1" tabindex="-1"></a><span class="ex">$</span> R</span>
-<span id="cb1-2"><a href="اجرای-کد.html#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="اجرای-کد.html#cb1-3" tabindex="-1"></a><span class="op">&gt;</span> my <span class="ex">code</span> ...</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="اجرای-کد.html#cb2-1" tabindex="-1"></a><span class="ex">$</span> R</span>
+<span id="cb2-2"><a href="اجرای-کد.html#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="اجرای-کد.html#cb2-3" tabindex="-1"></a><span class="op">&gt;</span> my <span class="ex">code</span> ...</span></code></pre></div>
 </details>
 <div class="remark">
 <p><span id="unlabeled-div-1" class="remark"><em>نکته</em>. </span>برای پاک کردن کنسول می‌توانید از کلید میانبر
@@ -309,13 +326,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 در کامند لاین</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="اجرای-کد.html#cb2-1" tabindex="-1"></a><span class="ex">$</span> Rscript code.R</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="اجرای-کد.html#cb3-1" tabindex="-1"></a><span class="ex">$</span> Rscript code.R</span></code></pre></div>
 </details>
 <ul>
 <li>چاپ کردن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="اجرای-کد.html#cb3-1" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Salam Donya!&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="اجرای-کد.html#cb4-1" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Salam Donya!&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>[1] &quot;Salam Donya!&quot;</code></pre>
 <ul>
@@ -326,10 +343,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>#</code>
 قبل از آن‌ها استفاده شود</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="اجرای-کد.html#cb5-1" tabindex="-1"></a><span class="co"># The Comment helps the readability of the coding</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="اجرای-کد.html#cb6-1" tabindex="-1"></a><span class="co"># The Comment helps the readability of the coding</span></span></code></pre></div>
 </details>
 <div class="remark">
 <p><span id="unlabeled-div-2" class="remark"><em>نکته</em>. </span>قرار دادن دیدگاه به فهم و خوانایی کد برای دیگران و بازبینی‌های آینده کمک می‌کند.</p>
+</div>
 </div>
 </div>
             </section>

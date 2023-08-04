@@ -153,7 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a></li>
+<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
 <li class="chapter" data-level="3.3" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.3</b> محیط کاری</a></li>
 </ul></li>
@@ -295,7 +298,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 یک شئ</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="توابع-درون-ساخت.html#cb108-1" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
+<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="توابع-درون-ساخت.html#cb117-1" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
 </details>
 <pre class="output"><code>&#39;data.frame&#39;:   150 obs. of  5 variables:
  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
@@ -307,7 +310,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>تبدیل چند رشته به یک رشته</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="توابع-درون-ساخت.html#cb110-1" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) <span class="do">## or paste0()</span></span></code></pre></div>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="توابع-درون-ساخت.html#cb119-1" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) <span class="do">## or paste0()</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
 <ul>
@@ -315,21 +318,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span dir="ltr"><code>%s</code></span></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="توابع-درون-ساخت.html#cb112-1" tabindex="-1"></a><span class="fu">sprintf</span>(<span class="at">fmt =</span> <span class="st">&quot;Salam %s!&quot;</span>, <span class="st">&quot;Donya&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="توابع-درون-ساخت.html#cb121-1" tabindex="-1"></a><span class="fu">sprintf</span>(<span class="at">fmt =</span> <span class="st">&quot;Salam %s!&quot;</span>, <span class="st">&quot;Donya&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
 <ul>
 <li>چاپ کردن چند چیز</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="توابع-درون-ساخت.html#cb114-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="توابع-درون-ساخت.html#cb123-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>Salam Donya!</code></pre>
 <ul>
 <li>خواندن کامند لاین</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="توابع-درون-ساخت.html#cb116-1" tabindex="-1"></a><span class="fu">readline</span>(<span class="at">prompt =</span> <span class="st">&quot;lotfan ye chezy vared konid: &quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="توابع-درون-ساخت.html#cb125-1" tabindex="-1"></a><span class="fu">readline</span>(<span class="at">prompt =</span> <span class="st">&quot;lotfan ye chezy vared konid: &quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>lotfan ye chezy vared konid: </code></pre>
 </div>

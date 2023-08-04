@@ -153,7 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a></li>
+<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
 <li class="chapter" data-level="3.3" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.3</b> محیط کاری</a></li>
 </ul></li>
@@ -290,41 +293,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>هیستوگرام (Histogram)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="نمودار.html#cb217-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="نمودار.html#cb226-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
 </details>
 <p><img src="base-r_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>توزیع چگالی (Density)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="نمودار.html#cb218-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="نمودار.html#cb227-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
 </details>
 <p><img src="base-r_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار پراکندگی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="نمودار.html#cb219-1" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="نمودار.html#cb228-1" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
 </details>
 <p><img src="base-r_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار دایره‌ای</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="نمودار.html#cb220-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span> <span class="ot">=</span> <span class="dv">20</span>, <span class="st">&quot;b&quot;</span> <span class="ot">=</span> <span class="dv">40</span>, <span class="st">&quot;c&quot;</span> <span class="ot">=</span> <span class="dv">10</span>, <span class="st">&quot;d&quot;</span> <span class="ot">=</span> <span class="dv">30</span>)</span>
-<span id="cb220-2"><a href="نمودار.html#cb220-2" tabindex="-1"></a></span>
-<span id="cb220-3"><a href="نمودار.html#cb220-3" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="نمودار.html#cb229-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span> <span class="ot">=</span> <span class="dv">20</span>, <span class="st">&quot;b&quot;</span> <span class="ot">=</span> <span class="dv">40</span>, <span class="st">&quot;c&quot;</span> <span class="ot">=</span> <span class="dv">10</span>, <span class="st">&quot;d&quot;</span> <span class="ot">=</span> <span class="dv">30</span>)</span>
+<span id="cb229-2"><a href="نمودار.html#cb229-2" tabindex="-1"></a></span>
+<span id="cb229-3"><a href="نمودار.html#cb229-3" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
 </details>
 <p><img src="base-r_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>ذخیره نمودار در فرمت‌های مختلف</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="نمودار.html#cb221-1" tabindex="-1"></a><span class="co"># pdf(&quot;fig/rplot.pdf&quot;, width = 350, height = 350)</span></span>
-<span id="cb221-2"><a href="نمودار.html#cb221-2" tabindex="-1"></a><span class="co"># png(&quot;fig/rplot.png&quot;, width = 350, height = 350)</span></span>
-<span id="cb221-3"><a href="نمودار.html#cb221-3" tabindex="-1"></a><span class="fu">jpeg</span>(<span class="st">&quot;fig/rplot.jpg&quot;</span>, <span class="at">width =</span> <span class="dv">350</span>, <span class="at">height =</span> <span class="dv">350</span>)</span>
-<span id="cb221-4"><a href="نمودار.html#cb221-4" tabindex="-1"></a>mtcars<span class="sc">$</span>mpg <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span>
-<span id="cb221-5"><a href="نمودار.html#cb221-5" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="نمودار.html#cb230-1" tabindex="-1"></a><span class="co"># pdf(&quot;fig/rplot.pdf&quot;, width = 350, height = 350)</span></span>
+<span id="cb230-2"><a href="نمودار.html#cb230-2" tabindex="-1"></a><span class="co"># png(&quot;fig/rplot.png&quot;, width = 350, height = 350)</span></span>
+<span id="cb230-3"><a href="نمودار.html#cb230-3" tabindex="-1"></a><span class="fu">jpeg</span>(<span class="st">&quot;fig/rplot.jpg&quot;</span>, <span class="at">width =</span> <span class="dv">350</span>, <span class="at">height =</span> <span class="dv">350</span>)</span>
+<span id="cb230-4"><a href="نمودار.html#cb230-4" tabindex="-1"></a>mtcars<span class="sc">$</span>mpg <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span>
+<span id="cb230-5"><a href="نمودار.html#cb230-5" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
 </details>
 <ul>
 <li>ggplot2:
@@ -333,12 +336,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 است.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="نمودار.html#cb222-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb222-2"><a href="نمودار.html#cb222-2" tabindex="-1"></a></span>
-<span id="cb222-3"><a href="نمودار.html#cb222-3" tabindex="-1"></a>iris <span class="sc">|&gt;</span> </span>
-<span id="cb222-4"><a href="نمودار.html#cb222-4" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb222-5"><a href="نمودار.html#cb222-5" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
-<span id="cb222-6"><a href="نمودار.html#cb222-6" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="نمودار.html#cb231-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb231-2"><a href="نمودار.html#cb231-2" tabindex="-1"></a></span>
+<span id="cb231-3"><a href="نمودار.html#cb231-3" tabindex="-1"></a>iris <span class="sc">|&gt;</span> </span>
+<span id="cb231-4"><a href="نمودار.html#cb231-4" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb231-5"><a href="نمودار.html#cb231-5" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
+<span id="cb231-6"><a href="نمودار.html#cb231-6" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 </details>
 <p><img src="base-r_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /></p>
 

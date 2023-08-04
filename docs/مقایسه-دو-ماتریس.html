@@ -153,7 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a></li>
+<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
 <li class="chapter" data-level="3.3" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.3</b> محیط کاری</a></li>
 </ul></li>
@@ -296,7 +299,7 @@ A =
 \end{bmatrix}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb393"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb393-1"><a href="مقایسه-دو-ماتریس.html#cb393-1" tabindex="-1"></a>(mtx_A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="مقایسه-دو-ماتریس.html#cb402-1" tabindex="-1"></a>(mtx_A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    1    4    7
@@ -314,7 +317,7 @@ B =
 \end{bmatrix}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb395"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb395-1"><a href="مقایسه-دو-ماتریس.html#cb395-1" tabindex="-1"></a>(mtx_B <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">9</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="مقایسه-دو-ماتریس.html#cb404-1" tabindex="-1"></a>(mtx_B <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">9</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]    9    6    3
@@ -335,7 +338,7 @@ A \overset{?}{\leq} B =
 \end{bmatrix}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb397"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb397-1"><a href="مقایسه-دو-ماتریس.html#cb397-1" tabindex="-1"></a>mtx_A <span class="sc">==</span> mtx_B </span></code></pre></div>
+<div class="sourceCode" id="cb406"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb406-1"><a href="مقایسه-دو-ماتریس.html#cb406-1" tabindex="-1"></a>mtx_A <span class="sc">==</span> mtx_B </span></code></pre></div>
 </details>
 <pre><code>##       [,1]  [,2]  [,3]
 ## [1,] FALSE FALSE FALSE
@@ -369,7 +372,7 @@ A + B =
 \end{bmatrix}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb399"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb399-1"><a href="مقایسه-دو-ماتریس.html#cb399-1" tabindex="-1"></a>mtx_A <span class="sc">+</span> mtx_B </span></code></pre></div>
+<div class="sourceCode" id="cb408"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb408-1"><a href="مقایسه-دو-ماتریس.html#cb408-1" tabindex="-1"></a>mtx_A <span class="sc">+</span> mtx_B </span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]   10   10   10
@@ -415,7 +418,7 @@ A \times B &amp; =
 \end{aligned}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb401"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb401-1"><a href="مقایسه-دو-ماتریس.html#cb401-1" tabindex="-1"></a>mtx_A <span class="sc">%*%</span> mtx_B</span></code></pre></div>
+<div class="sourceCode" id="cb410"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb410-1"><a href="مقایسه-دو-ماتریس.html#cb410-1" tabindex="-1"></a>mtx_A <span class="sc">%*%</span> mtx_B</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]   90   54   18

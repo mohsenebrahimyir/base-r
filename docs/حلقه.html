@@ -153,7 +153,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a></li>
+<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
 <li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
 <li class="chapter" data-level="3.3" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.3</b> محیط کاری</a></li>
 </ul></li>
@@ -291,11 +294,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>while</code>
 استفاده نماییم.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb213"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb213-1"><a href="حلقه.html#cb213-1" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">5</span></span>
-<span id="cb213-2"><a href="حلقه.html#cb213-2" tabindex="-1"></a><span class="cf">while</span> (i <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
-<span id="cb213-3"><a href="حلقه.html#cb213-3" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
-<span id="cb213-4"><a href="حلقه.html#cb213-4" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">-</span> <span class="dv">1</span></span>
-<span id="cb213-5"><a href="حلقه.html#cb213-5" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="حلقه.html#cb222-1" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">5</span></span>
+<span id="cb222-2"><a href="حلقه.html#cb222-2" tabindex="-1"></a><span class="cf">while</span> (i <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb222-3"><a href="حلقه.html#cb222-3" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
+<span id="cb222-4"><a href="حلقه.html#cb222-4" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb222-5"><a href="حلقه.html#cb222-5" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <pre><code>## [1] &quot;5th alaki&quot;
 ## [1] &quot;4th alaki&quot;
@@ -309,9 +312,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>for</code>
 استفاده نماییم.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb215"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb215-1"><a href="حلقه.html#cb215-1" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
-<span id="cb215-2"><a href="حلقه.html#cb215-2" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
-<span id="cb215-3"><a href="حلقه.html#cb215-3" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="حلقه.html#cb224-1" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
+<span id="cb224-2"><a href="حلقه.html#cb224-2" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
+<span id="cb224-3"><a href="حلقه.html#cb224-3" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <pre><code>## [1] &quot;1th alaki&quot;
 ## [1] &quot;2th alaki&quot;
