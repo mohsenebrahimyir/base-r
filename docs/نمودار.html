@@ -172,7 +172,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="خالی.html"><a href="خالی.html"><i class="fa fa-check"></i><b>4.4</b> خالی</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="متغییرها.html"><a href="متغییرها.html"><i class="fa fa-check"></i><b>5</b> متغییرها</a></li>
+<li class="chapter" data-level="5" data-path="متغیرها.html"><a href="متغیرها.html"><i class="fa fa-check"></i><b>5</b> متغیرها</a></li>
 <li class="chapter" data-level="6" data-path="ساختار-داده.html"><a href="ساختار-داده.html"><i class="fa fa-check"></i><b>6</b> ساختار داده</a></li>
 <li class="chapter" data-level="7" data-path="توابع.html"><a href="توابع.html"><i class="fa fa-check"></i><b>7</b> توابع</a>
 <ul>
@@ -246,7 +246,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="18" data-path="مواد-مخدر-در-دوران-کرونا.html"><a href="مواد-مخدر-در-دوران-کرونا.html"><i class="fa fa-check"></i><b>18</b> مواد مخدر در دوران کرونا</a>
 <ul>
-<li class="chapter" data-level="18.0.1" data-path="مواد-مخدر-در-دوران-کرونا.html"><a href="مواد-مخدر-در-دوران-کرونا.html#ساخت-جدول-۱-مقاله"><i class="fa fa-check"></i><b>18.0.1</b> ساخت جدول ۱ مقاله</a></li>
+<li class="chapter" data-level="18.1" data-path="ساخت-جدول-۱-مقاله.html"><a href="ساخت-جدول-۱-مقاله.html"><i class="fa fa-check"></i><b>18.1</b> ساخت جدول ۱ مقاله</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
 <li class="divider"></li>
@@ -295,21 +295,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="نمودار.html#cb226-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
 </details>
-<p><img src="base-r_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>توزیع چگالی (Density)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="نمودار.html#cb227-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
 </details>
-<p><img src="base-r_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار پراکندگی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="نمودار.html#cb228-1" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
 </details>
-<p><img src="base-r_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار دایره‌ای</li>
 </ul>
@@ -318,7 +318,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb229-2"><a href="نمودار.html#cb229-2" tabindex="-1"></a></span>
 <span id="cb229-3"><a href="نمودار.html#cb229-3" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
 </details>
-<p><img src="base-r_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>ذخیره نمودار در فرمت‌های مختلف</li>
 </ul>
@@ -343,7 +343,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb231-5"><a href="نمودار.html#cb231-5" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
 <span id="cb231-6"><a href="نمودار.html#cb231-6" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 </details>
-<p><img src="base-r_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /></p>
 
 </div>
             </section>
