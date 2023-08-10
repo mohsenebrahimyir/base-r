@@ -368,8 +368,8 @@ Levels: yek do se</code></pre>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="ساختار-داده.html#cb113-1" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
-<span id="cb113-2"><a href="ساختار-داده.html#cb113-2" tabindex="-1"></a>  <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
-<span id="cb113-3"><a href="ساختار-داده.html#cb113-3" tabindex="-1"></a>  <span class="st">&quot;age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
+<span id="cb113-2"><a href="ساختار-داده.html#cb113-2" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
+<span id="cb113-3"><a href="ساختار-داده.html#cb113-3" tabindex="-1"></a>  <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
 <span id="cb113-4"><a href="ساختار-داده.html#cb113-4" tabindex="-1"></a>)</span></code></pre></div>
 </details>
 <pre class="output"><code>  name age  male
@@ -381,12 +381,12 @@ Levels: yek do se</code></pre>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="ساختار-داده.html#cb115-1" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb115-2"><a href="ساختار-داده.html#cb115-2" tabindex="-1"></a>  <span class="st">&quot;vec&quot;</span> <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,</span>
-<span id="cb115-3"><a href="ساختار-داده.html#cb115-3" tabindex="-1"></a>  <span class="st">&quot;mat&quot;</span> <span class="ot">=</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">nrow =</span> <span class="dv">2</span>),</span>
-<span id="cb115-4"><a href="ساختار-داده.html#cb115-4" tabindex="-1"></a>  <span class="st">&quot;ary&quot;</span> <span class="ot">=</span> <span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>)),</span>
-<span id="cb115-5"><a href="ساختار-داده.html#cb115-5" tabindex="-1"></a>  <span class="st">&quot;df&quot;</span>  <span class="ot">=</span> <span class="fu">data.frame</span>(</span>
-<span id="cb115-6"><a href="ساختار-داده.html#cb115-6" tabindex="-1"></a>    <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
-<span id="cb115-7"><a href="ساختار-داده.html#cb115-7" tabindex="-1"></a>    <span class="st">&quot;age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
+<span id="cb115-2"><a href="ساختار-داده.html#cb115-2" tabindex="-1"></a>  <span class="at">vec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,</span>
+<span id="cb115-3"><a href="ساختار-داده.html#cb115-3" tabindex="-1"></a>  <span class="at">mat =</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">nrow =</span> <span class="dv">2</span>),</span>
+<span id="cb115-4"><a href="ساختار-داده.html#cb115-4" tabindex="-1"></a>  <span class="at">ary =</span> <span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>)),</span>
+<span id="cb115-5"><a href="ساختار-داده.html#cb115-5" tabindex="-1"></a>  <span class="at">df  =</span> <span class="fu">data.frame</span>(</span>
+<span id="cb115-6"><a href="ساختار-داده.html#cb115-6" tabindex="-1"></a>    <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
+<span id="cb115-7"><a href="ساختار-داده.html#cb115-7" tabindex="-1"></a>    <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
 <span id="cb115-8"><a href="ساختار-داده.html#cb115-8" tabindex="-1"></a>    )</span>
 <span id="cb115-9"><a href="ساختار-داده.html#cb115-9" tabindex="-1"></a>)</span></code></pre></div>
 </details>
