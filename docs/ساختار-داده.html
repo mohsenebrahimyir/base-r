@@ -300,32 +300,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>بردار (Vector)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="ساختار-داده.html#cb95-1" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="st">&quot;Mohsen&quot;</span>, <span class="cn">NA</span>, <span class="dv">56</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="ساختار-داده.html#cb97-1" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="st">&quot;Mohsen&quot;</span>, <span class="cn">NA</span>, <span class="dv">56</span>)</span></code></pre></div>
 </details>
 <pre><code>[1] &quot;1&quot; &quot;2&quot; &quot;Mohsen&quot; NA &quot;56&quot;</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="ساختار-داده.html#cb97-1" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">4</span></span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="ساختار-داده.html#cb99-1" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">4</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 2 3 4</code></pre>
 <ul>
 <li>تولید یک بردار که مقادیر آن ترتیب خاصی دارند</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="ساختار-داده.html#cb99-1" tabindex="-1"></a>(vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;se&quot;</span>, <span class="st">&quot;yek&quot;</span>, <span class="st">&quot;se&quot;</span>, <span class="st">&quot;do&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="ساختار-داده.html#cb101-1" tabindex="-1"></a>(vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;se&quot;</span>, <span class="st">&quot;yek&quot;</span>, <span class="st">&quot;se&quot;</span>, <span class="st">&quot;do&quot;</span>))</span></code></pre></div>
 </details>
 <pre><code>[1] &quot;se&quot; &quot;ye&quot; &quot;se&quot; &quot;do&quot;</code></pre>
 <ul>
 <li>مرتب کردن برحسب حروف الفبا</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="ساختار-داده.html#cb101-1" tabindex="-1"></a><span class="fu">sort</span>(vec)</span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="ساختار-داده.html#cb103-1" tabindex="-1"></a><span class="fu">sort</span>(vec)</span></code></pre></div>
 </details>
 <pre><code>[1] &quot;do&quot; &quot;se&quot; &quot;se&quot; &quot;yek&quot;</code></pre>
 <ul>
 <li>فاکتور (factor)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="ساختار-داده.html#cb103-1" tabindex="-1"></a>(fct <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="at">x =</span> vec, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;yek&quot;</span>, <span class="st">&quot;do&quot;</span>, <span class="st">&quot;se&quot;</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="ساختار-داده.html#cb105-1" tabindex="-1"></a>(fct <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="at">x =</span> vec, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;yek&quot;</span>, <span class="st">&quot;do&quot;</span>, <span class="st">&quot;se&quot;</span>)))</span></code></pre></div>
 </details>
 <pre><code>[1] se  yek se  do 
 Levels: yek do se</code></pre>
@@ -333,7 +333,7 @@ Levels: yek do se</code></pre>
 <li>مرتب کردن بر حسب سطح بندی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="ساختار-داده.html#cb105-1" tabindex="-1"></a><span class="fu">sort</span>(fct)</span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ساختار-داده.html#cb107-1" tabindex="-1"></a><span class="fu">sort</span>(fct)</span></code></pre></div>
 </details>
 <pre><code>[1] yek do  se  se 
 Levels: yek do se</code></pre>
@@ -341,7 +341,7 @@ Levels: yek do se</code></pre>
 <li>ماتریس (Matrix)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ساختار-داده.html#cb107-1" tabindex="-1"></a><span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">nrow =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="ساختار-داده.html#cb109-1" tabindex="-1"></a><span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">nrow =</span> <span class="dv">2</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>     [,1] [,2]
 [1,]    1    3
@@ -350,7 +350,7 @@ Levels: yek do se</code></pre>
 <li>آرایه (Array)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="ساختار-داده.html#cb109-1" tabindex="-1"></a><span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="ساختار-داده.html#cb111-1" tabindex="-1"></a><span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>))</span></code></pre></div>
 </details>
 <pre class="output"><code>, , 1
 
@@ -367,10 +367,10 @@ Levels: yek do se</code></pre>
 <li>فرمت داده (Data Frame)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="ساختار-داده.html#cb111-1" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
-<span id="cb111-2"><a href="ساختار-داده.html#cb111-2" tabindex="-1"></a>  <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
-<span id="cb111-3"><a href="ساختار-داده.html#cb111-3" tabindex="-1"></a>  <span class="st">&quot;age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
-<span id="cb111-4"><a href="ساختار-داده.html#cb111-4" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="ساختار-داده.html#cb113-1" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb113-2"><a href="ساختار-داده.html#cb113-2" tabindex="-1"></a>  <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
+<span id="cb113-3"><a href="ساختار-داده.html#cb113-3" tabindex="-1"></a>  <span class="st">&quot;age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
+<span id="cb113-4"><a href="ساختار-داده.html#cb113-4" tabindex="-1"></a>)</span></code></pre></div>
 </details>
 <pre class="output"><code>  name age  male
 1  ali  27  TRUE
@@ -380,15 +380,15 @@ Levels: yek do se</code></pre>
 <li>لیست (List)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="ساختار-داده.html#cb113-1" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb113-2"><a href="ساختار-داده.html#cb113-2" tabindex="-1"></a>  <span class="st">&quot;vec&quot;</span> <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,</span>
-<span id="cb113-3"><a href="ساختار-داده.html#cb113-3" tabindex="-1"></a>  <span class="st">&quot;mat&quot;</span> <span class="ot">=</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">nrow =</span> <span class="dv">2</span>),</span>
-<span id="cb113-4"><a href="ساختار-داده.html#cb113-4" tabindex="-1"></a>  <span class="st">&quot;ary&quot;</span> <span class="ot">=</span> <span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>)),</span>
-<span id="cb113-5"><a href="ساختار-داده.html#cb113-5" tabindex="-1"></a>  <span class="st">&quot;df&quot;</span>  <span class="ot">=</span> <span class="fu">data.frame</span>(</span>
-<span id="cb113-6"><a href="ساختار-داده.html#cb113-6" tabindex="-1"></a>    <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
-<span id="cb113-7"><a href="ساختار-داده.html#cb113-7" tabindex="-1"></a>    <span class="st">&quot;age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
-<span id="cb113-8"><a href="ساختار-داده.html#cb113-8" tabindex="-1"></a>    )</span>
-<span id="cb113-9"><a href="ساختار-داده.html#cb113-9" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="ساختار-داده.html#cb115-1" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb115-2"><a href="ساختار-داده.html#cb115-2" tabindex="-1"></a>  <span class="st">&quot;vec&quot;</span> <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,</span>
+<span id="cb115-3"><a href="ساختار-داده.html#cb115-3" tabindex="-1"></a>  <span class="st">&quot;mat&quot;</span> <span class="ot">=</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">nrow =</span> <span class="dv">2</span>),</span>
+<span id="cb115-4"><a href="ساختار-داده.html#cb115-4" tabindex="-1"></a>  <span class="st">&quot;ary&quot;</span> <span class="ot">=</span> <span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>)),</span>
+<span id="cb115-5"><a href="ساختار-داده.html#cb115-5" tabindex="-1"></a>  <span class="st">&quot;df&quot;</span>  <span class="ot">=</span> <span class="fu">data.frame</span>(</span>
+<span id="cb115-6"><a href="ساختار-داده.html#cb115-6" tabindex="-1"></a>    <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;ali&quot;</span>, <span class="st">&quot;sara&quot;</span>, <span class="st">&quot;reza&quot;</span>),</span>
+<span id="cb115-7"><a href="ساختار-داده.html#cb115-7" tabindex="-1"></a>    <span class="st">&quot;age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">27</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
+<span id="cb115-8"><a href="ساختار-داده.html#cb115-8" tabindex="-1"></a>    )</span>
+<span id="cb115-9"><a href="ساختار-داده.html#cb115-9" tabindex="-1"></a>)</span></code></pre></div>
 </details>
 <pre class="output"><code>$vec
 [1] 1 2 3 4

@@ -288,7 +288,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="انتخاب-مقادیر" class="section level2 hasAnchor" number="13.4">
 <h2><span class="header-section-number">13.4</span> انتخاب مقادیر<a href="انتخاب-مقادیر.html#انتخاب-مقادیر" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb294"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb294-1"><a href="انتخاب-مقادیر.html#cb294-1" tabindex="-1"></a>(vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">Name =</span> <span class="st">&quot;Mohsen&quot;</span>, <span class="at">Age =</span> <span class="dv">27</span>, <span class="at">Male =</span> <span class="cn">TRUE</span>, <span class="st">&quot;alaki&quot;</span>, <span class="cn">NA</span>, <span class="st">&quot;alaki&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="انتخاب-مقادیر.html#cb296-1" tabindex="-1"></a>(vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">Name =</span> <span class="st">&quot;Mohsen&quot;</span>, <span class="at">Age =</span> <span class="dv">27</span>, <span class="at">Male =</span> <span class="cn">TRUE</span>, <span class="st">&quot;alaki&quot;</span>, <span class="cn">NA</span>, <span class="st">&quot;alaki&quot;</span>))</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name  Age   Male                            
 &quot;Mohsen&quot; &quot;27&quot; &quot;TRUE&quot; &quot;alaki&quot; NA &quot;alaki&quot;</code></pre>
@@ -298,7 +298,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 n ام</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="انتخاب-مقادیر.html#cb296-1" tabindex="-1"></a>vec[<span class="dv">3</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="انتخاب-مقادیر.html#cb298-1" tabindex="-1"></a>vec[<span class="dv">3</span>]</span></code></pre></div>
 </details>
 <pre class="output"><code>  Male 
 &quot;TRUE&quot; </code></pre>
@@ -307,7 +307,7 @@ n ام</li>
 n ام</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="انتخاب-مقادیر.html#cb298-1" tabindex="-1"></a>vec[<span class="sc">-</span><span class="dv">3</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="انتخاب-مقادیر.html#cb300-1" tabindex="-1"></a>vec[<span class="sc">-</span><span class="dv">3</span>]</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name  Age                            
 &quot;Mohsen&quot; &quot;27&quot; &quot;alaki&quot; NA &quot;alaki&quot;</code></pre>
@@ -315,7 +315,7 @@ n ام</li>
 <li>انتخاب اندیس‌های دلخواه</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="انتخاب-مقادیر.html#cb300-1" tabindex="-1"></a>vec[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="انتخاب-مقادیر.html#cb302-1" tabindex="-1"></a>vec[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)]</span></code></pre></div>
 </details>
 <pre class="output"><code> Age      
 &quot;27&quot; NA </code></pre>
@@ -323,7 +323,7 @@ n ام</li>
 <li>انتخاب همه‌ی اندیس‌ها به غیر از اندیس‌های دلخواه</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="انتخاب-مقادیر.html#cb302-1" tabindex="-1"></a>vec[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb304"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb304-1"><a href="انتخاب-مقادیر.html#cb304-1" tabindex="-1"></a>vec[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5</span>)]</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name  Male                   
 &quot;Mohsen&quot; &quot;TRUE&quot; &quot;alaki&quot; &quot;alaki&quot; </code></pre>
@@ -331,7 +331,7 @@ n ام</li>
 <li>انتخاب مقدار بوسیله نام</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb304"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb304-1"><a href="انتخاب-مقادیر.html#cb304-1" tabindex="-1"></a>vec[<span class="fu">c</span>(<span class="st">&quot;Name&quot;</span>, <span class="st">&quot;Age&quot;</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb306"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb306-1"><a href="انتخاب-مقادیر.html#cb306-1" tabindex="-1"></a>vec[<span class="fu">c</span>(<span class="st">&quot;Name&quot;</span>, <span class="st">&quot;Age&quot;</span>)]</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name  Age 
 &quot;Mohsen&quot; &quot;27&quot; </code></pre>
@@ -339,7 +339,7 @@ n ام</li>
 <li>تغییر ترتیب اندیس‌های مقادیر</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb306"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb306-1"><a href="انتخاب-مقادیر.html#cb306-1" tabindex="-1"></a>vec[<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">2</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="انتخاب-مقادیر.html#cb308-1" tabindex="-1"></a>vec[<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">2</span>)]</span></code></pre></div>
 </details>
 <pre class="output"><code>    Age 
 NA &quot;27&quot; </code></pre>
@@ -348,7 +348,7 @@ NA &quot;27&quot; </code></pre>
 مقدار اول بردار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="انتخاب-مقادیر.html#cb308-1" tabindex="-1"></a><span class="fu">head</span>(<span class="at">x =</span> vec, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="انتخاب-مقادیر.html#cb310-1" tabindex="-1"></a><span class="fu">head</span>(<span class="at">x =</span> vec, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name  Age   Male 
 &quot;Mohsen&quot; &quot;27&quot; &quot;TRUE&quot; </code></pre>
@@ -358,14 +358,14 @@ NA &quot;27&quot; </code></pre>
 بردار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="انتخاب-مقادیر.html#cb310-1" tabindex="-1"></a><span class="fu">tail</span>(<span class="at">x =</span> vec, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="انتخاب-مقادیر.html#cb312-1" tabindex="-1"></a><span class="fu">tail</span>(<span class="at">x =</span> vec, <span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>&quot;alaki&quot; NA &quot;alaki&quot; </code></pre>
 <ul>
 <li>گرفتن مقادیر بدون تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="انتخاب-مقادیر.html#cb312-1" tabindex="-1"></a><span class="fu">unique</span>(<span class="at">x =</span> vec)</span></code></pre></div>
+<div class="sourceCode" id="cb314"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb314-1"><a href="انتخاب-مقادیر.html#cb314-1" tabindex="-1"></a><span class="fu">unique</span>(<span class="at">x =</span> vec)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Mohsen&quot; &quot;27&quot; &quot;TRUE&quot; &quot;alaki&quot; NA</code></pre>
 <ul>
@@ -374,18 +374,18 @@ NA &quot;27&quot; </code></pre>
 <p>این تابع برای مقادیر که بیش از یک بار تکرار شده‌اند،
 مقدار درست و برای بقیه غلط بر میگرداند</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb314"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb314-1"><a href="انتخاب-مقادیر.html#cb314-1" tabindex="-1"></a><span class="fu">duplicated</span>(<span class="at">x =</span> vec)</span></code></pre></div>
+<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="انتخاب-مقادیر.html#cb316-1" tabindex="-1"></a><span class="fu">duplicated</span>(<span class="at">x =</span> vec)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] FALSE FALSE FALSE FALSE FALSE TRUE</code></pre>
 <p>انتخاب مقادیر تکرار شده</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="انتخاب-مقادیر.html#cb316-1" tabindex="-1"></a>vec[<span class="fu">duplicated</span>(vec)]</span></code></pre></div>
+<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="انتخاب-مقادیر.html#cb318-1" tabindex="-1"></a>vec[<span class="fu">duplicated</span>(vec)]</span></code></pre></div>
 </details>
 <pre class="output"><code>        
 &quot;alaki&quot; </code></pre>
 <p>انتخاب مقادیر تکرار نشده</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="انتخاب-مقادیر.html#cb318-1" tabindex="-1"></a>vec[<span class="sc">!</span><span class="fu">duplicated</span>(vec)]</span></code></pre></div>
+<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="انتخاب-مقادیر.html#cb320-1" tabindex="-1"></a>vec[<span class="sc">!</span><span class="fu">duplicated</span>(vec)]</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name  Age   Male                   
 &quot;Mohsen&quot; &quot;27&quot; &quot;TRUE&quot;  &quot;alaki&quot; NA </code></pre>
@@ -393,7 +393,7 @@ NA &quot;27&quot; </code></pre>
 <li>حذف مقادیر از دست رفته</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="انتخاب-مقادیر.html#cb320-1" tabindex="-1"></a><span class="fu">na.omit</span>(vec)</span></code></pre></div>
+<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="انتخاب-مقادیر.html#cb322-1" tabindex="-1"></a><span class="fu">na.omit</span>(vec)</span></code></pre></div>
 </details>
 <pre class="output"><code>    Name      Age     Male                   
 &quot;Mohsen&quot;     &quot;27&quot;   &quot;TRUE&quot;  &quot;alaki&quot;  &quot;alaki&quot;</code></pre>
