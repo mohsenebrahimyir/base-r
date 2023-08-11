@@ -292,7 +292,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span class="math inline">\(4 \times 4\)</span></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="تغییر-ابعاد-ماتریس.html#cb388-1" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>, <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">4</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="تغییر-ابعاد-ماتریس.html#cb392-1" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>, <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">ncol =</span> <span class="dv">4</span>))</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]    1    5    9   13
@@ -304,11 +304,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span class="math inline">\(8 \times 2\)</span></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="تغییر-ابعاد-ماتریس.html#cb390-1" tabindex="-1"></a>(<span class="fu">dim</span>(mtx) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">2</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="تغییر-ابعاد-ماتریس.html#cb394-1" tabindex="-1"></a>(<span class="fu">dim</span>(mtx) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">2</span>))</span></code></pre></div>
 </details>
 <pre><code>## [1] 8 2</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="تغییر-ابعاد-ماتریس.html#cb392-1" tabindex="-1"></a>mtx</span></code></pre></div>
+<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="تغییر-ابعاد-ماتریس.html#cb396-1" tabindex="-1"></a>mtx</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2]
 ## [1,]    1    9
@@ -330,7 +330,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 نوع تمام مقادیر، رشته‌ای می‌شود.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="تغییر-ابعاد-ماتریس.html#cb394-1" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>, <span class="st">&quot;a&quot;</span>), <span class="dv">4</span>, <span class="dv">4</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb398-1"><a href="تغییر-ابعاد-ماتریس.html#cb398-1" tabindex="-1"></a>(mtx <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>, <span class="st">&quot;a&quot;</span>), <span class="dv">4</span>, <span class="dv">4</span>))</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,] &quot;1&quot;  &quot;5&quot;  &quot;9&quot;  &quot;13&quot;
@@ -338,7 +338,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [3,] &quot;3&quot;  &quot;7&quot;  &quot;11&quot; &quot;15&quot;
 ## [4,] &quot;4&quot;  &quot;8&quot;  &quot;12&quot; &quot;a&quot;</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb396"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb396-1"><a href="تغییر-ابعاد-ماتریس.html#cb396-1" tabindex="-1"></a><span class="fu">str</span>(mtx)</span></code></pre></div>
+<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb400-1"><a href="تغییر-ابعاد-ماتریس.html#cb400-1" tabindex="-1"></a><span class="fu">str</span>(mtx)</span></code></pre></div>
 </details>
 <pre><code>##  chr [1:4, 1:4] &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; &quot;5&quot; &quot;6&quot; &quot;7&quot; &quot;8&quot; &quot;9&quot; &quot;10&quot; &quot;11&quot; &quot;12&quot; &quot;13&quot; ...</code></pre>
 <ul>
@@ -355,7 +355,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 \end{bmatrix}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb398"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb398-1"><a href="تغییر-ابعاد-ماتریس.html#cb398-1" tabindex="-1"></a><span class="fu">diag</span>(<span class="dv">4</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="تغییر-ابعاد-ماتریس.html#cb402-1" tabindex="-1"></a><span class="fu">diag</span>(<span class="dv">4</span>)</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]    1    0    0    0
@@ -376,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 \end{bmatrix}
 \]</span></p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb400"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb400-1"><a href="تغییر-ابعاد-ماتریس.html#cb400-1" tabindex="-1"></a><span class="fu">diag</span>(<span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb404"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb404-1"><a href="تغییر-ابعاد-ماتریس.html#cb404-1" tabindex="-1"></a><span class="fu">diag</span>(<span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">3</span>))</span></code></pre></div>
 </details>
 <pre><code>##      [,1] [,2] [,3] [,4]
 ## [1,]    9    0    0    0
@@ -387,7 +387,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>گرفتن قطر یک ماتریس</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb402"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb402-1"><a href="تغییر-ابعاد-ماتریس.html#cb402-1" tabindex="-1"></a><span class="fu">diag</span>(mtx)</span></code></pre></div>
+<div class="sourceCode" id="cb406"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb406-1"><a href="تغییر-ابعاد-ماتریس.html#cb406-1" tabindex="-1"></a><span class="fu">diag</span>(mtx)</span></code></pre></div>
 </details>
 <pre><code>## [1] &quot;1&quot;  &quot;6&quot;  &quot;11&quot; &quot;a&quot;</code></pre>
 </div>

@@ -291,6 +291,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 به صورت بسته
 (Package)
 اختیار دیگران قرار داده‌اند.</p>
+<ul>
+<li>بسته‌های نصب شده</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="بسته.html#cb143-1" tabindex="-1"></a><span class="fu">.packages</span>(<span class="at">all.available =</span> T)</span></code></pre></div>
+</details>
+<pre><code> [1] &quot;Rcpp&quot;         &quot;base&quot;         &quot;boot&quot;        
+ [4] &quot;class&quot;        &quot;cluster&quot;      &quot;codetools&quot;   
+ [7] &quot;compiler&quot;     &quot;datasets&quot;     &quot;foreign&quot;     
+[10] &quot;graphics&quot;     &quot;grDevices&quot;    &quot;grid&quot;        
+[13] &quot;KernSmooth&quot;   &quot;lattice&quot;      &quot;MASS&quot;        
+[16] &quot;Matrix&quot;       &quot;methods&quot;      &quot;mgcv&quot;        
+[19] &quot;nlme&quot;         &quot;nnet&quot;         &quot;parallel&quot;    
+[22] &quot;rpart&quot;        &quot;spatial&quot;      &quot;splines&quot;     
+[25] &quot;stats&quot;        &quot;stats4&quot;       &quot;survival&quot;    
+[28] &quot;tcltk&quot;        &quot;tools&quot;        &quot;translations&quot;
+[31] &quot;utils&quot;</code></pre>
+<ul>
+<li>مسیر بسته‌های نصب شده</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="بسته.html#cb145-1" tabindex="-1"></a><span class="fu">.libPaths</span>()</span></code></pre></div>
+</details>
+<pre><code>[1] &quot;C:/Users/User/AppData/Local/R/win-library/4.3&quot;
+[2] &quot;C:/Program Files/R/R-4.3.1/library&quot;</code></pre>
 <div id="نصب-بسته" class="section level3 hasAnchor" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> نصب بسته<a href="بسته.html#نصب-بسته" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>برای استفاده از توابع توسعه داده شده توسط دیگران، باید
@@ -300,7 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 (<a href="https://cran.r-project.org/">CRAN</a>)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="بسته.html#cb143-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dplyr&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="بسته.html#cb147-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dplyr&quot;</span>)</span></code></pre></div>
 </details>
 <ul>
 <li>نصب از مخزن گیت‌هاب
@@ -312,9 +337,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <code>devtools</code>
 را نصب و سپس بسته مورد نظر را با یکی از روش زیر نصب نمایید.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="بسته.html#cb144-1" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span>
-<span id="cb144-2"><a href="بسته.html#cb144-2" tabindex="-1"></a><span class="co"># or</span></span>
-<span id="cb144-3"><a href="بسته.html#cb144-3" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="بسته.html#cb148-1" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span>
+<span id="cb148-2"><a href="بسته.html#cb148-2" tabindex="-1"></a><span class="co"># or</span></span>
+<span id="cb148-3"><a href="بسته.html#cb148-3" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span></code></pre></div>
 </details>
 <ul>
 <li>دانلود از مخازن دیگر
@@ -338,7 +363,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند:</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="بسته.html#cb145-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="بسته.html#cb149-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>Error in library(&quot;alaki&quot;) : there is no package called ‘alaki’</code></pre>
 <ul>
@@ -348,18 +373,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 برمی‌گرداند:</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="بسته.html#cb147-1" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="بسته.html#cb151-1" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>Loading required package: alaki
 Warning message:
 In library(package, lib.loc = lib.loc, character.only = TRUE, ... :
   there is no package called ‘alaki’</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="بسته.html#cb149-1" tabindex="-1"></a>(<span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="بسته.html#cb153-1" tabindex="-1"></a>(<span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>))</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="بسته.html#cb151-1" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="بسته.html#cb155-1" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
 </details>
 <ul>
 <li><span dir="ltr"><code>package::function()</code></span>:
@@ -367,7 +392,7 @@ In library(package, lib.loc = lib.loc, character.only = TRUE, ... :
 استفاده کنیم و دیگر به آن نیازی نداریم.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb152"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb152-1"><a href="بسته.html#cb152-1" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(iris, <span class="fu">c</span>(<span class="st">&quot;Sepal.Width&quot;</span>, <span class="st">&quot;Species&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="بسته.html#cb156-1" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(iris, <span class="fu">c</span>(<span class="st">&quot;Sepal.Width&quot;</span>, <span class="st">&quot;Species&quot;</span>))</span></code></pre></div>
 </details>
 <pre class="output"><code>    Sepal.Width    Species
 1           3.5     setosa
@@ -382,7 +407,7 @@ In library(package, lib.loc = lib.loc, character.only = TRUE, ... :
 <li><code>Tidyverse</code></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="بسته.html#cb154-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="بسته.html#cb158-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
 </details>
 <pre class="output"><code>── Attaching packages ────────────────── tidyverse 1.3.1 ──
 ✓ ggplot2 3.3.5     ✓ purrr   0.3.4

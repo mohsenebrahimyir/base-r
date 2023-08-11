@@ -293,41 +293,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>هیستوگرام (Histogram)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="نمودار.html#cb228-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="نمودار.html#cb232-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
 </details>
 <p><img src="book_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>توزیع چگالی (Density)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="نمودار.html#cb229-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="نمودار.html#cb233-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
 </details>
 <p><img src="book_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار پراکندگی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="نمودار.html#cb230-1" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
+<div class="sourceCode" id="cb234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb234-1"><a href="نمودار.html#cb234-1" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
 </details>
 <p><img src="book_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار دایره‌ای</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="نمودار.html#cb231-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span> <span class="ot">=</span> <span class="dv">20</span>, <span class="st">&quot;b&quot;</span> <span class="ot">=</span> <span class="dv">40</span>, <span class="st">&quot;c&quot;</span> <span class="ot">=</span> <span class="dv">10</span>, <span class="st">&quot;d&quot;</span> <span class="ot">=</span> <span class="dv">30</span>)</span>
-<span id="cb231-2"><a href="نمودار.html#cb231-2" tabindex="-1"></a></span>
-<span id="cb231-3"><a href="نمودار.html#cb231-3" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="نمودار.html#cb235-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span> <span class="ot">=</span> <span class="dv">20</span>, <span class="st">&quot;b&quot;</span> <span class="ot">=</span> <span class="dv">40</span>, <span class="st">&quot;c&quot;</span> <span class="ot">=</span> <span class="dv">10</span>, <span class="st">&quot;d&quot;</span> <span class="ot">=</span> <span class="dv">30</span>)</span>
+<span id="cb235-2"><a href="نمودار.html#cb235-2" tabindex="-1"></a></span>
+<span id="cb235-3"><a href="نمودار.html#cb235-3" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
 </details>
 <p><img src="book_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>ذخیره نمودار در فرمت‌های مختلف</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="نمودار.html#cb232-1" tabindex="-1"></a><span class="co"># pdf(&quot;fig/rplot.pdf&quot;, width = 350, height = 350)</span></span>
-<span id="cb232-2"><a href="نمودار.html#cb232-2" tabindex="-1"></a><span class="co"># png(&quot;fig/rplot.png&quot;, width = 350, height = 350)</span></span>
-<span id="cb232-3"><a href="نمودار.html#cb232-3" tabindex="-1"></a><span class="fu">jpeg</span>(<span class="st">&quot;fig/rplot.jpg&quot;</span>, <span class="at">width =</span> <span class="dv">350</span>, <span class="at">height =</span> <span class="dv">350</span>)</span>
-<span id="cb232-4"><a href="نمودار.html#cb232-4" tabindex="-1"></a>mtcars<span class="sc">$</span>mpg <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span>
-<span id="cb232-5"><a href="نمودار.html#cb232-5" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="نمودار.html#cb236-1" tabindex="-1"></a><span class="co"># pdf(&quot;fig/rplot.pdf&quot;, width = 350, height = 350)</span></span>
+<span id="cb236-2"><a href="نمودار.html#cb236-2" tabindex="-1"></a><span class="co"># png(&quot;fig/rplot.png&quot;, width = 350, height = 350)</span></span>
+<span id="cb236-3"><a href="نمودار.html#cb236-3" tabindex="-1"></a><span class="fu">jpeg</span>(<span class="st">&quot;fig/rplot.jpg&quot;</span>, <span class="at">width =</span> <span class="dv">350</span>, <span class="at">height =</span> <span class="dv">350</span>)</span>
+<span id="cb236-4"><a href="نمودار.html#cb236-4" tabindex="-1"></a>mtcars<span class="sc">$</span>mpg <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span>
+<span id="cb236-5"><a href="نمودار.html#cb236-5" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
 </details>
 <ul>
 <li>ggplot2:
@@ -336,12 +336,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 است.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="نمودار.html#cb233-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb233-2"><a href="نمودار.html#cb233-2" tabindex="-1"></a></span>
-<span id="cb233-3"><a href="نمودار.html#cb233-3" tabindex="-1"></a>iris <span class="sc">|&gt;</span> </span>
-<span id="cb233-4"><a href="نمودار.html#cb233-4" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb233-5"><a href="نمودار.html#cb233-5" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
-<span id="cb233-6"><a href="نمودار.html#cb233-6" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="نمودار.html#cb237-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb237-2"><a href="نمودار.html#cb237-2" tabindex="-1"></a></span>
+<span id="cb237-3"><a href="نمودار.html#cb237-3" tabindex="-1"></a>iris <span class="sc">|&gt;</span> </span>
+<span id="cb237-4"><a href="نمودار.html#cb237-4" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb237-5"><a href="نمودار.html#cb237-5" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
+<span id="cb237-6"><a href="نمودار.html#cb237-6" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 </details>
 <p><img src="book_files/figure-html/unnamed-chunk-13-1.png" width="100%" style="display: block; margin: auto;" /></p>
 

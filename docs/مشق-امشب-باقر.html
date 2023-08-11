@@ -309,35 +309,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>نمونه ۱</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb452"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb452-1"><a href="مشق-امشب-باقر.html#cb452-1" tabindex="-1"></a><span class="dv">70</span> <span class="dv">60</span> <span class="dv">50</span></span></code></pre></div>
+<div class="sourceCode" id="cb456"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb456-1"><a href="مشق-امشب-باقر.html#cb456-1" tabindex="-1"></a><span class="dv">70</span> <span class="dv">60</span> <span class="dv">50</span></span></code></pre></div>
 </details>
 <pre><code>Yes</code></pre>
 <ul>
 <li>نمونه ۲</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb454"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb454-1"><a href="مشق-امشب-باقر.html#cb454-1" tabindex="-1"></a><span class="dv">180</span> <span class="dv">0</span> <span class="dv">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb458"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb458-1"><a href="مشق-امشب-باقر.html#cb458-1" tabindex="-1"></a><span class="dv">180</span> <span class="dv">0</span> <span class="dv">0</span></span></code></pre></div>
 </details>
 <pre><code>No</code></pre>
 <ul>
 <li>نمونه ۳</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb456"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb456-1"><a href="مشق-امشب-باقر.html#cb456-1" tabindex="-1"></a><span class="dv">150</span> <span class="dv">40</span> <span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb460"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb460-1"><a href="مشق-امشب-باقر.html#cb460-1" tabindex="-1"></a><span class="dv">150</span> <span class="dv">40</span> <span class="dv">10</span></span></code></pre></div>
 </details>
 <pre><code>No</code></pre>
 <ul>
 <li>نمونه ۴</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb458"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb458-1"><a href="مشق-امشب-باقر.html#cb458-1" tabindex="-1"></a><span class="dv">78</span> <span class="dv">102</span> <span class="dv">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb462"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb462-1"><a href="مشق-امشب-باقر.html#cb462-1" tabindex="-1"></a><span class="dv">78</span> <span class="dv">102</span> <span class="dv">0</span></span></code></pre></div>
 </details>
 <pre><code>No</code></pre>
 <ul>
 <li>نمونه ۵</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb460"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb460-1"><a href="مشق-امشب-باقر.html#cb460-1" tabindex="-1"></a><span class="dv">87</span> <span class="dv">65</span> <span class="dv">27</span></span></code></pre></div>
+<div class="sourceCode" id="cb464"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb464-1"><a href="مشق-امشب-باقر.html#cb464-1" tabindex="-1"></a><span class="dv">87</span> <span class="dv">65</span> <span class="dv">27</span></span></code></pre></div>
 </details>
 <pre><code>No</code></pre>
 </div>
@@ -346,17 +346,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="solution">
 <p><span id="unlabeled-div-8" class="solution"><em>راه حل</em>. </span>قبل از دیدن پاسخ، سعی کنید خودتان انجام دهید.</p>
 <details class=chunk-details><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb462"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb462-1"><a href="مشق-امشب-باقر.html#cb462-1" tabindex="-1"></a>convert_single_string_to_vector <span class="ot">&lt;-</span></span>
-<span id="cb462-2"><a href="مشق-امشب-باقر.html#cb462-2" tabindex="-1"></a>  <span class="cf">function</span>(string, pattern) <span class="fu">return</span>(<span class="fu">strsplit</span>(string, pattern)[[<span class="dv">1</span>]])</span>
-<span id="cb462-3"><a href="مشق-امشب-باقر.html#cb462-3" tabindex="-1"></a></span>
-<span id="cb462-4"><a href="مشق-امشب-باقر.html#cb462-4" tabindex="-1"></a>are_all_angles_non_zero <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) <span class="fu">return</span>(<span class="sc">!</span>(<span class="dv">0</span> <span class="sc">%in%</span> angles))</span>
-<span id="cb462-5"><a href="مشق-امشب-باقر.html#cb462-5" tabindex="-1"></a>is_sum_of_angles_180 <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) <span class="fu">return</span>(<span class="fu">sum</span>(angles) <span class="sc">==</span> <span class="dv">180</span>)</span>
-<span id="cb462-6"><a href="مشق-امشب-باقر.html#cb462-6" tabindex="-1"></a></span>
-<span id="cb462-7"><a href="مشق-امشب-باقر.html#cb462-7" tabindex="-1"></a>can_create_triangle <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) {</span>
-<span id="cb462-8"><a href="مشق-امشب-باقر.html#cb462-8" tabindex="-1"></a>  angles <span class="ot">&lt;-</span> angles <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot; &quot;</span>) <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
-<span id="cb462-9"><a href="مشق-امشب-باقر.html#cb462-9" tabindex="-1"></a>  (<span class="fu">are_all_angles_non_zero</span>(angles) <span class="sc">&amp;&amp;</span> <span class="fu">is_sum_of_angles_180</span>(angles)) <span class="sc">|&gt;</span> </span>
-<span id="cb462-10"><a href="مشق-امشب-باقر.html#cb462-10" tabindex="-1"></a>    <span class="fu">ifelse</span>(<span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span>
-<span id="cb462-11"><a href="مشق-امشب-باقر.html#cb462-11" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb466"><pre class="sourceCode r fold-hide"><code class="sourceCode r"><span id="cb466-1"><a href="مشق-امشب-باقر.html#cb466-1" tabindex="-1"></a>convert_single_string_to_vector <span class="ot">&lt;-</span></span>
+<span id="cb466-2"><a href="مشق-امشب-باقر.html#cb466-2" tabindex="-1"></a>  <span class="cf">function</span>(string, pattern) <span class="fu">return</span>(<span class="fu">strsplit</span>(string, pattern)[[<span class="dv">1</span>]])</span>
+<span id="cb466-3"><a href="مشق-امشب-باقر.html#cb466-3" tabindex="-1"></a></span>
+<span id="cb466-4"><a href="مشق-امشب-باقر.html#cb466-4" tabindex="-1"></a>are_all_angles_non_zero <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) <span class="fu">return</span>(<span class="sc">!</span>(<span class="dv">0</span> <span class="sc">%in%</span> angles))</span>
+<span id="cb466-5"><a href="مشق-امشب-باقر.html#cb466-5" tabindex="-1"></a>is_sum_of_angles_180 <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) <span class="fu">return</span>(<span class="fu">sum</span>(angles) <span class="sc">==</span> <span class="dv">180</span>)</span>
+<span id="cb466-6"><a href="مشق-امشب-باقر.html#cb466-6" tabindex="-1"></a></span>
+<span id="cb466-7"><a href="مشق-امشب-باقر.html#cb466-7" tabindex="-1"></a>can_create_triangle <span class="ot">&lt;-</span> <span class="cf">function</span>(angles) {</span>
+<span id="cb466-8"><a href="مشق-امشب-باقر.html#cb466-8" tabindex="-1"></a>  angles <span class="ot">&lt;-</span> angles <span class="sc">|&gt;</span> <span class="fu">convert_single_string_to_vector</span>(<span class="st">&quot; &quot;</span>) <span class="sc">|&gt;</span> <span class="fu">as.numeric</span>()</span>
+<span id="cb466-9"><a href="مشق-امشب-باقر.html#cb466-9" tabindex="-1"></a>  (<span class="fu">are_all_angles_non_zero</span>(angles) <span class="sc">&amp;&amp;</span> <span class="fu">is_sum_of_angles_180</span>(angles)) <span class="sc">|&gt;</span> </span>
+<span id="cb466-10"><a href="مشق-امشب-باقر.html#cb466-10" tabindex="-1"></a>    <span class="fu">ifelse</span>(<span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span>
+<span id="cb466-11"><a href="مشق-امشب-باقر.html#cb466-11" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 </div>
 
