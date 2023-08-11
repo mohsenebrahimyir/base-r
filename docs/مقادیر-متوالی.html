@@ -291,49 +291,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>مرتب کردن مقادیر</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb260"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb260-1"><a href="مقادیر-متوالی.html#cb260-1" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">9</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="مقادیر-متوالی.html#cb266-1" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">9</span>))</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] -2  3  5  5  7  9</code></pre>
 <ul>
 <li>توالی صعودی در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb262"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb262-1"><a href="مقادیر-متوالی.html#cb262-1" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb268"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb268-1"><a href="مقادیر-متوالی.html#cb268-1" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 <ul>
 <li>توالی نزولی در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb264"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb264-1"><a href="مقادیر-متوالی.html#cb264-1" tabindex="-1"></a><span class="dv">10</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
+<div class="sourceCode" id="cb270"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb270-1"><a href="مقادیر-متوالی.html#cb270-1" tabindex="-1"></a><span class="dv">10</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 10  9  8  7  6  5  4  3  2  1</code></pre>
 <ul>
 <li>توالی صعودی با تعداد مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="مقادیر-متوالی.html#cb266-1" tabindex="-1"></a><span class="fu">seq_len</span>(<span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="مقادیر-متوالی.html#cb272-1" tabindex="-1"></a><span class="fu">seq_len</span>(<span class="dv">5</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 2 3 4 5</code></pre>
 <ul>
 <li>توالی صعودی با فاصله مشخص در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb268"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb268-1"><a href="مقادیر-متوالی.html#cb268-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> .<span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="مقادیر-متوالی.html#cb274-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> .<span class="dv">5</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  5.0  5.5  6.0  6.5  7.0  7.5  8.0  8.5  9.0  9.5 10.0</code></pre>
 <ul>
 <li>توالی صعودی به تعداد مشخص در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb270"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb270-1"><a href="مقادیر-متوالی.html#cb270-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">length =</span> <span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb276"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb276-1"><a href="مقادیر-متوالی.html#cb276-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">length =</span> <span class="dv">5</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  5.00  6.25  7.50  8.75 10.00</code></pre>
 <ul>
 <li>حروف کوچک الفبای انگلیسی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="مقادیر-متوالی.html#cb272-1" tabindex="-1"></a>letters</span></code></pre></div>
+<div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="مقادیر-متوالی.html#cb278-1" tabindex="-1"></a>letters</span></code></pre></div>
 </details>
 <pre class="output"><code> [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot;
 [14] &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot; &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
@@ -341,7 +341,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>حروف بزرگ الفبای انگلیسی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="مقادیر-متوالی.html#cb274-1" tabindex="-1"></a>LETTERS</span></code></pre></div>
+<div class="sourceCode" id="cb280"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb280-1"><a href="مقادیر-متوالی.html#cb280-1" tabindex="-1"></a>LETTERS</span></code></pre></div>
 </details>
 <pre class="output"><code> [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot;
 [14] &quot;N&quot; &quot;O&quot; &quot;P&quot; &quot;Q&quot; &quot;R&quot; &quot;S&quot; &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
@@ -349,7 +349,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>تکرار یک مقدار به تعداد مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb276"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb276-1"><a href="مقادیر-متوالی.html#cb276-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb282-1"><a href="مقادیر-متوالی.html#cb282-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="dv">10</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 2 2 2 2 2 2 2 2 2 2</code></pre>
 <ul>
@@ -358,7 +358,7 @@ n
 بار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="مقادیر-متوالی.html#cb278-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">times =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="مقادیر-متوالی.html#cb284-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">times =</span> <span class="dv">2</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 6 5 1 6 5</code></pre>
 <ul>
@@ -367,7 +367,7 @@ n
 بار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb280"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb280-1"><a href="مقادیر-متوالی.html#cb280-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">each=</span><span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb286"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb286-1"><a href="مقادیر-متوالی.html#cb286-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">each=</span><span class="dv">2</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 1 6 6 5 5</code></pre>
 

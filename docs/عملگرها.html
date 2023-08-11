@@ -291,10 +291,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 نوع خاصی از تابع است که روی چیز‌های که در چپ و راست آن قرار گیرد،
 اعمال می‌شود.</p>
 <ul>
-<li><code>$</code></li>
+<li>عملیات جمع به صورت عملگر</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="عملگرها.html#cb166-1" tabindex="-1"></a><span class="fu">unique</span>(iris <span class="sc">$</span> Species)</span></code></pre></div>
+<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="عملگرها.html#cb166-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div>
+</details>
+<pre><code>[1] 3</code></pre>
+<ul>
+<li>عملگر جمع به صورت تابع</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="عملگرها.html#cb168-1" tabindex="-1"></a><span class="st">&#39;+&#39;</span>(<span class="dv">1</span>, <span class="dv">2</span>)</span></code></pre></div>
+</details>
+<ul>
+<li>ساخت عملگر جمع دلخواه</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="عملگرها.html#cb169-1" tabindex="-1"></a><span class="st">&#39;%++%&#39;</span> <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb169-2"><a href="عملگرها.html#cb169-2" tabindex="-1"></a>  a <span class="sc">+</span> b <span class="sc">+</span> b</span>
+<span id="cb169-3"><a href="عملگرها.html#cb169-3" tabindex="-1"></a>}</span></code></pre></div>
+</details>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="عملگرها.html#cb170-1" tabindex="-1"></a><span class="dv">1</span> <span class="sc">%++%</span> <span class="dv">2</span></span></code></pre></div>
+</details>
+<pre><code>[1] 5</code></pre>
+<ul>
+<li>انتخاب ستون از یک فرمت داده به وسیله
+عملگر <code>$</code></li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="عملگرها.html#cb172-1" tabindex="-1"></a><span class="fu">unique</span>(iris <span class="sc">$</span> Species)</span></code></pre></div>
 </details>
 <pre><code>[1] setosa     versicolor virginica
 Levels: setosa versicolor virginica</code></pre>
@@ -308,7 +334,7 @@ Levels: setosa versicolor virginica</code></pre>
 </ul></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="عملگرها.html#cb168-1" tabindex="-1"></a>iris <span class="sc">$</span> Species <span class="sc">|&gt;</span> <span class="fu">unique</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="عملگرها.html#cb174-1" tabindex="-1"></a>iris <span class="sc">$</span> Species <span class="sc">|&gt;</span> <span class="fu">unique</span>()</span></code></pre></div>
 </details>
 <pre><code>[1] setosa     versicolor virginica
 Levels: setosa versicolor virginica</code></pre>
@@ -319,7 +345,7 @@ Levels: setosa versicolor virginica</code></pre>
 </ul></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="عملگرها.html#cb170-1" tabindex="-1"></a>iris <span class="sc">$</span> Species <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="عملگرها.html#cb176-1" tabindex="-1"></a>iris <span class="sc">$</span> Species <span class="sc">%&gt;%</span> <span class="fu">unique</span>()</span></code></pre></div>
 </details>
 <pre><code>[1] setosa     versicolor virginica
 Levels: setosa versicolor virginica</code></pre>
