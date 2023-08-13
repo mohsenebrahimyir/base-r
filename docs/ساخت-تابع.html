@@ -251,58 +251,58 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">7.2</span> ساخت تابع<a href="ساخت-تابع.html#ساخت-تابع" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>برای ساخت تابع باید به صورت زیر عمل کنیم.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="ساخت-تابع.html#cb337-1" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
-<span id="cb337-2"><a href="ساخت-تابع.html#cb337-2" tabindex="-1"></a></span>
-<span id="cb337-3"><a href="ساخت-تابع.html#cb337-3" tabindex="-1"></a>  <span class="co"># Do something</span></span>
-<span id="cb337-4"><a href="ساخت-تابع.html#cb337-4" tabindex="-1"></a></span>
-<span id="cb337-5"><a href="ساخت-تابع.html#cb337-5" tabindex="-1"></a>  <span class="fu">return</span>(output)</span>
-<span id="cb337-6"><a href="ساخت-تابع.html#cb337-6" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="ساخت-تابع.html#cb338-1" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
+<span id="cb338-2"><a href="ساخت-تابع.html#cb338-2" tabindex="-1"></a></span>
+<span id="cb338-3"><a href="ساخت-تابع.html#cb338-3" tabindex="-1"></a>  <span class="co"># Do something</span></span>
+<span id="cb338-4"><a href="ساخت-تابع.html#cb338-4" tabindex="-1"></a></span>
+<span id="cb338-5"><a href="ساخت-تابع.html#cb338-5" tabindex="-1"></a>  <span class="fu">return</span>(output)</span>
+<span id="cb338-6"><a href="ساخت-تابع.html#cb338-6" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <ul>
 <li>تابع جمع بستن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="ساخت-تابع.html#cb338-1" tabindex="-1"></a>jam <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
-<span id="cb338-2"><a href="ساخت-تابع.html#cb338-2" tabindex="-1"></a>  z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
-<span id="cb338-3"><a href="ساخت-تابع.html#cb338-3" tabindex="-1"></a>  <span class="fu">return</span>(z)</span>
-<span id="cb338-4"><a href="ساخت-تابع.html#cb338-4" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb339"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb339-1"><a href="ساخت-تابع.html#cb339-1" tabindex="-1"></a>jam <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb339-2"><a href="ساخت-تابع.html#cb339-2" tabindex="-1"></a>  z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span>
+<span id="cb339-3"><a href="ساخت-تابع.html#cb339-3" tabindex="-1"></a>  <span class="fu">return</span>(z)</span>
+<span id="cb339-4"><a href="ساخت-تابع.html#cb339-4" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb339"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb339-1"><a href="ساخت-تابع.html#cb339-1" tabindex="-1"></a><span class="fu">jam</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="ساخت-تابع.html#cb340-1" tabindex="-1"></a><span class="fu">jam</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 5</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb341"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb341-1"><a href="ساخت-تابع.html#cb341-1" tabindex="-1"></a><span class="fu">class</span>(jam)</span></code></pre></div>
+<div class="sourceCode" id="cb342"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb342-1"><a href="ساخت-تابع.html#cb342-1" tabindex="-1"></a><span class="fu">class</span>(jam)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;function&quot;</code></pre>
 <ul>
 <li>تابع سلام کردن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb343"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb343-1"><a href="ساخت-تابع.html#cb343-1" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(name) {</span>
-<span id="cb343-2"><a href="ساخت-تابع.html#cb343-2" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Salam&quot;</span>, name, <span class="st">&quot;aziz&quot;</span>)</span>
-<span id="cb343-3"><a href="ساخت-تابع.html#cb343-3" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
-<span id="cb343-4"><a href="ساخت-تابع.html#cb343-4" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="ساخت-تابع.html#cb344-1" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(name) {</span>
+<span id="cb344-2"><a href="ساخت-تابع.html#cb344-2" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">&quot;Salam&quot;</span>, name, <span class="st">&quot;aziz&quot;</span>)</span>
+<span id="cb344-3"><a href="ساخت-تابع.html#cb344-3" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
+<span id="cb344-4"><a href="ساخت-تابع.html#cb344-4" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="ساخت-تابع.html#cb344-1" tabindex="-1"></a><span class="fu">salam</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb345"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb345-1"><a href="ساخت-تابع.html#cb345-1" tabindex="-1"></a><span class="fu">salam</span>(<span class="st">&quot;Mohsen&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Mohsen aziz&quot;</code></pre>
 <ul>
 <li>مقدار اولیه برای ورودی‌ها</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb346"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb346-1"><a href="ساخت-تابع.html#cb346-1" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">name =</span> <span class="st">&quot;Mohsen&quot;</span>) {</span>
-<span id="cb346-2"><a href="ساخت-تابع.html#cb346-2" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Salam %s Aziz&quot;</span>, name)</span>
-<span id="cb346-3"><a href="ساخت-تابع.html#cb346-3" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
-<span id="cb346-4"><a href="ساخت-تابع.html#cb346-4" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="ساخت-تابع.html#cb347-1" tabindex="-1"></a>salam <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">name =</span> <span class="st">&quot;Mohsen&quot;</span>) {</span>
+<span id="cb347-2"><a href="ساخت-تابع.html#cb347-2" tabindex="-1"></a>  salam_name <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">&quot;Salam %s Aziz&quot;</span>, name)</span>
+<span id="cb347-3"><a href="ساخت-تابع.html#cb347-3" tabindex="-1"></a>  <span class="fu">return</span>(salam_name)</span>
+<span id="cb347-4"><a href="ساخت-تابع.html#cb347-4" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="ساخت-تابع.html#cb347-1" tabindex="-1"></a><span class="fu">salam</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb348"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb348-1"><a href="ساخت-تابع.html#cb348-1" tabindex="-1"></a><span class="fu">salam</span>()</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Mohsen Aziz&quot;</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb349"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb349-1"><a href="ساخت-تابع.html#cb349-1" tabindex="-1"></a><span class="fu">salam</span>(<span class="at">name =</span> <span class="st">&quot;Arash&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb350"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb350-1"><a href="ساخت-تابع.html#cb350-1" tabindex="-1"></a><span class="fu">salam</span>(<span class="at">name =</span> <span class="st">&quot;Arash&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;Salam Arash Aziz&quot;</code></pre>
 </div>

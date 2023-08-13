@@ -250,31 +250,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="بردار---مقادیر-تصادفی" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> بردار - مقادیر تصادفی<a href="بردار---مقادیر-تصادفی.html#بردار---مقادیر-تصادفی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
+<li>تنظیم
+<code>seed</code>
+برای ساخت اعداد رندوم</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="بردار---مقادیر-تصادفی.html#cb161-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span></code></pre></div>
+</details>
+<ul>
 <li>اعداد تصادفی در بازه مشخص بدون تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="بردار---مقادیر-تصادفی.html#cb161-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="بردار---مقادیر-تصادفی.html#cb162-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  5 12  1  4  6  7 10  8  3 13</code></pre>
 <ul>
 <li>اعداد تصادفی در بازه مشخص با تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="بردار---مقادیر-تصادفی.html#cb163-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span></code></pre></div>
+<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="بردار---مقادیر-تصادفی.html#cb164-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  7 18  4 16 10 19  9 16 17 10</code></pre>
 <ul>
 <li>حروف کوچک انگلیسی تصادفی بدون تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="بردار---مقادیر-تصادفی.html#cb165-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> letters, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="بردار---مقادیر-تصادفی.html#cb166-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> letters, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;r&quot; &quot;u&quot; &quot;z&quot; &quot;h&quot; &quot;k&quot; &quot;a&quot; &quot;m&quot; &quot;b&quot; &quot;v&quot; &quot;s&quot;</code></pre>
 <ul>
 <li>اعداد تصادفی با توزیع نرمال</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="بردار---مقادیر-تصادفی.html#cb167-1" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="بردار---مقادیر-تصادفی.html#cb168-1" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  1.29085505  0.70984957 -0.04318293  0.63228842  0.48876293
 [6]  0.03517201 -0.13634837 -0.16242425  0.91619639 -0.72076816</code></pre>
@@ -282,7 +290,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>اعداد تصادفی با توزیع یکنواخت</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="بردار---مقادیر-تصادفی.html#cb169-1" tabindex="-1"></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="بردار---مقادیر-تصادفی.html#cb170-1" tabindex="-1"></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 0.8406612 0.7941666 0.5174069 0.2705386 0.2232102
 [6] 0.8314685 0.9551069 0.1105243 0.1253661 0.1118882</code></pre>
