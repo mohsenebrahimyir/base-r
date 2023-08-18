@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>فصل 8 فایل‌ها | مبانی R</title>
-  <meta name="description" content="فصل 8 فایل‌ها | مبانی R" />
+  <title>فصل 13 تمرینات | مبانی R</title>
+  <meta name="description" content="فصل 13 تمرینات | مبانی R" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="فصل 8 فایل‌ها | مبانی R" />
+  <meta property="og:title" content="فصل 13 تمرینات | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="فصل 8 فایل‌ها | مبانی R" />
+  <meta name="twitter:title" content="فصل 13 تمرینات | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="بسته.html"/>
-<link rel="next" href="عملگرها.html"/>
+<link rel="prev" href="نمودار.html"/>
+<link rel="next" href="سوال-زرد-yellow-question.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -270,67 +270,31 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="فایلها" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">فصل 8</span> فایل‌ها<a href="فایلها.html#فایلها" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>فایل‌ها برای ذخیره سازی، و انتقال داده‌ها استفاده می‌شوند که نیاز داریم
-از روی آن‌ها داده‌ها را بخوانیم و بنویسیم.</p>
+<div id="تمرینات" class="section level1 hasAnchor" number="13">
+<h1><span class="header-section-number">فصل 13</span> تمرینات<a href="تمرینات.html#تمرینات" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="remark">
+<p><span id="unlabeled-div-6" class="remark"><em>نکته</em>. </span><strong><em>برای انجام تمرینات حتما به موارد زیر توجه کنید!</em></strong></p>
 <ul>
-<li>خروجی گرفتن داده با پسوند
-<span dir="ltr"><code>.csv</code></span></li>
+<li><p>کدهای مورد نظر خود را فقط در نواحی تعیین شده درون فایل
+<code>code.R</code>،
+بنویسید.</p></li>
+<li><p>نام پوشه تمرینات را تغییر ندهید.</p></li>
+<li><p>پوشه‌ها فقط شامل <code>code.R</code> باشد و فایل‌های جانبی را حذف نمایید.</p></li>
+<li><p>توجه فرمایید که حتما کدهای نوشته شده در کامپیوترتان قابل اجراست و شامل حلقه بینهایت یا کد مخرب نیست.</p></li>
+<li><p>بعد از تکمیل کدها و اطمینان از صحیح بودن خروجی‌ها،
+پوشه‌های شامل کدها را در فایل زیپی با آیدی ایمیل ثبتنامی در سایت
+باشگاه مغز ذخیره کنید. برای مثال: <code>example@email.com.zip</code></p></li>
 </ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="فایلها.html#cb337-1" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
-</details>
-<ul>
-<li>وارد کردن داده با پسوند
-<span dir="ltr"><code>.csv</code></span></li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="فایلها.html#cb338-1" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code>      X Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-1     1          5.1         3.5          1.4         0.2  setosa
-2     2          4.9         3.0          1.4         0.2  setosa
-3     3          4.7         3.2          1.3         0.2  setosa</code></pre>
-<ul>
-<li>خروجی گرفتن داده با پسوند اکسل</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="فایلها.html#cb340-1" tabindex="-1"></a>writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="at">x =</span> iris, <span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
-</details>
-<ul>
-<li>وارد کردن داده با پسوند اکسل</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb341"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb341-1"><a href="فایلها.html#cb341-1" tabindex="-1"></a>readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code># A tibble: 150 × 5
-   Sepal.…¹ Sepal…² Petal…³ Petal…⁴ Species
-      &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  
- 1      5.1     3.5     1.4     0.2 setosa 
- 2      4.9     3       1.4     0.2 setosa 
- 3      4.7     3.2     1.3     0.2 setosa 
- 4      4.6     3.1     1.5     0.2 setosa 
- 5      5       3.6     1.4     0.2 setosa 
- 6      5.4     3.9     1.7     0.4 setosa 
- 7      4.6     3.4     1.4     0.3 setosa 
- 8      5       3.4     1.5     0.2 setosa 
- 9      4.4     2.9     1.4     0.2 setosa 
-10      4.9     3.1     1.5     0.1 setosa 
-# … with 140 more rows, and abbreviated
-#   variable names ¹​Sepal.Length,
-#   ²​Sepal.Width, ³​Petal.Length,
-#   ⁴​Petal.Width
-# ℹ Use `print(n = ...)` to see more rows</code></pre>
-
+</div>
+<!--chapter:end:Rmd//88-00-exercise.Rmd-->
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="بسته.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="عملگرها.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="نمودار.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="سوال-زرد-yellow-question.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

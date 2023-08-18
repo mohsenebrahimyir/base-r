@@ -1,8 +1,8 @@
 Version: 1.0
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
+RestoreWorkspace: No
+SaveWorkspace: No
+AlwaysSaveHistory: No
 
 EnableCodeIndexing: Yes
 UseSpacesForTab: Yes
@@ -15,5 +15,5 @@ LaTeX: pdfLaTeX
 BuildType: Website
 
 PythonType: system
-PythonVersion: 3.8.12
+PythonVersion: 3.8.17
 PythonPath: /usr/bin/python3.8

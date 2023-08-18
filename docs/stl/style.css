@@ -299,7 +299,7 @@ caption, p.caption {
 
 /* block --------------------------------------------*/
 
-div.Theorem, div.lemma, div.definition, div.equation, div.exercise, div.example, div.remark {
+div.Theorem, div.lemma, div.definition, div.equation, div.exercise, div.example, div.remark, div.solution {
     padding: 1em 1em 0 1em;
     margin: 1em 0;
     background-size: 70px;
@@ -331,6 +331,13 @@ div.remark {
     border: 4px #b3040063;
     border-style: dashed solid;
     color: #e01010;
+}
+
+
+div.solution {
+    border: 4px #445069;
+    border-style: dashed solid;
+    color: #445069;
 }
 
 /* button -------------------------------------------------------*/

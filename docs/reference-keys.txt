@@ -1,5 +1,9 @@
 fig:unnamed-chunk-4
 fig:unnamed-chunk-6
+exr:unlabeled-div-9
+exr:unlabeled-div-12
+exr:unlabeled-div-15
+fig:unnamed-chunk-22
 مقدمه
 نصب-و-آماده-سازی-اولیه
 مفاهیم-پایه
@@ -38,3 +42,7 @@ fig:unnamed-chunk-6
 دستورات-شرطی
 حلقه
 نمودار
+تمرینات
+سوال-زرد-yellow-question
+جمع-مربعات-square-sum
+صفحه-شطرنج-chess-board
