@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>فصل 14 پروژه | مبانی R</title>
+  <meta name="description" content="فصل 14 پروژه | مبانی R" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="فصل 14 پروژه | مبانی R" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="فصل 14 پروژه | مبانی R" />
+  
+  
+  <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
+
+<meta name="author" content="محسن ابراهیمی" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="صفحه-شطرنج-chess-board.html"/>
+<link rel="next" href="جدول-۱-جمعیت-شناختی-table-1-demographic.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/codefolding-lua-1.1/codefolding-lua.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<!DOCTYPE HTML>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&display=swap" rel="stylesheet">
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="stl/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html">مبانی R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>پیش گفتار</a></li>
+<li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a></li>
+<li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
+<li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.2</b> محیط کاری</a></li>
+<li class="chapter" data-level="3.3" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.3</b> راهنما</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="مقادیر.html"><a href="مقادیر.html"><i class="fa fa-check"></i><b>4</b> مقادیر</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="رشتهای.html"><a href="رشتهای.html"><i class="fa fa-check"></i><b>4.1</b> رشته‌ای</a></li>
+<li class="chapter" data-level="4.2" data-path="عددی.html"><a href="عددی.html"><i class="fa fa-check"></i><b>4.2</b> عددی</a></li>
+<li class="chapter" data-level="4.3" data-path="منطقی.html"><a href="منطقی.html"><i class="fa fa-check"></i><b>4.3</b> منطقی</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="منطقی.html"><a href="منطقی.html#درست"><i class="fa fa-check"></i><b>4.3.1</b> درست</a></li>
+<li class="chapter" data-level="4.3.2" data-path="منطقی.html"><a href="منطقی.html#غلط"><i class="fa fa-check"></i><b>4.3.2</b> غلط</a></li>
+<li class="chapter" data-level="4.3.3" data-path="منطقی.html"><a href="منطقی.html#از-دست-رفته"><i class="fa fa-check"></i><b>4.3.3</b> از دست رفته</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="خالی.html"><a href="خالی.html"><i class="fa fa-check"></i><b>4.4</b> خالی</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="متغیرها.html"><a href="متغیرها.html"><i class="fa fa-check"></i><b>5</b> متغیرها</a></li>
+<li class="chapter" data-level="6" data-path="ساختار-داده.html"><a href="ساختار-داده.html"><i class="fa fa-check"></i><b>6</b> ساختار داده</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="بردار-کمی-بیشتر.html"><a href="بردار-کمی-بیشتر.html"><i class="fa fa-check"></i><b>6.1</b> بردار کمی بیشتر</a></li>
+<li class="chapter" data-level="6.2" data-path="بردار-متوالی-و-تصادفی.html"><a href="بردار-متوالی-و-تصادفی.html"><i class="fa fa-check"></i><b>6.2</b> بردار متوالی و تصادفی</a></li>
+<li class="chapter" data-level="6.3" data-path="بردار-ریاضی-و-آمار.html"><a href="بردار-ریاضی-و-آمار.html"><i class="fa fa-check"></i><b>6.3</b> بردار ریاضی و آمار</a></li>
+<li class="chapter" data-level="6.4" data-path="قالب-داده-کمی-بیشتر.html"><a href="قالب-داده-کمی-بیشتر.html"><i class="fa fa-check"></i><b>6.4</b> قالب داده کمی بیشتر</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="قالب-داده-کمی-بیشتر.html"><a href="قالب-داده-کمی-بیشتر.html#انتخاب-مقادیر"><i class="fa fa-check"></i><b>6.4.1</b> انتخاب مقادیر</a></li>
+<li class="chapter" data-level="6.4.2" data-path="قالب-داده-کمی-بیشتر.html"><a href="قالب-داده-کمی-بیشتر.html#اتصال-دو-قالب-داده"><i class="fa fa-check"></i><b>6.4.2</b> اتصال دو قالب داده</a></li>
+<li class="chapter" data-level="6.4.3" data-path="قالب-داده-کمی-بیشتر.html"><a href="قالب-داده-کمی-بیشتر.html#ادغام-دو-قالب-داده"><i class="fa fa-check"></i><b>6.4.3</b> ادغام دو قالب داده</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="توابع.html"><a href="توابع.html"><i class="fa fa-check"></i><b>7</b> توابع</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="توابع-درون-ساخت.html"><a href="توابع-درون-ساخت.html"><i class="fa fa-check"></i><b>7.1</b> توابع درون ساخت</a></li>
+<li class="chapter" data-level="7.2" data-path="ساخت-تابع.html"><a href="ساخت-تابع.html"><i class="fa fa-check"></i><b>7.2</b> ساخت تابع</a></li>
+<li class="chapter" data-level="7.3" data-path="بسته.html"><a href="بسته.html"><i class="fa fa-check"></i><b>7.3</b> بسته</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="بسته.html"><a href="بسته.html#نصب-بسته"><i class="fa fa-check"></i><b>7.3.1</b> نصب بسته</a></li>
+<li class="chapter" data-level="7.3.2" data-path="بسته.html"><a href="بسته.html#بارگذاری-بسته"><i class="fa fa-check"></i><b>7.3.2</b> بارگذاری بسته</a></li>
+<li class="chapter" data-level="7.3.3" data-path="بسته.html"><a href="بسته.html#بستههای-پرکاربرد"><i class="fa fa-check"></i><b>7.3.3</b> بسته‌های پرکاربرد</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="فایلها.html"><a href="فایلها.html"><i class="fa fa-check"></i><b>8</b> فایل‌ها</a></li>
+<li class="chapter" data-level="9" data-path="عملگرها.html"><a href="عملگرها.html"><i class="fa fa-check"></i><b>9</b> عملگرها</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="عملگرهای-حسابی.html"><a href="عملگرهای-حسابی.html"><i class="fa fa-check"></i><b>9.1</b> عملگرهای حسابی</a></li>
+<li class="chapter" data-level="9.2" data-path="عملگر-منطقی.html"><a href="عملگر-منطقی.html"><i class="fa fa-check"></i><b>9.2</b> عملگر منطقی</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="دستورات-شرطی.html"><a href="دستورات-شرطی.html"><i class="fa fa-check"></i><b>10</b> دستورات شرطی</a></li>
+<li class="chapter" data-level="11" data-path="حلقه.html"><a href="حلقه.html"><i class="fa fa-check"></i><b>11</b> حلقه</a></li>
+<li class="chapter" data-level="12" data-path="نمودار.html"><a href="نمودار.html"><i class="fa fa-check"></i><b>12</b> نمودار</a></li>
+<li class="chapter" data-level="13" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>13</b> تمرینات</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="چند-سایت-برای-تمرین-بیشتر.html"><a href="چند-سایت-برای-تمرین-بیشتر.html"><i class="fa fa-check"></i><b>13.1</b> چند سایت برای تمرین بیشتر</a></li>
+<li class="chapter" data-level="13.2" data-path="سایت-کوئرا.html"><a href="سایت-کوئرا.html"><i class="fa fa-check"></i><b>13.2</b> سایت کوئرا</a></li>
+<li class="chapter" data-level="13.3" data-path="ارسال-تمرین.html"><a href="ارسال-تمرین.html"><i class="fa fa-check"></i><b>13.3</b> ارسال تمرین</a></li>
+<li class="chapter" data-level="13.4" data-path="سوال-ساده-simple-question.html"><a href="سوال-ساده-simple-question.html"><i class="fa fa-check"></i><b>13.4</b> سوال ساده simple-question</a></li>
+<li class="chapter" data-level="13.5" data-path="سوال-زرد-yellow-question.html"><a href="سوال-زرد-yellow-question.html"><i class="fa fa-check"></i><b>13.5</b> سوال زرد yellow-question</a></li>
+<li class="chapter" data-level="13.6" data-path="مشق-شب-باقر-baqer-night-homework.html"><a href="مشق-شب-باقر-baqer-night-homework.html"><i class="fa fa-check"></i><b>13.6</b> مشق شب باقر baqer-night-homework</a></li>
+<li class="chapter" data-level="13.7" data-path="جمع-مربعات-square-sum.html"><a href="جمع-مربعات-square-sum.html"><i class="fa fa-check"></i><b>13.7</b> جمع مربعات square-sum</a></li>
+<li class="chapter" data-level="13.8" data-path="صفحه-شطرنج-chess-board.html"><a href="صفحه-شطرنج-chess-board.html"><i class="fa fa-check"></i><b>13.8</b> صفحه شطرنج chess-board</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="پروژه.html"><a href="پروژه.html"><i class="fa fa-check"></i><b>14</b> پروژه</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="جدول-۱-جمعیت-شناختی-table-1-demographic.html"><a href="جدول-۱-جمعیت-شناختی-table-1-demographic.html"><i class="fa fa-check"></i><b>14.1</b> جدول ۱ جمعیت شناختی table-1-demographic</a></li>
+<li class="chapter" data-level="14.2" data-path="شکل-۱-توزیع-جهانی-figure-1-global-distribution.html"><a href="شکل-۱-توزیع-جهانی-figure-1-global-distribution.html"><i class="fa fa-check"></i><b>14.2</b> شکل ۱ توزیع جهانی figure-1-global-distribution</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="main_resource.html"><a href="main_resource.html"><i class="fa fa-check"></i>منابع</a></li>
+<li class="divider"></li>
+&nbsp;
+<hr />
+<p style="text-align: center;">
+  <a href="https://mohsenebrahimy.ir/">
+  محسن ابراهیمی
+  <br/>
+ <span style="color: #808080;"><em>www.mohsenebrahimy.ir</em></span>
+ </a>
+</p>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<p style="text-align: center;">
+ <a href="https://t.me/mohsenebrahimy_ir" class="fa fa-telegram fa-3x" style="color:blue"></a>
+</p>
+&nbsp;
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><span dir="rtl">مبانی R</span></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="پروژه" class="section level1 hasAnchor" number="14">
+<h1><span class="header-section-number">فصل 14</span> پروژه<a href="پروژه.html#پروژه" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><strong>نظرسنجی جهانی رو مواد در دوران کرونا سال ۱۳۹۹</strong></p>
+<p><code>global-survey-on-drug-during-the-2020-covid-19</code></p>
+<center>
+<img src="https://www.frontiersin.org/files/Articles/646206/fpsyt-12-646206-HTML/image_m/fpsyt-12-646206-g001.jpg" />
+</center>
+<div class="ltr">
+<p><strong>A Global Survey on Changes in the Supply, Price, and Use of Illicit Drugs and Alcohol, and Related Complications During the 2020 COVID-19 Pandemic</strong>:
+<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.646206/full" class="uri">https://www.frontiersin.org/articles/10.3389/fpsyt.2021.646206/full</a></p>
+<p><strong>Reorganization of Substance Use Treatment and Harm Reduction Services During the COVID-19 Pandemic: A Global Survey</strong>:
+<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2021.639393/full" class="uri">https://www.frontiersin.org/articles/10.3389/fpsyt.2021.639393/full</a></p>
+</div>
+<!--chapter:end:Rmd//88-90-project.Rmd-->
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="صفحه-شطرنج-chess-board.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="جدول-۱-جمعیت-شناختی-table-1-demographic.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": true,
+"linkedin": true,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": null
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
