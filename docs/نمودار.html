@@ -306,49 +306,49 @@ div.csl-indent {
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb455"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb455-1"><a href="نمودار.html#cb455-1" tabindex="-1"></a><span class="fu">pie</span>(x)</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-19-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-21-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار نواری</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb456"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb456-1"><a href="نمودار.html#cb456-1" tabindex="-1"></a><span class="fu">barplot</span>(x)</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-20-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-22-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار ستونی یا بافت نگاشت</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb457"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb457-1"><a href="نمودار.html#cb457-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">hist</span>()</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-21-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-23-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار چگالی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb458"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb458-1"><a href="نمودار.html#cb458-1" tabindex="-1"></a>iris<span class="sc">$</span>Sepal.Width <span class="sc">|&gt;</span> <span class="fu">density</span>() <span class="sc">|&gt;</span> <span class="fu">plot</span>()</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-22-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-24-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار پراکندگی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb459"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb459-1"><a href="نمودار.html#cb459-1" tabindex="-1"></a><span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Width, iris<span class="sc">$</span>Petal.Length)</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-23-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>نمودار جعبه‌ای</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb460"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb460-1"><a href="نمودار.html#cb460-1" tabindex="-1"></a><span class="fu">boxplot</span>(iris<span class="sc">$</span>Sepal.Length <span class="sc">~</span> iris<span class="sc">$</span>Species)</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-24-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>رسم نمودار کلی از داده‌ها</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb461"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb461-1"><a href="نمودار.html#cb461-1" tabindex="-1"></a><span class="fu">plot</span>(iris)</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <ul>
 <li>ذخیره نمودار در فرمت‌های مختلف</li>
 </ul>
@@ -373,7 +373,7 @@ div.csl-indent {
 <span id="cb463-5"><a href="نمودار.html#cb463-5" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Petal.Length, <span class="at">y =</span> Petal.Width, <span class="at">color =</span> Species) <span class="sc">+</span></span>
 <span id="cb463-6"><a href="نمودار.html#cb463-6" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code></pre></div>
 </details>
-<p><img src="book_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="book_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <!--chapter:end:Rmd//12-00-plot.Rmd-->
 </div>
             </section>
