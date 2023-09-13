@@ -1,4 +1,8 @@
 # begin your code ==============================================================
+
+dir.create("img")
+dir.create("data")
+
 ## project_list ----------------------------------------------------------------
 
 project_list = list()
@@ -85,7 +89,7 @@ project_list$value_counter = function(...) {
 
 ## values_counter --------------------------------------------------------------
 
-project_list$values_counter <- function(...) {
+project_list$values_counter = function(...) {
   # code ...  
 }
 
@@ -106,30 +110,6 @@ project_list$df_demographic = {
 }
 
 ## table-1-demographic.xlsx ----------------------------------------------------
-
-# code ...  
-
-## number_of_country -----------------------------------------------------------
-
-project_list$number_of_country = {
-  # code ...  
-}
-
-## df_country ------------------------------------------------------------------
-
-project_list$df_country = {
-  # code ...  
-}
-
-## country-barchart.png --------------------------------------------------------
-
-# code ...  
-
-## figure-1-global-distribution.png --------------------------------------------
-
-# code ...  
-
-## global-distribution-responsive.html -----------------------------------------
 
 # code ...  
 

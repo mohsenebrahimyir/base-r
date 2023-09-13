@@ -16,8 +16,8 @@ fig:unnamed-chunk-42
 fig:unnamed-chunk-52
 fig:unnamed-chunk-54
 fig:unnamed-chunk-56
-fig:unnamed-chunk-64
-fig:unnamed-chunk-67
+fig:unnamed-chunk-60
+fig:unnamed-chunk-62
 مقدمه
 تمرینات
 ارسال-تمرین
