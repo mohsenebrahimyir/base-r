@@ -16,9 +16,24 @@ h1 {
 	max-width: 900px;
 	margin: 0 auto;
 }
+
 .ltr {
 	direction: ltr;
 }
+
+.ltr li {
+    padding-left: 5px;
+    margin-left: 15px;
+}
+
+.tiny-size {
+  font-size: 0.5em;
+}
+
+.script-size {
+  font-size: 0.6em;
+}
+
 .text-right {
 	text-align: right;
 }
@@ -61,6 +76,7 @@ h1 {
 .text-black {
 	font-weight: 900;
 }
+
 blockquote {
 	font-weight: 500;
 	padding: 10px;
@@ -270,16 +286,17 @@ caption, p.caption {
     left: 0;
 }
 
-.book.with-summary .book-body {
-    left: 0;
-    right: 300px;
-}
-
 .book.with-summary .book-header.fixed {
     right: 300px;
     left: 0;
 }
 
+.book.with-summary .book-body {
+    left: 0;
+    right: 300px;
+}
+
+/*
 @media (max-width: 600px) {
   .book .book-summary {
     width: calc(100% - 300px);
@@ -289,6 +306,7 @@ caption, p.caption {
     right: calc(100% - 300px);
   }
 }
+*/
 
 /* footnote ------------------------------------------------------*/
 
