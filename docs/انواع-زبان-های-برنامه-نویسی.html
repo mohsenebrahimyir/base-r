@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7.3 بسته | مبانی R</title>
-  <meta name="description" content="7.3 بسته | مبانی R" />
+  <title>1.1 انواع زبان های برنامه نویسی | مبانی R</title>
+  <meta name="description" content="1.1 انواع زبان های برنامه نویسی | مبانی R" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7.3 بسته | مبانی R" />
+  <meta property="og:title" content="1.1 انواع زبان های برنامه نویسی | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7.3 بسته | مبانی R" />
+  <meta name="twitter:title" content="1.1 انواع زبان های برنامه نویسی | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="ساخت-تابع.html"/>
-<link rel="next" href="اسم-فامیل-name-family.html"/>
+<link rel="prev" href="مقدمه.html"/>
+<link rel="next" href="تمرینات.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -294,155 +294,28 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="بسته" class="section level2 hasAnchor" number="7.3">
-<h2><span class="header-section-number">7.3</span> بسته<a href="بسته.html#بسته" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>خیلی از افراد توابعی که برای پروژه‌های شخصی خود نوشته‌اند را
-به صورت بسته
-(Package)
-اختیار دیگران قرار داده‌اند.</p>
+<div id="انواع-زبان-های-برنامه-نویسی" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> انواع زبان های برنامه نویسی<a href="انواع-زبان-های-برنامه-نویسی.html#انواع-زبان-های-برنامه-نویسی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>بسته‌های نصب شده</li>
+<li>زبان انسان (English)</li>
+<li>زبان‌های برنامه نویسی سطح بالا (C, C++, R)</li>
+<li>زبان برنامه نویسی سطح پایین (Assembly)</li>
+<li>زبان ماشین (01)</li>
 </ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="بسته.html#cb332-1" tabindex="-1"></a><span class="fu">.packages</span>(<span class="at">all.available =</span> T)</span></code></pre></div>
-</details>
-<pre><code> [1] &quot;Rcpp&quot;         &quot;base&quot;         &quot;boot&quot;        
- [4] &quot;class&quot;        &quot;cluster&quot;      &quot;codetools&quot;   
- [7] &quot;compiler&quot;     &quot;datasets&quot;     &quot;foreign&quot;     
-[10] &quot;graphics&quot;     &quot;grDevices&quot;    &quot;grid&quot;        
-[13] &quot;KernSmooth&quot;   &quot;lattice&quot;      &quot;MASS&quot;        
-[16] &quot;Matrix&quot;       &quot;methods&quot;      &quot;mgcv&quot;        
-[19] &quot;nlme&quot;         &quot;nnet&quot;         &quot;parallel&quot;    
-[22] &quot;rpart&quot;        &quot;spatial&quot;      &quot;splines&quot;     
-[25] &quot;stats&quot;        &quot;stats4&quot;       &quot;survival&quot;    
-[28] &quot;tcltk&quot;        &quot;tools&quot;        &quot;translations&quot;
-[31] &quot;utils&quot;</code></pre>
-<ul>
-<li>مسیر بسته‌های نصب شده</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="بسته.html#cb334-1" tabindex="-1"></a><span class="fu">.libPaths</span>()</span></code></pre></div>
-</details>
-<pre><code>[1] &quot;C:/Users/User/AppData/Local/R/win-library/4.3&quot;
-[2] &quot;C:/Program Files/R/R-4.3.1/library&quot;</code></pre>
-<div id="نصب-بسته" class="section level3 hasAnchor" number="7.3.1">
-<h3><span class="header-section-number">7.3.1</span> نصب بسته<a href="بسته.html#نصب-بسته" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>برای استفاده از توابع توسعه داده شده توسط دیگران، باید
-بسته مربوطه آن تابع را نصب نماییم:</p>
-<ul>
-<li>دانلود و نصب بسته‌ها از مخزن کِرَن
-(<a href="https://cran.r-project.org/">CRAN</a>)</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="بسته.html#cb336-1" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;dplyr&quot;</span>)</span></code></pre></div>
-</details>
-<ul>
-<li>نصب از مخزن گیت‌هاب
-(<a href="https://github.com/">Github</a>)</li>
-</ul>
-<p>ابتدا باید یکی از بسته‌های
-<code>remotes</code>
-یا
-<code>devtools</code>
-را نصب و سپس بسته مورد نظر را با یکی از روش زیر نصب نمایید.</p>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="بسته.html#cb337-1" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span>
-<span id="cb337-2"><a href="بسته.html#cb337-2" tabindex="-1"></a><span class="co"># or</span></span>
-<span id="cb337-3"><a href="بسته.html#cb337-3" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;tidyverse/dplyr&quot;</span>)</span></code></pre></div>
-</details>
-<ul>
-<li>دانلود از مخازن دیگر
-<ul>
-<li>مخزن بیت باکت (Bitbucket)
-با تابع
-<span dir="ltr"><code>install_bitbucket()</code></span></li>
-<li>مخزن گیت جنریک <span dir="ltr">(Generic git)</span>
-با تابع
-<span dir="ltr"><code>install_git()</code></span></li>
-<li>…</li>
-</ul></li>
-</ul>
+<p>سایت تبدیل زبان برنامه نویسی R به زبان برنامه نویسی Assembly <a href="https://www.codeconvert.ai/r-to-assembly-converter" class="uri">https://www.codeconvert.ai/r-to-assembly-converter</a></p>
+<div class="remark">
+<p><span id="unlabeled-div-1" class="remark"><em>نکته</em>. </span>در نهایت اکثر زبان‌های برنامه نویسی منطق یکسانی دارند و یادگیری یک زبان برنامه نویسی،
+یادگیری زبان برنامه نویسی دیگر را ساده تر می‌کند.</p>
 </div>
-<div id="بارگذاری-بسته" class="section level3 hasAnchor" number="7.3.2">
-<h3><span class="header-section-number">7.3.2</span> بارگذاری بسته<a href="بسته.html#بارگذاری-بسته" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><span dir="ltr"><code>library("package")</code></span>:
-تمام توابع موجود در یک پکیج را در محیط کاری آپلود می‌کند، اگر بسته نصب نباشد خطا
-(<code>Error</code>)
-برمی‌گرداند:</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="بسته.html#cb338-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code>Error in library(&quot;alaki&quot;) : there is no package called ‘alaki’</code></pre>
-<ul>
-<li><span dir="ltr"><code>require("package")</code></span>:
-تمام توابع موجود در یک پکیج را در محیط کاری آپلود می‌کند، اگر بسته نصب نباشد غلط
-(<code>FALSE</code>)
-برمی‌گرداند:</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="بسته.html#cb340-1" tabindex="-1"></a><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code>Loading required package: alaki
-Warning message:
-In library(package, lib.loc = lib.loc, character.only = TRUE, ... :
-  there is no package called ‘alaki’</code></pre>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb342"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb342-1"><a href="بسته.html#cb342-1" tabindex="-1"></a>(<span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>))</span></code></pre></div>
-</details>
-<pre class="output"><code>[1] FALSE</code></pre>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="بسته.html#cb344-1" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;alaki&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;alaki&quot;</span>)</span></code></pre></div>
-</details>
-<ul>
-<li><span dir="ltr"><code>package::function()</code></span>:
-این روش فقط برای مواقعی است که به صورت محلی می‌خواهیم تابع خاصی از یک پکیج را
-استفاده کنیم و دیگر به آن نیازی نداریم.</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb345"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb345-1"><a href="بسته.html#cb345-1" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">select</span>(iris, <span class="fu">c</span>(<span class="st">&quot;Sepal.Width&quot;</span>, <span class="st">&quot;Species&quot;</span>))</span></code></pre></div>
-</details>
-<pre class="output"><code>    Sepal.Width    Species
-1           3.5     setosa
-2           3.0     setosa 
-3           3.2     setosa
-4           3.1     setosa
-...         ...     ...</code></pre>
-</div>
-<div id="بستههای-پرکاربرد" class="section level3 hasAnchor" number="7.3.3">
-<h3><span class="header-section-number">7.3.3</span> بسته‌های پرکاربرد<a href="بسته.html#بستههای-پرکاربرد" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><code>Tidyverse</code></li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="بسته.html#cb347-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
-</details>
-<pre class="output"><code>── Attaching packages ────────────────── tidyverse 1.3.1 ──
-✓ ggplot2 3.3.5     ✓ purrr   0.3.4
-✓ tibble  3.1.6     ✓ dplyr   1.0.8
-✓ tidyr   1.2.0     ✓ stringr 1.4.0
-✓ readr   2.1.2     ✓ forcats 0.5.1
-── Conflicts ─────────────────────────── tidyverse_conflicts() ──
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()</code></pre>
-<p>این بسته متشکل از بسته‌های معروفی همچون
-<code>ggplot</code>،
-<code>tidyr</code>،
-<code>dplyr</code>،
-<code>readr</code>،
-<code>stringr</code>
-و … است.</p>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="ساخت-تابع.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="اسم-فامیل-name-family.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="مقدمه.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="تمرینات.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
