@@ -16,87 +16,87 @@ project_list$x = {
 ## df --------------------------------------------------------------------------
 
 project_list$df = {
-  # code ...  
+  # code ...
 }
 
 ## number_of_row_and_col -------------------------------------------------------
 
 project_list$number_of_row_and_col = {
-  # code ...  
+  # code ...
 }
 
 ## number_of_col ---------------------------------------------------------------
 
 project_list$number_of_col = {
-  # code ...  
+  # code ...
 }
 
 ## number_of_row ---------------------------------------------------------------
 
 project_list$number_of_row = {
-  # code ...  
+  # code ...
 }
 
 ## sorted_ages -----------------------------------------------------------------
 
 project_list$sorted_ages = {
-  # code ...  
+  # code ...
 }
 
 ## age-histogram.png -----------------------------------------------------------
 
-# code ...  
+# code ...
 
 ## age-boxplot.png -------------------------------------------------------------
 
-# code ...  
+# code ...
 
 ## df_age_mean_sd --------------------------------------------------------------
 
 project_list$df_age_mean_sd = {
-  # code ...  
+  # code ...
 }
 
 ## df_age_below_30_and_bsc_degree ----------------------------------------------
 
 project_list$df_age_below_30_and_bsc_degree = {
-  # code ...  
+  # code ...
 }
 
 ## number_of_bsc ---------------------------------------------------------------
 
 project_list$number_of_bsc = {
-  # code ...  
+  # code ...
 }
 
 ## percent_bsc -----------------------------------------------------------------
 
 percent_bsc = {
-  # code ...  
+  # code ...
 }
 
 ## df_degrees ------------------------------------------------------------------
 
 project_list$df_degrees = {
-  # code ...  
+  # code ...
 }
 
 ## value_counter ---------------------------------------------------------------
 
 project_list$value_counter = function(...) {
-  # code ...  
+  # code ...
 }
 
 ## values_counter --------------------------------------------------------------
 
 project_list$values_counter = function(...) {
-  # code ...  
+  # code ...
 }
 
 ## df_demog --------------------------------------------------------------------
 
 project_list$df_demog = {
-  # code ...  
+  # code ...
 }
 
 ## gender.png, degree.png, discipline.png --------------------------------------
@@ -106,11 +106,11 @@ project_list$df_demog = {
 ## df_demographic --------------------------------------------------------------
 
 project_list$df_demographic = {
-  # code ...  
+  # code ...
 }
 
 ## table-1-demographic.xlsx ----------------------------------------------------
 
-# code ...  
+# code ...
 
 # end your code ================================================================

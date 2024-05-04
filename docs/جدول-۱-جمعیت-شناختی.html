@@ -174,19 +174,21 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
-<li class="chapter" data-level="1.2" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>1.2</b> تمرینات</a></li>
-<li class="chapter" data-level="1.3" data-path="ارسال-تمرین.html"><a href="ارسال-تمرین.html"><i class="fa fa-check"></i><b>1.3</b> ارسال تمرین</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a></li>
+<li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>2.1</b> اجرای کد</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>2.1.1</b> راه اندازی محیط</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="مفاهیم-پایه.html"><a href="مفاهیم-پایه.html"><i class="fa fa-check"></i><b>3</b> مفاهیم پایه</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html"><i class="fa fa-check"></i><b>3.1</b> اجرای کد</a>
-<ul>
-<li class="chapter" data-level="3.1.1" data-path="اجرای-کد.html"><a href="اجرای-کد.html#راه-اندازی-محیط"><i class="fa fa-check"></i><b>3.1.1</b> راه اندازی محیط</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.2</b> محیط کاری</a></li>
-<li class="chapter" data-level="3.3" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.3</b> راهنما</a></li>
-<li class="chapter" data-level="3.4" data-path="سلام-دنیا-hello-world.html"><a href="سلام-دنیا-hello-world.html"><i class="fa fa-check"></i><b>3.4</b> سلام دنیا hello-world</a></li>
+<li class="chapter" data-level="3.1" data-path="محیط-کاری.html"><a href="محیط-کاری.html"><i class="fa fa-check"></i><b>3.1</b> محیط کاری</a></li>
+<li class="chapter" data-level="3.2" data-path="راهنما.html"><a href="راهنما.html"><i class="fa fa-check"></i><b>3.2</b> راهنما</a></li>
+<li class="chapter" data-level="3.3" data-path="تمرینات.html"><a href="تمرینات.html"><i class="fa fa-check"></i><b>3.3</b> تمرینات</a></li>
+<li class="chapter" data-level="3.4" data-path="ارسال-تمرین.html"><a href="ارسال-تمرین.html"><i class="fa fa-check"></i><b>3.4</b> ارسال تمرین</a></li>
+<li class="chapter" data-level="3.5" data-path="سلام-دنیا-hello-world.html"><a href="سلام-دنیا-hello-world.html"><i class="fa fa-check"></i><b>3.5</b> سلام دنیا hello-world</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="مقادیر.html"><a href="مقادیر.html"><i class="fa fa-check"></i><b>4</b> مقادیر</a>
 <ul>
@@ -417,9 +419,9 @@ div.csl-indent {
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb483"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb483-1"><a href="جدول-۱-جمعیت-شناختی.html#cb483-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_age_below_30_and_bsc_degree <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
-<pre><code>    Gender Age       Date Degree
-163   Male  28 2020-04-30    BSc
-173   Male  25 2020-05-04    BSc</code></pre>
+<pre><code>    Gender Age       Date Degree            Discipline Country
+163   Male  28 2020-04-30    BSc           Social Work   Burma
+173   Male  25 2020-05-04    BSc Psychology/Counseling Namibia</code></pre>
 <ol start="11" class="example" style="list-style-type: decimal">
 <li>تعداد افراد با مدرک کارشناسی را محاسبه کنید.
 و در متغیر
@@ -439,6 +441,7 @@ div.csl-indent {
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
 <div class="sourceCode" id="cb487"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb487-1"><a href="جدول-۱-جمعیت-شناختی.html#cb487-1" tabindex="-1"></a>project_list<span class="sc">$</span>percent_of_bsc <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
+<pre><code>3.4</code></pre>
 <ol start="13" class="example" style="list-style-type: decimal">
 <li>تعداد و درصد افراد را برای همه‌ی مدارک تحصیلی محاسبه کنید و
 به صورت قالب داده در متغیر
@@ -446,7 +449,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb488"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb488-1"><a href="جدول-۱-جمعیت-شناختی.html#cb488-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_degrees <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb489"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb489-1"><a href="جدول-۱-جمعیت-شناختی.html#cb489-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_degrees <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>   value count percent
 1    BSc     6     3.4
@@ -462,7 +465,7 @@ div.csl-indent {
 بنویسید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb490"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb490-1"><a href="جدول-۱-جمعیت-شناختی.html#cb490-1" tabindex="-1"></a>project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">value_counter</span>(<span class="st">&quot;Degree&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb491"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb491-1"><a href="جدول-۱-جمعیت-شناختی.html#cb491-1" tabindex="-1"></a>project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">value_counter</span>(<span class="st">&quot;Degree&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>   value count percent
 1    BSc     6     3.4
@@ -481,12 +484,12 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb492"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb492-1"><a href="جدول-۱-جمعیت-شناختی.html#cb492-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="ot">=</span> </span>
-<span id="cb492-2"><a href="جدول-۱-جمعیت-شناختی.html#cb492-2" tabindex="-1"></a>  project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">values_counter</span>(</span>
-<span id="cb492-3"><a href="جدول-۱-جمعیت-شناختی.html#cb492-3" tabindex="-1"></a>    <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Discipline&quot;</span>)</span>
-<span id="cb492-4"><a href="جدول-۱-جمعیت-شناختی.html#cb492-4" tabindex="-1"></a>  ) </span>
-<span id="cb492-5"><a href="جدول-۱-جمعیت-شناختی.html#cb492-5" tabindex="-1"></a></span>
-<span id="cb492-6"><a href="جدول-۱-جمعیت-شناختی.html#cb492-6" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb493"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb493-1"><a href="جدول-۱-جمعیت-شناختی.html#cb493-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="ot">=</span> </span>
+<span id="cb493-2"><a href="جدول-۱-جمعیت-شناختی.html#cb493-2" tabindex="-1"></a>  project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">values_counter</span>(</span>
+<span id="cb493-3"><a href="جدول-۱-جمعیت-شناختی.html#cb493-3" tabindex="-1"></a>    <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Discipline&quot;</span>)</span>
+<span id="cb493-4"><a href="جدول-۱-جمعیت-شناختی.html#cb493-4" tabindex="-1"></a>  ) </span>
+<span id="cb493-5"><a href="جدول-۱-جمعیت-شناختی.html#cb493-5" tabindex="-1"></a></span>
+<span id="cb493-6"><a href="جدول-۱-جمعیت-شناختی.html#cb493-6" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>       column                     value count percent
 1      Gender                    Female    62    35.0
@@ -545,7 +548,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb494"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb494-1"><a href="جدول-۱-جمعیت-شناختی.html#cb494-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demographic <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb495"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb495-1"><a href="جدول-۱-جمعیت-شناختی.html#cb495-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demographic <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>       column                     value count_or_mean percent_or_sd
 1      Gender                    Female         62.00         35.00
