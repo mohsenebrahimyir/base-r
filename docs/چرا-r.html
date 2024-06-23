@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>7.1 توابع درون ساخت | مبانی R</title>
-  <meta name="description" content="7.1 توابع درون ساخت | مبانی R" />
+  <title>1.2 چرا R | مبانی R</title>
+  <meta name="description" content="1.2 چرا R | مبانی R" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="7.1 توابع درون ساخت | مبانی R" />
+  <meta property="og:title" content="1.2 چرا R | مبانی R" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="7.1 توابع درون ساخت | مبانی R" />
+  <meta name="twitter:title" content="1.2 چرا R | مبانی R" />
   
   
   <meta name="twitter:image" content="https://mohsenebrahimyir.github.io/base-r/img/cover.jpg" />
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="توابع.html"/>
-<link rel="next" href="ساخت-تابع.html"/>
+<link rel="prev" href="انواع-زبان-های-برنامه-نویسی.html"/>
+<link rel="next" href="نصب-و-آماده-سازی-اولیه.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -303,64 +303,127 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="توابع-درون-ساخت" class="section level2 hasAnchor" number="7.1">
-<h2><span class="header-section-number">7.1</span> توابع درون ساخت<a href="توابع-درون-ساخت.html#توابع-درون-ساخت" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>توابعی که به طور پیش فرض در
-<strong>R</strong>
-قرار دارند را توابع
-درون ساخت <span dir="ltr">(built-in)</span>
-می‌گویند.</p>
+<div id="چرا-r" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> چرا R<a href="چرا-r.html#چرا-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="نگاهی-به-نظر-برنامه-نویسان" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> نگاهی به نظر برنامه نویسان<a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>دریافت خلاصه‌ای از
-ساختار (Structure)
-یک شئ</li>
+<li><a href="https://survey.stackoverflow.co/" class="uri">https://survey.stackoverflow.co/</a></li>
 </ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="توابع-درون-ساخت.html#cb316-1" tabindex="-1"></a><span class="fu">str</span>(iris)</span></code></pre></div>
-</details>
-<pre class="output"><code>&#39;data.frame&#39;:   150 obs. of  5 variables:
- $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
- $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
- $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
- $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
- $ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
-<ul>
-<li>تبدیل چند رشته به یک رشته</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="توابع-درون-ساخت.html#cb318-1" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>) <span class="do">## or paste0()</span></span></code></pre></div>
-</details>
-<pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
-<ul>
-<li>جای گذاری یک مقدار در یک رشته با استفاده از
-<span dir="ltr"><code>%s</code></span></li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="توابع-درون-ساخت.html#cb320-1" tabindex="-1"></a><span class="fu">sprintf</span>(<span class="at">fmt =</span> <span class="st">&quot;Salam %s!&quot;</span>, <span class="st">&quot;Donya&quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code>[1] &quot;Salam Donya!&quot;</code></pre>
-<ul>
-<li>چاپ کردن چند چیز</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="توابع-درون-ساخت.html#cb322-1" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Salam &quot;</span>, <span class="st">&quot;Donya&quot;</span>, <span class="st">&quot;!&quot;</span>, <span class="at">sep =</span> <span class="st">&quot;&quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code>Salam Donya!</code></pre>
-<ul>
-<li>خواندن کامند لاین</li>
-</ul>
-<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="توابع-درون-ساخت.html#cb324-1" tabindex="-1"></a><span class="fu">readline</span>(<span class="at">prompt =</span> <span class="st">&quot;lotfan ye chezy vared konid: &quot;</span>)</span></code></pre></div>
-</details>
-<pre class="output"><code>lotfan ye chezy vared konid: </code></pre>
+<div id="کل-دادهها" class="section level4 hasAnchor" number="1.2.1.1">
+<h4><span class="header-section-number">1.2.1.1</span> کل داده‌ها<a href="چرا-r.html#کل-دادهها" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>در این شکل توزیع کشورهای افراد شرکت کننده را ترسیم نمودیم (بعضی افراد از اظهار کشورشان امتناع کردند که از داده‌ها حذف شده‌اند)</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="img/stackoverflow-survey/world-map-of-developers.png" alt="توزیع کشورهای توسعه دهندگان شرکت کننده در نظرسنجی جهانی" width="95%" />
+<p class="caption">
+شکل 1.2: توزیع کشورهای توسعه دهندگان شرکت کننده در نظرسنجی جهانی
+</p>
 </div>
+</div>
+<div id="توسعه-دهندگان-فیلتر-شده" class="section level4 hasAnchor" number="1.2.1.2">
+<h4><span class="header-section-number">1.2.1.2</span> توسعه دهندگان فیلتر شده<a href="چرا-r.html#توسعه-دهندگان-فیلتر-شده" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>با توجه به داده‌های موجود در نظر سنجی برای دقت بیشتر و تحلیل بهتر نتایج،
+بخشی از شرکت کننده‌ها فیلتر شده‌اند.</p>
+<p>شرایط توسعه دهندگانی که برای تحلیل انتخاب شده‌اند.</p>
+<ul>
+<li>افراد بالای ۲۵ سال سن</li>
+<li>افراد با بیش از ۵ سال سابقه برنامه نویسی حرفه‌ای</li>
+<li>افراد شاغل (تمام یا نیمه وقت) یا خود اشتغال</li>
+<li>افرادی که از انواع گزینه‌های توسعه دهنده کمتر از ۳ گزینه انتخاب نمودند.</li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="img/stackoverflow-survey/world-map-of-filtered-developers.png" alt="توزیع کشورهای توسعه دهندگان فیلتر شده شرکت کننده در نظرسنجی جهانی" width="95%" />
+<p class="caption">
+شکل 1.3: توزیع کشورهای توسعه دهندگان فیلتر شده شرکت کننده در نظرسنجی جهانی
+</p>
+</div>
+</div>
+<div id="انواع-توسعه-دهندگان" class="section level4 hasAnchor" number="1.2.1.3">
+<h4><span class="header-section-number">1.2.1.3</span> انواع توسعه دهندگان<a href="چرا-r.html#انواع-توسعه-دهندگان" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-10"></span>
+<img src="img/stackoverflow-survey/developers-types.png" alt="انواع توسعه دهندگان" width="95%" />
+<p class="caption">
+شکل 1.4: انواع توسعه دهندگان
+</p>
+</div>
+</div>
+</div>
+<div id="ده-زبان-برنامه-نویسی-برتر" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> ده زبان برنامه نویسی برتر<a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="نگاه-کلی" class="section level4 hasAnchor" number="1.2.2.1">
+<h4><span class="header-section-number">1.2.2.1</span> نگاه کلی<a href="چرا-r.html#نگاه-کلی" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-12"></span>
+<img src="img/stackoverflow-survey/all-developers.png" alt="ده زبان برنامه نویسی برتر-نگاه کلی" width="95%" />
+<p class="caption">
+شکل 1.5: ده زبان برنامه نویسی برتر-نگاه کلی
+</p>
+</div>
+</div>
+<div id="نرم-افزار" class="section level4 hasAnchor" number="1.2.2.2">
+<h4><span class="header-section-number">1.2.2.2</span> نرم افزار<a href="چرا-r.html#نرم-افزار" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-14"></span>
+<img src="img/stackoverflow-survey/developer-desktop-or-enterprise-applications.png" alt="ده زبان برنامه نویسی برتر-توسعه دهندگان نرم افزار" width="95%" />
+<p class="caption">
+شکل 1.6: ده زبان برنامه نویسی برتر-توسعه دهندگان نرم افزار
+</p>
+</div>
+</div>
+<div id="وبسایت-بکاند-فرانت-اند" class="section level4 hasAnchor" number="1.2.2.3">
+<h4><span class="header-section-number">1.2.2.3</span> وبسایت (بک‌اند-فرانت-اند)<a href="چرا-r.html#وبسایت-بکاند-فرانت-اند" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-16"></span>
+<img src="img/stackoverflow-survey/developer-full-stack.png" alt="ده زبان برنامه نویسی برتر-توسعه دهندگان وبسایت" width="95%" />
+<p class="caption">
+شکل 1.7: ده زبان برنامه نویسی برتر-توسعه دهندگان وبسایت
+</p>
+</div>
+</div>
+<div id="بازی-سازی" class="section level4 hasAnchor" number="1.2.2.4">
+<h4><span class="header-section-number">1.2.2.4</span> بازی سازی<a href="چرا-r.html#بازی-سازی" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
+<img src="img/stackoverflow-survey/developer-game-or-graphics.png" alt="ده زبان برنامه نویسی برتر-توسعه دهندگان بازی" width="95%" />
+<p class="caption">
+شکل 1.8: ده زبان برنامه نویسی برتر-توسعه دهندگان بازی
+</p>
+</div>
+</div>
+<div id="موبایل" class="section level4 hasAnchor" number="1.2.2.5">
+<h4><span class="header-section-number">1.2.2.5</span> موبایل<a href="چرا-r.html#موبایل" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-20"></span>
+<img src="img/stackoverflow-survey/developer-mobile.png" alt="ده زبان برنامه نویسی برتر-توسعه دهندگان موبایل" width="95%" />
+<p class="caption">
+شکل 1.9: ده زبان برنامه نویسی برتر-توسعه دهندگان موبایل
+</p>
+</div>
+</div>
+<div id="دانشمند-داده-و-یادگیری-ماشین" class="section level4 hasAnchor" number="1.2.2.6">
+<h4><span class="header-section-number">1.2.2.6</span> دانشمند داده و یادگیری ماشین<a href="چرا-r.html#دانشمند-داده-و-یادگیری-ماشین" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-22"></span>
+<img src="img/stackoverflow-survey/data-scientist-or-machine-learning-specialist.png" alt="ده زبان برنامه نویسی برتر-توسعه دهندگان داده و یادگیری ماشین" width="95%" />
+<p class="caption">
+شکل 1.10: ده زبان برنامه نویسی برتر-توسعه دهندگان داده و یادگیری ماشین
+</p>
+</div>
+</div>
+</div>
+<div id="زبان-برنامه-نویسی-برای-شروع" class="section level3 hasAnchor" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> زبان برنامه نویسی برای شروع<a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-24"></span>
+<img src="img/which-language-should-i-learn-first.png" alt="چه زبان برنامه نویسی را باید اول یاد بگیریم؟" width="95%" />
+<p class="caption">
+شکل 1.11: چه زبان برنامه نویسی را باید اول یاد بگیریم؟
+</p>
+</div>
+
+</div>
+</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="توابع.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ساخت-تابع.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="انواع-زبان-های-برنامه-نویسی.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="نصب-و-آماده-سازی-اولیه.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

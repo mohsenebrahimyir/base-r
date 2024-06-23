@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -305,16 +311,16 @@ div.csl-indent {
 <code>plotly</code></li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb497"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb497-1"><a href="شکل-۱-توزیع-جهانی.html#cb497-1" tabindex="-1"></a><span class="do">## installing and importing packages</span></span>
-<span id="cb497-2"><a href="شکل-۱-توزیع-جهانی.html#cb497-2" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;tidyverse&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>); <span class="fu">library</span>(tidyverse)</span>
-<span id="cb497-3"><a href="شکل-۱-توزیع-جهانی.html#cb497-3" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;plotly&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;plotly&quot;</span>); <span class="fu">library</span>(<span class="st">&quot;plotly&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb505"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb505-1"><a href="شکل-۱-توزیع-جهانی.html#cb505-1" tabindex="-1"></a><span class="do">## installing and importing packages</span></span>
+<span id="cb505-2"><a href="شکل-۱-توزیع-جهانی.html#cb505-2" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;tidyverse&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>); <span class="fu">library</span>(tidyverse)</span>
+<span id="cb505-3"><a href="شکل-۱-توزیع-جهانی.html#cb505-3" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">&quot;plotly&quot;</span>)) <span class="fu">install.packages</span>(<span class="st">&quot;plotly&quot;</span>); <span class="fu">library</span>(<span class="st">&quot;plotly&quot;</span>)</span></code></pre></div>
 </details>
 <ol start="20" class="example" style="list-style-type: decimal">
 <li>وارد کردن داده‌ها</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb498"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb498-1"><a href="شکل-۱-توزیع-جهانی.html#cb498-1" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;./data/drug-global-survey-covid-19.csv&quot;</span></span>
-<span id="cb498-2"><a href="شکل-۱-توزیع-جهانی.html#cb498-2" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">read_csv</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb506"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb506-1"><a href="شکل-۱-توزیع-جهانی.html#cb506-1" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;./data/drug-global-survey-covid-19.csv&quot;</span></span>
+<span id="cb506-2"><a href="شکل-۱-توزیع-جهانی.html#cb506-2" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">read_csv</span>(x)</span></code></pre></div>
 </details>
 <pre><code>Rows: 177 Columns: 6                                                                                                                
 ── Column specification ─────────────────────────────────────────────────────────────────────────
@@ -344,18 +350,18 @@ $ Country    &lt;chr&gt; &quot;Netherlands&quot;, &quot;Iran&quot;, &quot;Iran&q
 ذخیره شوند.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb502"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb502-1"><a href="شکل-۱-توزیع-جهانی.html#cb502-1" tabindex="-1"></a>df_country <span class="ot">=</span> df <span class="sc">|&gt;</span></span>
-<span id="cb502-2"><a href="شکل-۱-توزیع-جهانی.html#cb502-2" tabindex="-1"></a>  <span class="fu">group_by</span>(Country) <span class="sc">|&gt;</span></span>
-<span id="cb502-3"><a href="شکل-۱-توزیع-جهانی.html#cb502-3" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb502-4"><a href="شکل-۱-توزیع-جهانی.html#cb502-4" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">value =</span> Country) <span class="sc">|&gt;</span></span>
-<span id="cb502-5"><a href="شکل-۱-توزیع-جهانی.html#cb502-5" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb502-6"><a href="شکل-۱-توزیع-جهانی.html#cb502-6" tabindex="-1"></a>    <span class="at">percent =</span> (count <span class="sc">/</span> <span class="fu">sum</span>(count) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">2</span>),</span>
-<span id="cb502-7"><a href="شکل-۱-توزیع-جهانی.html#cb502-7" tabindex="-1"></a>    <span class="at">value =</span> value <span class="sc">|&gt;</span> <span class="fu">reorder</span>(count)</span>
-<span id="cb502-8"><a href="شکل-۱-توزیع-جهانی.html#cb502-8" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb502-9"><a href="شکل-۱-توزیع-جهانی.html#cb502-9" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(count))</span>
-<span id="cb502-10"><a href="شکل-۱-توزیع-جهانی.html#cb502-10" tabindex="-1"></a></span>
-<span id="cb502-11"><a href="شکل-۱-توزیع-جهانی.html#cb502-11" tabindex="-1"></a></span>
-<span id="cb502-12"><a href="شکل-۱-توزیع-جهانی.html#cb502-12" tabindex="-1"></a>df_country</span></code></pre></div>
+<div class="sourceCode" id="cb510"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb510-1"><a href="شکل-۱-توزیع-جهانی.html#cb510-1" tabindex="-1"></a>df_country <span class="ot">=</span> df <span class="sc">|&gt;</span></span>
+<span id="cb510-2"><a href="شکل-۱-توزیع-جهانی.html#cb510-2" tabindex="-1"></a>  <span class="fu">group_by</span>(Country) <span class="sc">|&gt;</span></span>
+<span id="cb510-3"><a href="شکل-۱-توزیع-جهانی.html#cb510-3" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb510-4"><a href="شکل-۱-توزیع-جهانی.html#cb510-4" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">value =</span> Country) <span class="sc">|&gt;</span></span>
+<span id="cb510-5"><a href="شکل-۱-توزیع-جهانی.html#cb510-5" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb510-6"><a href="شکل-۱-توزیع-جهانی.html#cb510-6" tabindex="-1"></a>    <span class="at">percent =</span> (count <span class="sc">/</span> <span class="fu">sum</span>(count) <span class="sc">*</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> <span class="fu">round</span>(<span class="dv">2</span>),</span>
+<span id="cb510-7"><a href="شکل-۱-توزیع-جهانی.html#cb510-7" tabindex="-1"></a>    <span class="at">value =</span> value <span class="sc">|&gt;</span> <span class="fu">reorder</span>(count)</span>
+<span id="cb510-8"><a href="شکل-۱-توزیع-جهانی.html#cb510-8" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb510-9"><a href="شکل-۱-توزیع-جهانی.html#cb510-9" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(count))</span>
+<span id="cb510-10"><a href="شکل-۱-توزیع-جهانی.html#cb510-10" tabindex="-1"></a></span>
+<span id="cb510-11"><a href="شکل-۱-توزیع-جهانی.html#cb510-11" tabindex="-1"></a></span>
+<span id="cb510-12"><a href="شکل-۱-توزیع-جهانی.html#cb510-12" tabindex="-1"></a>df_country</span></code></pre></div>
 </details>
 <pre><code># A tibble: 77 × 3
    value          count percent
@@ -383,41 +389,41 @@ $ Country    &lt;chr&gt; &quot;Netherlands&quot;, &quot;Iran&quot;, &quot;Iran&q
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb504"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb504-1"><a href="شکل-۱-توزیع-جهانی.html#cb504-1" tabindex="-1"></a>country_barchart <span class="ot">=</span> </span>
-<span id="cb504-2"><a href="شکل-۱-توزیع-جهانی.html#cb504-2" tabindex="-1"></a>  <span class="do">## importing data to ggplot</span></span>
-<span id="cb504-3"><a href="شکل-۱-توزیع-جهانی.html#cb504-3" tabindex="-1"></a>  df_country <span class="sc">|&gt;</span> </span>
-<span id="cb504-4"><a href="شکل-۱-توزیع-جهانی.html#cb504-4" tabindex="-1"></a>  <span class="do">## ggplot panel</span></span>
-<span id="cb504-5"><a href="شکل-۱-توزیع-جهانی.html#cb504-5" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb504-6"><a href="شکل-۱-توزیع-جهانی.html#cb504-6" tabindex="-1"></a>  <span class="do">## aesthetic</span></span>
-<span id="cb504-7"><a href="شکل-۱-توزیع-جهانی.html#cb504-7" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> count, <span class="at">y =</span> value, <span class="at">fill =</span> count <span class="sc">&gt;=</span> <span class="dv">9</span>) <span class="sc">+</span></span>
-<span id="cb504-8"><a href="شکل-۱-توزیع-جهانی.html#cb504-8" tabindex="-1"></a>  <span class="do">## chart type</span></span>
-<span id="cb504-9"><a href="شکل-۱-توزیع-جهانی.html#cb504-9" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb504-10"><a href="شکل-۱-توزیع-جهانی.html#cb504-10" tabindex="-1"></a>  <span class="do">## custom labels</span></span>
-<span id="cb504-11"><a href="شکل-۱-توزیع-جهانی.html#cb504-11" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb504-12"><a href="شکل-۱-توزیع-جهانی.html#cb504-12" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;N&quot;</span>,</span>
-<span id="cb504-13"><a href="شکل-۱-توزیع-جهانی.html#cb504-13" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Country&quot;</span>,</span>
-<span id="cb504-14"><a href="شکل-۱-توزیع-جهانی.html#cb504-14" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">&quot;N&quot;</span></span>
-<span id="cb504-15"><a href="شکل-۱-توزیع-جهانی.html#cb504-15" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb504-16"><a href="شکل-۱-توزیع-جهانی.html#cb504-16" tabindex="-1"></a>  <span class="do">## general theme</span></span>
-<span id="cb504-17"><a href="شکل-۱-توزیع-جهانی.html#cb504-17" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">&quot;Roboto&quot;</span>, <span class="at">base_size =</span> <span class="dv">6</span>) <span class="sc">+</span></span>
-<span id="cb504-18"><a href="شکل-۱-توزیع-جهانی.html#cb504-18" tabindex="-1"></a>  <span class="do">## custom theme</span></span>
-<span id="cb504-19"><a href="شکل-۱-توزیع-جهانی.html#cb504-19" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb504-20"><a href="شکل-۱-توزیع-جهانی.html#cb504-20" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
-<span id="cb504-21"><a href="شکل-۱-توزیع-جهانی.html#cb504-21" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>),</span>
-<span id="cb504-22"><a href="شکل-۱-توزیع-جهانی.html#cb504-22" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>)</span>
-<span id="cb504-23"><a href="شکل-۱-توزیع-جهانی.html#cb504-23" tabindex="-1"></a>  )</span>
-<span id="cb504-24"><a href="شکل-۱-توزیع-جهانی.html#cb504-24" tabindex="-1"></a></span>
-<span id="cb504-25"><a href="شکل-۱-توزیع-جهانی.html#cb504-25" tabindex="-1"></a><span class="do">## save plot</span></span>
-<span id="cb504-26"><a href="شکل-۱-توزیع-جهانی.html#cb504-26" tabindex="-1"></a><span class="fu">ggsave</span>(</span>
-<span id="cb504-27"><a href="شکل-۱-توزیع-جهانی.html#cb504-27" tabindex="-1"></a>  <span class="at">filename =</span> <span class="st">&quot;./img/country-barchart.png&quot;</span>,</span>
-<span id="cb504-28"><a href="شکل-۱-توزیع-جهانی.html#cb504-28" tabindex="-1"></a>  <span class="at">plot =</span> country_barchart,</span>
-<span id="cb504-29"><a href="شکل-۱-توزیع-جهانی.html#cb504-29" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">300</span>, </span>
-<span id="cb504-30"><a href="شکل-۱-توزیع-جهانی.html#cb504-30" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">85</span>,</span>
-<span id="cb504-31"><a href="شکل-۱-توزیع-جهانی.html#cb504-31" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">150</span>,</span>
-<span id="cb504-32"><a href="شکل-۱-توزیع-جهانی.html#cb504-32" tabindex="-1"></a>  <span class="at">units =</span> <span class="st">&quot;mm&quot;</span></span>
-<span id="cb504-33"><a href="شکل-۱-توزیع-جهانی.html#cb504-33" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb512"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb512-1"><a href="شکل-۱-توزیع-جهانی.html#cb512-1" tabindex="-1"></a>country_barchart <span class="ot">=</span> </span>
+<span id="cb512-2"><a href="شکل-۱-توزیع-جهانی.html#cb512-2" tabindex="-1"></a>  <span class="do">## importing data to ggplot</span></span>
+<span id="cb512-3"><a href="شکل-۱-توزیع-جهانی.html#cb512-3" tabindex="-1"></a>  df_country <span class="sc">|&gt;</span> </span>
+<span id="cb512-4"><a href="شکل-۱-توزیع-جهانی.html#cb512-4" tabindex="-1"></a>  <span class="do">## ggplot panel</span></span>
+<span id="cb512-5"><a href="شکل-۱-توزیع-جهانی.html#cb512-5" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb512-6"><a href="شکل-۱-توزیع-جهانی.html#cb512-6" tabindex="-1"></a>  <span class="do">## aesthetic</span></span>
+<span id="cb512-7"><a href="شکل-۱-توزیع-جهانی.html#cb512-7" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> count, <span class="at">y =</span> value, <span class="at">fill =</span> count <span class="sc">&gt;=</span> <span class="dv">9</span>) <span class="sc">+</span></span>
+<span id="cb512-8"><a href="شکل-۱-توزیع-جهانی.html#cb512-8" tabindex="-1"></a>  <span class="do">## chart type</span></span>
+<span id="cb512-9"><a href="شکل-۱-توزیع-جهانی.html#cb512-9" tabindex="-1"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
+<span id="cb512-10"><a href="شکل-۱-توزیع-جهانی.html#cb512-10" tabindex="-1"></a>  <span class="do">## custom labels</span></span>
+<span id="cb512-11"><a href="شکل-۱-توزیع-جهانی.html#cb512-11" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb512-12"><a href="شکل-۱-توزیع-جهانی.html#cb512-12" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;N&quot;</span>,</span>
+<span id="cb512-13"><a href="شکل-۱-توزیع-جهانی.html#cb512-13" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Country&quot;</span>,</span>
+<span id="cb512-14"><a href="شکل-۱-توزیع-جهانی.html#cb512-14" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">&quot;N&quot;</span></span>
+<span id="cb512-15"><a href="شکل-۱-توزیع-جهانی.html#cb512-15" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb512-16"><a href="شکل-۱-توزیع-جهانی.html#cb512-16" tabindex="-1"></a>  <span class="do">## general theme</span></span>
+<span id="cb512-17"><a href="شکل-۱-توزیع-جهانی.html#cb512-17" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_family =</span> <span class="st">&quot;Roboto&quot;</span>, <span class="at">base_size =</span> <span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb512-18"><a href="شکل-۱-توزیع-جهانی.html#cb512-18" tabindex="-1"></a>  <span class="do">## custom theme</span></span>
+<span id="cb512-19"><a href="شکل-۱-توزیع-جهانی.html#cb512-19" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb512-20"><a href="شکل-۱-توزیع-جهانی.html#cb512-20" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb512-21"><a href="شکل-۱-توزیع-جهانی.html#cb512-21" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>),</span>
+<span id="cb512-22"><a href="شکل-۱-توزیع-جهانی.html#cb512-22" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>)</span>
+<span id="cb512-23"><a href="شکل-۱-توزیع-جهانی.html#cb512-23" tabindex="-1"></a>  )</span>
+<span id="cb512-24"><a href="شکل-۱-توزیع-جهانی.html#cb512-24" tabindex="-1"></a></span>
+<span id="cb512-25"><a href="شکل-۱-توزیع-جهانی.html#cb512-25" tabindex="-1"></a><span class="do">## save plot</span></span>
+<span id="cb512-26"><a href="شکل-۱-توزیع-جهانی.html#cb512-26" tabindex="-1"></a><span class="fu">ggsave</span>(</span>
+<span id="cb512-27"><a href="شکل-۱-توزیع-جهانی.html#cb512-27" tabindex="-1"></a>  <span class="at">filename =</span> <span class="st">&quot;./img/country-barchart.png&quot;</span>,</span>
+<span id="cb512-28"><a href="شکل-۱-توزیع-جهانی.html#cb512-28" tabindex="-1"></a>  <span class="at">plot =</span> country_barchart,</span>
+<span id="cb512-29"><a href="شکل-۱-توزیع-جهانی.html#cb512-29" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">300</span>, </span>
+<span id="cb512-30"><a href="شکل-۱-توزیع-جهانی.html#cb512-30" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">85</span>,</span>
+<span id="cb512-31"><a href="شکل-۱-توزیع-جهانی.html#cb512-31" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">150</span>,</span>
+<span id="cb512-32"><a href="شکل-۱-توزیع-جهانی.html#cb512-32" tabindex="-1"></a>  <span class="at">units =</span> <span class="st">&quot;mm&quot;</span></span>
+<span id="cb512-33"><a href="شکل-۱-توزیع-جهانی.html#cb512-33" tabindex="-1"></a>)</span></code></pre></div>
 </details>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-70"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-92"></span>
 <img src="img/country-barchart.png" alt="نمودار نواری تعداد افراد شرکت کننده در هر کشور" width="80%" />
 <p class="caption">
 شکل 13.6: نمودار نواری تعداد افراد شرکت کننده در هر کشور
@@ -435,84 +441,84 @@ $ Country    &lt;chr&gt; &quot;Netherlands&quot;, &quot;Iran&quot;, &quot;Iran&q
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb505"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb505-1"><a href="شکل-۱-توزیع-جهانی.html#cb505-1" tabindex="-1"></a><span class="do">## get global map data and save in df_world ----</span></span>
-<span id="cb505-2"><a href="شکل-۱-توزیع-جهانی.html#cb505-2" tabindex="-1"></a>df_world <span class="ot">=</span> <span class="fu">map_data</span>(<span class="st">&quot;world&quot;</span>)</span>
-<span id="cb505-3"><a href="شکل-۱-توزیع-جهانی.html#cb505-3" tabindex="-1"></a></span>
-<span id="cb505-4"><a href="شکل-۱-توزیع-جهانی.html#cb505-4" tabindex="-1"></a><span class="do">## check region name ----</span></span>
-<span id="cb505-5"><a href="شکل-۱-توزیع-جهانی.html#cb505-5" tabindex="-1"></a><span class="co"># df_world$region |&gt; unique()</span></span>
-<span id="cb505-6"><a href="شکل-۱-توزیع-جهانی.html#cb505-6" tabindex="-1"></a></span>
-<span id="cb505-7"><a href="شکل-۱-توزیع-جهانی.html#cb505-7" tabindex="-1"></a><span class="do">## campare country name with region ----</span></span>
-<span id="cb505-8"><a href="شکل-۱-توزیع-جهانی.html#cb505-8" tabindex="-1"></a><span class="co"># df_country[!(df_country$value %in% df_world$region), ]$value |&gt; unique()</span></span>
-<span id="cb505-9"><a href="شکل-۱-توزیع-جهانی.html#cb505-9" tabindex="-1"></a></span>
-<span id="cb505-10"><a href="شکل-۱-توزیع-جهانی.html#cb505-10" tabindex="-1"></a><span class="do">## correct country name ----</span></span>
-<span id="cb505-11"><a href="شکل-۱-توزیع-جهانی.html#cb505-11" tabindex="-1"></a>df_country <span class="ot">=</span> df_country <span class="sc">|&gt;</span></span>
-<span id="cb505-12"><a href="شکل-۱-توزیع-جهانی.html#cb505-12" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb505-13"><a href="شکل-۱-توزیع-جهانی.html#cb505-13" tabindex="-1"></a>    <span class="at">value =</span> value <span class="sc">|&gt;</span> <span class="fu">str_replace_all</span>(<span class="fu">c</span>(</span>
-<span id="cb505-14"><a href="شکل-۱-توزیع-جهانی.html#cb505-14" tabindex="-1"></a>    <span class="st">&quot;United States&quot;</span> <span class="ot">=</span> <span class="st">&quot;USA&quot;</span>,</span>
-<span id="cb505-15"><a href="شکل-۱-توزیع-جهانی.html#cb505-15" tabindex="-1"></a>    <span class="st">&quot;Burma&quot;</span> <span class="ot">=</span> <span class="st">&quot;Myanmar&quot;</span>,</span>
-<span id="cb505-16"><a href="شکل-۱-توزیع-جهانی.html#cb505-16" tabindex="-1"></a>    <span class="st">&quot;United Kingdom&quot;</span> <span class="ot">=</span> <span class="st">&quot;UK&quot;</span>, </span>
-<span id="cb505-17"><a href="شکل-۱-توزیع-جهانی.html#cb505-17" tabindex="-1"></a>    <span class="st">&quot;Palestinian&quot;</span> <span class="ot">=</span> <span class="st">&quot;Palestine&quot;</span></span>
-<span id="cb505-18"><a href="شکل-۱-توزیع-جهانی.html#cb505-18" tabindex="-1"></a>    ))</span>
-<span id="cb505-19"><a href="شکل-۱-توزیع-جهانی.html#cb505-19" tabindex="-1"></a>  )</span>
-<span id="cb505-20"><a href="شکل-۱-توزیع-جهانی.html#cb505-20" tabindex="-1"></a></span>
-<span id="cb505-21"><a href="شکل-۱-توزیع-جهانی.html#cb505-21" tabindex="-1"></a><span class="do">## merge two data base ----</span></span>
-<span id="cb505-22"><a href="شکل-۱-توزیع-جهانی.html#cb505-22" tabindex="-1"></a>df_world <span class="ot">=</span> <span class="fu">full_join</span>(</span>
-<span id="cb505-23"><a href="شکل-۱-توزیع-جهانی.html#cb505-23" tabindex="-1"></a>  <span class="do">## remove Antarctica area</span></span>
-<span id="cb505-24"><a href="شکل-۱-توزیع-جهانی.html#cb505-24" tabindex="-1"></a>  df_world <span class="sc">|&gt;</span> <span class="fu">filter</span>(region <span class="sc">!=</span> <span class="st">&quot;Antarctica&quot;</span>),</span>
-<span id="cb505-25"><a href="شکل-۱-توزیع-جهانی.html#cb505-25" tabindex="-1"></a>  <span class="do">## remove Macau</span></span>
-<span id="cb505-26"><a href="شکل-۱-توزیع-جهانی.html#cb505-26" tabindex="-1"></a>  df_country <span class="sc">|&gt;</span> <span class="fu">filter</span>(value <span class="sc">!=</span> <span class="st">&quot;Macau&quot;</span>),</span>
-<span id="cb505-27"><a href="شکل-۱-توزیع-جهانی.html#cb505-27" tabindex="-1"></a>  <span class="do">## merging global world by region with country by value ----</span></span>
-<span id="cb505-28"><a href="شکل-۱-توزیع-جهانی.html#cb505-28" tabindex="-1"></a>  <span class="at">by =</span> <span class="fu">c</span>(<span class="st">&quot;region&quot;</span><span class="ot">=</span><span class="st">&quot;value&quot;</span>)</span>
-<span id="cb505-29"><a href="شکل-۱-توزیع-جهانی.html#cb505-29" tabindex="-1"></a>)</span>
-<span id="cb505-30"><a href="شکل-۱-توزیع-جهانی.html#cb505-30" tabindex="-1"></a></span>
-<span id="cb505-31"><a href="شکل-۱-توزیع-جهانی.html#cb505-31" tabindex="-1"></a><span class="do">## check data frame after merging ----</span></span>
-<span id="cb505-32"><a href="شکل-۱-توزیع-جهانی.html#cb505-32" tabindex="-1"></a><span class="co"># df_world |&gt; filter(is.na(region))</span></span>
-<span id="cb505-33"><a href="شکل-۱-توزیع-جهانی.html#cb505-33" tabindex="-1"></a></span>
-<span id="cb505-34"><a href="شکل-۱-توزیع-جهانی.html#cb505-34" tabindex="-1"></a><span class="do">## importing map in global_map variable ----</span></span>
-<span id="cb505-35"><a href="شکل-۱-توزیع-جهانی.html#cb505-35" tabindex="-1"></a>global_map <span class="ot">=</span> </span>
-<span id="cb505-36"><a href="شکل-۱-توزیع-جهانی.html#cb505-36" tabindex="-1"></a>  <span class="do">## inserting data in ggplot</span></span>
-<span id="cb505-37"><a href="شکل-۱-توزیع-جهانی.html#cb505-37" tabindex="-1"></a>  df_world <span class="sc">|&gt;</span> </span>
-<span id="cb505-38"><a href="شکل-۱-توزیع-جهانی.html#cb505-38" tabindex="-1"></a>  <span class="do">## creating ggplot panel</span></span>
-<span id="cb505-39"><a href="شکل-۱-توزیع-جهانی.html#cb505-39" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb505-40"><a href="شکل-۱-توزیع-جهانی.html#cb505-40" tabindex="-1"></a>  <span class="do">## setting x, y, group and label in aesthetic</span></span>
-<span id="cb505-41"><a href="شکل-۱-توزیع-جهانی.html#cb505-41" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> long, <span class="at">y =</span> lat, <span class="at">group =</span> group, <span class="at">label =</span> region) <span class="sc">+</span></span>
-<span id="cb505-42"><a href="شکل-۱-توزیع-جهانی.html#cb505-42" tabindex="-1"></a>  <span class="do">## drawing colored map base on count</span></span>
-<span id="cb505-43"><a href="شکل-۱-توزیع-جهانی.html#cb505-43" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="fu">aes</span>(<span class="at">fill =</span> count), <span class="at">color =</span> <span class="st">&quot;black&quot;</span>, <span class="at">lwd =</span> <span class="fl">0.1</span>) <span class="sc">+</span></span>
-<span id="cb505-44"><a href="شکل-۱-توزیع-جهانی.html#cb505-44" tabindex="-1"></a>  <span class="do">## setting filled color</span></span>
-<span id="cb505-45"><a href="شکل-۱-توزیع-جهانی.html#cb505-45" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(</span>
-<span id="cb505-46"><a href="شکل-۱-توزیع-جهانی.html#cb505-46" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">&quot;orange&quot;</span>,</span>
-<span id="cb505-47"><a href="شکل-۱-توزیع-جهانی.html#cb505-47" tabindex="-1"></a>    <span class="at">high =</span> <span class="st">&quot;darkRed&quot;</span>,</span>
-<span id="cb505-48"><a href="شکل-۱-توزیع-جهانی.html#cb505-48" tabindex="-1"></a>    <span class="at">na.value =</span> <span class="st">&quot;#e6e6e6&quot;</span>,</span>
-<span id="cb505-49"><a href="شکل-۱-توزیع-جهانی.html#cb505-49" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">13</span>),</span>
-<span id="cb505-50"><a href="شکل-۱-توزیع-جهانی.html#cb505-50" tabindex="-1"></a>    <span class="at">n.breaks =</span> <span class="dv">10</span></span>
-<span id="cb505-51"><a href="شکل-۱-توزیع-جهانی.html#cb505-51" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb505-52"><a href="شکل-۱-توزیع-جهانی.html#cb505-52" tabindex="-1"></a>  <span class="do">## cutting frame and remove non-necessary area</span></span>
-<span id="cb505-53"><a href="شکل-۱-توزیع-جهانی.html#cb505-53" tabindex="-1"></a>  <span class="fu">coord_equal</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">155</span>, <span class="sc">+</span><span class="dv">165</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">50</span>, <span class="dv">80</span>)) <span class="sc">+</span></span>
-<span id="cb505-54"><a href="شکل-۱-توزیع-جهانی.html#cb505-54" tabindex="-1"></a>  <span class="do">## setting global theme and font</span></span>
-<span id="cb505-55"><a href="شکل-۱-توزیع-جهانی.html#cb505-55" tabindex="-1"></a>  <span class="fu">theme_void</span>(<span class="at">base_family =</span> <span class="st">&quot;Roboto&quot;</span>) <span class="sc">+</span></span>
-<span id="cb505-56"><a href="شکل-۱-توزیع-جهانی.html#cb505-56" tabindex="-1"></a>  <span class="do">## customizing global theme</span></span>
-<span id="cb505-57"><a href="شکل-۱-توزیع-جهانی.html#cb505-57" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb505-58"><a href="شکل-۱-توزیع-جهانی.html#cb505-58" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb505-59"><a href="شکل-۱-توزیع-جهانی.html#cb505-59" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.09</span>, <span class="fl">0.4</span>),</span>
-<span id="cb505-60"><a href="شکل-۱-توزیع-جهانی.html#cb505-60" tabindex="-1"></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">&quot;mm&quot;</span>),</span>
-<span id="cb505-61"><a href="شکل-۱-توزیع-جهانی.html#cb505-61" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">7</span>, <span class="st">&quot;mm&quot;</span>),</span>
-<span id="cb505-62"><a href="شکل-۱-توزیع-جهانی.html#cb505-62" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">7</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>),</span>
-<span id="cb505-63"><a href="شکل-۱-توزیع-جهانی.html#cb505-63" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">0</span>,<span class="at">r =</span> <span class="dv">0</span>,<span class="at">b =</span> <span class="dv">0</span>,<span class="at">l =</span> <span class="dv">0</span>, <span class="at">unit =</span> <span class="st">&quot;pt&quot;</span>),</span>
-<span id="cb505-64"><a href="شکل-۱-توزیع-جهانی.html#cb505-64" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>),</span>
-<span id="cb505-65"><a href="شکل-۱-توزیع-جهانی.html#cb505-65" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>)</span>
-<span id="cb505-66"><a href="شکل-۱-توزیع-جهانی.html#cb505-66" tabindex="-1"></a>  )</span>
-<span id="cb505-67"><a href="شکل-۱-توزیع-جهانی.html#cb505-67" tabindex="-1"></a></span>
-<span id="cb505-68"><a href="شکل-۱-توزیع-جهانی.html#cb505-68" tabindex="-1"></a><span class="do">## save plot</span></span>
-<span id="cb505-69"><a href="شکل-۱-توزیع-جهانی.html#cb505-69" tabindex="-1"></a><span class="fu">ggsave</span>(</span>
-<span id="cb505-70"><a href="شکل-۱-توزیع-جهانی.html#cb505-70" tabindex="-1"></a>  <span class="at">filename =</span> <span class="st">&quot;./img/figure-1-global-distribution.png&quot;</span>,</span>
-<span id="cb505-71"><a href="شکل-۱-توزیع-جهانی.html#cb505-71" tabindex="-1"></a>  <span class="at">plot =</span> global_map,</span>
-<span id="cb505-72"><a href="شکل-۱-توزیع-جهانی.html#cb505-72" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">300</span>,</span>
-<span id="cb505-73"><a href="شکل-۱-توزیع-جهانی.html#cb505-73" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">180</span>,</span>
-<span id="cb505-74"><a href="شکل-۱-توزیع-جهانی.html#cb505-74" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">73</span>,</span>
-<span id="cb505-75"><a href="شکل-۱-توزیع-جهانی.html#cb505-75" tabindex="-1"></a>  <span class="at">units =</span> <span class="st">&quot;mm&quot;</span></span>
-<span id="cb505-76"><a href="شکل-۱-توزیع-جهانی.html#cb505-76" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb513"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb513-1"><a href="شکل-۱-توزیع-جهانی.html#cb513-1" tabindex="-1"></a><span class="do">## get global map data and save in df_world ----</span></span>
+<span id="cb513-2"><a href="شکل-۱-توزیع-جهانی.html#cb513-2" tabindex="-1"></a>df_world <span class="ot">=</span> <span class="fu">map_data</span>(<span class="st">&quot;world&quot;</span>)</span>
+<span id="cb513-3"><a href="شکل-۱-توزیع-جهانی.html#cb513-3" tabindex="-1"></a></span>
+<span id="cb513-4"><a href="شکل-۱-توزیع-جهانی.html#cb513-4" tabindex="-1"></a><span class="do">## check region name ----</span></span>
+<span id="cb513-5"><a href="شکل-۱-توزیع-جهانی.html#cb513-5" tabindex="-1"></a><span class="co"># df_world$region |&gt; unique()</span></span>
+<span id="cb513-6"><a href="شکل-۱-توزیع-جهانی.html#cb513-6" tabindex="-1"></a></span>
+<span id="cb513-7"><a href="شکل-۱-توزیع-جهانی.html#cb513-7" tabindex="-1"></a><span class="do">## campare country name with region ----</span></span>
+<span id="cb513-8"><a href="شکل-۱-توزیع-جهانی.html#cb513-8" tabindex="-1"></a><span class="co"># df_country[!(df_country$value %in% df_world$region), ]$value |&gt; unique()</span></span>
+<span id="cb513-9"><a href="شکل-۱-توزیع-جهانی.html#cb513-9" tabindex="-1"></a></span>
+<span id="cb513-10"><a href="شکل-۱-توزیع-جهانی.html#cb513-10" tabindex="-1"></a><span class="do">## correct country name ----</span></span>
+<span id="cb513-11"><a href="شکل-۱-توزیع-جهانی.html#cb513-11" tabindex="-1"></a>df_country <span class="ot">=</span> df_country <span class="sc">|&gt;</span></span>
+<span id="cb513-12"><a href="شکل-۱-توزیع-جهانی.html#cb513-12" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb513-13"><a href="شکل-۱-توزیع-جهانی.html#cb513-13" tabindex="-1"></a>    <span class="at">value =</span> value <span class="sc">|&gt;</span> <span class="fu">str_replace_all</span>(<span class="fu">c</span>(</span>
+<span id="cb513-14"><a href="شکل-۱-توزیع-جهانی.html#cb513-14" tabindex="-1"></a>    <span class="st">&quot;United States&quot;</span> <span class="ot">=</span> <span class="st">&quot;USA&quot;</span>,</span>
+<span id="cb513-15"><a href="شکل-۱-توزیع-جهانی.html#cb513-15" tabindex="-1"></a>    <span class="st">&quot;Burma&quot;</span> <span class="ot">=</span> <span class="st">&quot;Myanmar&quot;</span>,</span>
+<span id="cb513-16"><a href="شکل-۱-توزیع-جهانی.html#cb513-16" tabindex="-1"></a>    <span class="st">&quot;United Kingdom&quot;</span> <span class="ot">=</span> <span class="st">&quot;UK&quot;</span>, </span>
+<span id="cb513-17"><a href="شکل-۱-توزیع-جهانی.html#cb513-17" tabindex="-1"></a>    <span class="st">&quot;Palestinian&quot;</span> <span class="ot">=</span> <span class="st">&quot;Palestine&quot;</span></span>
+<span id="cb513-18"><a href="شکل-۱-توزیع-جهانی.html#cb513-18" tabindex="-1"></a>    ))</span>
+<span id="cb513-19"><a href="شکل-۱-توزیع-جهانی.html#cb513-19" tabindex="-1"></a>  )</span>
+<span id="cb513-20"><a href="شکل-۱-توزیع-جهانی.html#cb513-20" tabindex="-1"></a></span>
+<span id="cb513-21"><a href="شکل-۱-توزیع-جهانی.html#cb513-21" tabindex="-1"></a><span class="do">## merge two data base ----</span></span>
+<span id="cb513-22"><a href="شکل-۱-توزیع-جهانی.html#cb513-22" tabindex="-1"></a>df_world <span class="ot">=</span> <span class="fu">full_join</span>(</span>
+<span id="cb513-23"><a href="شکل-۱-توزیع-جهانی.html#cb513-23" tabindex="-1"></a>  <span class="do">## remove Antarctica area</span></span>
+<span id="cb513-24"><a href="شکل-۱-توزیع-جهانی.html#cb513-24" tabindex="-1"></a>  df_world <span class="sc">|&gt;</span> <span class="fu">filter</span>(region <span class="sc">!=</span> <span class="st">&quot;Antarctica&quot;</span>),</span>
+<span id="cb513-25"><a href="شکل-۱-توزیع-جهانی.html#cb513-25" tabindex="-1"></a>  <span class="do">## remove Macau</span></span>
+<span id="cb513-26"><a href="شکل-۱-توزیع-جهانی.html#cb513-26" tabindex="-1"></a>  df_country <span class="sc">|&gt;</span> <span class="fu">filter</span>(value <span class="sc">!=</span> <span class="st">&quot;Macau&quot;</span>),</span>
+<span id="cb513-27"><a href="شکل-۱-توزیع-جهانی.html#cb513-27" tabindex="-1"></a>  <span class="do">## merging global world by region with country by value ----</span></span>
+<span id="cb513-28"><a href="شکل-۱-توزیع-جهانی.html#cb513-28" tabindex="-1"></a>  <span class="at">by =</span> <span class="fu">c</span>(<span class="st">&quot;region&quot;</span><span class="ot">=</span><span class="st">&quot;value&quot;</span>)</span>
+<span id="cb513-29"><a href="شکل-۱-توزیع-جهانی.html#cb513-29" tabindex="-1"></a>)</span>
+<span id="cb513-30"><a href="شکل-۱-توزیع-جهانی.html#cb513-30" tabindex="-1"></a></span>
+<span id="cb513-31"><a href="شکل-۱-توزیع-جهانی.html#cb513-31" tabindex="-1"></a><span class="do">## check data frame after merging ----</span></span>
+<span id="cb513-32"><a href="شکل-۱-توزیع-جهانی.html#cb513-32" tabindex="-1"></a><span class="co"># df_world |&gt; filter(is.na(region))</span></span>
+<span id="cb513-33"><a href="شکل-۱-توزیع-جهانی.html#cb513-33" tabindex="-1"></a></span>
+<span id="cb513-34"><a href="شکل-۱-توزیع-جهانی.html#cb513-34" tabindex="-1"></a><span class="do">## importing map in global_map variable ----</span></span>
+<span id="cb513-35"><a href="شکل-۱-توزیع-جهانی.html#cb513-35" tabindex="-1"></a>global_map <span class="ot">=</span> </span>
+<span id="cb513-36"><a href="شکل-۱-توزیع-جهانی.html#cb513-36" tabindex="-1"></a>  <span class="do">## inserting data in ggplot</span></span>
+<span id="cb513-37"><a href="شکل-۱-توزیع-جهانی.html#cb513-37" tabindex="-1"></a>  df_world <span class="sc">|&gt;</span> </span>
+<span id="cb513-38"><a href="شکل-۱-توزیع-جهانی.html#cb513-38" tabindex="-1"></a>  <span class="do">## creating ggplot panel</span></span>
+<span id="cb513-39"><a href="شکل-۱-توزیع-جهانی.html#cb513-39" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb513-40"><a href="شکل-۱-توزیع-جهانی.html#cb513-40" tabindex="-1"></a>  <span class="do">## setting x, y, group and label in aesthetic</span></span>
+<span id="cb513-41"><a href="شکل-۱-توزیع-جهانی.html#cb513-41" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> long, <span class="at">y =</span> lat, <span class="at">group =</span> group, <span class="at">label =</span> region) <span class="sc">+</span></span>
+<span id="cb513-42"><a href="شکل-۱-توزیع-جهانی.html#cb513-42" tabindex="-1"></a>  <span class="do">## drawing colored map base on count</span></span>
+<span id="cb513-43"><a href="شکل-۱-توزیع-جهانی.html#cb513-43" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="fu">aes</span>(<span class="at">fill =</span> count), <span class="at">color =</span> <span class="st">&quot;black&quot;</span>, <span class="at">lwd =</span> <span class="fl">0.1</span>) <span class="sc">+</span></span>
+<span id="cb513-44"><a href="شکل-۱-توزیع-جهانی.html#cb513-44" tabindex="-1"></a>  <span class="do">## setting filled color</span></span>
+<span id="cb513-45"><a href="شکل-۱-توزیع-جهانی.html#cb513-45" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(</span>
+<span id="cb513-46"><a href="شکل-۱-توزیع-جهانی.html#cb513-46" tabindex="-1"></a>    <span class="at">low =</span> <span class="st">&quot;orange&quot;</span>,</span>
+<span id="cb513-47"><a href="شکل-۱-توزیع-جهانی.html#cb513-47" tabindex="-1"></a>    <span class="at">high =</span> <span class="st">&quot;darkRed&quot;</span>,</span>
+<span id="cb513-48"><a href="شکل-۱-توزیع-جهانی.html#cb513-48" tabindex="-1"></a>    <span class="at">na.value =</span> <span class="st">&quot;#e6e6e6&quot;</span>,</span>
+<span id="cb513-49"><a href="شکل-۱-توزیع-جهانی.html#cb513-49" tabindex="-1"></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">13</span>),</span>
+<span id="cb513-50"><a href="شکل-۱-توزیع-جهانی.html#cb513-50" tabindex="-1"></a>    <span class="at">n.breaks =</span> <span class="dv">10</span></span>
+<span id="cb513-51"><a href="شکل-۱-توزیع-جهانی.html#cb513-51" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb513-52"><a href="شکل-۱-توزیع-جهانی.html#cb513-52" tabindex="-1"></a>  <span class="do">## cutting frame and remove non-necessary area</span></span>
+<span id="cb513-53"><a href="شکل-۱-توزیع-جهانی.html#cb513-53" tabindex="-1"></a>  <span class="fu">coord_equal</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">155</span>, <span class="sc">+</span><span class="dv">165</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">50</span>, <span class="dv">80</span>)) <span class="sc">+</span></span>
+<span id="cb513-54"><a href="شکل-۱-توزیع-جهانی.html#cb513-54" tabindex="-1"></a>  <span class="do">## setting global theme and font</span></span>
+<span id="cb513-55"><a href="شکل-۱-توزیع-جهانی.html#cb513-55" tabindex="-1"></a>  <span class="fu">theme_void</span>(<span class="at">base_family =</span> <span class="st">&quot;Roboto&quot;</span>) <span class="sc">+</span></span>
+<span id="cb513-56"><a href="شکل-۱-توزیع-جهانی.html#cb513-56" tabindex="-1"></a>  <span class="do">## customizing global theme</span></span>
+<span id="cb513-57"><a href="شکل-۱-توزیع-جهانی.html#cb513-57" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb513-58"><a href="شکل-۱-توزیع-جهانی.html#cb513-58" tabindex="-1"></a>    <span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb513-59"><a href="شکل-۱-توزیع-جهانی.html#cb513-59" tabindex="-1"></a>    <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.09</span>, <span class="fl">0.4</span>),</span>
+<span id="cb513-60"><a href="شکل-۱-توزیع-جهانی.html#cb513-60" tabindex="-1"></a>    <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">&quot;mm&quot;</span>),</span>
+<span id="cb513-61"><a href="شکل-۱-توزیع-جهانی.html#cb513-61" tabindex="-1"></a>    <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="dv">7</span>, <span class="st">&quot;mm&quot;</span>),</span>
+<span id="cb513-62"><a href="شکل-۱-توزیع-جهانی.html#cb513-62" tabindex="-1"></a>    <span class="at">legend.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">7</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>),</span>
+<span id="cb513-63"><a href="شکل-۱-توزیع-جهانی.html#cb513-63" tabindex="-1"></a>    <span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">0</span>,<span class="at">r =</span> <span class="dv">0</span>,<span class="at">b =</span> <span class="dv">0</span>,<span class="at">l =</span> <span class="dv">0</span>, <span class="at">unit =</span> <span class="st">&quot;pt&quot;</span>),</span>
+<span id="cb513-64"><a href="شکل-۱-توزیع-جهانی.html#cb513-64" tabindex="-1"></a>    <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>),</span>
+<span id="cb513-65"><a href="شکل-۱-توزیع-جهانی.html#cb513-65" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;white&quot;</span>)</span>
+<span id="cb513-66"><a href="شکل-۱-توزیع-جهانی.html#cb513-66" tabindex="-1"></a>  )</span>
+<span id="cb513-67"><a href="شکل-۱-توزیع-جهانی.html#cb513-67" tabindex="-1"></a></span>
+<span id="cb513-68"><a href="شکل-۱-توزیع-جهانی.html#cb513-68" tabindex="-1"></a><span class="do">## save plot</span></span>
+<span id="cb513-69"><a href="شکل-۱-توزیع-جهانی.html#cb513-69" tabindex="-1"></a><span class="fu">ggsave</span>(</span>
+<span id="cb513-70"><a href="شکل-۱-توزیع-جهانی.html#cb513-70" tabindex="-1"></a>  <span class="at">filename =</span> <span class="st">&quot;./img/figure-1-global-distribution.png&quot;</span>,</span>
+<span id="cb513-71"><a href="شکل-۱-توزیع-جهانی.html#cb513-71" tabindex="-1"></a>  <span class="at">plot =</span> global_map,</span>
+<span id="cb513-72"><a href="شکل-۱-توزیع-جهانی.html#cb513-72" tabindex="-1"></a>  <span class="at">dpi =</span> <span class="dv">300</span>,</span>
+<span id="cb513-73"><a href="شکل-۱-توزیع-جهانی.html#cb513-73" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">180</span>,</span>
+<span id="cb513-74"><a href="شکل-۱-توزیع-جهانی.html#cb513-74" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">73</span>,</span>
+<span id="cb513-75"><a href="شکل-۱-توزیع-جهانی.html#cb513-75" tabindex="-1"></a>  <span class="at">units =</span> <span class="st">&quot;mm&quot;</span></span>
+<span id="cb513-76"><a href="شکل-۱-توزیع-جهانی.html#cb513-76" tabindex="-1"></a>)</span></code></pre></div>
 </details>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-72"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-94"></span>
 <img src="img/figure-1-global-distribution.png" alt="نقشه توزیج جهانی تعداد افراد شرکت کننده در هر کشور" width="80%" />
 <p class="caption">
 شکل 13.7: نقشه توزیج جهانی تعداد افراد شرکت کننده در هر کشور
@@ -527,11 +533,11 @@ $ Country    &lt;chr&gt; &quot;Netherlands&quot;, &quot;Iran&quot;, &quot;Iran&q
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb506"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb506-1"><a href="شکل-۱-توزیع-جهانی.html#cb506-1" tabindex="-1"></a><span class="do">## creating responsive global map</span></span>
-<span id="cb506-2"><a href="شکل-۱-توزیع-جهانی.html#cb506-2" tabindex="-1"></a>global_map <span class="sc">|&gt;</span> </span>
-<span id="cb506-3"><a href="شکل-۱-توزیع-جهانی.html#cb506-3" tabindex="-1"></a>  <span class="fu">ggplotly</span>() <span class="sc">|&gt;</span></span>
-<span id="cb506-4"><a href="شکل-۱-توزیع-جهانی.html#cb506-4" tabindex="-1"></a>  <span class="fu">as_widget</span>() <span class="sc">|&gt;</span></span>
-<span id="cb506-5"><a href="شکل-۱-توزیع-جهانی.html#cb506-5" tabindex="-1"></a>  htmlwidgets<span class="sc">::</span><span class="fu">saveWidget</span>(<span class="st">&quot;./img/global-distribution-responsive.html&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb514"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb514-1"><a href="شکل-۱-توزیع-جهانی.html#cb514-1" tabindex="-1"></a><span class="do">## creating responsive global map</span></span>
+<span id="cb514-2"><a href="شکل-۱-توزیع-جهانی.html#cb514-2" tabindex="-1"></a>global_map <span class="sc">|&gt;</span> </span>
+<span id="cb514-3"><a href="شکل-۱-توزیع-جهانی.html#cb514-3" tabindex="-1"></a>  <span class="fu">ggplotly</span>() <span class="sc">|&gt;</span></span>
+<span id="cb514-4"><a href="شکل-۱-توزیع-جهانی.html#cb514-4" tabindex="-1"></a>  <span class="fu">as_widget</span>() <span class="sc">|&gt;</span></span>
+<span id="cb514-5"><a href="شکل-۱-توزیع-جهانی.html#cb514-5" tabindex="-1"></a>  htmlwidgets<span class="sc">::</span><span class="fu">saveWidget</span>(<span class="st">&quot;./img/global-distribution-responsive.html&quot;</span>)</span></code></pre></div>
 </details>
 <iframe src="./img/global-distribution-responsive.html" width="100%" height="300"></iframe>
 

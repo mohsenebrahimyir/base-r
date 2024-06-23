@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -303,22 +309,22 @@ div.csl-indent {
 قالب داده یا <span dir="ltr"><code>data frame</code></span> است.</p>
 <p>نحوه تعریف یک قالب داده به صورت زیر است:</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb264"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb264-1"><a href="قالب-داده-کمی-بیشتر.html#cb264-1" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
-<span id="cb264-2"><a href="قالب-داده-کمی-بیشتر.html#cb264-2" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
-<span id="cb264-3"><a href="قالب-داده-کمی-بیشتر.html#cb264-3" tabindex="-1"></a>    <span class="st">&quot;Name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Mohsen&quot;</span>, <span class="st">&quot;Xie&quot;</span>, <span class="st">&quot;Narges&quot;</span>),</span>
-<span id="cb264-4"><a href="قالب-داده-کمی-بیشتر.html#cb264-4" tabindex="-1"></a>    <span class="st">&quot;Sen&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="dv">45</span>, <span class="dv">36</span>),</span>
-<span id="cb264-5"><a href="قالب-داده-کمی-بیشتر.html#cb264-5" tabindex="-1"></a>    <span class="st">&quot;Gender&quot;</span> <span class="ot">=</span> <span class="fu">factor</span>(</span>
-<span id="cb264-6"><a href="قالب-داده-کمی-بیشتر.html#cb264-6" tabindex="-1"></a>      <span class="at">x =</span> <span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="cn">NA</span>, <span class="st">&quot;Female&quot;</span>), </span>
-<span id="cb264-7"><a href="قالب-داده-کمی-بیشتر.html#cb264-7" tabindex="-1"></a>      <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Female&quot;</span>, <span class="st">&quot;Male&quot;</span>)</span>
-<span id="cb264-8"><a href="قالب-داده-کمی-بیشتر.html#cb264-8" tabindex="-1"></a>    ),</span>
-<span id="cb264-9"><a href="قالب-داده-کمی-بیشتر.html#cb264-9" tabindex="-1"></a>    <span class="st">&quot;Single&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">NA</span>)</span>
-<span id="cb264-10"><a href="قالب-داده-کمی-بیشتر.html#cb264-10" tabindex="-1"></a>  )</span></code></pre></div>
+<div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="قالب-داده-کمی-بیشتر.html#cb272-1" tabindex="-1"></a>df <span class="ot">&lt;-</span> </span>
+<span id="cb272-2"><a href="قالب-داده-کمی-بیشتر.html#cb272-2" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
+<span id="cb272-3"><a href="قالب-داده-کمی-بیشتر.html#cb272-3" tabindex="-1"></a>    <span class="st">&quot;Name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Mohsen&quot;</span>, <span class="st">&quot;Xie&quot;</span>, <span class="st">&quot;Narges&quot;</span>),</span>
+<span id="cb272-4"><a href="قالب-داده-کمی-بیشتر.html#cb272-4" tabindex="-1"></a>    <span class="st">&quot;Sen&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="dv">45</span>, <span class="dv">36</span>),</span>
+<span id="cb272-5"><a href="قالب-داده-کمی-بیشتر.html#cb272-5" tabindex="-1"></a>    <span class="st">&quot;Gender&quot;</span> <span class="ot">=</span> <span class="fu">factor</span>(</span>
+<span id="cb272-6"><a href="قالب-داده-کمی-بیشتر.html#cb272-6" tabindex="-1"></a>      <span class="at">x =</span> <span class="fu">c</span>(<span class="st">&quot;Male&quot;</span>, <span class="cn">NA</span>, <span class="st">&quot;Female&quot;</span>), </span>
+<span id="cb272-7"><a href="قالب-داده-کمی-بیشتر.html#cb272-7" tabindex="-1"></a>      <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Female&quot;</span>, <span class="st">&quot;Male&quot;</span>)</span>
+<span id="cb272-8"><a href="قالب-داده-کمی-بیشتر.html#cb272-8" tabindex="-1"></a>    ),</span>
+<span id="cb272-9"><a href="قالب-داده-کمی-بیشتر.html#cb272-9" tabindex="-1"></a>    <span class="st">&quot;Single&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">NA</span>)</span>
+<span id="cb272-10"><a href="قالب-داده-کمی-بیشتر.html#cb272-10" tabindex="-1"></a>  )</span></code></pre></div>
 </details>
 <ul>
 <li>نمایش داده با ساختار قالب داده</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="قالب-داده-کمی-بیشتر.html#cb265-1" tabindex="-1"></a>df</span></code></pre></div>
+<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="قالب-داده-کمی-بیشتر.html#cb273-1" tabindex="-1"></a>df</span></code></pre></div>
 </details>
 <pre><code>    Name Sen Gender Single
 1 Mohsen  NA   Male   TRUE
@@ -328,7 +334,7 @@ div.csl-indent {
 <li>نمایش ساختار داده</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="قالب-داده-کمی-بیشتر.html#cb267-1" tabindex="-1"></a><span class="fu">str</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="قالب-داده-کمی-بیشتر.html#cb275-1" tabindex="-1"></a><span class="fu">str</span>(df)</span></code></pre></div>
 </details>
 <pre><code>&#39;data.frame&#39;:   3 obs. of  4 variables:
  $ Name  : chr  &quot;Mohsen&quot; &quot;Xie&quot; &quot;Narges&quot;
@@ -341,7 +347,7 @@ div.csl-indent {
 <li>نام سطر و ستون</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="قالب-داده-کمی-بیشتر.html#cb269-1" tabindex="-1"></a><span class="fu">rownames</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="قالب-داده-کمی-بیشتر.html#cb277-1" tabindex="-1"></a><span class="fu">rownames</span>(df)</span></code></pre></div>
 </details>
 <pre><code>[1] &quot;1&quot; &quot;2&quot; &quot;3&quot;</code></pre>
 <pre><code>colnames(df)</code></pre>
@@ -350,13 +356,13 @@ div.csl-indent {
 <li>تغییر نام سطر‌ها</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="قالب-داده-کمی-بیشتر.html#cb273-1" tabindex="-1"></a><span class="fu">rownames</span>(df) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;avali&quot;</span>, <span class="st">&quot;dovomi&quot;</span>, <span class="st">&quot;sevomi&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="قالب-داده-کمی-بیشتر.html#cb281-1" tabindex="-1"></a><span class="fu">rownames</span>(df) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;avali&quot;</span>, <span class="st">&quot;dovomi&quot;</span>, <span class="st">&quot;sevomi&quot;</span>)</span></code></pre></div>
 </details>
 <ul>
 <li>انتخاب ستونی خاص با اندیس</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="قالب-داده-کمی-بیشتر.html#cb274-1" tabindex="-1"></a>df[, <span class="dv">3</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb282-1"><a href="قالب-داده-کمی-بیشتر.html#cb282-1" tabindex="-1"></a>df[, <span class="dv">3</span>]</span></code></pre></div>
 </details>
 <pre><code>[1] Male   &lt;NA&gt;   Female
 Levels: Female Male</code></pre>
@@ -364,7 +370,7 @@ Levels: Female Male</code></pre>
 <li>انتخاب ستونی خاص با نام</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb276"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb276-1"><a href="قالب-داده-کمی-بیشتر.html#cb276-1" tabindex="-1"></a>df[, <span class="st">&quot;Gender&quot;</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="قالب-داده-کمی-بیشتر.html#cb284-1" tabindex="-1"></a>df[, <span class="st">&quot;Gender&quot;</span>]</span></code></pre></div>
 </details>
 <pre><code>[1] Male   &lt;NA&gt;   Female
 Levels: Female Male</code></pre>
@@ -372,7 +378,7 @@ Levels: Female Male</code></pre>
 <li>انتخاب ستونی خاص با علامت دلار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="قالب-داده-کمی-بیشتر.html#cb278-1" tabindex="-1"></a>df<span class="sc">$</span>Gender</span></code></pre></div>
+<div class="sourceCode" id="cb286"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb286-1"><a href="قالب-داده-کمی-بیشتر.html#cb286-1" tabindex="-1"></a>df<span class="sc">$</span>Gender</span></code></pre></div>
 </details>
 <pre><code>[1] Male   &lt;NA&gt;   Female
 Levels: Female Male</code></pre>
@@ -380,7 +386,7 @@ Levels: Female Male</code></pre>
 <li>انتخاب سطر خاص با اندیس</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb280"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb280-1"><a href="قالب-داده-کمی-بیشتر.html#cb280-1" tabindex="-1"></a>df[<span class="dv">2</span>, ]</span></code></pre></div>
+<div class="sourceCode" id="cb288"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb288-1"><a href="قالب-داده-کمی-بیشتر.html#cb288-1" tabindex="-1"></a>df[<span class="dv">2</span>, ]</span></code></pre></div>
 </details>
 <pre><code>       Name Sen Gender Single
 dovomi  Xie  45   &lt;NA&gt;  FALSE</code></pre>
@@ -388,7 +394,7 @@ dovomi  Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <li>انتخاب سطر خاص با نام</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb282-1"><a href="قالب-داده-کمی-بیشتر.html#cb282-1" tabindex="-1"></a>df[<span class="st">&quot;dovomi&quot;</span>,]</span></code></pre></div>
+<div class="sourceCode" id="cb290"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb290-1"><a href="قالب-داده-کمی-بیشتر.html#cb290-1" tabindex="-1"></a>df[<span class="st">&quot;dovomi&quot;</span>,]</span></code></pre></div>
 </details>
 <pre><code>       Name Sen Gender Single
 dovomi  Xie  45   &lt;NA&gt;  FALSE</code></pre>
@@ -396,7 +402,7 @@ dovomi  Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <li>انتخاب سطر با فیلتر کردن برحسب یک مقدار خاص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="قالب-داده-کمی-بیشتر.html#cb284-1" tabindex="-1"></a>df[df<span class="sc">$</span>Name <span class="sc">==</span> <span class="st">&quot;Mohsen&quot;</span>, ]</span></code></pre></div>
+<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="قالب-داده-کمی-بیشتر.html#cb292-1" tabindex="-1"></a>df[df<span class="sc">$</span>Name <span class="sc">==</span> <span class="st">&quot;Mohsen&quot;</span>, ]</span></code></pre></div>
 </details>
 <pre><code>        Name Sen Gender Single
 avali Mohsen  NA   Male   TRUE</code></pre>
@@ -407,10 +413,10 @@ avali Mohsen  NA   Male   TRUE</code></pre>
 <li>اتصال دو قالب داده بر حسب ستون</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb286"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb286-1"><a href="قالب-داده-کمی-بیشتر.html#cb286-1" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df[, <span class="fu">c</span>(<span class="st">&quot;Name&quot;</span>, <span class="st">&quot;Sen&quot;</span>)]</span>
-<span id="cb286-2"><a href="قالب-داده-کمی-بیشتر.html#cb286-2" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df[, <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Single&quot;</span>)]</span>
-<span id="cb286-3"><a href="قالب-داده-کمی-بیشتر.html#cb286-3" tabindex="-1"></a></span>
-<span id="cb286-4"><a href="قالب-داده-کمی-بیشتر.html#cb286-4" tabindex="-1"></a>df1 <span class="sc">|&gt;</span> <span class="fu">cbind</span>(df2)</span></code></pre></div>
+<div class="sourceCode" id="cb294"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb294-1"><a href="قالب-داده-کمی-بیشتر.html#cb294-1" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df[, <span class="fu">c</span>(<span class="st">&quot;Name&quot;</span>, <span class="st">&quot;Sen&quot;</span>)]</span>
+<span id="cb294-2"><a href="قالب-داده-کمی-بیشتر.html#cb294-2" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df[, <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Single&quot;</span>)]</span>
+<span id="cb294-3"><a href="قالب-داده-کمی-بیشتر.html#cb294-3" tabindex="-1"></a></span>
+<span id="cb294-4"><a href="قالب-داده-کمی-بیشتر.html#cb294-4" tabindex="-1"></a>df1 <span class="sc">|&gt;</span> <span class="fu">cbind</span>(df2)</span></code></pre></div>
 </details>
 <pre><code>         Name Sen Gender Single
 avali  Mohsen  NA   Male   TRUE
@@ -420,10 +426,10 @@ sevomi Narges  36 Female     NA</code></pre>
 <li>اتصال دو قالب داده بر حسب ردیف</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb288"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb288-1"><a href="قالب-داده-کمی-بیشتر.html#cb288-1" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df[<span class="st">&quot;avali&quot;</span>, ]</span>
-<span id="cb288-2"><a href="قالب-داده-کمی-بیشتر.html#cb288-2" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df[<span class="st">&quot;dovomi&quot;</span>, ]</span>
-<span id="cb288-3"><a href="قالب-داده-کمی-بیشتر.html#cb288-3" tabindex="-1"></a></span>
-<span id="cb288-4"><a href="قالب-داده-کمی-بیشتر.html#cb288-4" tabindex="-1"></a>df1 <span class="sc">|&gt;</span> <span class="fu">rbind</span>(df2)</span></code></pre></div>
+<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="قالب-داده-کمی-بیشتر.html#cb296-1" tabindex="-1"></a>df1 <span class="ot">&lt;-</span> df[<span class="st">&quot;avali&quot;</span>, ]</span>
+<span id="cb296-2"><a href="قالب-داده-کمی-بیشتر.html#cb296-2" tabindex="-1"></a>df2 <span class="ot">&lt;-</span> df[<span class="st">&quot;dovomi&quot;</span>, ]</span>
+<span id="cb296-3"><a href="قالب-داده-کمی-بیشتر.html#cb296-3" tabindex="-1"></a></span>
+<span id="cb296-4"><a href="قالب-داده-کمی-بیشتر.html#cb296-4" tabindex="-1"></a>df1 <span class="sc">|&gt;</span> <span class="fu">rbind</span>(df2)</span></code></pre></div>
 </details>
 <pre><code>         Name Sen Gender Single
 avali  Mohsen  NA   Male   TRUE
@@ -432,7 +438,7 @@ dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <div id="ادغام-دو-قالب-داده" class="section level3 hasAnchor" number="6.4.3">
 <h3><span class="header-section-number">6.4.3</span> ادغام دو قالب داده<a href="قالب-داده-کمی-بیشتر.html#ادغام-دو-قالب-داده" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb290"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb290-1"><a href="قالب-داده-کمی-بیشتر.html#cb290-1" tabindex="-1"></a>(<span class="at">df1 =</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;Mehdi&quot;</span>, <span class="st">&quot;Mohsen&quot;</span>, <span class="st">&quot;Reza&quot;</span>, <span class="st">&quot;Ali&quot;</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="قالب-داده-کمی-بیشتر.html#cb298-1" tabindex="-1"></a>(<span class="at">df1 =</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;Mehdi&quot;</span>, <span class="st">&quot;Mohsen&quot;</span>, <span class="st">&quot;Reza&quot;</span>, <span class="st">&quot;Ali&quot;</span>)))</span></code></pre></div>
 </details>
 <pre><code>  id   name
 1  1  Mehdi
@@ -440,7 +446,7 @@ dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 3  3   Reza
 4  4    Ali</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb292"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb292-1"><a href="قالب-داده-کمی-بیشتر.html#cb292-1" tabindex="-1"></a>(<span class="at">df2 =</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">5</span>, <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">34</span>, <span class="dv">31</span>, <span class="dv">23</span>, <span class="dv">43</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="قالب-داده-کمی-بیشتر.html#cb300-1" tabindex="-1"></a>(<span class="at">df2 =</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">5</span>, <span class="at">age =</span> <span class="fu">c</span>(<span class="dv">34</span>, <span class="dv">31</span>, <span class="dv">23</span>, <span class="dv">43</span>)))</span></code></pre></div>
 </details>
 <pre><code>  id age
 1  2  34
@@ -451,7 +457,7 @@ dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <li>مشترک</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb294"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb294-1"><a href="قالب-داده-کمی-بیشتر.html#cb294-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb302"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb302-1"><a href="قالب-داده-کمی-بیشتر.html#cb302-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>  id   name age
 1  2 Mohsen  34
@@ -461,7 +467,7 @@ dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <li>همه</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb296-1"><a href="قالب-داده-کمی-بیشتر.html#cb296-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb304"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb304-1"><a href="قالب-داده-کمی-بیشتر.html#cb304-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>, <span class="at">all =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </details>
 <pre><code>  id   name age
 1  1  Mehdi  NA
@@ -473,7 +479,7 @@ dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <li>برحسب اولی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb298"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb298-1"><a href="قالب-داده-کمی-بیشتر.html#cb298-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>, <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb306"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb306-1"><a href="قالب-داده-کمی-بیشتر.html#cb306-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>, <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </details>
 <pre><code>  id   name age
 1  1  Mehdi  NA
@@ -484,7 +490,7 @@ dovomi    Xie  45   &lt;NA&gt;  FALSE</code></pre>
 <li>برحسب دومی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb300"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb300-1"><a href="قالب-داده-کمی-بیشتر.html#cb300-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>, <span class="at">all.y =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="قالب-داده-کمی-بیشتر.html#cb308-1" tabindex="-1"></a><span class="fu">merge</span>(df1, df2, <span class="at">by =</span> <span class="st">&quot;id&quot;</span>, <span class="at">all.y =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </details>
 <pre><code>  id   name age
 1  2 Mohsen  34

@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -301,36 +307,36 @@ div.csl-indent {
 <h2><span class="header-section-number">4.2</span> عددی<a href="عددی.html#عددی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>مقادیری که عملیات ریاضی بر آن‌ها می‌توان انجام داد.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="عددی.html#cb29-1" tabindex="-1"></a><span class="fu">class</span>(<span class="sc">-</span><span class="dv">1234567890</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="عددی.html#cb37-1" tabindex="-1"></a><span class="fu">class</span>(<span class="sc">-</span><span class="dv">1234567890</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
 <ul>
 <li>تغییر یک مقدار به نوع عددی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="عددی.html#cb31-1" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">&quot;000100.000&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="عددی.html#cb39-1" tabindex="-1"></a><span class="fu">as.numeric</span>(<span class="st">&quot;000100.000&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 100</code></pre>
 <ul>
 <li>مقادیر تعریف نشده</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="عددی.html#cb33-1" tabindex="-1"></a><span class="dv">0</span><span class="sc">/</span><span class="dv">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="عددی.html#cb41-1" tabindex="-1"></a><span class="dv">0</span><span class="sc">/</span><span class="dv">0</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1] NaN</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="عددی.html#cb35-1" tabindex="-1"></a><span class="cn">Inf</span><span class="sc">/</span><span class="cn">Inf</span></span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="عددی.html#cb43-1" tabindex="-1"></a><span class="cn">Inf</span><span class="sc">/</span><span class="cn">Inf</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1] NaN</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="عددی.html#cb37-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NaN</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="عددی.html#cb45-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NaN</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
 <ul>
 <li>مقادیر عددی از دست رفته</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="عددی.html#cb39-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_real_</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="عددی.html#cb47-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_real_</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;numeric&quot;</code></pre>
 <ul>
@@ -338,14 +344,14 @@ div.csl-indent {
 صحیح (Integer)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="عددی.html#cb41-1" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">12.001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="عددی.html#cb49-1" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">12.001</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 12</code></pre>
 <ul>
 <li>مقادیر عددی صحیح از دست رفته</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="عددی.html#cb43-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_integer_</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="عددی.html#cb51-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_integer_</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;integer&quot;</code></pre>
 <ul>
@@ -353,7 +359,7 @@ div.csl-indent {
 اعشاری (Double)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="عددی.html#cb45-1" tabindex="-1"></a><span class="fu">as.double</span>(<span class="fl">12.001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="عددی.html#cb53-1" tabindex="-1"></a><span class="fu">as.double</span>(<span class="fl">12.001</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 12.001</code></pre>
 <ul>
@@ -361,14 +367,14 @@ div.csl-indent {
 مختلط (Complex)</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="عددی.html#cb47-1" tabindex="-1"></a><span class="fu">as.complex</span>(<span class="fl">12.001</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="عددی.html#cb55-1" tabindex="-1"></a><span class="fu">as.complex</span>(<span class="fl">12.001</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 12.001+0i</code></pre>
 <ul>
 <li>مقادیر عددی مختلط از دست رفته</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="عددی.html#cb49-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_complex_</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="عددی.html#cb57-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA_complex_</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] NA_complex_</code></pre>
 </div>

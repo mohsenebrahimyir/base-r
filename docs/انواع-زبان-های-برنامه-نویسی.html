@@ -30,7 +30,7 @@
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 <link rel="prev" href="مقدمه.html"/>
-<link rel="next" href="نصب-و-آماده-سازی-اولیه.html"/>
+<link rel="next" href="چرا-r.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -299,27 +305,213 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="انواع-زبان-های-برنامه-نویسی" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> انواع زبان های برنامه نویسی<a href="انواع-زبان-های-برنامه-نویسی.html#انواع-زبان-های-برنامه-نویسی" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="img/evolution-of-programming-languages.jpeg" alt="انقلاب زبان‌های برنامه نویسی" width="95%" />
+<p class="caption">
+شکل 1.1: انقلاب زبان‌های برنامه نویسی
+</p>
+</div>
 <ul>
 <li>زبان انسان (English)</li>
-<li>زبان‌های برنامه نویسی سطح بالا (C, C++, R)</li>
+<li>زبان‌های برنامه نویسی سطح بالا (C, C++, R, Python)</li>
 <li>زبان برنامه نویسی سطح پایین (Assembly)</li>
 <li>زبان ماشین (01)</li>
 </ul>
-<p>سایت تبدیل زبان برنامه نویسی R به زبان برنامه نویسی Assembly <a href="https://www.codeconvert.ai/r-to-assembly-converter" class="uri">https://www.codeconvert.ai/r-to-assembly-converter</a></p>
 <div class="remark">
-<p><span id="unlabeled-div-1" class="remark"><em>نکته</em>. </span>در نهایت اکثر زبان‌های برنامه نویسی منطق یکسانی دارند و یادگیری یک زبان برنامه نویسی،
+<p><span id="unlabeled-div-1" class="remark"><em>نکته</em>. </span>در نهایت اکثر زبان‌های برنامه نویسی منطق یکسانی دارند و یا
+دگیری یک زبان برنامه نویسی،
 یادگیری زبان برنامه نویسی دیگر را ساده تر می‌کند.</p>
 </div>
+<p>سایت تبدیل زبان برنامه نویسی R به زبان برنامه نویسی Assembly <a href="https://www.codeconvert.ai/r-to-assembly-converter" class="uri">https://www.codeconvert.ai/r-to-assembly-converter</a></p>
+<ul>
+<li>خروجی</li>
+</ul>
+<pre><code>    name Age
+1 Mohsen  30
+2  Arash  12</code></pre>
+<ul>
+<li>R</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="انواع-زبان-های-برنامه-نویسی.html#cb2-1" tabindex="-1"></a>df <span class="ot">=</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-2"><a href="انواع-زبان-های-برنامه-نویسی.html#cb2-2" tabindex="-1"></a>  <span class="st">&quot;name&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Mohsen&quot;</span>, <span class="st">&quot;Arash&quot;</span>),</span>
+<span id="cb2-3"><a href="انواع-زبان-های-برنامه-نویسی.html#cb2-3" tabindex="-1"></a>  <span class="st">&quot;Age&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">12</span>)</span>
+<span id="cb2-4"><a href="انواع-زبان-های-برنامه-نویسی.html#cb2-4" tabindex="-1"></a>)</span>
+<span id="cb2-5"><a href="انواع-زبان-های-برنامه-نویسی.html#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="انواع-زبان-های-برنامه-نویسی.html#cb2-6" tabindex="-1"></a><span class="fu">print</span>(df)</span></code></pre></div>
+</details>
+<ul>
+<li>Matlab</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode matlab"><code class="sourceCode matlab"><span id="cb3-1"><a href="انواع-زبان-های-برنامه-نویسی.html#cb3-1" tabindex="-1"></a><span class="va">df</span> <span class="op">=</span> <span class="va">table</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="انواع-زبان-های-برنامه-نویسی.html#cb3-2" tabindex="-1"></a><span class="va">df</span>.<span class="va">name</span> <span class="op">=</span> {<span class="ss">&#39;Mohsen&#39;</span><span class="op">,</span> <span class="ss">&#39;Arash&#39;</span>}<span class="op">;</span></span>
+<span id="cb3-3"><a href="انواع-زبان-های-برنامه-نویسی.html#cb3-3" tabindex="-1"></a><span class="va">df</span>.<span class="va">Age</span> <span class="op">=</span> [<span class="fl">30</span><span class="op">,</span> <span class="fl">12</span>]<span class="op">;</span></span>
+<span id="cb3-4"><a href="انواع-زبان-های-برنامه-نویسی.html#cb3-4" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="انواع-زبان-های-برنامه-نویسی.html#cb3-5" tabindex="-1"></a><span class="va">disp</span>(<span class="va">df</span>)</span></code></pre></div>
+<ul>
+<li>Python</li>
+</ul>
+<details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-1" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-2"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-2" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-3" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb4-4"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-4" tabindex="-1"></a>    <span class="st">&quot;name&quot;</span>: [<span class="st">&quot;Mohsen&quot;</span>, <span class="st">&quot;Arash&quot;</span>],</span>
+<span id="cb4-5"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-5" tabindex="-1"></a>    <span class="st">&quot;Age&quot;</span>: [<span class="dv">30</span>, <span class="dv">12</span>]</span>
+<span id="cb4-6"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-6" tabindex="-1"></a>})</span>
+<span id="cb4-7"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-7" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="انواع-زبان-های-برنامه-نویسی.html#cb4-8" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div>
+</details>
+<ul>
+<li>Sas</li>
+</ul>
+<pre class="sas"><code>data df;
+  input name $ age;
+datalines;
+Mohsen 30
+Arash 12
+;
+run;
 
+proc print data=df;
+run;</code></pre>
+<ul>
+<li>Fortran</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode fortran"><code class="sourceCode fortranfixed"><span id="cb6-1"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-1" tabindex="-1"></a><span class="kw">PROGRAM</span> main</span>
+<span id="cb6-2"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-2" tabindex="-1"></a>  <span class="kw">IMPLICIT</span> <span class="kw">NONE</span></span>
+<span id="cb6-3"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-3" tabindex="-1"></a>  </span>
+<span id="cb6-4"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-4" tabindex="-1"></a>  <span class="dt">INTEGER</span> <span class="dt">::</span> i</span>
+<span id="cb6-5"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-5" tabindex="-1"></a>  <span class="dt">CHARACTER(LEN=10)</span>, <span class="dt">DIMENSION(2)</span> <span class="dt">::</span> name</span>
+<span id="cb6-6"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-6" tabindex="-1"></a>  <span class="dt">INTEGER</span>, <span class="dt">DIMENSION(2)</span> <span class="dt">::</span> age</span>
+<span id="cb6-7"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-7" tabindex="-1"></a>  </span>
+<span id="cb6-8"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-8" tabindex="-1"></a>  name(<span class="dv">1</span>) <span class="kw">=</span> <span class="st">&quot;Mohsen&quot;</span></span>
+<span id="cb6-9"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-9" tabindex="-1"></a>  name(<span class="dv">2</span>) <span class="kw">=</span> <span class="st">&quot;Arash&quot;</span></span>
+<span id="cb6-10"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-10" tabindex="-1"></a>  age(<span class="dv">1</span>) <span class="kw">=</span> <span class="dv">30</span></span>
+<span id="cb6-11"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-11" tabindex="-1"></a>  age(<span class="dv">2</span>) <span class="kw">=</span> <span class="dv">12</span></span>
+<span id="cb6-12"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-12" tabindex="-1"></a>  </span>
+<span id="cb6-13"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-13" tabindex="-1"></a>  <span class="kw">DO</span> i <span class="kw">=</span> <span class="dv">1</span>, <span class="dv">2</span></span>
+<span id="cb6-14"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-14" tabindex="-1"></a>    <span class="fu">WRITE(*</span>,<span class="fu">*)</span> <span class="st">&quot;name: &quot;</span>, name(i), <span class="st">&quot;, age: &quot;</span>, age(i)</span>
+<span id="cb6-15"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-15" tabindex="-1"></a>  <span class="kw">END DO</span></span>
+<span id="cb6-16"><a href="انواع-زبان-های-برنامه-نویسی.html#cb6-16" tabindex="-1"></a><span class="kw">END PROGRAM</span> main</span></code></pre></div>
+<ul>
+<li>C</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb7-1"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-1" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb7-2"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-2" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;vector&gt;</span></span>
+<span id="cb7-3"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-3" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;string&gt;</span></span>
+<span id="cb7-4"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-4" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;unordered_map&gt;</span></span>
+<span id="cb7-5"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-5" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-6" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb7-7"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-7" tabindex="-1"></a>    std<span class="op">::</span>vector<span class="op">&lt;</span>std<span class="op">::</span>string<span class="op">&gt;</span> name <span class="op">=</span> <span class="op">{</span><span class="st">&quot;Mohsen&quot;</span><span class="op">,</span> <span class="st">&quot;Arash&quot;</span><span class="op">};</span></span>
+<span id="cb7-8"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-8" tabindex="-1"></a>    std<span class="op">::</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;</span> Age <span class="op">=</span> <span class="op">{</span><span class="dv">30</span><span class="op">,</span> <span class="dv">12</span><span class="op">};</span></span>
+<span id="cb7-9"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-9" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-10" tabindex="-1"></a>    std<span class="op">::</span>unordered_map<span class="op">&lt;</span>std<span class="op">::</span>string<span class="op">,</span> std<span class="op">::</span>vector<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&gt;</span> df<span class="op">;</span></span>
+<span id="cb7-11"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-11" tabindex="-1"></a>    df<span class="op">[</span><span class="st">&quot;name&quot;</span><span class="op">]</span> <span class="op">=</span> name<span class="op">;</span></span>
+<span id="cb7-12"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-12" tabindex="-1"></a>    df<span class="op">[</span><span class="st">&quot;Age&quot;</span><span class="op">]</span> <span class="op">=</span> Age<span class="op">;</span></span>
+<span id="cb7-13"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-13" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-14" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">const</span> <span class="kw">auto</span><span class="op">&amp;</span> pair <span class="op">:</span> df<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-15"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-15" tabindex="-1"></a>        std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> pair<span class="op">.</span>first <span class="op">&lt;&lt;</span> <span class="st">&quot;: &quot;</span><span class="op">;</span></span>
+<span id="cb7-16"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-16" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">const</span> <span class="kw">auto</span><span class="op">&amp;</span> value <span class="op">:</span> pair<span class="op">.</span>second<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-17"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-17" tabindex="-1"></a>            std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> value <span class="op">&lt;&lt;</span> <span class="st">&quot; &quot;</span><span class="op">;</span></span>
+<span id="cb7-18"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-18" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb7-19"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-19" tabindex="-1"></a>        std<span class="op">::</span>cout <span class="op">&lt;&lt;</span> std<span class="op">::</span>endl<span class="op">;</span></span>
+<span id="cb7-20"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-20" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-21"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-21" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-22" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-23"><a href="انواع-زبان-های-برنامه-نویسی.html#cb7-23" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<ul>
+<li>Assembly</li>
+</ul>
+<pre class="assembly"><code>asm
+.data
+df_name_data:
+    .asciz &quot;Mohsen&quot;
+    .asciz &quot;Arash&quot;
+df_age_data:
+    .int 30
+    .int 12
+df_nrows = 2
+df_ncols = 2
+
+.text
+.globl main
+main:
+    # Allocate memory for the data frame
+    movl $df_nrows, %eax
+    movl $df_ncols, %ebx
+    imull %ebx, %eax
+    shl $2, %eax # Each element is 4 bytes (int)
+    pushl %eax
+    call malloc
+    popl %ecx
+    movl %eax, %edi # edi points to the data frame
+
+    # Copy the name data
+    movl $df_name_data, %esi
+    movl $0, %ecx
+loop1:
+    cmpl $df_nrows, %ecx
+    je end1
+    movl (%esi), %eax
+    movl %eax, (%edi)
+    addl $4, %edi # Move to the next column
+    addl $4, %esi # Move to the next name
+    incl %ecx
+    jmp loop1
+end1:
+
+    # Copy the age data
+    movl $df_age_data, %esi
+    movl $0, %ecx
+loop2:
+    cmpl $df_nrows, %ecx
+    je end2
+    movl (%esi), %eax
+    movl %eax, (%edi)
+    addl $4, %edi # Move to the next column
+    addl $4, %esi # Move to the next age
+    incl %ecx
+    jmp loop2
+end2:
+
+    # Print the data frame
+    movl $df_nrows, %eax
+    movl $df_ncols, %ebx
+    imull %ebx, %eax # Total number of elements
+    movl %edi, %ebx # ebx points to the start of the data frame
+    movl $0, %ecx
+loop3:
+    cmpl %eax, %ecx
+    je end3
+    # Print the current element
+    pushl (%ebx)
+    pushl $format
+    call printf
+    addl $8, %esp
+    addl $4, %ebx # Move to the next element
+    incl %ecx
+    jmp loop3
+end3:
+
+    # Free the memory
+    movl %edi, %eax
+    call free
+
+    xorl %eax, %eax
+    ret
+
+.data
+format:
+    .asciz &quot;%d &quot;
+</code></pre>
 </div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
 <a href="مقدمه.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="نصب-و-آماده-سازی-اولیه.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="چرا-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

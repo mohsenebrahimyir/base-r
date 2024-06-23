@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -306,11 +312,11 @@ div.csl-indent {
 <code>while</code>
 استفاده نماییم.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb447"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb447-1"><a href="حلقه.html#cb447-1" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">5</span></span>
-<span id="cb447-2"><a href="حلقه.html#cb447-2" tabindex="-1"></a><span class="cf">while</span> (i <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
-<span id="cb447-3"><a href="حلقه.html#cb447-3" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
-<span id="cb447-4"><a href="حلقه.html#cb447-4" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">-</span> <span class="dv">1</span></span>
-<span id="cb447-5"><a href="حلقه.html#cb447-5" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb455"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb455-1"><a href="حلقه.html#cb455-1" tabindex="-1"></a>i <span class="ot">=</span> <span class="dv">5</span></span>
+<span id="cb455-2"><a href="حلقه.html#cb455-2" tabindex="-1"></a><span class="cf">while</span> (i <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb455-3"><a href="حلقه.html#cb455-3" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
+<span id="cb455-4"><a href="حلقه.html#cb455-4" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb455-5"><a href="حلقه.html#cb455-5" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <pre><code>## [1] &quot;5th alaki&quot;
 ## [1] &quot;4th alaki&quot;
@@ -324,9 +330,9 @@ div.csl-indent {
 <code>for</code>
 استفاده نماییم.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb449"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb449-1"><a href="حلقه.html#cb449-1" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
-<span id="cb449-2"><a href="حلقه.html#cb449-2" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
-<span id="cb449-3"><a href="حلقه.html#cb449-3" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb457"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb457-1"><a href="حلقه.html#cb457-1" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
+<span id="cb457-2"><a href="حلقه.html#cb457-2" tabindex="-1"></a>  <span class="st">&quot;%sth alaki&quot;</span> <span class="sc">|&gt;</span> <span class="fu">sprintf</span>(i) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span>
+<span id="cb457-3"><a href="حلقه.html#cb457-3" tabindex="-1"></a>}</span></code></pre></div>
 </details>
 <pre><code>## [1] &quot;1th alaki&quot;
 ## [1] &quot;2th alaki&quot;

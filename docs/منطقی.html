@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -310,15 +316,15 @@ div.csl-indent {
 <code>0</code> را غلط برمیگرداند و مقادیر غیر <code>0</code>را درست بر می‌گرداند.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="منطقی.html#cb51-1" tabindex="-1"></a><span class="fu">as.logical</span>(<span class="dv">564564</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="منطقی.html#cb59-1" tabindex="-1"></a><span class="fu">as.logical</span>(<span class="dv">564564</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] TRUE</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="منطقی.html#cb53-1" tabindex="-1"></a><span class="fu">as.logical</span>(<span class="dv">0</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="منطقی.html#cb61-1" tabindex="-1"></a><span class="fu">as.logical</span>(<span class="dv">0</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] FALSE</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="منطقی.html#cb55-1" tabindex="-1"></a><span class="fu">as.logical</span>(NA_character)</span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="منطقی.html#cb63-1" tabindex="-1"></a><span class="fu">as.logical</span>(NA_character)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] NA</code></pre>
 <div id="درست" class="section level3 hasAnchor" number="4.3.1">
@@ -331,29 +337,29 @@ div.csl-indent {
 نوشته شود تا به عنوان مقدار منطقی درست پذیرفته شود.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="منطقی.html#cb57-1" tabindex="-1"></a><span class="fu">class</span>(T)</span></code></pre></div>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="منطقی.html#cb65-1" tabindex="-1"></a><span class="fu">class</span>(T)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;logical&quot;</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="منطقی.html#cb59-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="منطقی.html#cb67-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;logical&quot;</code></pre>
 <ul>
 <li>دیگر املاهای عبارت درست، خطا بر می‌گردانند.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="منطقی.html#cb61-1" tabindex="-1"></a><span class="fu">class</span>(true)</span></code></pre></div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="منطقی.html#cb69-1" tabindex="-1"></a><span class="fu">class</span>(true)</span></code></pre></div>
 </details>
 <pre class="output"><code>Error: object &#39;true&#39; not found</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="منطقی.html#cb63-1" tabindex="-1"></a><span class="fu">class</span>(True)</span></code></pre></div>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="منطقی.html#cb71-1" tabindex="-1"></a><span class="fu">class</span>(True)</span></code></pre></div>
 </details>
 <pre class="output"><code>Error: object &#39;True&#39; not found</code></pre>
 <ul>
 <li>چک کردن درست بودن یک مقدار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="منطقی.html#cb65-1" tabindex="-1"></a><span class="fu">isTRUE</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="منطقی.html#cb73-1" tabindex="-1"></a><span class="fu">isTRUE</span>(<span class="cn">TRUE</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] TRUE</code></pre>
 </div>
@@ -367,29 +373,29 @@ div.csl-indent {
 نوشته شود تا به عنوان مقدار منطقی پذیرفته شود.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="منطقی.html#cb67-1" tabindex="-1"></a><span class="fu">class</span>(F)</span></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="منطقی.html#cb75-1" tabindex="-1"></a><span class="fu">class</span>(F)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;logical&quot;</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="منطقی.html#cb69-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="منطقی.html#cb77-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">FALSE</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;logical&quot;</code></pre>
 <ul>
 <li>دیگر املاهای عبارت غلط، خطا بر می‌گردانند.</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="منطقی.html#cb71-1" tabindex="-1"></a><span class="fu">class</span>(false)</span></code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="منطقی.html#cb79-1" tabindex="-1"></a><span class="fu">class</span>(false)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] Error: object &#39;false&#39; not found</code></pre>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="منطقی.html#cb73-1" tabindex="-1"></a><span class="fu">class</span>(False)</span></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="منطقی.html#cb81-1" tabindex="-1"></a><span class="fu">class</span>(False)</span></code></pre></div>
 </details>
 <pre class="output"><code>Error: object &#39;False&#39; not found</code></pre>
 <ul>
 <li>چک کردن غلط بودن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="منطقی.html#cb75-1" tabindex="-1"></a><span class="fu">isFALSE</span>(<span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="منطقی.html#cb83-1" tabindex="-1"></a><span class="fu">isFALSE</span>(<span class="cn">FALSE</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] TRUE</code></pre>
 </div>
@@ -399,14 +405,14 @@ div.csl-indent {
 <code>NA</code>
 مشخص می‌شوند</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="منطقی.html#cb77-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="منطقی.html#cb85-1" tabindex="-1"></a><span class="fu">class</span>(<span class="cn">NA</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;logical&quot;</code></pre>
 <ul>
 <li>چک کردن از دست رفته بودن</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="منطقی.html#cb79-1" tabindex="-1"></a><span class="fu">is.na</span>(<span class="cn">NA</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="منطقی.html#cb87-1" tabindex="-1"></a><span class="fu">is.na</span>(<span class="cn">NA</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] TRUE</code></pre>
 </div>

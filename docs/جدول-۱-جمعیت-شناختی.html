@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -325,7 +331,7 @@ div.csl-indent {
 </div>
 <p>فایل داده‌های پرسشنامه در پوشه داده ذخیره شده است.</p>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb468"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb468-1"><a href="جدول-۱-جمعیت-شناختی.html#cb468-1" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;./data/drug-global-survey-covid-19.csv&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb476"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb476-1"><a href="جدول-۱-جمعیت-شناختی.html#cb476-1" tabindex="-1"></a>x <span class="ot">=</span> <span class="st">&quot;./data/drug-global-survey-covid-19.csv&quot;</span></span></code></pre></div>
 </details>
 <ol class="example" style="list-style-type: decimal">
 <li>برای ذخیره سازی متغیرهای مختلف اول یک متغیر با کلاس لیست به اسم
@@ -333,7 +339,7 @@ div.csl-indent {
 تعریف کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb469"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb469-1"><a href="جدول-۱-جمعیت-شناختی.html#cb469-1" tabindex="-1"></a>project_list <span class="sc">|&gt;</span> <span class="fu">class</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb477"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb477-1"><a href="جدول-۱-جمعیت-شناختی.html#cb477-1" tabindex="-1"></a>project_list <span class="sc">|&gt;</span> <span class="fu">class</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>()</span></code></pre></div>
 </details>
 <pre><code>list</code></pre>
 <ol start="2" class="example" style="list-style-type: decimal">
@@ -344,7 +350,7 @@ div.csl-indent {
 بریزید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb471"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb471-1"><a href="جدول-۱-جمعیت-شناختی.html#cb471-1" tabindex="-1"></a>project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> <span class="fu">str</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb479"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb479-1"><a href="جدول-۱-جمعیت-شناختی.html#cb479-1" tabindex="-1"></a>project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> <span class="fu">str</span>() <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>&#39;data.frame&#39;:   177 obs. of  6 variables:
  $ Gender    : chr  &quot;Male&quot; &quot;Male&quot; &quot;Male&quot; &quot;Male&quot; ...
@@ -361,7 +367,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb473"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb473-1"><a href="جدول-۱-جمعیت-شناختی.html#cb473-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_row_and_col <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb481"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb481-1"><a href="جدول-۱-جمعیت-شناختی.html#cb481-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_row_and_col <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>177 6</code></pre>
 <ol start="4" class="example" style="list-style-type: decimal">
@@ -370,7 +376,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb475"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb475-1"><a href="جدول-۱-جمعیت-شناختی.html#cb475-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_col <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb483"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb483-1"><a href="جدول-۱-جمعیت-شناختی.html#cb483-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_col <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>6</code></pre>
 <ol start="5" class="example" style="list-style-type: decimal">
@@ -379,7 +385,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb477"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb477-1"><a href="جدول-۱-جمعیت-شناختی.html#cb477-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_row <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb485"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb485-1"><a href="جدول-۱-جمعیت-شناختی.html#cb485-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_row <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>177</code></pre>
 <ol start="6" class="example" style="list-style-type: decimal">
@@ -389,7 +395,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb479"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb479-1"><a href="جدول-۱-جمعیت-شناختی.html#cb479-1" tabindex="-1"></a>project_list<span class="sc">$</span>sorted_ages <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb487"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb487-1"><a href="جدول-۱-جمعیت-شناختی.html#cb487-1" tabindex="-1"></a>project_list<span class="sc">$</span>sorted_ages <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>24 25 26 28 28 29 30 30 30 30 30 31 32 32 32 32 32 32 32 32 32 32 33 34 34 34 34 35 35 35 35 35 35 36 36 36 37 37 37 37 37 38 38 38 39 39 39 39 40 40 40 40 40 40 40 40 40 41 41 41 41 41 42 43 43 43 43 43 43 44 44 44 44 44 45 45 45 45 46 46 47 47 47 47 47 47 47 47 47 48 48 48 48 48 48 48 49 49 49 49 49 50 50 50 50 50 50 50 51 51 51 51 51 52 52 52 53 53 53 53 53 54 54 54 54 54 54 54 55 55 55 56 56 56 56 57 58 58 58 58 58 59 59 59 59 59 59 60 60 60 61 61 61 61 62 62 62 63 63 64 64 65 65 66 67 68 69 69 69</code></pre>
 <ol start="7" class="example" style="list-style-type: decimal">
@@ -402,7 +408,7 @@ div.csl-indent {
 <code>img</code>
 ذخیره کنید.</li>
 </ol>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-71"></span>
 <img src="img/age-histogram.png" alt="نمودار بافت نگار سن" width="80%" />
 <p class="caption">
 شکل 13.1: نمودار بافت نگار سن
@@ -419,7 +425,7 @@ div.csl-indent {
 <code>img</code>
 ذخیره کنید.</li>
 </ol>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-52"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-74"></span>
 <img src="img/age-boxplot.png" alt="نمودار جعبه‌ای سن برحسب کشورهای آمریکا، هند، هلند و ایران" width="80%" />
 <p class="caption">
 شکل 13.2: نمودار جعبه‌ای سن برحسب کشورهای آمریکا، هند، هلند و ایران
@@ -431,7 +437,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb481"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb481-1"><a href="جدول-۱-جمعیت-شناختی.html#cb481-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_age_mean_sd <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb489"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb489-1"><a href="جدول-۱-جمعیت-شناختی.html#cb489-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_age_mean_sd <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>  column  mean    sd
 1    Age 46.51 10.78</code></pre>
@@ -442,7 +448,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb483"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb483-1"><a href="جدول-۱-جمعیت-شناختی.html#cb483-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_age_below_30_and_bsc_degree <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb491"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb491-1"><a href="جدول-۱-جمعیت-شناختی.html#cb491-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_age_below_30_and_bsc_degree <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>    Gender Age       Date Degree            Discipline Country
 163   Male  28 2020-04-30    BSc           Social Work   Burma
@@ -454,7 +460,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb485"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb485-1"><a href="جدول-۱-جمعیت-شناختی.html#cb485-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_bsc <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb493"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb493-1"><a href="جدول-۱-جمعیت-شناختی.html#cb493-1" tabindex="-1"></a>project_list<span class="sc">$</span>number_of_bsc <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>6</code></pre>
 <ol start="12" class="example" style="list-style-type: decimal">
@@ -464,7 +470,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb487"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb487-1"><a href="جدول-۱-جمعیت-شناختی.html#cb487-1" tabindex="-1"></a>project_list<span class="sc">$</span>percent_of_bsc <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb495"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb495-1"><a href="جدول-۱-جمعیت-شناختی.html#cb495-1" tabindex="-1"></a>project_list<span class="sc">$</span>percent_of_bsc <span class="sc">|&gt;</span> <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div>
 </details>
 <pre><code>3.4</code></pre>
 <ol start="13" class="example" style="list-style-type: decimal">
@@ -474,7 +480,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb489"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb489-1"><a href="جدول-۱-جمعیت-شناختی.html#cb489-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_degrees <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb497"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb497-1"><a href="جدول-۱-جمعیت-شناختی.html#cb497-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_degrees <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>   value count percent
 1    BSc     6     3.4
@@ -490,7 +496,7 @@ div.csl-indent {
 بنویسید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb491"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb491-1"><a href="جدول-۱-جمعیت-شناختی.html#cb491-1" tabindex="-1"></a>project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">value_counter</span>(<span class="st">&quot;Degree&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb499"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb499-1"><a href="جدول-۱-جمعیت-شناختی.html#cb499-1" tabindex="-1"></a>project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">value_counter</span>(<span class="st">&quot;Degree&quot;</span>) <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>   value count percent
 1    BSc     6     3.4
@@ -509,12 +515,12 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb493"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb493-1"><a href="جدول-۱-جمعیت-شناختی.html#cb493-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="ot">=</span> </span>
-<span id="cb493-2"><a href="جدول-۱-جمعیت-شناختی.html#cb493-2" tabindex="-1"></a>  project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">values_counter</span>(</span>
-<span id="cb493-3"><a href="جدول-۱-جمعیت-شناختی.html#cb493-3" tabindex="-1"></a>    <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Discipline&quot;</span>)</span>
-<span id="cb493-4"><a href="جدول-۱-جمعیت-شناختی.html#cb493-4" tabindex="-1"></a>  ) </span>
-<span id="cb493-5"><a href="جدول-۱-جمعیت-شناختی.html#cb493-5" tabindex="-1"></a></span>
-<span id="cb493-6"><a href="جدول-۱-جمعیت-شناختی.html#cb493-6" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb501"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb501-1"><a href="جدول-۱-جمعیت-شناختی.html#cb501-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="ot">=</span> </span>
+<span id="cb501-2"><a href="جدول-۱-جمعیت-شناختی.html#cb501-2" tabindex="-1"></a>  project_list<span class="sc">$</span>df <span class="sc">|&gt;</span> project_list<span class="sc">$</span><span class="fu">values_counter</span>(</span>
+<span id="cb501-3"><a href="جدول-۱-جمعیت-شناختی.html#cb501-3" tabindex="-1"></a>    <span class="fu">c</span>(<span class="st">&quot;Gender&quot;</span>, <span class="st">&quot;Degree&quot;</span>, <span class="st">&quot;Discipline&quot;</span>)</span>
+<span id="cb501-4"><a href="جدول-۱-جمعیت-شناختی.html#cb501-4" tabindex="-1"></a>  ) </span>
+<span id="cb501-5"><a href="جدول-۱-جمعیت-شناختی.html#cb501-5" tabindex="-1"></a></span>
+<span id="cb501-6"><a href="جدول-۱-جمعیت-شناختی.html#cb501-6" tabindex="-1"></a>project_list<span class="sc">$</span>df_demog <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>       column                     value count percent
 1      Gender                    Female    62    35.0
@@ -545,19 +551,19 @@ div.csl-indent {
 <code>img</code>
 ذخیره کنید.</li>
 </ol>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-62"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-84"></span>
 <img src="img/gender.png" alt="نمودار جنسیت افراد شرکت کننده" width="80%" />
 <p class="caption">
 شکل 13.3: نمودار جنسیت افراد شرکت کننده
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-64"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-86"></span>
 <img src="img/degree.png" alt="نمودار مدرک افراد شرکت کننده" width="80%" />
 <p class="caption">
 شکل 13.4: نمودار مدرک افراد شرکت کننده
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-66"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-88"></span>
 <img src="img/discipline.png" alt="نمودار تخصص افراد شرکت کننده" width="80%" />
 <p class="caption">
 شکل 13.5: نمودار تخصص افراد شرکت کننده
@@ -573,7 +579,7 @@ div.csl-indent {
 ذخیره کنید.</li>
 </ol>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb495"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb495-1"><a href="جدول-۱-جمعیت-شناختی.html#cb495-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demographic <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb503"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb503-1"><a href="جدول-۱-جمعیت-شناختی.html#cb503-1" tabindex="-1"></a>project_list<span class="sc">$</span>df_demographic <span class="sc">|&gt;</span> <span class="fu">print</span>()</span></code></pre></div>
 </details>
 <pre><code>       column                     value count_or_mean percent_or_sd
 1      Gender                    Female         62.00         35.00

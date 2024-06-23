@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -303,49 +309,49 @@ div.csl-indent {
 <li>مرتب کردن مقادیر</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="بردار-متوالی-و-تصادفی.html#cb175-1" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">9</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="بردار-متوالی-و-تصادفی.html#cb183-1" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">7</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">3</span>, <span class="dv">9</span>))</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] -2  3  5  5  7  9</code></pre>
 <ul>
 <li>توالی صعودی در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="بردار-متوالی-و-تصادفی.html#cb177-1" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="بردار-متوالی-و-تصادفی.html#cb185-1" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 <ul>
 <li>توالی نزولی در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="بردار-متوالی-و-تصادفی.html#cb179-1" tabindex="-1"></a><span class="dv">10</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="بردار-متوالی-و-تصادفی.html#cb187-1" tabindex="-1"></a><span class="dv">10</span><span class="sc">:</span><span class="dv">1</span></span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 10  9  8  7  6  5  4  3  2  1</code></pre>
 <ul>
 <li>توالی صعودی با تعداد مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="بردار-متوالی-و-تصادفی.html#cb181-1" tabindex="-1"></a><span class="fu">seq_len</span>(<span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="بردار-متوالی-و-تصادفی.html#cb189-1" tabindex="-1"></a><span class="fu">seq_len</span>(<span class="dv">5</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 2 3 4 5</code></pre>
 <ul>
 <li>توالی صعودی با فاصله مشخص در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="بردار-متوالی-و-تصادفی.html#cb183-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> .<span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="بردار-متوالی-و-تصادفی.html#cb191-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> .<span class="dv">5</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  5.0  5.5  6.0  6.5  7.0  7.5  8.0  8.5  9.0  9.5 10.0</code></pre>
 <ul>
 <li>توالی صعودی به تعداد مشخص در بازه مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="بردار-متوالی-و-تصادفی.html#cb185-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">length =</span> <span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="بردار-متوالی-و-تصادفی.html#cb193-1" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">5</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">length =</span> <span class="dv">5</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  5.00  6.25  7.50  8.75 10.00</code></pre>
 <ul>
 <li>حروف کوچک الفبای انگلیسی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="بردار-متوالی-و-تصادفی.html#cb187-1" tabindex="-1"></a>letters</span></code></pre></div>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="بردار-متوالی-و-تصادفی.html#cb195-1" tabindex="-1"></a>letters</span></code></pre></div>
 </details>
 <pre class="output"><code> [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot;
 [14] &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot; &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
@@ -353,7 +359,7 @@ div.csl-indent {
 <li>حروف بزرگ الفبای انگلیسی</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="بردار-متوالی-و-تصادفی.html#cb189-1" tabindex="-1"></a>LETTERS</span></code></pre></div>
+<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="بردار-متوالی-و-تصادفی.html#cb197-1" tabindex="-1"></a>LETTERS</span></code></pre></div>
 </details>
 <pre class="output"><code> [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot;
 [14] &quot;N&quot; &quot;O&quot; &quot;P&quot; &quot;Q&quot; &quot;R&quot; &quot;S&quot; &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
@@ -361,7 +367,7 @@ div.csl-indent {
 <li>تکرار یک مقدار به تعداد مشخص</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="بردار-متوالی-و-تصادفی.html#cb191-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb199"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb199-1"><a href="بردار-متوالی-و-تصادفی.html#cb199-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="dv">10</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 2 2 2 2 2 2 2 2 2 2</code></pre>
 <ul>
@@ -370,7 +376,7 @@ n
 بار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="بردار-متوالی-و-تصادفی.html#cb193-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">times =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb201-1"><a href="بردار-متوالی-و-تصادفی.html#cb201-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">times =</span> <span class="dv">2</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 6 5 1 6 5</code></pre>
 <ul>
@@ -379,7 +385,7 @@ n
 بار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="بردار-متوالی-و-تصادفی.html#cb195-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">each=</span><span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="بردار-متوالی-و-تصادفی.html#cb203-1" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">5</span>), <span class="at">each=</span><span class="dv">2</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 1 1 6 6 5 5</code></pre>
 <ul>
@@ -388,34 +394,34 @@ n
 برای ساخت اعداد رندوم</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="بردار-متوالی-و-تصادفی.html#cb197-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb205"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb205-1"><a href="بردار-متوالی-و-تصادفی.html#cb205-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span></code></pre></div>
 </details>
 <ul>
 <li>اعداد تصادفی در بازه مشخص بدون تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="بردار-متوالی-و-تصادفی.html#cb198-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb206"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb206-1"><a href="بردار-متوالی-و-تصادفی.html#cb206-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  5 12  1  4  6  7 10  8  3 13</code></pre>
 <ul>
 <li>اعداد تصادفی در بازه مشخص با تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="بردار-متوالی-و-تصادفی.html#cb200-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span></code></pre></div>
+<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb208-1"><a href="بردار-متوالی-و-تصادفی.html#cb208-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> T)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  7 18  4 16 10 19  9 16 17 10</code></pre>
 <ul>
 <li>حروف کوچک انگلیسی تصادفی بدون تکرار</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="بردار-متوالی-و-تصادفی.html#cb202-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> letters, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb210-1"><a href="بردار-متوالی-و-تصادفی.html#cb210-1" tabindex="-1"></a><span class="fu">sample</span>(<span class="at">x =</span> letters, <span class="at">size =</span> <span class="dv">10</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] &quot;r&quot; &quot;u&quot; &quot;z&quot; &quot;h&quot; &quot;k&quot; &quot;a&quot; &quot;m&quot; &quot;b&quot; &quot;v&quot; &quot;s&quot;</code></pre>
 <ul>
 <li>اعداد تصادفی با توزیع نرمال</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="بردار-متوالی-و-تصادفی.html#cb204-1" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="بردار-متوالی-و-تصادفی.html#cb212-1" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1]  1.29085505  0.70984957 -0.04318293  0.63228842  0.48876293
 [6]  0.03517201 -0.13634837 -0.16242425  0.91619639 -0.72076816</code></pre>
@@ -423,7 +429,7 @@ n
 <li>اعداد تصادفی با توزیع یکنواخت</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb206"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb206-1"><a href="بردار-متوالی-و-تصادفی.html#cb206-1" tabindex="-1"></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="بردار-متوالی-و-تصادفی.html#cb214-1" tabindex="-1"></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">1</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>[1] 0.8406612 0.7941666 0.5174069 0.2705386 0.2232102
 [6] 0.8314685 0.9551069 0.1105243 0.1253661 0.1118882</code></pre>

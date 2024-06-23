@@ -175,6 +175,12 @@ div.csl-indent {
 <li class="chapter" data-level="1" data-path="مقدمه.html"><a href="مقدمه.html"><i class="fa fa-check"></i><b>1</b> مقدمه</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="انواع-زبان-های-برنامه-نویسی.html"><a href="انواع-زبان-های-برنامه-نویسی.html"><i class="fa fa-check"></i><b>1.1</b> انواع زبان های برنامه نویسی</a></li>
+<li class="chapter" data-level="1.2" data-path="چرا-r.html"><a href="چرا-r.html"><i class="fa fa-check"></i><b>1.2</b> چرا R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="چرا-r.html"><a href="چرا-r.html#نگاهی-به-نظر-برنامه-نویسان"><i class="fa fa-check"></i><b>1.2.1</b> نگاهی به نظر برنامه نویسان</a></li>
+<li class="chapter" data-level="1.2.2" data-path="چرا-r.html"><a href="چرا-r.html#ده-زبان-برنامه-نویسی-برتر"><i class="fa fa-check"></i><b>1.2.2</b> ده زبان برنامه نویسی برتر</a></li>
+<li class="chapter" data-level="1.2.3" data-path="چرا-r.html"><a href="چرا-r.html#زبان-برنامه-نویسی-برای-شروع"><i class="fa fa-check"></i><b>1.2.3</b> زبان برنامه نویسی برای شروع</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="نصب-و-آماده-سازی-اولیه.html"><a href="نصب-و-آماده-سازی-اولیه.html"><i class="fa fa-check"></i><b>2</b> نصب و آماده سازی اولیه</a>
 <ul>
@@ -306,14 +312,14 @@ div.csl-indent {
 <span dir="ltr"><code>.csv</code></span></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb353"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb353-1"><a href="فایلها.html#cb353-1" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb361"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb361-1"><a href="فایلها.html#cb361-1" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> iris, <span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
 </details>
 <ul>
 <li>وارد کردن داده با پسوند
 <span dir="ltr"><code>.csv</code></span></li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb354"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb354-1"><a href="فایلها.html#cb354-1" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb362-1"><a href="فایلها.html#cb362-1" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;iris.csv&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code>      X Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 1     1          5.1         3.5          1.4         0.2  setosa
@@ -323,13 +329,13 @@ div.csl-indent {
 <li>خروجی گرفتن داده با پسوند اکسل</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb356-1"><a href="فایلها.html#cb356-1" tabindex="-1"></a>writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="at">x =</span> iris, <span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb364-1"><a href="فایلها.html#cb364-1" tabindex="-1"></a>writexl<span class="sc">::</span><span class="fu">write_xlsx</span>(<span class="at">x =</span> iris, <span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
 </details>
 <ul>
 <li>وارد کردن داده با پسوند اکسل</li>
 </ul>
 <details class=chunk-details open><summary class=chunk-summary><span class=chunk-summary-text>Code</span></summary>
-<div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb357-1"><a href="فایلها.html#cb357-1" tabindex="-1"></a>readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb365"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb365-1"><a href="فایلها.html#cb365-1" tabindex="-1"></a>readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="at">path =</span> <span class="st">&quot;iris.xlsx&quot;</span>)</span></code></pre></div>
 </details>
 <pre class="output"><code># A tibble: 150 × 5
    Sepal.…¹ Sepal…² Petal…³ Petal…⁴ Species
